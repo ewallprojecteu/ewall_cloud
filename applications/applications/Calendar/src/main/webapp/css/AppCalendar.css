@@ -1,0 +1,100 @@
+#AppCalendar-DataContainer{z-index:10;width:100%;height:100%;min-width:1240px;min-height:860px;top:0px;left:0px;position:absolute;/*background-color:#ffffff;*/
+-webkit-touch-callout:none;
+-webkit-user-select:none;
+-khtml-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;}
+
+#AppCalendar-DataContainer * {font-family:"Lucida Grande",Verdana,Arial,Helvetica,sans-serif;}
+#AppCalendar-DataContainer *:focus {outline:0 !important;}
+
+#AppCalendar-DataContainer .AppCalendar-Parts{z-index:10;width:1214px;height:841px;top:0px;left:50%;margin-left:-606px;position:absolute;overflow:hidden;}
+#AppCalendar-DataContainer .AppCalendar-Parts #AppCalendar-ExtEvents{z-index:11;width:100%;height:54px;top:0px;left:0px;position:absolute;}
+#AppCalendar-DataContainer .AppCalendar-Parts #AppCalendar-Calendar{z-index:10;width:100%;height:100%;top:66px;left:0px;position:absolute;overflow:hidden;}
+#AppCalendar-DataContainer .AppCalendar-Parts #AppCalendar-Dialog{z-index:12;overflow:hidden;}
+
+#AppCalendar-ExtEvents .AppCalendar-gradient {
+	background: #E6E6E6;
+	background: -webkit-linear-gradient(rgba(255, 255, 255, 1), rgba(230, 230, 230, 1));
+	background: -o-linear-gradient(rgba(255, 255, 255, 1), rgba(230, 230, 230, 1));
+	background: -moz-linear-gradient(rgba(255, 255, 255, 1), rgba(230, 230, 230, 1));
+	background: linear-gradient(rgba(255, 255, 255, 1), rgba(230, 230, 230, 1));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFE6E6E6', GradientType=0);
+}
+#AppCalendar-ExtEvents .AppCalendar-table {display:table; table-layout:fixed; width:100%; height:100%; border-spacing:0;}
+#AppCalendar-ExtEvents .AppCalendar-corner-all {-webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;}
+#AppCalendar-ExtEvents .AppCalendar-cell {display:table-cell; width:100%; height:100%; border:1px solid #be0000; cursor:pointer;}
+#AppCalendar-ExtEvents .AppCalendar-icon-clone {width:174px; height:52px; border:1px solid #3a87ad; cursor:pointer;}
+#AppCalendar-ExtEvents .AppCalendar-icon > div {display:block; width:100%; height:52px;}
+#AppCalendar-ExtEvents .AppCalendar-icon .AppCalendar-icon-medical {background:url(../images/icon-medical.png) no-repeat center center;}
+#AppCalendar-ExtEvents .AppCalendar-icon .AppCalendar-icon-measurements {background:url(../images/icon-measurements.png) no-repeat center center;}
+#AppCalendar-ExtEvents .AppCalendar-icon .AppCalendar-icon-eating {background:url(../images/icon-eating.png) no-repeat center center;}
+#AppCalendar-ExtEvents .AppCalendar-icon .AppCalendar-icon-physical {background:url(../images/icon-physical.png) no-repeat center center;}
+#AppCalendar-ExtEvents .AppCalendar-icon .AppCalendar-icon-cognitive {background:url(../images/icon-cognitive.png) no-repeat center center;}
+#AppCalendar-ExtEvents .AppCalendar-icon .AppCalendar-icon-shower {background:url(../images/icon-shower.png) no-repeat center center;}
+#AppCalendar-ExtEvents .AppCalendar-icon .AppCalendar-icon-socializing {background:url(../images/icon-socializing.png) no-repeat center center;}
+
+#AppCalendar-Calendar .fc-toolbar{height:60px;padding:0;margin:0}
+#AppCalendar-Calendar .fc-toolbar .fc-button, 
+#AppCalendar-Calendar .fc-toolbar .ui-button{font-size:1.5em;}
+#AppCalendar-Calendar.fc-unthemed .fc-toolbar .fc-button .fc-icon{top: -0.15em;}
+#AppCalendar-Calendar .fc-toolbar .fc-center h2{color:#ffffff;font-size:2em;}
+
+#AppCalendar-Calendar .fc-view-container .fc-head tr{height:36px;}
+#AppCalendar-Calendar .fc-view-container .fc-head .fc-row th{vertical-align:middle;font-size:1.3em;}
+#AppCalendar-Calendar.fc-unthemed .fc-view-container .fc-head .fc-row th{color:#ffffff;}
+
+#AppCalendar-Calendar .fc-agenda-view .fc-day-grid .fc-row {min-height:78px !important;}
+#AppCalendar-Calendar .fc-time-grid .fc-slats td {height:34px;}
+
+#AppCalendar-Calendar .fc-scroller{overflow:hidden;}
+#AppCalendar-Calendar .fc-scroller .iScrollVerticalScrollbar{z-index:14;width:30px;height:100%;top:0px;right:0px;overflow:hidden;position:absolute;}
+#AppCalendar-Calendar .fc-scroller .iScrollIndicator{width:100%;height:280px;left:0px;position:absolute;background-color:#cccccc;
+-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;
+-webkit-box-shadow: inset 1px 1px 6px 0px #909090;
+-moz-box-shadow: inset 1px 1px 6px 0px #909090;
+box-shadow: inset 1px 1px 6px 0px #909090;}
+
+#AppCalendar-Dialog * {box-sizing:content-box;}
+
+#AppCalendar-Dialog .AppCalendar-dialog-row{width:100%;height:90px;position:relative;overflow:hidden;}
+#AppCalendar-Dialog .AppCalendar-dialog-row-single-30{width:100%;height:30px;position:relative;overflow:hidden;}
+#AppCalendar-Dialog .AppCalendar-dialog-row-single-60{width:100%;height:60px;position:relative;overflow:hidden;}
+
+#AppCalendar-Dialog .AppCalendar-dialog-column2-1{width:49%; position:absolute; overflow:hidden;}
+#AppCalendar-Dialog .AppCalendar-dialog-column2-2{width:49%; left:50%; position:absolute; overflow:hidden;}
+
+#AppCalendar-Dialog .AppCalendar-dialog-column3-1{width:33%; position:absolute; overflow:hidden;}
+#AppCalendar-Dialog .AppCalendar-dialog-column3-2{width:32%; left:34%; position:absolute; overflow:hidden;}
+#AppCalendar-Dialog .AppCalendar-dialog-column3-3{width:32%; left:67%; position:absolute; overflow:hidden;}
+
+#AppCalendar-Dialog .AppCalendar-dialog-column32-1{width:65%; position:absolute; overflow:hidden;}
+#AppCalendar-Dialog .AppCalendar-dialog-column32-2{width:32%; left:67%; position:absolute; overflow:hidden;}
+
+#AppCalendar-Dialog .AppCalendar-dialog-column4-1{width:29%; position:absolute; overflow:hidden;}
+#AppCalendar-Dialog .AppCalendar-dialog-column4-2{width:19%; left:30%; position:absolute; overflow:hidden;}
+#AppCalendar-Dialog .AppCalendar-dialog-column4-3{width:29%; left:50%; position:absolute; overflow:hidden;}
+#AppCalendar-Dialog .AppCalendar-dialog-column4-4{width:19%; left:80%; position:absolute; overflow:hidden;}
+
+#AppCalendar-Dialog .AppCalendar-has-error {border-color:#cd071e;}
+#AppCalendar-Dialog .ui-dialog-title{font-size:1.3em;}
+#AppCalendar-Dialog label, #AppCalendar-Dialog input[type="text"]{display:block;font-size:1.2em;}
+#AppCalendar-Dialog small, #AppCalendar-Dialog input[type="checkbox"]{float:left; display:block;font-size:1.2em;}
+#AppCalendar-Dialog small {line-height:44px; white-space:nowrap;}
+#AppCalendar-Dialog .AppCalendar-dialog-column3-1 small, 
+#AppCalendar-Dialog .AppCalendar-dialog-column3-2 small, 
+#AppCalendar-Dialog .AppCalendar-dialog-column3-3 small {width:250px; overflow:hidden; text-overflow:ellipsis;}
+#AppCalendar-Dialog label{margin-bottom:8px;}
+#AppCalendar-Dialog input[type="text"]{width:99%;height:38px;}
+#AppCalendar-Dialog input[type="checkbox"]{width:38px; height:38px; margin:3px 3px 3px 0;}
+#AppCalendar-Dialog select{width:99%;height:39px;font-size:1.2em;}
+#AppCalendar-Dialog button .ui-button-text{font-size:1.2em;}
+
+#AppCalendar-Dialog .AppCalendar-Dialog-Load{z-index:17;width:100%;height:100%;top:0px;left:0px;position:absolute;
+background:url(../images/AppCalendar_loading.gif) no-repeat center center;}
+#AppCalendar-DataContainer .AppCalendar-Parts .AppCalendar-Load{z-index:14;width:100%;height:100%;top:0px;left:0px;position:absolute;
+background:url(../images/AppCalendar_loading.gif) no-repeat center center; display:none;}
+
+#AppCalendar-DataContainer .AppCalendar-Parts .AppCalendar-overlay{z-index:15;width:100%;height:100%;top:0px;left:0px;position:absolute;display:none;}

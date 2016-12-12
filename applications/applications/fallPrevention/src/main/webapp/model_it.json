@@ -1,0 +1,234 @@
+{
+  "slices": [
+    {
+      "id": "Home",
+      "coordinates": "413,435,1,436,12,333,46,248,123,144",
+      "title": "Rischi connessi allo stato della casa",
+      "intro": ", molte case presentano potenziali pericoli, e molti anziani attribuiscono loro cadute a spostamenti o scivoloni dentro la loro casa o negli immediati dintorni.",
+      "action": "Per favore seleziona gli elementi che si trovano nella tua casa e premi OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "carpets",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Hai tappeti mal stesi. Rimuovili dal pavimento o fai in modo che essi siano stesi in modo sicuro, prestando attenzione ai bordi e al fatto che non formano pieghe.",
+          "inactiveText": "Hai tappeti mal stesi?"
+        },
+        {
+          "id": "floors",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Il pavimento è scivoloso. Non passare la cera. Parlane con un caregiver o con chi ti aiuta in casa!",
+          "inactiveText": "Hai pavimenti scivolosi?"
+        },
+        {
+          "id": "stairs",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Hai scale in casa. Usa sempre il corrimano, non salire o scendere le scale trasportando oggetti ingombranti e indossa sempre scarpe adeguate.",
+          "inactiveText": "Do you have stairs at home?"
+        },
+        {
+          "id": "poorLight",
+          "danger": false,
+          "mode": "user",
+          "activeText": "L'illuminazione nelle stanze è scarsa. Prova ad utilizzare luci più fortiin casa, cambia le lampadine o prova ad ottimizzare l'illuminazione nele stanze più buie.",
+          "inactiveText": "L'illuminazione è scarsa in qualche stanza della casa?"
+        }
+      ]
+    },
+    {
+      "id": "Medication",
+      "coordinates": "129,130,215,64,320,23,419,10,418,420",
+      "title": "Rischi connessi all'assunzione di farmaci",
+      "intro": ", l'assunzione di farmaci negli anziani è connessa con l'aumento di rischi di cadute.",
+      "action": "Petr favore osserva le informazioni inserite dal tuo medico di famiglia o dai caregiver. Se hai bisogno di ulteriori informazioni, consultati con loro. Al termine, premi OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "polipharmacotherapy",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Ricorda, sei esposto a una farmacoterapia che potrebbe aumentare il rischio di cadere. Per favore, sii a conoscenza di altri fattori che potrebbero aumentare ulteriormente questo rischio!",
+          "inactiveText": "Il tuo medico di famiglia o i caregiver non hanno indicato alcun rischio di polifarmacoterapia."
+        },
+        {
+          "id": "frid",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Ricorda, stai assumendo farmaci che potrebbero aumentare il rischio di cadere. Per favore, sii a conoscenza di altri fattori che potrebbero aumentare ulteriormente il rischio!",
+          "inactiveText": "Il tuo medico di famiglia o i caregiver non hanno indicato alcun rischio per l'assunzione di farmaci che aumentano il rischio di cadere"
+        }
+      ]
+    },
+    {
+      "id": "Vitals",
+      "coordinates": "434,4,544,18,656,66,722,122,432,414",
+      "title": "Rischi connessi con parametri vitali",
+      "intro": ", alcuni parametri vitali possono essere connessi al rischio di cadere e dovrebbero essere tenuti sotto controllo.",
+      "action": "PEr favore, osserva i risultati dei parametri vitali, indicare quali elementi si applicano a te e premi OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "hypertension",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Potresti soffrire di ipotensione ortostatica, eWALL ha infatti rilevato in calo pressorio! Vai a visita dal tuo medico di famiglia per ulteriori informazioni e controlli.",
+          "inactiveText": "Hai avuto episodi riconducibili a ipotensione ortostatica?"
+        },
+        {
+          "id": "dizziness",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Se avverti una sensazione di capogiro o vertigini,dovresti andare a farti visitare dal tuo medico di famiglia per ulteriori controlli e informazioni.",
+          "inactiveText": "Avverti una sensazione di capogiro o vertigini?"
+        }
+      ]
+    },
+    {
+      "id": "Eyesight",
+      "coordinates": "447,419,737,130,800,210,840,306,857,417",
+      "title": "Rischi connessi alla vista",
+      "intro": ", l'invecchiamento è spesso accompagnato da cambiamenti nella vista che possono aumentare il rischio di cadute. Fortunatamente, diversi fattori che mettono a rischio gli anziani con problemi di vista possono essere corretti modificando il comportamento individuale e l'ambiente domestico.",
+      "action": "Per favore, osserva le informazioni inserite dal tuo medico di famiglia o dai caregiver. Se hai bisogno di ulteriori informazioni, consultarti con loro. Al termine, premi OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "multifocal",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Ricorda, utilizzando lenti multifocali è possibile che si verifichi una percezione alterata della distanza tra te e gli oggetti. Presta maggiore attenzione e rimuovi eventuali ostacoli sul pavimento.",
+          "inactiveText": "Il tuo medico di famiglia o i caregiver hanno indicato che tu non usi lenti multifocali"
+        },
+        {
+          "id": "impairments",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Dal momento che hai di problemi di vista, non dimenticare di avere regolari controlli con il tuo oculista. Il corretto controllo di disturbi che colpiscono gli occhi può aiutare a preservare la vista residua!",
+          "inactiveText": "Il tuo medico di famiglia o i caregiver hanno indicato che tu non soffri di nessun tipo di disturbo visivo (Cataratte, glaucoma, degenerazione maculare, ecc.)"
+        }
+      ]
+    },
+    {
+      "id": "Cognitive",
+      "coordinates": "455,435,866,432,851,535,804,647,746,725",
+      "title": "Rischi connessi allo stato cognitivo",
+      "intro": ", i pazienti con disordini di tipo neuorologico, come ad esempio il morbo di Parkinson,  la sclerosi multipla, ictus o malattia di Alzheimer, cadono più frequentemente.",
+      "action": "Per favore, osserva le informazioni inserite dal tuo medico di famiglia o dai caregiver. Se hai bisogno di ulteriori informazioni, consultati con loro. Inoltre, indica quegli elementi che possono essere applicati a te e premi OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "fear",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Hai paura di cadere. Non permettere che questo limiti le tue attività quotidiane! Per favore, contatta il tuo medico di famiglia, potrà suggerirti le soluzioni più adatte alle tue esigenze.",
+          "inactiveText": "Hai paura che potresti cadere?"
+        },
+        {
+          "id": "cognitive",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Hai un disturbo cognitivo, e allora non dimenticare il tuo programma di allenamento cognitivo. Allena il tuo cervello!",
+          "inactiveText": "Il tuo medico di famiglia o i caregiver hanno indicato che tu non soffri di alcun disturbo cognitivo"
+        },
+        {
+          "id": "extrapyramidal",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Dal momento che sofri di disordini del movimento indotti dai farmaci (sintomi extrapiramidali), fai checkup regolari con il tuo medico di famiglia e il tuo neurologo.",
+          "inactiveText": "Stai assumendo psicofarmaci o anti depressiviche possono indurre disordini del movimento (sintomi extrapiramidali)?"
+        }
+      ]
+    },
+    {
+      "id": "Feet",
+      "coordinates": "447,448,734,735,648,804,557,841,447,856",
+      "title": "Rischi connessi ai piedi",
+      "intro": ", i problemi ai piedi sono comuni nelle persone anziane e sono associati a disturbi dell'equilibrio e alle capacità funzionali. Essi derivano da semplici cambiamenti legati all'età, così come da specifiche disfunzioni, o da decondizionamento a seguito di un periodo di inattività. Essi sono la causa più comune di cadutede.",
+      "action": "Please indicate if you are feeling foot pain. Then observe the information entered by your GP or caregivers. If you need further information, consult with them. When done, press OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "pain",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Tu soffri di dolori invalidanti ai piedi. Il tuo medico può suggerirti una gestione più efficiente del dolore al piede. Pianifica controlli regolari.",
+          "inactiveText": "Soffri di dolori invalidanti ai piedi?"
+        },
+        {
+          "id": "ankle",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Tu soffri di una diminuzione della flessibilità della caviglia. Per evitare rischi di caduta si consiglia di indossare calzature adeguate, inoltre, è importante prevedere controlli regolari con un podologo.",
+          "inactiveText": "Il tuo medico di famiglia o i caregiver hanno indicato che tu non soffri di una diminuzione della flessibilità della caviglia"
+        },
+        {
+          "id": "hallux",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Tu soffri di problemi di alluce valgo. Per evitare rischi di caduta si consiglia di indossare calzature adeguate, inoltre, è importante prevedere controlli regolari con un podologo.",
+          "inactiveText": "Il tuo medico di famiglia o i caregiver hanno indicato che tu non soffri di alluce valgo"
+        },
+        {
+          "id": "tactile",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Tu sooffri della diminuzione della sensibilità tattile plantare. Per evitare rischi di caduta si consiglia di indossare calzature adeguate, inoltre, è importante prevedere controlli regolari con un podologo.",
+          "inactiveText": "Il tuo medico di famiglia o i caregiver hanno indicato che tu non soffri della diminuzione della sensibilità tattile plantare."
+        },
+        {
+          "id": "toe",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Tu soffri della diminuzione della forza di flessione plantare delle dita dei piedi. Per evitare rischi di caduta si consiglia di indossare calzature adeguate, inoltre, è importante prevedere controlli regolari con un podologo.",
+          "inactiveText": "Il tuo medico di famiglia o i caregiver hanno indicato che tu non soffri diminuzione della forza di flessione plantare delle dita dei piedi"
+        }
+      ]
+    },
+    {
+      "id": "Social",
+      "coordinates": "434,456,139,747,222,806,319,848,437,862",
+      "title": "Rischi connessi alla mancanza di attività sociale",
+      "intro": ", la paura di cadere è la principale causa di evitamento e isolamento sociale.",
+      "action": "Per favore, prendi in considerazione l'attività di socializzazione e premi OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "avoidance",
+          "danger": false,
+          "mode": "user",
+          "activeText": "La tua attività di socializzazione è diminuita. Se pensi che la tua paura di cadere ti stia portando all'isolamento sociale, per favorecontatta il tuo medico di famiglia, potrà suggerirti la migliore soluzione adatta ai tuoi bisogni.",
+          "inactiveText": "Eviti di incontrarti regolarmente con altre persone in casa o altrove?"
+        }
+      ]
+    },
+    {
+      "id": "Legs",
+      "coordinates": "10,448,419,447,129,737,59,641,19,531",
+      "title": "Rischi connessi alle gambe",
+      "intro": ", i problemi di deambulazione possono derivare da semplici cambiamenti legati all'età nell'andatura e nell'equilibrio, oppure come da specifiche disfunzioni, o da decondizionamento a seguito di un periodo di inattività. Essi sono la causa più comune di cadute",
+      "action": "Per favore, indica se avverti problemi di estensione delle ginocchia. Quindiosservare l'attività fisica misurata da eWALL. Al termine, premi OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "exercise",
+          "danger": false,
+          "mode": "home",
+          "activeText": "eWALL ha rilevato solamente XXX passi in media negli ultimi YYY giorni, Cerca di essere più attivo!",
+          "inactiveText": "Eccellente! eWALL ha rilevato XXX passi in media negli ultimi YYY giorni. Sei veramente in gamba!"
+        },
+        {
+          "id": "knee",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Dal momento che avverti problemi di estensione delle ginocchia, è consigliabile prevedere controlli regolari con un ortopedico per evitare il rischio di cadute.",
+          "inactiveText": "Avverti problemi di estensione delle ginocchia?"
+        }
+      ]
+    }
+  ],
+  "fitbitnosteps": "eWALL non ha rilevato alcun passo nei giorni scorsi. Assicurati di usare il tuo Fitbit ChargeHR!",
+  "fitbitnodata": "eWALL non è in grado di registrare i tuoi dati relativi all’attività!",
+  "fitbitok": "Eccellente! eWALL ha rilevato XXX passi in media negli ultimi YYY giorni. Sei veramente in gamba!"
+}

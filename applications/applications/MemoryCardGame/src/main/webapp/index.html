@@ -1,0 +1,190 @@
+<!-- <!doctype html>
+<head>
+  <title>jQuery memory card / concentration / pairs game</title>
+  <meta name="description" content="Quizy jquery plugin for creating memory game (concentration gaim, pairs game)">
+  <meta name="keywords" content="jquery plugin, memory game, concentration, pairs game, javascript, jquery" />
+ -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta content="width=device-width, initial-scale=0.5" name="viewport">
+<link rel="stylesheet" href="../MemoryCardGame/css/quizymemorygame.css">
+
+<style>
+    body {
+        font-family: Helvetica, Arial, Verdana;
+        text-align: center;
+    }
+    
+    #tutorial-memorygame {
+        margin: auto;
+        width: 780px;
+    }
+    
+    .text-style1 {
+        font-size: 14pt;
+        color: #56605f;
+        font-weight: normal;
+        text-shadow: 1px 1px 1px #fff;
+        margin: 0;
+        line-height: 24pt;
+    }
+    
+    .reset-button {
+        margin: 0 0 1.5em 0;
+    }
+    
+    canvas {
+        background: black;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+</style>
+<!-- 
+</head>
+
+<!-- Game window wrapper -->
+<style>
+    .gwd-div-17ar {
+        position: absolute;
+        left: 387px;
+        top: 138px;
+        height: 802px;
+        width: 1191px;
+        background-image: none;
+        background-color: rgb(0, 0, 0);
+    }
+    
+    .gwd-div-zsuw {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 50px;
+        font-family: Lobster;
+        font-size: 32px;
+        text-align: center;
+        color: white;
+        background-image: linear-gradient(rgb(229, 112, 231) 0%, rgb(200, 94, 199) 47%, rgb(168, 73, 163) 100%);
+        background-attachment: initial;
+        background-size: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-position: initial;
+        background-repeat: initial;
+    }
+    
+    .gwd-div-3lek {
+        position: absolute;
+        left: 0px;
+        top: 50px;
+        width: 100%;
+        height: 751px;
+        background-image: none;
+        background-color: rgb(184, 170, 170);
+    }
+</style>
+<img src="assets/game-frame.png" class="gwd-img-o7sj gwd-img-mmom gwd-img-j7j3" id="layer-8-gameframe">
+<div class="gwd-div-17ar" id="game-frame-filler" style="">
+    <div class="gwd-div-zsuw" id="game-header"></div>
+    <div class="gwd-div-3lek" id="game-body">
+        <!-- --- -->
+
+<!--
+<body>
+  
+  <h1>QuizY jQuery memory plugin</h1>
+ -->
+        <div id="main" role="main">
+
+            <div id="tutorial-memorygame" class="quizy-memorygame">
+                <ul>
+                    <li class="match1">
+                        <img src="../MemoryCardGame/img/bulgaria.png">
+                    </li>
+                    <li class="match2">
+                        <img src="../MemoryCardGame/img/denmark.png">
+                    </li>
+                    <li class="match3">
+                        <img src="../MemoryCardGame/img/austria.png">
+                    </li>
+                    <li class="match4">
+                        <img src="../MemoryCardGame/img/netherlands.png">
+                    </li>
+                    <li class="match5">
+                        <img src="../MemoryCardGame/img/italy.png">
+                    </li>
+                    <li class="match6">
+                        <img src="../MemoryCardGame/img/croatia.png">
+                    </li>
+                    <li class="match7">
+                        <img src="../MemoryCardGame/img/romania.png">
+                    </li>
+                    <li class="match8">
+                        <img src="../MemoryCardGame/img/greece.png">
+                    </li>
+                    <li class="match1">
+                        <img src="../MemoryCardGame/img/bulgaria.png">
+                        <!-- <br><br><br><p class="text-style1">Bulgaria</p> -->
+                    </li>
+                    <li class="match2">
+                        <img src="../MemoryCardGame/img/denmark.png">
+                        <!-- <br><br><br><p class="text-style1">Denmark</p> -->
+                    </li>
+                    <li class="match3">
+                        <img src="../MemoryCardGame/img/austria.png">
+                        <!-- <br><br><br><p class="text-style1">Austria</p> -->
+                    </li>
+                    <li class="match4">
+                        <img src="../MemoryCardGame/img/netherlands.png">
+                        <!-- <br><br><br><p class="text-style1">Netherlands</p> -->
+                    </li>
+                    <li class="match5">
+                        <img src="../MemoryCardGame/img/italy.png">
+                        <!-- <br><br><br><p class="text-style1">Italy</p> -->
+                    </li>
+                    <li class="match6">
+                        <img src="../MemoryCardGame/img/croatia.png">
+                        <!-- <br><br><br><p class="text-style1">Croatia</p> -->
+                    </li>
+                    <li class="match7">
+                        <img src="../MemoryCardGame/img/romania.png">
+                        <!-- <br><br><br><p class="text-style1">Romania</p> -->
+                    </li>
+                    <li class="match8">
+                        <img src="../MemoryCardGame/img/greece.png">
+                        <!-- <br><br><br><br><p class="text-style1">Greece</p> -->
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="reset-button">
+                <button id="restart" style="width: 10em;  height: 3em; font-size: 18"></button>
+            </div>
+        </div>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../js/jquery-1.7.1.min.js"><\/script>')</script> -->
+        <script src="../MemoryCardGame/js/jquery-ui.min.js"></script>
+ <!--        <script src="../MemoryCardGame/js/jquery-ui-1.8.17.custom.min.js"></script>
+ -->
+        <script src="../MemoryCardGame/js/jquery.flip.min.js"></script>
+        <script src="../MemoryCardGame/js/jquery.quizymemorygame.js"></script>
+
+        <script>
+            $('#tutorial-memorygame').quizyMemoryGame();
+            $('#restart').click(function () {
+                $('#tutorial-memorygame').quizyMemoryGame('restart');
+                return false;
+            });
+        </script>
+        <!-- 
+</body> -->
+
+        <!-- Game window wrapper -->
+    </div>
+</div>
+<!-- ---  -->
+
+<!-- </html> -->

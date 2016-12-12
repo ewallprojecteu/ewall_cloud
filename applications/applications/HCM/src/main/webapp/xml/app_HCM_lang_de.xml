@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="HistoryTxt">
+        <item>Heute</item>
+        <item>Letzte Woche</item>
+        <item>Letztes Monat</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>So</item>
+        <item>Mo</item>
+        <item>Di</item>
+        <item>Mi</item>
+        <item>Do</item>
+        <item>Fr</item>
+        <item>Sa</item>
+    </ItemGroup>
+    <ItemGroup name="MeasureTxt">
+        <item>Herzfrequenz</item>
+        <item>Sättigung</item>
+        <item>Blutdruck</item>
+    </ItemGroup>
+    <ItemGroup name="MeasureValueTxt">
+        <item>PPM</item>
+        <item>%</item>
+        <item>
+            <subitem>SYS</subitem>
+            <subitem>DIA</subitem>
+        </item>
+    </ItemGroup>
+    <ItemGroup name="SystemMessages">
+        <item>Messung</item>
+        <item>Verlauf</item>
+        <item>Messung Beginnen</item>
+        <item>Bitte versuchen Sie es später erneut</item>
+    </ItemGroup>
+    <ItemGroup name="ColorLegendLabels">
+        <Label>Legende</Label>
+        <Color id="1">Niedriger Wert</Color>
+        <Color id="2">Normaler Wert</Color>
+        <Color id="3">Hoher Wert</Color>
+    </ItemGroup>
+    <ItemGroup name="MeasureInfoTxt">
+        <item>
+            <subitem>Das Smart Stethoskop ist in eWALL verantwortlich für die Überwachung der Herzfrequenz.</subitem>
+            <subitem>Es misst die Herzfrequenz und Herzleistung.</subitem>
+            <subitem>Drücken Sie die Taste "Start" bei Ihrem Smart Stethoskop und drücken Sie es fest an ihre Brust in der Nähe des Herzens.</subitem>
+            <subitem>Drücken Sie die "MESSUNG BEGINNEN" Taste auf dem Bildschirm.</subitem>
+        </item>
+        <item>
+            <subitem>Das Pulsoximeter mißt und zeigt funktionale Sauerstoffsättigung des arteriellen Hämoglobin Spiegels (% SpO&lt;sub&gt;2&lt;/sub&gt;) und Herzfrequenz.</subitem>
+            <subitem>Führen Sie ihren Finger mit dem Nagel nach oben in das Oximeter ein bis die Fingerspitze die angezeigte Stop Linie berührt.</subitem>
+            <subitem>Sobald der Finger im Oximeter eingeführt ist, beginnt das Gerät eine kurze Start Sequenz. Überprüfen Sie ob alle LED Lichter bei dieser Sequenz aufleuchten.</subitem>
+            <subitem>Drücken Sie die "MESSUNG BEGINNEN" Taste auf dem Bildschirm.</subitem>
+        </item>
+        <item>
+            <subitem>Das Gerät misst Ihren Blutdruck und Herzfrequenz einfach und schnell.</subitem>
+            <subitem>Sie können die Stulpe entweder auf Ihrem linken oder rechten Arm wickeln. Befestigen Sie die Stulpe so dass der Schlauch auf der Seite des Ellbogens liegt.</subitem>
+            <subitem>Wählen Sie Ihre Benutzer ID aus (A oder B)</subitem>
+            <subitem>Drücken Sie die O/I START Taste. Alle Symbole erscheinen auf dem Bildschirm. Die gewählte Benutzer ID wird auf dem Bildschirm aufleuchten.</subitem>
+            <subitem>Drücken Sie die "MESSUNG BEGINNEN" Taste auf dem Bildschirm.</subitem>
+        </item>
+    </ItemGroup>
+</language_data>

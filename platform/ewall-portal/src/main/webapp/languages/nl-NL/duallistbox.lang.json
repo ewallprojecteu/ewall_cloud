@@ -1,0 +1,11 @@
+{
+    "filterPlaceHolder": "Filter",
+    "filterTextClear": "Laat alles zien",
+    "infoText": "Alles",
+    "infoTextEmpty": "Lege lijst",
+    "infoTextFiltered": "Gefiltered",
+    "moveAllLabel": "Verplaats alles",
+    "moveSelectedLabel": "Verplaats geselecteerde",
+    "removeAllLabel": "Verwijder alles",
+    "removeSelectedLabel": "Verwijder geselecteerde"
+}

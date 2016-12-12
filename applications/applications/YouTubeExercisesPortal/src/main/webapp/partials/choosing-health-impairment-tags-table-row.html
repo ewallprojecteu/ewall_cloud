@@ -1,0 +1,73 @@
+<td>
+     <label i18n="common.videoSuitableForPersonHint"></label>
+</td>
+<td>
+	<ul class="nav nav-pills nav-stacked" ng-init="intensitiesCollapsed = true; assertionsCollapsed = true; additionalAssertionsCollapsed = true;">
+		<li>
+				<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#collapsedPartIntensity" ng-click="intensitiesCollapsed = !intensitiesCollapsed">
+					<span i18n="healthImpairments.intensities"></span><span>&nbsp;&nbsp;&nbsp;</span>
+					<span ng-show="intensitiesCollapsed" class="glyphicon glyphicon-collapse-down"></span>
+					<span ng-show="!intensitiesCollapsed" class="glyphicon glyphicon-collapse-up"></span>
+				</button>
+		    	<div id="collapsedPartIntensity" class="collapse">
+				<div class="table-responsive">
+					<table class="table">
+						<tr ng-repeat="healthImpairmentIntensity in healthImpairmentIntensities track by $index">
+							<td i18n="healthImpairments.maximum"></td>
+							<td>
+								<select ng-model="healthImpairmentIntensityStates[$index]" ng-options="intensityState for 
+									intensityState in healthImpairmentIntensity.classPropertiesList" class="form-control">
+								</select>
+							</td>
+							<td>{{healthImpairmentIntensity.name}}</td>
+						</tr>
+					</table>
+				</div>
+				</div>
+			</li>
+			<li>
+				<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#collapsedPartFlag" ng-click="assertionsCollapsed = !assertionsCollapsed">
+					<span i18n="healthImpairments.assertions"></span><span>&nbsp;&nbsp;&nbsp;</span>
+					<span ng-show="assertionsCollapsed" class="glyphicon glyphicon-collapse-down"></span>
+					<span ng-show="!assertionsCollapsed" class="glyphicon glyphicon-collapse-up"></span>
+				</button>
+			     	<div id="collapsedPartFlag" class="collapse">
+					<div class="table-responsive">
+						<table class="table">
+							<tr ng-repeat="healthImpairmentFlag in healthImpairmentFlags track by $index">
+								<td i18n="healthImpairments.has"></td>
+								<td>{{healthImpairmentFlag.name}}</td>
+								<td>
+									<select ng-model="healthImpairmentFlagStates[$index]" ng-options="flag for 
+										flag in healthImpairmentFlag.classPropertiesList" class="form-control">
+									</select>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</li>
+			<li>
+				<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#collapsedPartAdditional" ng-click="additionalAssertionsCollapsed = !additionalAssertionsCollapsed">
+					<span i18n="healthImpairments.additionalTagsAssertions"></span><span>&nbsp;&nbsp;&nbsp;</span>
+					<span ng-show="additionalAssertionsCollapsed" class="glyphicon glyphicon-collapse-down"></span>
+					<span ng-show="!additionalAssertionsCollapsed" class="glyphicon glyphicon-collapse-up"></span>
+				</button>
+		     	<div id="collapsedPartAdditional" class="collapse">
+				<div class="table-responsive">
+					<table class="table">
+						<tr ng-repeat="additionalHealthImpairment in additionalHealthImpairmentTags track by $index">
+							<td i18n="healthImpairments.has"></td>
+							<td>{{additionalHealthImpairment.name}}</td>
+							<td>
+								<select ng-model="additionalHealthImpairmentTagsStates[$index]" ng-options="flag for 
+									flag in additionalHealthImpairmentTagsAvailableStates" class="form-control">
+								</select>
+							</td>
+						</tr>
+					</table>
+				</div>
+				</div>
+		</li>
+	</ul>
+</td>

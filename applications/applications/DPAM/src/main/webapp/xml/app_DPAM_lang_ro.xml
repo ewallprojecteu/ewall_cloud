@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="LongMonths">
+        <item>Ianuarie</item>
+        <item>Februarie</item>
+        <item>Martie</item>
+        <item>Aprilie</item>
+        <item>Mai</item>
+        <item>Iunie</item>
+        <item>Iulie</item>
+        <item>August</item>
+        <item>Septembrie</item>
+        <item>Octombrie</item>
+        <item>Noiembrie</item>
+        <item>Decembrie</item>
+    </ItemGroup>
+    <ItemGroup name="ShortMonths">
+        <item>Ian</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>Mai</item>
+        <item>Iun</item>
+        <item>Iul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Noi</item>
+        <item>Dec</item>
+    </ItemGroup>
+    <ItemGroup name="LongDays">
+        <item>Duminică</item>
+        <item>Luni</item>
+        <item>Marți</item>
+        <item>Miercuri</item>
+        <item>Joi</item>
+        <item>Vineri</item>
+        <item>Sâmbătă</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>Du</item>
+        <item>Lu</item>
+        <item>Ma</item>
+        <item>Mi</item>
+        <item>Jo</item>
+        <item>Vi</item>
+        <item>Sa</item>
+    </ItemGroup>
+    <ItemGroup name="ChartTitle">
+        <item>Distanța de mers în pași</item>
+        <item>Distanța de mers în kilometri</item>
+        <item>Calorii consumate</item>
+    </ItemGroup>
+    <ItemGroup name="yTitle">
+        <item>Pași</item>
+        <item>Kilometri</item>
+        <item>Calorii</item>
+    </ItemGroup>
+    <ItemGroup name="ChartNavLabels">
+        <item>Pași</item>
+        <item>Kilometri</item>
+        <item>Calorii</item>
+    </ItemGroup>
+    <ItemGroup name="NavActLabels">
+        <item>Activitate în</item>
+        <item>Zi</item>
+        <item>Săptămâna</item>
+        <item>Lună</item>
+    </ItemGroup>
+    <ItemGroup name="Messages">
+        <item>
+            <Title>Felicitări</Title>
+            <Content>V-ați atins scopul pentru perioada selectată.</Content>
+        </item>
+    </ItemGroup>
+    <ItemGroup name="AppLabels">
+        <item>
+            <shorthour>ore</shorthour>
+            <steps>Pași</steps>
+        </item>
+    </ItemGroup>
+    <ItemGroup name="ColorLegendLabels">
+        <Label>Movement Legend</Label>
+        <Color id="1">Very low</Color>
+        <Color id="2">Low</Color>
+        <Color id="3">Medium</Color>
+        <Color id="4">High</Color>
+        <Color id="5">Very high</Color>
+    </ItemGroup>
+</language_data>

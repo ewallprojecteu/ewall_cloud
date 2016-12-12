@@ -1,0 +1,11 @@
+{
+    "filterPlaceHolder": "Filtern",
+    "filterTextClear": "alle anzeigen",
+    "infoText": "alle anzeigen [0]",
+    "infoTextEmpty": "leere Liste",
+    "infoTextFiltered": "<span class=\"label label-warning\">Gefiltert</span> [0] von [1]",
+    "moveAllLabel": "Alle verschieben",
+    "moveSelectedLabel": "Auswahl verschieben",
+    "removeAllLabel": "Alle entfernen",
+    "removeSelectedLabel": "Auswahl entfernen"
+}

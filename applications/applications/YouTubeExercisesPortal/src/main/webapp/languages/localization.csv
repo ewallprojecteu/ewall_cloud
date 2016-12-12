@@ -1,0 +1,61 @@
+keys,en-US,it-IT,da-DK,de-AT,nl-NL,sr-SP,mk-MK,bg-BG,hr-HR,ro-RO
+application.title,YouTube Exercises Portal,Portale degli esercizi su YouTube,,YouTube Trainingsportal,YouTube Training Portaal,YouTube Portal Za Vježbe,,,YouTube Portal Za Vježbe,
+language.available,We are available in {nlang} languages,Sono disponibili {nlang} lingue,Vi er tilgængelige i {nlang} sprog,verfügbar in {nlang} Sprachen,We zijn beschikbaar in {nllang} talen,Dostupni smo u {nlang} jezicima,,,Dostupni smo u  {nlang} jezicima,
+language.changeLanguage,Change language,Cambia la lingua,Skift sprog,Sprache ändern,Verander taal,Promjeni jezik,Промени јазик,смяна на език,Promjeni jezik,Schimbă limba
+language.chooseLanguage,Choose a language,Scegli una lingua,Vælg et sprog,Sprache auswählen,Kies een taal,Izaberi jezik,Изберете јазик,Изберете език,Izaberi jezik,Alege o limbă
+language.plusMore,plus {nlang} more,più altre {nlang},samt mere,,en {nlang} meer,Prikaži još,,,Prikaži još,
+language.search,Search languages...,Cerca lingue...,Søg efter sprog...,Sprache suchen...,Zoek talen...,Traži jezike...,Барај јазици...,Търсене езици...,Traži jezike...,Căutare limbi...
+home.availableVideos,Available videos,Video disponibili,Tilgængelige film,vorhandene Videos,Beschikbare videos,Dostupni video,,,Dostupni video,
+home.disconnectFromGoogle,Disconnect from Google ({1}),Scollegati da Google,Afbrudt fra Google ({1}),von Google trennen,Verbinding met Google ({1}) verbreken,Raskini vezu sa Google-om ({1}),,,Odspoji se s Google-a ({1}),
+home.connectToGoogle,Connect to Google ({1}),Connettiti a Google,Forbundet til Google ({1}),mit Google verbinden,Verbind met Google ({1}),Poveži se na Google ({1}),,,Spoji se na Google ({1}),
+home.changeUser,Change user,Cambia utente,Skift bruger,User wechseln,Verander gebruiker,Promijeni korisnika,,,Promijeni korisnika,
+home.successfullyAuthorized,Successfully authorized user and saved Google credentials to database,Utente autorizzato con successo e credenziali di Google salvate nel database,,,,Uspješno autoriziran korisnik i spremljeni korisnički podaci u bazu,,,Uspješno autoriziran korisnik i spremljeni korisnički podaci u bazu,
+home.errorAuthorizingExistAnother,Some user is already connected to Google with currently email address (granted access token). Please try with another email address or disconnect from Google with connected user and try again.,Un utente è già connesso a Google con l'indirizzo email corrente (token di accesso concesso). Provare con un altro indirizzo email o disconnettersi da Google e riprovare.,,,,Neki korisnik je već povezan na Google s trenutnom email adresom (odobren token pristupa). Molimo pokušajte s druge email adrese ili raskinite vezu s Google-om s povezanim korisnikom i pokušajte ponovo.,,,Neki korisnik je već povezan na Google s trenutnom email adresom (odobren token pristupa). Molimo pokušajte s druge email adrese ili raskinite vezu s Google-om s povezanim korisnikom i pokušajte ponovo.,
+home.errorAuthorizing,Error while authorizing user and saving Google credentials to database,Errore durante l'autorizzazione dell'utente e il salvataggio delle credenziali di Google nel database,,,,Autorizacija korisnika i spremanje korisničkih podataka u bazu nije uspjelo,,,Autorizacija korisnika i spremanje korisničkih podataka u bazu nije uspjelo,
+home.successfullyRevokedAccess,Successfully deleted user credentials and revoked access token from Google,Cancellazione delle credenziali e revoca del token di accesso a Google avvenuta con successo,,,,Uspješno obrisani korisnički podaci i ukinut Google-ov token pristupa,,,Uspješno obrisani korisnički podaci i ukinut Google-ov token pristupa,
+home.errorRevokingAccess,Error while deleting user credentials and revoking access token from Google,Errore durante la cancellazione delle credenziali e la revoca del token di accesso a Google,,,,Brisanje korisničkih podataka i ukidanje Google-ovog tokena pristupa nije uspjelo,,,Brisanje korisničkih podataka i ukidanje Google-ovog tokena pristupa nije uspjelo,
+common.ok,OK,OK,OK,OK,OK,U redu,,,U redu,
+common.success,Success,Successo,Succes,Erfolg,Succes,Uspjeh,,,Uspjeh,
+common.error,Error,Errore,Fejl,Fehler,Fout,Greška,,,Greška,
+common.description,Description,Descrizione,Beskrivelse,Erklärung,Omschrijving,Opis,,,Opis,
+common.descriptionHint,Some description,Suggerimento,en kort beskrivelse,Erklärung,Een omschrijving,Neki opis,,,Neki opis,
+common.privacy,Privacy,Privacy,Privathed,Privatsphäre,Privacy,Privatnost,,,Privatnost,
+common.uploadVideo,Upload video,Carica video,Upload billede,Video hochladen,Upload video,Prenesi video,,,Prenesi video,
+common.addExternalVideo,Add external video,Aggiungi un video esterno,Tilføj film,externes Video hochladen,Voeg externe video toe,Dodaj eksterni video,,,Dodaj vanjski video,
+common.addHealthImpairmentTag,Add health impairment tag,Aggiungi un tag per il disturbo della salute,,gesundheitliche Beeinträchtigung hinzufügen,Voeg ziektebeeld label toe,Dodaj oznaku zdravstvene poteškoće,,,Dodaj oznaku zdravstvene poteškoće,
+common.videoSuitableForPersonHint,Video is suitable for person with health impairments,Il video è adatto a persone con disturbi della salute,Filmen er tilgængelig for personer med svækket helbred,Video ist passend für Personen mit gesundheitlichen Beeinträchtigungen,Video is geschikt voor gebruikers met ziektebeeld,Video je prilagođen za osobu sa zdravstvenim poteškoćama,,,Video je prilagođen za osobu sa zdravstvenim poteškoćama,
+common.loading,Loading...,Caricamento...,Loading...,Lädt...,Laden...,Učitavanje...,Вчитување,зареждане,Učitavanje...,Se încarcă...
+common.loginFailed,Log in failed,Accesso fallito,Fejl ved login,Einloggen fehlgeschlagen,Inloggen mislukt,Neuspješno prijavljivanje,Неуспешно пријавување,зареждането неуспешно,Neuspješno prijavljivanje,Autentificare nereușită
+userSelection.title,User selection,Selezione utente,Brugervalg,User Auswahl,Gebruikers selectie,Izbor korisnika,,,Odabir korisnika,
+userSelection.selectUserHint,Select one user for YouTube exercises portal usage,Seleziona un utente per il portale degli esercizi su Youtube,Vælg en bruger for at træne med YouTube film,User für YouTube Trainingsportal auswählen,Selecteer één gebruiker voor het gebruiken van het YouTube Training portaal,Izaberite jednog korisnika za korišćenje YouTube vježbe portala,,,Odaberite jednog korisnika za korištenje YouTube vježbe portala,
+userSelection.openPortal,Open YouTube exercises portal,Apri il portale degli esercizi su YouTube,Åbn YouTube portalen med træningsfilm,YouTube Trainingsportal öffnen,Open YouTube Training portaal,Otvori YouTube vježbe portal,,,Otvori YouTube vježbe portal,
+availableVideos.videoTitle,Video title,Titolo del video,Titlen på filmen,Videotitel,Video titel,Naziv videa,,,Naziv videa,
+availableVideos.videoURL,Video URL,URL del video,Film URL,Video URL,Video URL,URL videa,,,URL videa,
+availableVideos.selectHealthImpairmentTag,Select health impairment tag,Seleziona un tag del disturbo di salute,,gesundheitliche Beeinträchtigung auswählen,Selecteer ziektebeeld label,Označi naznaku zdravstvene poteškoće,,,Označi oznaku zdravstvene poteškoće,
+uploadVideo.title,Title,Titolo,Titel,Titel,Titel,Naziv,,,Naziv,
+uploadVideo.uploadVideo,Upload video,Carica video,Upload film,Video hochladen,Video uploaden,Prenesi video,,,Prenesi video,
+uploadVideo.browseVideos,Browse videos,Scorri tra i video,Hent film,Videos durchsuchen,Bladeren door videos,Pretraži video,,,Pretraži video,
+uploadVideo.changeVideo,Change video,Cambia video,Skift film,Video ändern,Verander video,Promijeni video,,,Promijeni video,
+uploadVideo.public,Public,Pubblico,Offentlig,öffentlich,Publiek,Javno,,,Javno,
+uploadVideo.private,Private,Privato,Privat,privat,Privé,Privatno,,,Privatno,
+uploadVideo.unlisted,Unlisted,Non in lista,ikke på listen,nicht aufgeführt,Niet gecategoriseerd,Nepopisano,,,Nepopisano,
+uploadVideo.successfullyUploaded,Successfully uploaded video,Video caricato con successo,Succesfuld upload af film,Video erfolgreich hochgeladen,Uploaden van video succesvol,Uspješno prenesen video,,,Uspješno prenesen video,
+uploadVideo.failedUploading,Failed uploading video,Errore nel caricamento del video,Fejl ved upload af film,Hochladen des Videos fehlgeschlagen,Uploadend van video mislukt,Prijenos videa nije uspio,,,Prijenos videa nije uspio,
+addExternalVideo.videoLink,Video link,Link al video,Link til film,Video Link,Video link,Video veza,,,Video veza,
+addExternalVideo.successfullyAdded,Successfully added external video,Video esterno aggiunto con successo,Succesfuld tilføjelse af film,externes Video erfolgreich hochgeladen,Externe video succesvol toegevoegd,Uspješno dodat video iz eksternih izvora,,,Uspješno dodan video iz vanjskih izvora,
+addExternalVideo.failedAdding,Failed adding external video,Errore nell'aggiunta del vieo esterno,Fejl ved tilføjelse af film,Hochladen des externen Videos fehlgeschlagen,Fout bij het toevoegen van externe video,Dodavanje videa iz eksternih izvora nije uspjelo,,,Dodavanje videa iz vanjskih izvora nije uspjelo,
+addHealthImpairmentTag.tagName,Additional health impairment tag name,Nome del tag addizionale per un disturbo di salute,,Neue Bezeichnung für gesundheitliche Beeinträchtigung hinzufügen,Naam extra ziektebeeld label,Naziv naznake dodatne zdravstvene poteškoće,,,Naziv oznake dodatne zdravstvene poteškoće,
+addHealthImpairmentTag.name,Name,Nome,Navn,Name,Naam,Naziv,,,Naziv,
+addHealthImpairmentTag.successfullyAdded,Successfully added health impairment tag,Tag di disturbo di salute aggiunto con successo,,neue gesundheitliche Beeinträchtigung erfolgreich hinzugefügt,Ziektebeeld label succesvol toegevoegd,Uspješno dodata naznaka zdravstvene poteškoće,,,Uspješno dodana oznaka zdravstvene poteškoće,
+addHealthImpairmentTag.failedAdding,Failed adding health impairment tag,Errore durante l'aggiunta del tag di disturbo di salute,,Hinzufügen der neuen gesundheitlichen Beeinträchtigung fehlgeschlagen,Fout bij het toevoegen van ziektebeeld label,Dodavanje naznake zdravstvene poteškoće nije uspjelo,,,Dodavanje oznake zdravstvene poteškoće nije uspjelo,
+healthImpairments.maximum,maximum,Massimo,maksimum,Maximum,Maximum,maksimalno,,,maksimalno,
+healthImpairments.has,has,ha,?,hat,heeft,ima,,,ima,
+healthImpairments.intensities,Intensities,Intensità,intensitet,Intensität,Intensiteiten,Intenziteti,,,Intenziteti,
+healthImpairments.assertions,Assertions,Asserzioni,Påstand,Aussagen ???,Beweringen,Tvrdnje,,,Tvrdnje,
+healthImpairments.additionalTagsAssertions,Additional tags assertions,Asserzioni di tag addizionali,,neue Aussagen hinzufügen,"Extra labels, beweringen",Tvrdnje dodatnih naznaka,,,Tvrdnje dodatnih tagova,
+login.username,Username,Nome utente,Brugernavn,Benutzername,Gebruikersnaam,Korisničko ime,Корисничко име,Потребителско име,Korisničko ime,Nume utilizator
+login.password,Password,Password,Password,Passwort,Wachtwoord,Lozinka,Лозинка,парола,Lozinka,Parolă
+login.rememberMe,Remember me,Ricordami,Husk mig,Erinnere mich,Onthoud mij,Zapamti me,Запомни ме,запомни ме,Zapamti me,Ține-mă minte
+login.signIn,Sign in,Accedi,Log ind,einschreiben,Inloggen,Prijavi se,Пријави се,вписване,Prijavi se,Conectare
+login.title,YouTube Exercises Portal administration sign in,,,,,Prijavljivanje administratora na YouTube Exercises Portal,,,Prijavljivanje administratora na YouTube Exercises Portal,
+home.logout,Logout,Disconnetti,Log ud,ausloggen,Log uit,Odjavljivanje,Одјавување ,отписване,Odjavljivanje,Deconectare

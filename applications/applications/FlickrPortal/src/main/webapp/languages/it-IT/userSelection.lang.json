@@ -1,0 +1,10 @@
+{
+    "authUser": "Autorizza l'utente su Flickr",
+    "credentialsExist": "I dati dell'utente Flickr esistono",
+    "credentialsMissing": "Dati dell'utente Flickr mancanti",
+    "failedAuthorizing": "Errore durante l'autorizzazione dell'utente e il salvataggio dei dati utente di Flickr",
+    "openPortal": "Apri il portale Flickr",
+    "selectUserHint": "Seleziona un utente per l'uso del portale Flickr",
+    "successfullyAuthorized": "Autorizzazione utente e salvataggio dei dati utente di Flickr avvenuti con successo",
+    "title": "Selezione utente del portale Flickr"
+}

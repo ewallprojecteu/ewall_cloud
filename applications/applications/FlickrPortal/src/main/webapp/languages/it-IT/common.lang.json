@@ -1,0 +1,16 @@
+{
+    "error": "Errore",
+    "family": "Famiglia",
+    "friends": "Amici",
+    "friendsAndFamily": "Amici e famiglia",
+    "loading": "Caricamento...",
+    "loginFailed": "Accesso fallito",
+    "ok": "Ok",
+    "privacy": "Privacy",
+    "private": "Privato",
+    "public": "Pubblico",
+    "success": "Successo",
+    "tags": "Tags",
+    "uploadPhoto": "Carica foto",
+    "uploading": "Caricamento..."
+}

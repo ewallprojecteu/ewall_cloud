@@ -1,0 +1,43 @@
+<section>
+	<div class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th i18n="addHealthImpairmentTag.tagName"></th>
+                <th i18n="common.description"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="healthImpairmentTag in additionalHealthImpairmentTags">
+                <td>{{healthImpairmentTag.name}}</td>
+                <td>{{healthImpairmentTag.description}}</td>
+            </tr>
+        </table>
+    </div>
+    <br />
+    
+    <form>
+	    <div class="table-responsive">
+	        <table class="table">
+	            <tr>
+	                <td>
+	                    <label for="txtName" i18n="addHealthImpairmentTag.name"></label>
+	                </td>
+	                <td>
+	                    <input type="text" i18n-attr="{placeholder: 'addHealthImpairmentTag.name'}" ng-model="tagName" class="form-control" id="txtName" autofocus />
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                    <label for="txtDescription" i18n="common.description"></label>
+	                </td>
+	                <td>
+	                    <textarea i18n-attr="{placeholder: 'common.descriptionHint'}" ng-model="tagDescription" rows="4" cols="50" class="form-control" id="txtDescription"></textarea>
+	                </td>
+	            </tr>
+	        </table>
+	    </div>
+    </form>
+
+    <button id="addHealthImpairmentTagBtn" class="btn btn-primary" ng-click="$(this).blur(); addHealthImpairmentTag()" i18n="common.addHealthImpairmentTag"></button>
+</section>

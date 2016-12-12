@@ -1,0 +1,100 @@
+body { 
+  	text-align: center;
+  	padding: 100px;
+  	margin: 0;
+  	font-family: 'Oswald', sans-serif !important;
+}
+
+.snappuzzle-wrap {
+	position: relative; 
+	display: block;
+	background: transparent;
+	box-shadow: 3px 3px 20px black;
+}
+.snappuzzle-pile { 
+	position: relative; 
+}
+.snappuzzle-piece { 
+	cursor: move;
+	box-shadow: 3px 3px 20px black;
+}
+.snappuzzle-slot { 
+	position: absolute; 
+	background: white; 
+	opacity: 1; 
+}
+.snappuzzle-slot-hover { 
+	background: #eee;
+}
+
+#puzzle-containment{
+	width:1191px;
+	height:700px;
+	background:transparent;
+	padding:11px;
+	text-align:center;
+}
+
+#pile {
+	height:700px !important;
+}
+
+.ewall-item img{
+	height:680px !important;
+ 	width:680px !important;
+  	object-fit: cover !important;
+  	overflow: hidden !important;
+}
+
+a:hover, a:visited, a:link, a:active {
+	text-decoration: none !important;
+	color: inherit !important;
+}
+
+.welcome {
+	margin-top: 20px !important;
+	animation: slideInUp 1s;
+}
+
+.icon {
+	zoom:1.5;
+}
+
+.well-done{
+	font-family: 'Oswald', sans-serif !important;
+	margin-top: -300px !important;
+}
+
+.preview img{
+  	height:220px;
+  	width:220px;
+  	object-fit: cover;
+  	overflow: hidden;
+    margin: 10px;
+}
+
+.selected-image{
+  	border: pink solid 6px;
+}
+
+.levels{
+	animation:slideInUp 1s;
+}
+
+.pics{
+	margin-left:20px;
+	height:550px;
+	overflow-y:scroll;
+}
+
+/*
+.menu{
+	margin-top: 60px;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    overflow:hidden;
+    position:absolute;
+}
+*/

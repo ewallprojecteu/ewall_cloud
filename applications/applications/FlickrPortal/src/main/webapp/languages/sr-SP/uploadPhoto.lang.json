@@ -1,0 +1,10 @@
+{
+    "browsePhotos": "Pretraži fotografije",
+    "changePhoto": "Promijeni fotografiju",
+    "description": "Opis",
+    "descriptionHint": "Neki opis",
+    "failedUploading": "Prijenos fotografije nije uspio",
+    "successfullyUploaded": "Uspješno prenesena fotografija",
+    "title": "Naziv",
+    "uploadToFlicker": "Prenesi na Flickr"
+}

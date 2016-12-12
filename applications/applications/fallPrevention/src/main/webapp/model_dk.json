@@ -1,0 +1,234 @@
+{
+  "slices": [
+    {
+      "id": "Home",
+      "coordinates": "413,435,1,436,12,333,46,248,123,144",
+      "title": "Risici relateret til hjemmet",
+      "intro": ", de fleste hjem indeholder potentielle risikoelementer i forhold til fald, og mange ældre forklarer deres fald med, at de er snublet eller gledet i deres hjem eller lige omkring hjemmet.",
+      "action": "Vælg venligt de genstande som findes i dit hjem og tryk OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "carpets",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Du har løse tæpper. Fjern dem fra gulvet eller sørg for at sikre dig, at de ligger sikkert. Læg især mærke til tæppernes hjørner og sørg for at de ikke folder.",
+          "inactiveText": "Har du løse tæpper?"
+        },
+        {
+          "id": "floors",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Dine gulve er glatte. Undgå at give dem voks. Snak med dine pårørende om det!",
+          "inactiveText": "Har du glatte gulve?"
+        },
+        {
+          "id": "stairs",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Du har trapper I dit hjem. Sørg for at du altid bruger gelænderet, gå ikke op eller ned af trappen, mens du bærer uhåndterlige genstande og sørg for at bruge ordentligt fodtøj.",
+          "inactiveText": "Har du trapper derhjemme?"
+        },
+        {
+          "id": "poorLight",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Belysningen i et eller flere af dine rum derhjemme er dårlig. Forsøg at bruge stærkere lys i dit hjem. Skift evt. dine pærer eller brug en ekstra lampe for at øge belysningen.",
+          "inactiveText": "Er der dårlig belysning i nogle af dine rum I hjemmet?"
+        }
+      ]
+    },
+    {
+      "id": "Medication",
+      "coordinates": "129,130,215,64,320,23,419,10,418,420",
+      "title": "Risici relateret til medicin",
+      "intro": ", ældre menneskers medicinindtag er forbundet med en øget risiko for fald.",
+      "action": "Se venligst informationen som er angivet af din læge eller sygeplejerske. Kontakt dem hvis du har brug for yderligere information. Tryk OK når du er klar!",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "polipharmacotherapy",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Husk at du får medicin som kan øge risikoen for fald. Vær venligst opmærksom på andre faktorer som kan øge denne risiko yderligere!",
+          "inactiveText": "Din læge eller sygeplejerske har ikke indgivet nogen risko forbundet med din medicin."
+        },
+        {
+          "id": "frid",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": " Husk at du får medicin som kan øge risikoen for fald. Vær venligst opmærksom på andre faktorer som kan øge denne risiko yderligere!",
+          "inactiveText": " Din læge eller sygeplejerske har ikke angivet nogen øget risiko for fald forbundet med din medicin"
+        }
+      ]
+    },
+    {
+      "id": "Vitals",
+      "coordinates": "434,4,544,18,656,66,722,122,432,414",
+      "title": "Risici relateret til sundhedstilstanden",
+      "intro": ", nogle af dine sundhedsdata kan være relateret til fald og bør blive monitoreret.",
+      "action": "Se venligst resultaterne af dine målinger, find punkterne der passer til dig og tryk OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "hypertension",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "eWALL har målt et fald i dit blodtryk, hvilket kan indikere, at dit blodtryk er lavt! Du bør kontakte din læge for yderligere information og undersøgelse.",
+          "inactiveText": "Har du problemer med lavt blodtryk?"
+        },
+        {
+          "id": "dizziness",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Eftersom du føler dig svimmel, bør du kontakte din læge for yderligere information og undersøgelse.",
+          "inactiveText": "Føler du dig svimmel?"
+        }
+      ]
+    },
+    {
+      "id": "Eyesight",
+      "coordinates": "447,419,737,130,800,210,840,306,857,417",
+      "title": "Risici relateret til synet",
+      "intro": ", med aldermen kommer ofte en række forandringer I øjnene, som kan øge risikoen for fald. Heldigvis kan mange af de faktorer, som øger risikoen for fald grundet forandringerne af synet, forebygges ved hjælp af forandringer i den enkeltes adfærd eller i hjemmet.",
+      "action": "Se venligst informationen som er angivet af din læge eller sygeplejerske. Kontakt dem hvis du har brug for yderligere information. Tryk OK når du er klar!",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "multifocal",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Husk at multifokale linser kan medføre en ændret opfattelse af afstanden mellem dig og diverse genstande. Vær særligt opmærksom og flyt eventuelle forhindringer på gulvet.",
+          "inactiveText": "Din læge eller sygeplejerske har indikeret, at du ikke bruger multifokale linser"
+        },
+        {
+          "id": "impairments",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Eftersom du har problemer med synet, så husk at få dine øjne tjekket regelmæssigt. Det er vigtigt at holde godt øje med sygdomme, som kan påvirke øjnene med henblik på at bevare synet!",
+          "inactiveText": "Din læge eller sygeplejerske har fortal, at du ikke har problemer med synet"
+        }
+      ]
+    },
+    {
+      "id": "Cognitive",
+      "coordinates": "455,435,866,432,851,535,804,647,746,725",
+      "title": "Risici relateret til den kognitive tilstand",
+      "intro": ", personer med neurologiske sygdomme som Parkinsons, multipel sklerose, blodprop, hjermeblødning eller Alzheimers faler oftere.",
+      "action": " Se venligst informationen som er angivet af din læge eller sygeplejerske. Kontakt dem hvis du har brug for yderligere information. Tryk OK når du er klar!",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "fear",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Du er bange for at falde. Lad det ikke begrænse dig i at udføre dine aktiviteter i dagligdagen! Kontakt evt. din læge så han/hun kan hjælpe med den træning, der passer til dig og dine behov.",
+          "inactiveText": "Er du bange for at falde?"
+        },
+        {
+          "id": "cognitive",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Du har en kognitiv svækkelse så glem ikke dit kognitive træningsprogram. Træn din hjerne!",
+          "inactiveText": "Din læge eller sygeplejerske har angivet, at du ikke lider af kognitiv svækkelse"
+        },
+        {
+          "id": "extrapyramidal",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Eftersom du lider af medicininduceret bevægeforstyrrelse bør du blive undersøgt regelmæssigt af din læge.",
+          "inactiveText": "Tager du antipsykotisk eller antidepressiv medicin som kan forårsage medicininduceret bevægeforstyrrelse?"
+        }
+      ]
+    },
+    {
+      "id": "Feet",
+      "coordinates": "447,448,734,735,648,804,557,841,447,856",
+      "title": "Risici relateret til fødderne",
+      "intro": ", Problemer med fødderne er almindelige hos ældre og er forbundet med nedsat balance. Problemerne kan stamme fra simple aldersmæssige forandringer, fra specifikke lidelser eller fra forandringer efter en periode med inaktivitet. Problemer med fødderne er en hyppig årsag til fald.",
+      "action": "Angiv venligst om du har smerter I fødderne. Se så informationen som din læge eller sygeplejerske har angivet. Konferer med dem hvis du har brug for yderligere information. Tryk OK når du er klar!",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "pain",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Du har fodsmerter. Måske kan din læge foreslå en mere effektiv behandling. Husk at få fødderne tjekket regelmæssigt.",
+          "inactiveText": "Har du invaliderende fodsmerter?"
+        },
+        {
+          "id": "ankle",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Du har nedsat fleksibilitet I anklen. For at forebygge fald bør du gå i godt og passende fodtøj. Desuden kan regelmæssige tjek hos din læge/fodlæge anbefales",
+          "inactiveText": "Din læge eller sygeplejerske har angivet, at du ikke lider af nedsat fleksibilitet i anklen"
+        },
+        {
+          "id": "hallux",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Du lider af hallux vagus (skæv storetå). For at forebygge fald bør du gå i godt og passende fodtøj. Desuden kan regelmæssige tjek hos din læge/fodlæge anbefales.",
+          "inactiveText": "Din læge eller sygeplejerske har angivet, at du ikke lider af hallux vagus (skæv storetå)"
+        },
+        {
+          "id": "tactile",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Sensibiliteten i dine fødder er påvirket. For at forebygge fald bør du gå i godt og passende fodtøj. Desuden kan regelmæssige tjek hos din læge/fodlæge anbefales.",
+          "inactiveText": " Din læge eller sygeplejerske har angivet, at du ikke har problemer med sensibiliteten i dine fødder"
+        },
+        {
+          "id": "toe",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Du har nedsat styrke I dine tæer. For at forebygge fald bør du gå i godt og passende fodtøj. Desuden kan regelmæssige tjek hos din læge/fodlæge anbefales ",
+          "inactiveText": " Din læge eller sygeplejerske har angivet, at du ikke har problemer nedsat styrke i dine tæer"
+        }
+      ]
+    },
+    {
+      "id": "Social",
+      "coordinates": "434,456,139,747,222,806,319,848,437,862",
+      "title": "Risici relateret til begræningning i sociale aktiviteter",
+      "intro": ", Frygt for at falde er hoveddrivkraften bag social isolation.",
+      "action": "Vælg venligst en social aktivitet og tryk OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "avoidance",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Du er begrænset I dine sociale aktiviteter. Din frygt for at falde medfører, at du ikke deltager i sociale sammenhænge. Kontakt venligst din læge så han/hun kan hjælpe dig med et træningsprogram som passer præcis til dig og dine behov. ",
+          "inactiveText": "Undgår du at mødes med andre enten hjemme eller andre steder?"
+        }
+      ]
+    },
+    {
+      "id": "Legs",
+      "coordinates": "10,448,419,447,129,737,59,641,19,531",
+      "title": "Risici relateret til benene",
+      "intro": ", Gangproblemer kan stamme fra simple aldersrelaterede forandringer i gang og balance, fra specifikke sygdomme eller fra forandringer efter en periode med inaktivitet. Gangproblemer er en hyppig årsag til fald.",
+      "action": "Angiv venligst om du har problemer med at strække dine knæ. Se så den fysiske aktivitet som er målt af eWALL. Tryk derefter OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "exercise",
+          "danger": false,
+          "mode": "home",
+          "activeText": "eWALL har kun regisreret XXX skridt I gennemsnit over de sidste YYY dage. Forsøg at være mere aktiv!",
+          "inactiveText": "Glimrende! eWALL har registreret XXX skridt I gennemsnit over de sidste YYY dage. Dine ben er stærke!"
+        },
+        {
+          "id": "knee",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Eftersom du oplever problemer med at strække knæene, anbefales det, at du går til regelmæssige tjek hos din læge/fodlæge for at forebygge fald.",
+          "inactiveText": "Har du problemer med at strække dine knæ?"
+        }
+      ]
+    }
+  ],
+  "fitbitnosteps": "eWALL har ikke registreret nogen skridt fra dig de sidste dage. Husk at bruge din Fitbit tracker som sidder i din PC!",
+  "fitbitnodata": "eWALL kan ikke få dine informationer om aktivitet!",
+  "fitbitok": "Glimrende! eWALL har registreret XXX skridt I gennemsnit over de sidste YYY dage. Dine ben er stærke!"
+}

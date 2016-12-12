@@ -1,0 +1,16 @@
+{
+    "error": "Fout",
+    "family": "Familie",
+    "friends": "Vrienden",
+    "friendsAndFamily": "Vrienden en familie",
+    "loading": "Laden...",
+    "loginFailed": "Inloggen mislukt",
+    "ok": "Ok",
+    "privacy": "Privacy",
+    "private": "Privé",
+    "public": "Publiek",
+    "success": "Succes",
+    "tags": "Labels (gescheiden door comma's)",
+    "uploadPhoto": "Upload foto",
+    "uploading": "Aan het uploaden..."
+}

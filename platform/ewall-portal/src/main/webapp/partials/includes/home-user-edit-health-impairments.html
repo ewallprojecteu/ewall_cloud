@@ -1,0 +1,160 @@
+<div ng-init="sensoryRelatedBtnCollapsed = true; skeletelRelatedBtnCollapsed = true; languageRelatedBtnCollapsed = true; memoryRelatedBtnCollapsed = true;">
+	
+		<!-- SENSORY RELATED -->
+   		<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#collapsedHealthImpairmentsSensory" 
+   			ng-click="sensoryRelatedBtnCollapsed = !sensoryRelatedBtnCollapsed;">
+			<strong><span i18n="healthImpairments.sensoryRelatedHealthImpairments"></span><span>&nbsp;&nbsp;&nbsp;</span></strong>
+			<span class="{{sensoryRelatedBtnCollapsed ? 'glyphicon glyphicon-collapse-down' : 'glyphicon glyphicon-collapse-up'}}"></span>
+		</button>
+   		<div id="collapsedHealthImpairmentsSensory" class="collapse">
+   		<br />
+    		<div class="row">
+	    		<div class="col-md-6 form-group">
+					<label i18n="healthImpairments.astigmatism"></label>
+					<select ng-model="healthImpairments.astigmatismDdl" id="astigmatismDdl"
+						ng-include="'partials/includes/home-user-edit-health-impairments-options-flags.html'" class="form-control">
+					</select>
+				</div>
+				<div class="col-md-6 form-group">
+					<label i18n="healthImpairments.colorBlindness"></label>
+					<select ng-model="healthImpairments.colorBlindnessDdl" id="colorBlindnessDdl" 
+						ng-include="'partials/includes/home-user-edit-health-impairments-options-flags.html'" class="form-control">
+					</select>
+				</div>
+				<div class="col-md-6 form-group">
+					<label i18n="healthImpairments.farSightedness"></label>
+					<select ng-model="healthImpairments.farSightednessDdl" id="farSightednessDdl"
+						ng-include="'partials/includes/home-user-edit-health-impairments-options-flags.html'" class="form-control">
+					</select>
+				</div>
+				<div class="col-md-6 form-group">
+					<label i18n="healthImpairments.lightSensitivity"></label>
+					<select ng-model="healthImpairments.lightSensitivityDdl" id="lightSensitivityDdl"
+						ng-include="'partials/includes/home-user-edit-health-impairments-options-flags.html'" class="form-control">
+					</select>
+				</div>
+				<div class="col-md-6 form-group">
+					<label i18n="healthImpairments.shortSightedness"></label>
+					<select ng-model="healthImpairments.shortSightednessDdl" id="shortSightednessDdl"
+						ng-include="'partials/includes/home-user-edit-health-impairments-options-flags.html'" class="form-control">
+					</select>
+				</div>
+				<div class="col-md-6 form-group">
+					<label i18n="healthImpairments.visionLoss"></label>
+					<select ng-model="healthImpairments.visionLossDdl" id="visionLossDdl"
+						 ng-include="'partials/includes/home-user-edit-health-impairments-options-intensities.html'" class="form-control">
+					</select>
+				</div>
+				<div class="col-md-6 form-group">
+					<label i18n="healthImpairments.hearLoss"></label>
+					<select ng-model="healthImpairments.hearLossDdl" id="hearLossDdl"
+					  ng-include="'partials/includes/home-user-edit-health-impairments-options-intensities.html'" class="form-control">
+					</select>
+				</div>
+    		</div>
+    	</div>
+    	
+    	<!--     	SKELETEL RELATED -->
+    	<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#collapsedHealthImpairmentsSkeletel" 
+    		ng-click="skeletelRelatedBtnCollapsed = !skeletelRelatedBtnCollapsed;">
+			<strong><span i18n="healthImpairments.skeletalRelatedHealthImpairments"></span><span>&nbsp;&nbsp;&nbsp;</span></strong>
+			<span class="{{skeletelRelatedBtnCollapsed ? 'glyphicon glyphicon-collapse-down' : 'glyphicon glyphicon-collapse-up'}}"></span>
+		</button>
+   		<div id="collapsedHealthImpairmentsSkeletel" class="collapse">
+   		<br />
+    		<div class="row">
+	    		<div class="col-md-6 form-group">
+					<label i18n="healthImpairments.neckMotorImpairment"></label>
+					<select ng-model="healthImpairments.neckMotorImpairmentDdl" id="neckMotorImpairmentDdl"
+						ng-include="'partials/includes/home-user-edit-health-impairments-options-intensities.html'" class="form-control">
+					</select>
+				</div>
+				<div class="col-md-6 form-group">
+					<label i18n="healthImpairments.shoulderImpairment"></label>
+					<select ng-model="healthImpairments.shoulderImpairmentDdl" id="shoulderImpairmentDdl" 
+						ng-include="'partials/includes/home-user-edit-health-impairments-options-intensities.html'" class="form-control">
+					</select>
+				</div>
+				<div class="col-md-6 form-group">
+					<label i18n="healthImpairments.armImpairment"></label>
+					<select ng-model="healthImpairments.armImpairmentDdl" id="armImpairmentDdl"
+						ng-include="'partials/includes/home-user-edit-health-impairments-options-intensities.html'" class="form-control">
+					</select>
+				</div>
+				<div class="col-md-6 form-group">
+					<label i18n="healthImpairments.wristImpairment"></label>
+					<select ng-model="healthImpairments.wristImpairmentDdl" id="wristImpairmentDdl"
+						ng-include="'partials/includes/home-user-edit-health-impairments-options-intensities.html'" class="form-control">
+					</select>
+				</div>
+				<div class="col-md-6 form-group">
+					<label i18n="healthImpairments.hipImpairment"></label>
+					<select ng-model="healthImpairments.hipImpairmentDdl" id="hipImpairmentDdl"
+						ng-include="'partials/includes/home-user-edit-health-impairments-options-intensities.html'" class="form-control">
+					</select>
+				</div>
+				<div class="col-md-6 form-group">
+					<label i18n="healthImpairments.kneeImpairment"></label>
+					<select ng-model="healthImpairments.kneeImpairmentDdl" id="kneeImpairmentDdl"
+						 ng-include="'partials/includes/home-user-edit-health-impairments-options-intensities.html'" class="form-control">
+					</select>
+				</div>
+				<div class="col-md-6 form-group">
+					<label i18n="healthImpairments.legImpairment"></label>
+					<select ng-model="healthImpairments.legImpairmentDdl" id="legImpairmentDdl"
+					 	ng-include="'partials/includes/home-user-edit-health-impairments-options-intensities.html'" class="form-control">
+					</select>
+				</div>
+				<div class="col-md-6 form-group">
+					<label i18n="healthImpairments.anckleImpairment"></label>
+					<select ng-model="healthImpairments.anckleImpairmentDdl" id="anckleImpairmentDdl"
+						 ng-include="'partials/includes/home-user-edit-health-impairments-options-intensities.html'" class="form-control">
+					</select>
+				</div>
+				<div class="col-md-6 form-group">
+					<label i18n="healthImpairments.footImpairment"></label>
+					<select ng-model="healthImpairments.footImpairmentDdl" id="footImpairmentDdl"
+					 	ng-include="'partials/includes/home-user-edit-health-impairments-options-intensities.html'" class="form-control">
+					</select>
+				</div>
+    		</div>
+    	</div>
+    	
+    	<!--     	LANGUAGE RELATED -->
+    	<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#collapsedHealthImpairmentsLanguage" 
+    		ng-click="languageRelatedBtnCollapsed = !languageRelatedBtnCollapsed;">
+			<strong><span i18n="healthImpairments.languageRelatedHealthImpairments"></span><span>&nbsp;&nbsp;&nbsp;</span></strong>
+			<span class="{{languageRelatedBtnCollapsed ? 'glyphicon glyphicon-collapse-down' : 'glyphicon glyphicon-collapse-up'}}"></span>
+		</button>
+   		<div id="collapsedHealthImpairmentsLanguage" class="collapse">
+   		<br />
+    		<div class="row">
+	    		<div class="col-md-6 form-group">
+					<label i18n="healthImpairments.dislexia"></label>
+					<select ng-model="healthImpairments.dislexiaDdl" id="dislexiaDdl"
+						ng-include="'partials/includes/home-user-edit-health-impairments-options-flags.html'" class="form-control">
+					</select>
+				</div>
+    		</div>
+    	</div>
+    	
+    	<!--     	MEMORY RELATED -->
+    	<button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#collapsedHealthImpairmentsMemory" 
+    		ng-click="memoryRelatedBtnCollapsed = !memoryRelatedBtnCollapsed;">
+			<strong><span i18n="healthImpairments.memoryRelatedHealthImpairments"></span><span>&nbsp;&nbsp;&nbsp;</span></strong>
+			<span class="{{memoryRelatedBtnCollapsed ? 'glyphicon glyphicon-collapse-down' : 'glyphicon glyphicon-collapse-up'}}"></span>
+		</button>
+   		<div id="collapsedHealthImpairmentsMemory" class="collapse">
+   		<br />
+    		<div class="row">
+	    		<div class="col-md-6 form-group">
+					<label i18n="healthImpairments.amnesia"></label>
+					<select ng-model="healthImpairments.amnesiaDdl" id="amnesiaDdl"
+						ng-include="'partials/includes/home-user-edit-health-impairments-options-flags.html'" class="form-control">
+					</select>
+				</div>
+    		</div>
+    	</div>
+    	<br />
+
+</div>

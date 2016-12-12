@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html ng-app="ewall">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title> eWall weather widget</title>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+
+</head>
+<body>
+<div id="background" style="position: absolute; z-index: 900; width: 100%; height: 100%; left: 0px; top: 0px; background-color: #eeeeee; background-repeat: no-repeat; background-position: center center; background-size: cover; background-image: url('resources/bck1.jpg');">
+</div>
+  
+ <div id="weatherWidget" style="display: none; background-color: transparent; box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 1); left: 50%; width: 350px; height: 350px; margin: 0 -175px; position: absolute; z-index: 900; top: 150px; -webkit-transition: all 250ms; /* For Safari 3.1 to 6.0 */ transition: all 250ms;" class="widget weather" ng-controller="WeatherWidgetController">
+     
+   <div style="width: 100%; position: relative; left: 0px; top: 0px; height: 50px; background-color: #b0bec5;" class="widget-header">
+     <div style="display: none; position: absolute; z-index: 900; height: 50px; top: 0px; right: 0px; width: 50px; background-repeat: no-repeat; background-image: url('resources/cross_white.png'); background-position: center center; background-size: 30%;" class="widgetCloseButton"></div>
+       <span style="position: absolute; z-index: 900; font-family: 'Helvetica,Trebuchet MS',sans-serif; color: #ffffff; left: 30px; bottom: 5px; font-size: 25px;" class="widgetTitle">Weather </span>
+   </div>
+  
+   <div style="position: absolute; z-index: 900; width: 100%; height: 270px; background: #d4d4d4; left: 0px; top: 50px;" class="widget-body">
+     <div class="widget-body-part important" style="position: relative; float:left; z-index: 900; width: 100%; height: 180px; margin-bottom: 1px; background: white;" >
+     <span style="font: verdana; position: absolute; z-index: 900; height: 30px; top: 10px; font-family: Verdana,Geneva,sans-serif; font-size: 25px; left: 15px; width: 315px;" class="place">
+         {{ weather.name +", "+ weather.sys.country}}
+    </span>
+      <div style="position: absolute; z-index: 900; top: 64px; left: 15px; background-repeat: no-repeat; background-position: center center; background-color: transparent; background-size: 110%; width: 70px; height: 70px; background-image:url('{{ weather.weather[0].icon }}')"  class="weatherIcon">
+       </div> 
+       <span style="font: Verdana; position: absolute; z-index: 900; height: 60px; font-family: Verdana,Geneva,sans-serif; font-size: 50px; color: #141414; white-space: normal; top: 64px; width: 137px; left: 85px;" class="temperature">
+           {{weather.main.temp | number:0}}℃
+       </span>
+       <div style="position: absolute; z-index: 900; width: 5px; height: 30px; background-color: red; left: 257px; top: 63px;" class="max-temperature-icon">
+       </div>
+     <div style="width: 5px; height: 30px; position: absolute; z-index: 900; background-color: blue; left: 257px; top: 94px;" class="min-temperature-icon"></div>
+       <div style="border-radius: 50%; -moz-border-radius: 50%; position: absolute; z-index: 900; height: 10px; background-color: blue; width: 10px; left: 255px; top: 120px;">
+       </div>
+     <span style="position: absolute; z-index: 900; width: 50px; height: 30px; font-family: Verdana,Geneva,sans-serif; font-size: 12px; font-weight: bold; left: 277px; top: 96px;" class="min-temperature-value">
+         min: {{Math.floor(weather.main.temp_min) | number:0}}℃
+    </span>
+    <span style="width: 50px; height: 30px; position: absolute; z-index: 900; font-family: Verdana,Geneva,sans-serif; font-size: 12px; font-weight: bold; left: 277px; top: 58px;" class="max-temperature-value">
+        max: {{Math.ceil(weather.main.temp_max) | number:0}}℃
+    </span>
+      <span style="position: absolute; z-index: 900; font-family: Verdana,Geneva,sans-serif; font-size: 16px; top: 144.5px; left: 15px; width: 315px; height: 30px; text-align: center;" class="weather-description">
+    {{weather.weather[weather.weather.length - 1].description | uppercase }}
+       </span>
+ </div>
+ <div class="widget-body-part" style="position: relative; float:left; z-index: 900; width: 100%; height: 90px; background: white;"> 
+    <div style="position: absolute; z-index: 900; height: 70px; width: 150px; top: 0px; left: 15px;" class="preasure">
+        <div style="position: absolute; z-index: 900; top: 9px; height: 52px; background-repeat: no-repeat; background-position: center center; background-size: contain; background-image: url('resources/preasure.png'); left: 3px; width: 46px;" class="preasure-icon">
+        </div>
+        <span style="position: absolute; z-index: 900; font-family: Verdana,Geneva,sans-serif; font-size: 12px; left: 58px; top: 13px;">
+            Pressure
+        </span>
+        <span style="position: absolute; z-index: 900; font-family: Verdana,Geneva,sans-serif; font-weight: bold; font-size: 16px; left: 58px; top: 36px;">
+            {{weather.main.pressure }} hPa
+        </span>
+       </div>
+       <div style="height: 70px; position: absolute; z-index: 900; left: 181px; top: 0px; width: 153px;" class="wind">
+           <div style="position: absolute; z-index: 900; top: 9px; height: 52px; background-repeat: no-repeat; background-position: center center; background-size: contain; background-image: url('resources/wind.png'); left: 3px; width: 46px;" class="wind-icon">
+           </div>
+           <span style="position: absolute; z-index: 900; font-family: Verdana,Geneva,sans-serif; font-size: 12px; left: 58px; top: 13px;">
+               Wind speed
+           </span>
+           <span style="position: absolute; z-index: 900; font-family: Verdana,Geneva,sans-serif; font-weight: bold; font-size: 16px; left: 59px; top: 36px;">
+               {{weather.wind.speed | number:1 }} m/s
+           </span>
+       </div>
+       
+     
+       
+   </div>    
+</div>
+   <div style="position: absolute; z-index: 900; width: 100%; bottom: 0px; height: 30px; left: 0px; right: 0px; background-color: #f0eeee;" class="widget-footer">
+     <div style="position: absolute; z-index: 900; height: 100%; top: 0px; width: 30px; background-repeat: no-repeat; background-position: center center; background-size: 100%; background-image: url('resources/arrow_points_arrow.png'); left: 15px; display: none;" class="footerExpand"></div>
+   </div>
+ </div>
+<script src="../../lib/angular.min.js"></script>
+<script src="lib/weather.js"></script>
+    
+<script>
+/* var $jq = $;
+ var weatherJSON = {
+            id:"2756071",
+            dt:"1408706225",
+            name:"Enschede",
+            cod:200,
+            coord:{
+                lat:52.22,
+                lon:6.9
+            },
+            sys:{
+                message:0.1018,
+                country:"NL",
+                sunrise:1408681693,
+                sunset:1408732930
+            },
+            main:{
+                temp:20.17,
+                humidity:63,
+                temp_min:16.67,
+                temp_max:18.9,
+                pressure:1010,
+                sea_level:0,
+                grnd_level:0
+            },
+            wind:{
+                speed:5.1,
+                deg:210.0,
+                gust:0.0
+            },
+            clouds:{
+                all:75
+            },
+            weather:[
+                {
+                    id:803,
+                    main:"Clouds",
+                    description:"broken clouds",
+                    icon:"http://openweathermap.org/img/w/04d.png"
+                }
+                ]
+            };
+            
+// make angular module
+var weatherW = angular.module("weatherWidget", []);       
+
+// assign angular controller to module
+weatherW.controller('WeatherWidgetController', ['$scope', function($scope){
+
+    // call weather service brick
+    $jq.get("http://localhost/service-brick-weather/weather?userid=bob&lang=en&city=enschede&unit=metric", function(data){
+      // success
+        weatherJSON = data;
+                for(i=0; i<weatherJSON.weather.length; i++){
+                        weatherJSON.weather[i].icon ="http://openweathermap.org/img/w/" +weatherJSON.weather[i].icon+ ".png";
+                    }
+
+            // console.log(weatherJSON);
+            $scope.weather = weatherJSON;
+            $scope.$apply();
+            $jq("#weatherWidget").css('display', 'block'); 
+    });
+
+}]);
+// defines passive element beaviour
+$jq.fn.toPassive = function() {
+    $jq(this).css("z-index", 1001);
+    $jq(this).css("box-shadow", "");
+    $jq(this).children('.widget-header').css("display", "none");
+    $jq(this).children('.widget-footer').css("display", "none");
+    $jq(this).children('.widget-body').css("background", "transparent");
+    $jq(this).find('.widget-body-part').not('.important').css("display", "none");
+    $jq(this).find('.widget-body-part.important').css({
+                                                "background": "rgba(255, 255, 255, 0.7)",
+                                                "box-shadow": "0px 0px 8px 0px rgba(50, 50, 50, 1)"});
+    
+}
+// defines active element beaviour
+$jq.fn.toActive = function() {
+    $jq(this).css("z-index", 900);
+    $jq(this).css("box-shadow", "0px 0px 8px 0px rgba(50, 50, 50, 1)");
+    $jq(this).children('.widget-header').css("display", "block");
+    $jq(this).children('.widget-footer').css("display", "block");
+    $jq(this).children('.widget-body').css("background", "#d4d4d4");
+    $jq(this).find('.widget-body-part').not('.important').css("display", "block");
+    $jq(this).find('.widget-body-part.important').css({
+                                                "background": "#fff",
+                                                "box-shadow": ""});
+    
+}
+// defines switch between passive amd active mode
+var isPassive = false;
+    
+document.onkeydown = function() {
+    // console.log(window.event.keyCode);
+    switch (window.event.keyCode) {
+        
+        case 80: 
+            isPassive = !isPassive;
+            if(isPassive) {
+                $jq('.defaultWidget').toPassive();
+            } else {
+                 $jq('.defaultWidget').toActive();
+            }
+            
+        break;
+    }
+};
+*/
+    </script>
+</body>
+
+
+
+</html>

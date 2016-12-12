@@ -1,0 +1,16 @@
+{
+    "error": "Error",
+    "family": "Family",
+    "friends": "Friends",
+    "friendsAndFamily": "Friends and family",
+    "loading": "Loading...",
+    "loginFailed": "Log in failed",
+    "ok": "Ok",
+    "privacy": "Privacy",
+    "private": "Private",
+    "public": "Public",
+    "success": "Success",
+    "tags": "Tags (comma separated)",
+    "uploadPhoto": "Upload photo",
+    "uploading": "Uploading..."
+}

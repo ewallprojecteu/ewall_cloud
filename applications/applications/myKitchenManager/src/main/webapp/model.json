@@ -1,0 +1,48 @@
+{
+  "intro": "Plan the cooking of your meals: browse through the contents of your fridge and pantry, search for recipes, getting reports of ingredients you have or miss, and manage items in your shopping list, preparing for, or after shopping. Click on your fridge, pantry, recipe book, or shopping list on the left to get started. Through these you can:",
+  "menuSelection": 0,
+  "fridgeAisleSelection": 0,
+  "pantryAisleSelection": 0,
+  "listAisleSelection": 0,
+  "searchAisleSelection": 0,
+  "inFridge": [],
+  "inPantry": [],
+  "inList": [],
+  "forSearch": [],
+  "fridgeView": true,
+  "pantryView": true,
+  "listView": true,
+  "recipesBrowse": true,
+  "searchResults": false,
+  "selectForFridge": false,
+  "selectForPantry": false,
+  "selectedRecipes": [],
+  "currentRecipe": 0,
+  "overview": [
+    {
+      "title": "My Kitchen Manager overview",
+      "description": "Read this overview.",
+      "image": "myKitchenManager.png"
+    },
+    {
+      "title": "My fridge",
+      "description": "View and update the contents of your fridge. Two views are offered: The first view, ingredients list, allows you to select ingredients for your fridge per category. Selected items are highlighted. Clicking on highlighted items removes them from the fridge. The second view, fridge contents, shows you what is in your fridge. Clicking on any item removes it.",
+      "image": "fridge.png"
+    },
+    {
+      "title": "My pantry",
+      "description": "View and update the contents of your pantry. Two views are offered: The first view, ingredients list, allows you to select ingredients for your pantry per category. Selected items are highlighted. Clicking on highlighted items removes them from the pantry. The second view, pantry contents, shows you what is in your pantry. Clicking on any item removes it.",
+      "image": "pantry.png"
+    },
+    {
+      "title": "My recipes",
+      "description": "Browse through your recipes. Search for them based on ingredients. Ingredients in your fridge, pantry and shopping list appear in blue, green and orange respectively. By clicking on any ingredient (even those you already have) you add them to the shopping list.",
+      "image": "recipes.png"
+    },
+    {
+      "title": "My shopping list",
+      "description": "Manage your shopping list: Add items before you go shopping and update the contents of your fridge and pantry upon your return. Two views are offered: The first view, ingredients list, allows you to select ingredients for your list per category. Selected items are highlighted. Clicking on highlighted items removes them from the list. The second view, shopping list contents, shows you what is in your list. Clicking on any item removes it from the list, but if you have selected any of the buttons remove to fridge or remove to pantry, the items are sent to the fridge and pantry respectively.",
+      "image": "shoppingList.png"
+    }
+  ]
+}

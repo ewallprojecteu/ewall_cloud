@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="Dialog">
+        <item name="Header">
+            <Add>Neuen Termin erstellen</Add>
+            <Edit>Termin bearbeiten/löschen</Edit>
+        </item>
+        <item name="Labels">
+            <Title>Titel des Termins</Title>
+            <StartDate>Anfangsdatum</StartDate>
+            <EndDate>Enddatum</EndDate>
+            <StartTime>Anfangszeit</StartTime>
+            <EndTime>Endzeit</EndTime>
+            <Location>Lage</Location>
+            <Indoor>drinnen</Indoor>
+            <Outdoor>draußen</Outdoor>
+            <Question1>Was sollten Sie mitnehmen?</Question1>
+            <Question2>Wie werden Sie den Ort erreichen?</Question2>
+            <Question3>Wollen Sie Ihre Übungen aus dem Video Trainer wählen?</Question3>
+            <Question4>Wollen Sie kognitive Spiele mit eWALL spielen?</Question4>
+            <RepeatInterval>Ereignis wiederholen</RepeatInterval>
+            <RepeatTimes>Zeiten wiederholen</RepeatTimes>
+            <ReminderTime>Erinnerung</ReminderTime>
+            <Hourly>stündlich</Hourly>
+            <Daily>täglich</Daily>
+            <Weekly>wöchentlich</Weekly>
+            <Monthly>monatlich</Monthly>
+            <Yearly>jährlich</Yearly>
+            <ReminderTimeVal15>15 min</ReminderTimeVal15>
+            <ReminderTimeVal30>30 min</ReminderTimeVal30>
+            <ReminderTimeVal120>2 Std.</ReminderTimeVal120>
+            <ReminderTimeVal1440>einen Tag davor</ReminderTimeVal1440>
+            <TransportationFoot>zu Fuß</TransportationFoot>
+            <TransportationCar>Auto</TransportationCar>
+            <TransportationTaxi>Taxi</TransportationTaxi>
+            <TransportationOther>andere</TransportationOther>
+            <DoctorName>Name der Ärztin/ des Arztes</DoctorName>
+            <DoctorPhone>Telefonnummer der Ärztin/ des Arztes</DoctorPhone>
+            <MedExam>medizinische Untersuchungen</MedExam>
+            <InsCard>Versicherungskarte</InsCard>
+            <OtherDocs>andere</OtherDocs>
+            <Wallet>Portemonnaie</Wallet>
+            <Keys>Schlüssel</Keys>
+            <OtherBelongings>andere</OtherBelongings>
+            <Yes>Ja</Yes>
+            <No>Nein</No>
+            <Shower>Dusche</Shower>
+            <Groom>Körperpflege</Groom>
+            <Bloodpressure>Blutdruck</Bloodpressure>
+            <SPO2>Sauerstoffsättigung</SPO2>
+            <Heartrate>Puls</Heartrate>
+            <Breakfast>Frühstück</Breakfast>
+            <Lunch>Mittagessen</Lunch>
+            <Dinner>Abendessen</Dinner>
+            <TitleMedicalVal>medizinische Überprüfung</TitleMedicalVal>
+            <TitlePhysicalVal>körperliche Übung</TitlePhysicalVal>
+            <TitleCognitiveVal>kognitive Übung</TitleCognitiveVal>
+        </item>
+        <item name="Buttons">
+            <Add>Termin hinzufügen</Add>
+            <Edit>Termin bearbeiten</Edit>
+            <Delete>Termin löschen</Delete>
+            <DeleteAll>Alles löschen</DeleteAll>
+            <Cancel>Abbrechen</Cancel>
+        </item>
+    </ItemGroup>
+</language_data>

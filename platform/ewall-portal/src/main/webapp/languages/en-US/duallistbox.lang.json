@@ -1,0 +1,11 @@
+{
+    "filterPlaceHolder": "Filter",
+    "filterTextClear": "show all",
+    "infoText": "Showing all [0]",
+    "infoTextEmpty": "Empty list",
+    "infoTextFiltered": "<span class=\"label label-warning\">Filtered</span> [0] from [1]",
+    "moveAllLabel": "Move all",
+    "moveSelectedLabel": "Move selected",
+    "removeAllLabel": "Remove all",
+    "removeSelectedLabel": "Remove selected"
+}

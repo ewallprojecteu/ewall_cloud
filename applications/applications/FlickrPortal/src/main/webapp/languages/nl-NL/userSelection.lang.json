@@ -1,0 +1,10 @@
+{
+    "authUser": "Authorizeer gebruiker op Flickr",
+    "credentialsExist": "Flickr gebruikers data gevonden",
+    "credentialsMissing": "Flickr gebruikers data ontbreekt",
+    "failedAuthorizing": "Fout bij het authorizeren en opslaan van Flickr gebruikers data",
+    "openPortal": "Open Flickr portaal",
+    "selectUserHint": "Selecteer één gebruiker voor het gebruiken van het Flickr portaal",
+    "successfullyAuthorized": "Gebruiker succesvol geauthorizeerd en Flickr data opgeslagen",
+    "title": "Flickr portaal gebruikers keuze"
+}

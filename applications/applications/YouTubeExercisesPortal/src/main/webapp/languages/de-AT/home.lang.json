@@ -1,0 +1,12 @@
+{
+    "availableVideos": "vorhandene Videos",
+    "changeUser": "User wechseln",
+    "connectToGoogle": "mit Google verbinden",
+    "disconnectFromGoogle": "von Google trennen",
+    "errorAuthorizing": "",
+    "errorAuthorizingExistAnother": "",
+    "errorRevokingAccess": "",
+    "logout": "ausloggen",
+    "successfullyAuthorized": "",
+    "successfullyRevokedAccess": ""
+}

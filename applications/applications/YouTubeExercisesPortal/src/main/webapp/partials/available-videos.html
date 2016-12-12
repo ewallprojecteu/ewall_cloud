@@ -1,0 +1,28 @@
+<section>
+    <select ng-model="healthImpairmentTag" ng-change="updateVideosTable()" 
+    	ng-options="healthImpairmentTag.name group by healthImpairmentTag.typeStr for healthImpairmentTag in healthImpairmentTags"
+        class="form-control">
+        <option value="" ng-show="!healthImpairmentTag" i18n="availableVideos.selectHealthImpairmentTag"></option>
+    </select>
+    <br />
+
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th i18n="availableVideos.videoTitle"></th>
+                <th i18n="common.description"></th>
+                <th i18n="common.privacy"></th>
+                <th i18n="availableVideos.videoURL"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="video in videosByTag">
+                <td>{{video.youTubeVideo.title}}</td>
+                <td>{{video.youTubeVideo.description}}</td>
+                <td>{{video.youTubeVideo.privacyStatus}}</td>
+                <td><a href="#" ng-click="openVideo(video.youTubeVideo.url)">{{video.youTubeVideo.url}}</a></td>
+            </tr>
+        </table>
+    </div>
+</section>

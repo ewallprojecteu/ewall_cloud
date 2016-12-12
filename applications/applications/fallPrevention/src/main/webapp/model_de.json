@@ -1,0 +1,235 @@
+{
+  "slices": [
+    {
+      "id": "Home",
+      "coordinates": "413,435,1,436,12,333,46,248,123,144",
+      "title": "Risiken bezogen auf den Hausstatus",
+      "intro": ", die meisten Wohnungen beinhalten bestimmte Gefahrenquellen und viele ältere Personen rutschen aus oder stolpern über Gegenstände in deren Zuhause und stürzen dadurch zu Boden.",
+      "action": "Bitte wählen Sie die Gegenstände aus, die Sie bei Ihnen zu Hause vorfinden und drücken Sie dann OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "carpets",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Entfernen Sie Ihre frei liegenden Teppiche vom Boden oder stellen Sie sicher, dass sie sicher liegen, also die Ecken und Kanten nicht aufgebogen sind und der Teppich keine Falten wirft.",
+          "inactiveText": "Haben Sie frei liegende Teppiche?"
+        },
+        {
+          "id": "floors",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Ihre Böden sind rutschig. Wachsen Sie sie nicht. Sprechen Sie mit Ihren Betreuungspersonen oder Haushaltshilfen.",
+          "inactiveText": "Haben Sie rutschige Böden?"
+        },
+        {
+          "id": "stairs",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Nutzen Sie Ihre Handläufe wen Sie die Treppen nutzen und tragen Sie geeignetes Schuhwerk. Transportieren Sie keine großen, sperrigen Gegenstände über die Treppen.",
+          "inactiveText": "Haben Sie Treppen zu Hause?"
+        },
+        {
+          "id": "poorLight",
+          "danger": false,
+          "mode": "user",
+          "activeText": "The Beleuchtung in Ihrer Wohnung ist schwach. Versuchen Sie stärkeres Licht zu verwenden indem Sie die Glühbirnen wechseln oder optimieren Sie die Beleuchtungsintensität in dunklen Räumen.",
+          "inactiveText": "Haben Sie schwache Beleuchtung zu Hause?"
+        }
+      ]
+    },
+    {
+      "id": "Medication",
+      "coordinates": "129,130,215,64,320,23,419,10,418,420",
+      "title": "Risiken bezogen auf Medikation",
+      "intro": ", Medikamenteneinnahme ist bei älteren Personen mit erhöhtem Sturzrisiko verbunden.",
+      "action": "Bitte beachten Sie die Informationen Ihrer Ärztin  oder Ihres Arztes bzw. Ihrer Betreuungsperson. Wenn Sie Informationen benötigen, kontaktieren Sie diese. Drücken Sie nun OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "polipharmacotherapy",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Bedenken Sie, dass Sie Arzneimittel einnehmen, die Ihre Sturzgefahr erhöhen könnten. Seinen Sie bitte aufmerksam gegenüber anderen Faktoren, die das Sturzrisiko weiter erhöhen!",
+          "inactiveText": "Ihre Ärztin oder Ihr Arzt bzw. Ihre Betreuungsperson haben keine Mehrfach-Arzneimittelverschreibungen angegeben."
+        },
+        {
+          "id": "frid",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Bedenken Sie, dass Sie Arzneimittel einnehmen, die Ihre Sturzgefahr erhöhen könnten. Seinen Sie bitte aufmerksam gegenüber anderen Faktoren, die das Sturzrisiko weiter erhöhen!",
+          "inactiveText": "Ihre Ärztin oder Ihr Arzt bzw. Ihre Betreuungsperson haben keine Einnahme von so genannten FRID-Medikamenten (Fall Risk Increasing Drugs) angegeben."
+        }
+      ]
+    },
+    {
+      "id": "Vitals",
+      "coordinates": "434,4,544,18,656,66,722,122,432,414",
+      "title": "Risiken bezogen auf Gesundheitsdaten",
+      "intro": ", einige Gesundheitsdaten können ein Sturzrisiko erhöhen und sollten beobachtet werden.",
+      "action": "Bitte beachten Sie die Übersicht Ihrer Gesundheitsdaten, geben Sie die Punkte an, die auf Sie zutreffen und drücken Sie OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "hypertension",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Sie haben möglicherweise orthostatisch bedingten niedrigen Blutdruck, da eWALL eine Verminderung Ihres Blutdrucks angegeben hat. Sie sollten zur weiteren Abklärung Ihre Arztin oder Ihren Arzt aufsuchen.",
+          "inactiveText": "Haben Sie orthostatisch bedingten niedrigen Blutdruck?"
+        },
+        {
+          "id": "dizziness",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Da Sie sich leicht benommen oder schwindelig fühlen, sollten Sie zur weiteren Abklärung Ihre Ärztin oder Ihren Arzt aufsuchen.",
+          "inactiveText": "Fühlen Sie sich leicht benommen oder schwindelig?"
+        }
+      ]
+    },
+    {
+      "id": "Eyesight",
+      "coordinates": "447,419,737,130,800,210,840,306,857,417",
+      "title": "Risiken bezogen auf das Sehvermögen",
+      "intro": ", Altern ist oftmals mit Beeinträchtigungen der Sehkraft verbunden, das das Sturzrisiko erhöhen kann. Einige Faktoren, die das Sturzrisiko älterer Personen mit Augenproblemen beeinträchtigen, können durch Verhaltensänderungen oder Änderungen in der Wohnung behoben oder reduziert werden.",
+      "action": "Bitte beachten Sie die Informationen, die von Ihrer Ärztin oder Ihres Arztes bzw. Betreuungsperson angegeben wurde. Kontaktieren Sie diese, wenn Sie weitere Informationen benötigen. Drücken Sie nun OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "multifocal",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Beachten Sie, dass beim Tragen von Mehrfachgläsern Gegenstände in einer veränderten Entfernung wahrgenommen werden. Geben Sie dem Beachtung und entfernen Sie Gegenstände vom Boden.",
+          "inactiveText": "Ihre Ärztin oder Ihr Arzt bzw. Ihre Betreuungsperson haben keine Verwendung von Mehrstärkengläsern angegeben"
+        },
+        {
+          "id": "impairments",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Da Sie Sehbeeinträchtigungen haben, sollten Sie Ihre regelmäßigen Kontrollen beim Optiker nicht vergessen. Die regelmäßige Überwachung von Krankheiten, welche die Augen betreffen, kann einer Verschlechterung der Sehstärke entgegenwirken!",
+          "inactiveText": "Ihre Ärztin oder Ihr Arzt bzw. Ihre Betreuungsperson haben angegeben, dass Sie keine Sehbeeinträchtigungen (Katarakt, Glaukom, Makulardegeneration, etc.) haben"
+        }
+      ]
+    },
+    {
+      "id": "Cognitive",
+      "coordinates": "455,435,866,432,851,535,804,647,746,725",
+      "title": "Risiken bezogen auf den kognitiven Status",
+      "intro": ", Menschen mit neurologischen Erkrankungen wie Parkinson, Multiple Sklerose, Schlaganfall oder Alzheimer haben ein erhöhtes Sturzrisiko.",
+      "action": "Bitte beachten Sie die Informationen, die von Ihrer Ärztin oder Ihrem Arzt bzw. Betreuungsperson angegeben wurden. Kontaktieren Sie diese, wenn Sie weitere Informationen benötigen.Geben Sie die folgenden Punkte an, die auf Sie zutreffen und drücken Sie dann OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "fear",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Sie haben Angst zu stürzen. Lassen Sie nicht zu, dass dies Ihre täglichen Aktivitäten einschränkt! Bitte kontaktieren Sie Ihre Ärztin oder Ihren Arzt, um Ihnen geeignetes Training vorschlagen zu lassen.",
+          "inactiveText": "Haben Sie Angst, dass Sie stürzen könnten?"
+        },
+        {
+          "id": "cognitive",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Sie haben kognitive Einschränkungen, versuchen Sie daher regelmäßig Ihr Gedächtnis mit kognitiven Übungen zu trainieren!",
+          "inactiveText": "Ihre Ärztin oder Ihr Arzt bzw. Ihre Betreuungsperson haben angegeben, dass Sie keine kognitiven Einschränkungen haben."
+        },
+        {
+          "id": "extrapyramidal",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Da Sie medikamenteninduzierte Bewegungs-Beeinträchtigungen (Extrapyramidales System) haben, sollten Sie regelmäßig Ihre Ärztin oder Ihren Arzt aufsuchen.",
+          "inactiveText": "Nehmen Sie antidepressive oder antipsychotische Medikamente, die möglicherweise medikamenteninduzierte Bewegungs-Beeinträchtigungen hervorrufen?"
+        }
+      ]
+    },
+    {
+      "id": "Feet",
+      "coordinates": "447,448,734,735,648,804,557,841,447,856",
+      "title": "Risiken bezogen auf die Füße",
+      "intro": ", Fußprobleme sind bei älteren Personen häufig mit eingeschränkter Balance assoziiert. Fußprobleme kommen von altersbedingten Änderungen, von spezifischen Dysfunktionen oder von Muskelabbau nach einer inaktiven Phase und sind der häufigste Grund für Stürze.",
+      "action": "Geben Sie bitte an, ob Sie Fußprobleme haben. Beachten Sie auch die Informationen, die von Ihrer Ärztin oder Ihrem Arzt bzw. Betreuungsperson angegeben wurde. Kontaktieren Sie diese, falls Sie weitere Informationen benötigen. Drücken Sie nun OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "pain",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Sie haben Schmerzen in den Füßen. Ihre Ärztin oder Ihr Arzt kann Ihnen ein effizienteres Schmerzmanagement anbieten. Machen Sie regelmäßige Kontrollen.",
+          "inactiveText": "Haben Sie Schmerzen in den Füßen?"
+        },
+        {
+          "id": "ankle",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Sie haben eingeschränkte Beweglichkeit im Sprunggelenk. Um Stürzt zu vermeiden, sollten Sie geeignete Schuhe tragen und regelmäßige Kontrollen beim Fußspezialisten einplanen.",
+          "inactiveText": "Ihre Ärztin oder Ihr Arzt bzw. Ihre Betreuungsperson haben angegeben, dass Sie keine eingeschränkte Beweglichkeit im Sprunggelenk haben."
+        },
+        {
+          "id": "hallux",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Sie haben Hallux valgus Probleme. Um Stürze zu vermeiden, sollten Sie geeignete Schuhe tragen und regelmäßige Kontrollen beim Fußspezialisten einplanen.",
+          "inactiveText": "Ihre Ärztin oder Ihr Arzt bzw. Ihre Betreuungsperson haben angegeben, dass Sie keinen Hallux valgus haben."
+        },
+        {
+          "id": "tactile",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Sie haben Sensibilitätsbeeinträchtigungen an der Fußsohle. Um Stürzt zu vermeiden, sollten Sie geeignete Schuhe tragen und regelmäßige Kontrollen beim Fußspezialisten einplanen.",
+          "inactiveText": "Ihre Ärztin oder Ihr Arzt bzw. Ihre Betreuungsperson haben angegeben, dass Sie keine Sensibilitätsbeeinträchtigungen an der Fußsohle haben."
+        },
+        {
+          "id": "toe",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Sie haben eine verminderte Zehenbeugerkraft. Um Stürzt zu vermeiden, sollten Sie geeignete Schuhe tragen und regelmäßige Kontrollen beim Fußspezialisten einplanen.",
+          "inactiveText": "Ihre Ärztin oder Ihr Arzt bzw. Ihre Betreuungsperson haben angegeben, dass Sie keine verminderte Zehenbeugerkraft haben."
+        }
+      ]
+    },
+    {
+      "id": "Social",
+      "coordinates": "434,456,139,747,222,806,319,848,437,862",
+      "title": "Risiken bezogen auf verminderte soziale Aktivitäten",
+      "intro": ", Angst vor Stützen ist der Hauptgrund für soziale Isolation.",
+      "action": "Bitte geben Sie Zutreffendes an und drücken Sie dann OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "avoidance",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Falls Ihre Angst vor Stürzen zur Vermeidung von sozialen Aktivitäten führt, kontaktieren SIe bitte Ihre Ärztin oder Ihren Arzt, die Ihnen ein geeignetes Training vorschlagen können.",
+          "inactiveText": "Vermeiden Sie des Öfteren sich mit anderen Personen zu Hause oder anderswo zu treffen?"
+        }
+      ]
+    },
+    {
+      "id": "Legs",
+      "coordinates": "10,448,419,447,129,737,59,641,19,531",
+      "title": "Risiken bezogen auf die Beine",
+      "intro": ", Gehprobleme können von einfachen altersbezogenen Änderungen im Gang und der Bealance kommen, wie auch von spezifischen Dysfunktionen oder Muskelschwund nach einer inaktiven Phase. Das sind die häufigsten Gründe für Stürze.",
+      "action": "Geben Sie bitte an, ob Sie Beinprobleme haben. Beachten Sie auch Ihre körperliche Aktivität, die von eWALL gemessen wurden. Drücken Sie nun OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "exercise",
+          "danger": false,
+          "mode": "home",
+          "activeText": "eWALL hat nur durchschnittlich XXX Schritte in den letzten YYY Tagen gemessen. Versuchen Sie mehr Schritte zu machen.",
+          "inactiveText": "Großartig! eWALL hat durchschnittlich XXX Schritte in den letzten YYY Tagen gemessen. Ihre Beine sind stark!"
+        },
+        {
+          "id": "knee",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Da Sie knees' extension haben, sollten Sie regelmäßige Kontrollen beim Orthopäden machen um Stürze zu vermeiden.",
+          "inactiveText": "Haben Sie knees' extension?"
+        }
+      ]
+    }
+  ],
+  "fitbitnosteps": "eWALL hat in den letzten Tagen keine Schritte erkannt. Stellen Sie sicher, dass Sie Ihr Fitbit ChargeHR Armband tragen!",
+  "fitbitnodata": "eWALL kann Ihre Aktivitätsdaten nicht abrufen!",
+  "fitbitok": "Großartig! eWALL hat durchschnittlich XXX Schritte in den letzten YYY Tagen gemessen. Ihre Beine sind stark!"
+
+}

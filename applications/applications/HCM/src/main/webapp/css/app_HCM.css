@@ -1,0 +1,124 @@
+#AppHCM_AppDataContainer{z-index:10;width:100%;height:100%;min-width:1254px;min-height:874px;top:0px;left:0px;position:absolute;background-color:#e6e6e6;
+-webkit-touch-callout:none;
+-webkit-user-select:none;
+-khtml-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;}
+
+#AppHCM_AppDataContainer * {box-sizing:content-box;}
+
+#AppHCM_AppDataContainer #AppHCM-PartAll{z-index:10;width:1254px;height:872px;top:50%;left:50%;margin-top:-436px;margin-left:-627px;position:absolute;}
+
+#AppHCM-PartAll #AppHCM-NavPart{z-index:10;width:100%;height:160px;top:10px;left:0px;position:absolute;overflow:hidden;}
+#AppHCM-PartAll #AppHCM-ActPart{z-index:10;width:1252px;height:670px;top:190px;left:0px;position:absolute;overflow:hidden;
+background-color:#f6f6f6;border:1px solid #7F7F7F;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;}
+
+#AppHCM-NavPart .AppHCM-mp{width:50%;height:100%;top:0px;left:0px;position:absolute;}
+#AppHCM-NavPart .AppHCM-hp{width:50%;height:100%;float:right;position:relative;}
+
+#AppHCM-NavPart img{width:100px;height:100px;left:50%;margin-left:-50px;position:absolute;}
+#AppHCM-NavPart h1, 
+#AppHCM-NavPart p{padding:0;margin:0;
+text-align:center;font-size:15px;font-family:Arial,Verdana,Helvetica,sans-serif;
+font-weight:bold;text-transform:uppercase;}
+#AppHCM-NavPart h1{display:block;height:25px;color:#444444;}
+#AppHCM-NavPart p{display:table-cell;vertical-align:bottom;width:178px;height:130px;left:0px;top:1px;
+position:relative;overflow:hidden;color:#777777;padding:0 4px}
+#AppHCM-NavPart ul{height:135px;margin:0;padding:0;}
+#AppHCM-NavPart ul li{list-style:none;float:left;width:178px;height:133px;padding:0;margin:0;
+text-align:center;background-color:#f6f6f6;border:1px solid #777777;
+-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;cursor:pointer;cursor:hand;}
+#AppHCM-NavPart ul li div{width:178px;height:133px;position:relative;}
+#AppHCM-NavPart .AppHCM-hp h1, #AppHCM-NavPart .AppHCM-hp ul{float:right;}
+#AppHCM-NavPart .AppHCM-mp ul li{margin-right:10px;}
+#AppHCM-NavPart .AppHCM-hp ul li{margin-left:10px;}
+#AppHCM-NavPart .AppHCM-mp h1{width:370px;}
+#AppHCM-NavPart .AppHCM-hp h1{width:560px;}
+#AppHCM-NavPart ul li:hover, #AppHCM-NavPart ul .AppHCM-el-sel{background-color:#e6e6e6;}
+#AppHCM-NavPart ul li:hover p, #AppHCM-NavPart ul .AppHCM-el-sel p{color:#444444;}
+
+#AppHCM-ActPart .AppHCM-mp-info{width:1000px;height:650px;top:10px;left:10px;position:absolute;overflow:hidden;}
+#AppHCM-ActPart .AppHCM-mp-info .AppHCM-img{float:left;width:250px;padding:0;margin:0 10px 10px 0;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;}
+#AppHCM-ActPart .AppHCM-mp-info .AppHCM-img.img-0{height:380px;background:url(../images/AppHCM_measure_info_0.png) no-repeat center center;}
+#AppHCM-ActPart .AppHCM-mp-info .AppHCM-img.img-1{height:299px;background:url(../images/AppHCM_measure_info_1.png) no-repeat center center;}
+#AppHCM-ActPart .AppHCM-mp-info .AppHCM-img.img-2{height:380px;background:url(../images/AppHCM_measure_info_2.jpg) no-repeat center center;}
+#AppHCM-ActPart .AppHCM-mp-info p{text-align:justify;font-size:19px;font-family:Arial,Verdana,Helvetica,sans-serif;color:#444444;font-weight:normal;padding:0;margin:0 10px 10px 0;line-height:1.3;}
+
+#AppHCM-ActPart .AppHCM-mp-button{width:220px;height:80px;top:10px;left:1022px;position:absolute;cursor:pointer;cursor:hand;}
+#AppHCM-ActPart .AppHCM-mp-button .AppHCM-dbs-1{width:215px;height:75px;top:0px;left:5px;position:absolute;
+background-color:#fbde71;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;}
+#AppHCM-ActPart .AppHCM-mp-button .AppHCM-dbs-2{width:215px;height:75px;left:0px;top:5px;position:absolute;
+background-color:#a3dc7e;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;}
+#AppHCM-ActPart .AppHCM-mp-button p{display:table-cell;text-align:center;vertical-align:middle;width:195px;height:75px;padding:0 0 0 10px;margin:0;
+font-size:18px;font-family:Arial,Verdana,Helvetica,sans-serif;color:#ffffff;font-weight:bold;line-height:1.5;text-transform:uppercase;}
+
+#AppHCM-ActPart .AppHCM-mp-data{width:220px;height:590px;top:70px;left:1022px;position:absolute;overflow:hidden;
+background-color:#e6e6e6;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;}
+#AppHCM-ActPart .AppHCM-mp-data div{display:table-cell;vertical-align:middle;width:220px;height:570px;position:relative;}
+#AppHCM-ActPart .AppHCM-mp-data ul{width:200px;height:410px;top:30px;left:10px;position:absolute;margin:0;padding:0;}
+#AppHCM-ActPart .AppHCM-mp-data ul li{list-style:none;float:left;width:200px;height:200px;margin:0 0 10px 0;padding:0;}
+#AppHCM-ActPart .AppHCM-mp-data ul li div{width:200px;height:200px;-moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%;}
+#AppHCM-ActPart .AppHCM-mp-data h1{text-align:center;font-size:32px;font-family:Arial,Verdana,Helvetica,sans-serif;color:#ffffff;font-weight:bold;padding:0;margin:0;}
+#AppHCM-ActPart .AppHCM-mp-data h2{text-align:center;font-size:22px;font-family:Arial,Verdana,Helvetica,sans-serif;color:#444444;font-weight:bold;padding:10px;margin:0;}
+#AppHCM-ActPart .AppHCM-mp-data ul li h2{color:#ffffff;font-weight:normal;margin:10px 0 0 0;padding:0 10px;}
+
+#AppHCM-ActPart .AppHCM-Legend{width:200px;height:136px;top:520px;left:1032px;position:absolute;overflow:hidden;}
+#AppHCM-ActPart .AppHCM-Legend ul{width:100%;height:100%;position:absolute;margin:0;padding:0;overflow:hidden;}
+#AppHCM-ActPart .AppHCM-Legend ul li{list-style:none;float:left;width:100%;height:32px;margin:0;padding:0;overflow:hidden;}
+#AppHCM-ActPart .AppHCM-Legend ul li.AppHCM-Legend-Box{height:30px;margin-bottom:6px;
+border-top:1px dashed #999999;border-bottom:1px dashed #999999;}
+#AppHCM-ActPart .AppHCM-Legend ul li div{float:left;width:46px;height:26px;margin:3px 10px 3px 0;}
+#AppHCM-ActPart .AppHCM-Legend ul li p{display:table-cell;width:190px;height:32px;position:relative;margin:0;padding:0;
+text-align:left;vertical-align:middle;font-size:16px;font-family:Verdana,Arial,Helvetica,sans-serif;color:#191919;font-weight:normal;}
+#AppHCM-ActPart .AppHCM-Legend ul li.AppHCM-Legend-Box p{height:30px;}
+
+#AppHCM-ActPart .AppHCM-hp{width:1232px;height:630px;top:20px;left:10px;position:absolute;overflow:hidden;}
+#AppHCM-ActPart .AppHCM-hp .AppHCM-hp-lp{width:154px;height:510px;top:0px;left:0px;position:absolute;overflow:hidden;}
+#AppHCM-ActPart .AppHCM-hp .AppHCM-hp-vp{width:1078px;height:510px;top:0px;left:154px;position:absolute;overflow:hidden;}
+#AppHCM-ActPart .AppHCM-hp .AppHCM-hp-cp{width:1078px;height:100px;top:530px;left:154px;position:absolute;overflow:hidden;}
+
+#AppHCM-ActPart .AppHCM-hp .AppHCM-hp-lp div{width:152px;height:50px;top:0px;left:0px;position:absolute;margin:0;padding:0;overflow:hidden;}
+#AppHCM-ActPart .AppHCM-hp .AppHCM-hp-lp ul{width:152px;height:420px;top:50px;left:0px;position:absolute;margin:0;padding:0;}
+#AppHCM-ActPart .AppHCM-hp .AppHCM-hp-lp ul li{list-style:none;float:left;width:100%;margin:0;padding:0;overflow:hidden;
+background-color:#E6E6E6;-webkit-border-top-left-radius:10px;-webkit-border-bottom-left-radius:10px;
+-moz-border-radius-topleft:10px;-moz-border-radius-bottomleft:10px;
+border-top-left-radius:10px;border-bottom-left-radius:10px;}
+#AppHCM-ActPart .AppHCM-hp .AppHCM-hp-lp ul li p{display:table-cell;vertical-align:middle;text-align:center;width:152px;position:relative;overflow:hidden;
+font-size:19px;font-family:Arial,Verdana,Helvetica,sans-serif;color:#444444;font-weight:normal;padding:0 8px;margin:0;}
+
+#AppHCM-ActPart .AppHCM-hp .AppHCM-hp-vp .AppHCM-hp-vp-all{height:100%;top:0px;left:0px;position:relative;}
+#AppHCM-ActPart .AppHCM-hp .AppHCM-hp-vp .AppHCM-hp-vp-all ul.AppHCM-RowHead{height:50px;top:0px;left:0px;position:absolute;margin:0;padding:0;overflow:hidden;}
+#AppHCM-ActPart .AppHCM-hp .AppHCM-hp-vp .AppHCM-hp-vp-all ul.AppHCM-RowHead li{list-style:none;float:left;height:100%;margin:0 1px;padding:0;overflow:hidden;}
+#AppHCM-ActPart .AppHCM-hp .AppHCM-hp-vp .AppHCM-hp-vp-all ul.AppHCM-RowData{height:100px;left:0px;position:absolute;margin:0;padding:0;overflow:hidden;}
+#AppHCM-ActPart .AppHCM-hp .AppHCM-hp-vp .AppHCM-hp-vp-all ul.AppHCM-RowData li{list-style:none;float:left;height:100%;margin:0 1px;padding:0;overflow:hidden;}
+#AppHCM-ActPart .AppHCM-hp-vp-all ul.AppHCM-RowData p{text-align:center;font-size:19px;font-family:Arial,Verdana,Helvetica,sans-serif;font-weight:normal;height:35px;padding:0;margin:6px 0;}
+
+#AppHCM-ActPart .AppHCM-hp-vp-all ul.AppHCM-RowHead h1, 
+#AppHCM-ActPart .AppHCM-hp .AppHCM-hp-lp div h1{text-align:center;font-size:18px;font-family:Arial,Verdana,Helvetica,sans-serif;color:#444444;font-weight:normal;padding:0;margin:0 0 5px 0;text-transform:uppercase;}
+#AppHCM-ActPart .AppHCM-hp-vp-all ul.AppHCM-RowHead h2, 
+#AppHCM-ActPart .AppHCM-hp .AppHCM-hp-lp div h2{text-align:center;font-size:16px;font-family:Arial,Verdana,Helvetica,sans-serif;color:#444444;font-weight:bold;padding:0;margin:0;text-transform:uppercase;}
+
+#AppHCM-ActPart .AppHCM-hp .AppHCM-hp-cp ul{width:100%;height:30px;position:relative;margin:0;padding:0;overflow:hidden;}
+#AppHCM-ActPart .AppHCM-hp .AppHCM-hp-cp ul li{list-style:none;float:left;height:100%;margin:0 15px 0 0;padding:0;}
+#AppHCM-ActPart .AppHCM-hp .AppHCM-hp-cp ul li div{height:30px;position:relative;}
+#AppHCM-ActPart .AppHCM-hp .AppHCM-hp-cp ul li span{display:table-cell;width:60px;height:30px;}
+#AppHCM-ActPart .AppHCM-hp .AppHCM-hp-cp ul li p, 
+#AppHCM-ActPart .AppHCM-hp .AppHCM-hp-cp label{font-size:16px;font-family:Verdana,Arial,Helvetica,sans-serif;color:#191919;font-weight:normal;}
+#AppHCM-ActPart .AppHCM-hp .AppHCM-hp-cp ul li p{display:table-cell;height:30px;position:relative;
+text-align:center;vertical-align:middle;margin:0;padding:0 0 0 10px;}
+#AppHCM-ActPart .AppHCM-hp .AppHCM-hp-cp label{display:block;height:26px;margin-bottom:10px;padding-top:7px;
+border-top:1px dashed #999999;border-bottom:1px dashed #999999;}
+
+#AppHCM-ActPart.AppHCM-loading{background: #f6f6f6 url(../images/AppHCM_loading.gif) no-repeat center center;}
+#AppHCM-ActPart .AppHCM-mp-data.AppHCM-loading{background: #e6e6e6 url(../images/AppHCM_loading.gif) no-repeat center center;}
+
+#AppHCM_AppDataContainer .AppHCM-overlay{z-index:15;width:100%;height:100%;top:0px;left:0px;position:absolute;}
+
+#AppHCM-ActPart .AppHCM-hp .AppHCM-hp-vp .iScrollHorizontalScrollbar{z-index:20;height:40px;top:470px;left:0px;right:0px;position:absolute;overflow:hidden;}
+#AppHCM-ActPart .AppHCM-hp .AppHCM-hp-vp .iScrollIndicator{width:392px;height:30px;top:5px;position:absolute;background-color:#cccccc;
+-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;
+-webkit-box-shadow: inset 1px 1px 6px 0px #909090;
+-moz-box-shadow: inset 1px 1px 6px 0px #909090;
+box-shadow: inset 1px 1px 6px 0px #909090;}

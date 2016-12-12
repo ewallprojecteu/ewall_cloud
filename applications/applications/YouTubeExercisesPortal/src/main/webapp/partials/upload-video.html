@@ -1,0 +1,50 @@
+<section>
+	<form name="uploadVideoForm">
+	    <div class="table-responsive">
+	        <table class="table">
+	        	<tr>
+	                <td colspan="2">
+	                    <div class="fileinput fileinput-new" data-provides="fileinput">
+					        <span class="btn btn-danger btn-file">
+					            <span class="fileinput-new" i18n="uploadVideo.browseVideos"></span>
+					            <span class="fileinput-exists" i18n="uploadVideo.changeVideo"></span>
+					            <input type="file" fileread="video.encoded" name="..." accept="video/*">
+					        </span>
+					        <span class="fileinput-filename"></span>
+					        <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">&times;</a>
+					    </div>
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                    <label for="txtTitle" i18n="uploadVideo.title"></label>
+	                </td>
+	                <td>
+	                    <input type="text" i18n-attr="{placeholder: 'uploadVideo.title'}" ng-model="videoTitle" class="form-control" id="txtTitle" autofocus />
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                    <label for="txtDescription" i18n="common.description"></label>
+	                </td>
+	                <td>
+	                    <textarea i18n-attr="{placeholder: 'common.descriptionHint'}" ng-model="videoDescription" rows="4" cols="50" class="form-control" id="txtDescription"></textarea>
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                    <label i18n="common.privacy"></label>
+	                </td>
+	                <td ng-init="videoPrivacy='Public'">
+	                    <label class="radio-inline"><input type="radio" ng-model="videoPrivacy" value="Public" /><span i18n="uploadVideo.public"></span></label>
+	                    <label class="radio-inline"><input type="radio" ng-model="videoPrivacy" value="Private" /><span i18n="uploadVideo.private"></span></label>
+	                    <label class="radio-inline"><input type="radio" ng-model="videoPrivacy" value="Unlisted" /><span i18n="uploadVideo.unlisted"></span></label>
+	                </td>
+	            </tr>
+	            <tr ng-include="'partials/choosing-health-impairment-tags-table-row.html'"></tr>
+	        </table>
+	    </div>
+	
+	    <button id="uploadVideoBtn" class="btn btn-primary" ng-click="$(this).blur(); uploadVideoData()" ng-disabled="!isConnected" i18n="uploadVideo.uploadVideo"></button>
+    </form>
+</section>

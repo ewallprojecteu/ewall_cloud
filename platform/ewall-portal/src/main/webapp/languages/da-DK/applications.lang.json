@@ -1,0 +1,17 @@
+{
+    "addNew": "tilføj en ny applikation",
+    "availableServices": "tilgængelig service",
+    "contacts": "kontakter",
+    "dependsOnServices": "afhænger af service",
+    "detail": "detaljer om applikationerne",
+    "enterName": "indtast navnet på applikationen ",
+    "games": "spil ",
+    "health": "sundhed",
+    "hidden": "Gemt",
+    "house": "Hjem ",
+    "minimized": "Minimeret",
+    "name": "Navn på applikation",
+    "selectType": "Vælg type",
+    "type": "Type",
+    "web_app": "Web App"
+}

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="LongMonths">
+        <item>Januar</item>
+        <item>Februar</item>
+        <item>Mart</item>
+        <item>April</item>
+        <item>Maj</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Avgust</item>
+        <item>Septembar</item>
+        <item>Oktobar</item>
+        <item>Novembar</item>
+        <item>Decembar</item>
+    </ItemGroup>
+    <ItemGroup name="ShortMonths">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>Maj</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Avg</item>
+        <item>Sep</item>
+        <item>Okt</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </ItemGroup>
+    <ItemGroup name="LongDays">
+        <item>Nedjelja</item>
+        <item>Ponedjeljak</item>
+        <item>Utorak</item>
+        <item>Srijeda</item>
+        <item>Četvrtak</item>
+        <item>Petak</item>
+        <item>Subota</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>Ned</item>
+        <item>Pon</item>
+        <item>Uto</item>
+        <item>Sre</item>
+        <item>Čet</item>
+        <item>Pet</item>
+        <item>Sub</item>
+    </ItemGroup>
+    <ItemGroup name="AppLabels">
+        <item>Trajanje</item>
+        <item>h</item>
+        <item>sat</item>
+        <item>sati</item>
+        <item>minuta</item>
+        <item>minuta</item>
+        <item>sekunda</item>
+        <item>sekundi</item>
+        <item>Informacije nisu dostupne</item>
+    </ItemGroup>
+    <ItemGroup name="ExtDataMessage">
+        <item name="sleeping">
+            <subitem>Spavanje</subitem>
+            <subitem>Senzor vas je detektovao u krevetu</subitem>
+        </item>
+        <item name="showering">
+            <subitem>Tuširanje</subitem>
+            <subitem>Senzor vlažnosti je detektovao da se tuširate u kupatilu</subitem>
+        </item>
+        <item name="entertaining">
+            <subitem>Odmor i zabava</subitem>
+            <subitem>Senzor lokacije vas je locirao u dnevnoj sobi</subitem>
+        </item>
+        <item name="cooking">
+            <subitem>Kuvanje i ishrana</subitem>
+            <subitem>Senzor lokacije vas je locirao u kuhinji</subitem>
+        </item>
+        <item name="sanitary_visits">
+            <subitem>Posjeta sanitarnim prostorijama</subitem>
+            <subitem>
+            </subitem>
+        </item>
+        <item name="getting_out">
+            <subitem>Izlazak</subitem>
+            <subitem>Detektovali smo da izlazite napolje</subitem>
+        </item>
+        <item name="houseworks">
+            <subitem>Kućni poslovi</subitem>
+            <subitem>eWALL je detektovao da se bavite kućnim poslovima</subitem>
+        </item>
+        <item name="visits">
+            <subitem>
+            </subitem>
+            <subitem>
+            </subitem>
+        </item>
+    </ItemGroup>
+</language_data>

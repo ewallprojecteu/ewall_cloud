@@ -1,0 +1,16 @@
+{
+    "error": "Greška",
+    "family": "Porodica",
+    "friends": "Prijatelji",
+    "friendsAndFamily": "Prijatelji i porodica",
+    "loading": "Učitavanje...",
+    "loginFailed": "Neuspješno prijavljivanje",
+    "ok": "Ok",
+    "privacy": "Privatnost",
+    "private": "Privatno",
+    "public": "Javno",
+    "success": "Uspjeh",
+    "tags": "Oznake (odvojene zarezom)",
+    "uploadPhoto": "Prenesi fotografiju",
+    "uploading": "Prijenos..."
+}

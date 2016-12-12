@@ -1,0 +1,49 @@
+<div class="factorBkg">
+    <img src="../fallPrevention/images/pieCenter.png" id="fallLogo">
+    <img ng-src="../fallPrevention/images/logo{{model.slices[model.selectedSlice].id}}.png" id="factorLogo">
+    <img src="../fallPrevention/images/button.png" id="OKbutton" style="cursor: pointer" href="#"
+         ng-click="calculateDanger(model.selectedSlice)" ui-sref="main.fallsPreventionChecklist.mainPie">
+    <div class="text-center">
+        <h1>{{model.slices[model.selectedSlice].title}}</h1>
+    </div>
+    <div class="factorDescription">
+        <p>{{model.firstname}}{{model.slices[model.selectedSlice].intro}}</p>
+        <p>{{model.slices[model.selectedSlice].action}}</p>
+        <div style="margin-top: 10px; overflow: hidden" ng-repeat="constituent in model.slices[model.selectedSlice].constituents">
+            <div ng-switch="constituent.mode" style="float: left;margin-top: -10px; position: absolute">
+                <div ng-switch-when="doctor">
+                    <i class="fa fa-user-md medMode" title="Input from doctor"></i>
+                </div>
+                <div ng-switch-when="home">
+                    <i class="fa fa-home homeMode" title="Input from home sensors"></i>
+                </div>
+            </div>
+            <div ng-switch="constituent.danger" style="float: left;">
+                <span ng-switch-when=true>
+                    <span ng-switch="constituent.mode">
+                        <span ng-switch-when="user">
+                            <img src="../fallPrevention/images/checkboxChecked.png" style="margin-left: 20px; cursor: pointer"
+                                 ng-click="constituent.mode === 'user' && toggleDanger(model.selectedSlice, $index)">
+                        </span>
+                        <span ng-switch-default>
+                            <img src="../fallPrevention/images/checkboxChecked.png" class="disabledImg" style="margin-left: 20px;">
+                        </span>
+                        <span style="margin-left: 5px;">{{constituent.activeText}}</span>
+                    </span>
+                </span>
+                <span ng-switch-when=false>
+                    <span ng-switch="constituent.mode">
+                        <span ng-switch-when="user">
+                            <img src="../fallPrevention/images/checkboxEmpty.png" style="margin-left: 20px; cursor: pointer"
+                                 ng-click="constituent.mode === 'user' && toggleDanger(model.selectedSlice, $index)">
+                        </span>
+                        <span ng-switch-default>
+                            <img src="../fallPrevention/images/checkboxEmpty.png" class="disabledImg" style="margin-left: 20px;">
+                        </span>
+                        <span style="margin-left: 5px;">{{constituent.inactiveText}}</span>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

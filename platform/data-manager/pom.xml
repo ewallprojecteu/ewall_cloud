@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>eu.ewall.platform</groupId>
+		<artifactId>ewall-platform-pom</artifactId>
+		<version>1.1.0-SNAPSHOT</version>
+	</parent>
+
+	<groupId>eu.ewall.platform</groupId>
+	<artifactId>data-manager</artifactId>
+	<packaging>jar</packaging>
+
+	<description>Data manager for eWall (cloud) platform</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-mongodb</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>eu.ewall.platform</groupId>
+			<artifactId>commons-data-model</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.9</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>${project.name}</finalName>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${maven.compile.source}</source>
+					<target>${maven.compile.target}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

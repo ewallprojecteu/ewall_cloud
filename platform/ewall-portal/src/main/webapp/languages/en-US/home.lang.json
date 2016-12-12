@@ -1,0 +1,10 @@
+{
+    "applications": "Applications",
+    "devices": "Devices",
+    "home": "Home",
+    "logout": "Logout ({username})",
+    "regions": "Regions",
+    "sensingEnvs": "Sensing environments",
+    "services": "Services",
+    "users": "Users"
+}

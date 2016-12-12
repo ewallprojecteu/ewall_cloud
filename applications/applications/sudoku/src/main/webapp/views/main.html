@@ -1,0 +1,19 @@
+<div class="text-center welcome">
+	<div class="h1">{{labels.welcome}}</div>
+	<div class="h2">{{labels.choose}}</div>
+	<div class="main text-center">
+		<a class="col-md-offset-3 col-md-2" href="#"
+			ui-sref="main.sudoku.game({level:'easy'})"> <i
+			class="icon fa fa-bicycle fa-4x" aria-hidden="true"></i>
+			<p class="h2">{{labels.easy}}</p>
+		</a> <a class="col-md-2" href="#"
+			ui-sref="main.sudoku.game({level:'medium'})"> <i
+			class="icon fa fa-car fa-4x" aria-hidden="true"></i>
+			<p class="h2">{{labels.medium}}</p>
+		</a> <a class="col-md-2" href="#"
+			ui-sref="main.sudoku.game({level:'hard'})"> <i
+			class="icon fa fa-space-shuttle fa-4x" aria-hidden="true"></i>
+			<p class="h2">{{labels.hard}}</p>
+		</a>
+	</div>
+</div>

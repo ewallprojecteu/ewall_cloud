@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="LongMonths">
+        <item>Siječanj</item>
+        <item>Veljača</item>
+        <item>Ožujak</item>
+        <item>Travanj</item>
+        <item>Svibanj</item>
+        <item>Lipanj</item>
+        <item>Srpanj</item>
+        <item>Kolovoz</item>
+        <item>Rujan</item>
+        <item>Listopad</item>
+        <item>Studeni</item>
+        <item>Prosinac</item>
+    </ItemGroup>
+    <ItemGroup name="ShortMonths">
+        <item>Sij</item>
+        <item>Velj</item>
+        <item>Ožu</item>
+        <item>Tra</item>
+        <item>Svi</item>
+        <item>Lip</item>
+        <item>Srp</item>
+        <item>Kol</item>
+        <item>Ruj</item>
+        <item>Lis</item>
+        <item>Stu</item>
+        <item>Pro</item>
+    </ItemGroup>
+    <ItemGroup name="LongDays">
+        <item>Nedjelja</item>
+        <item>Ponedjeljak</item>
+        <item>Utorak</item>
+        <item>Srijeda</item>
+        <item>Četvrtak</item>
+        <item>Petak</item>
+        <item>Subota</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>Ned</item>
+        <item>Pon</item>
+        <item>Uto</item>
+        <item>Srij</item>
+        <item>Čet</item>
+        <item>Pet</item>
+        <item>Sub</item>
+    </ItemGroup>
+    <ItemGroup name="ChartTitle">
+        <item>Prijeđena udaljenost u koracima</item>
+        <item>Prijeđena udaljenost u kilometrima</item>
+        <item>Potrošene kalorije</item>
+    </ItemGroup>
+    <ItemGroup name="yTitle">
+        <item>Koraci</item>
+        <item>Kilometri</item>
+        <item>Kalorija</item>
+    </ItemGroup>
+    <ItemGroup name="ChartNavLabels">
+        <item>Koraci</item>
+        <item>Kilometri</item>
+        <item>Kalorija</item>
+    </ItemGroup>
+    <ItemGroup name="NavActLabels">
+        <item>Aktivnost u</item>
+        <item>Danu</item>
+        <item>Tjednu</item>
+        <item>Mjesecu</item>
+    </ItemGroup>
+    <ItemGroup name="Messages">
+        <item>
+            <Title>Čestitke</Title>
+            <Content>Postigli ste cilj za odabrani period.</Content>
+        </item>
+    </ItemGroup>
+    <ItemGroup name="AppLabels">
+        <item>
+            <shorthour>h</shorthour>
+            <steps>Koraci</steps>
+        </item>
+    </ItemGroup>
+    <ItemGroup name="ColorLegendLabels">
+        <Label>Legenda kretanja</Label>
+        <Color id="1">Vrlo malo</Color>
+        <Color id="2">Malo</Color>
+        <Color id="3">Srednje</Color>
+        <Color id="4">Visoko</Color>
+        <Color id="5">Jako visoko</Color>
+    </ItemGroup>
+</language_data>

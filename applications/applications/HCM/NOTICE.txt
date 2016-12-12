@@ -1,0 +1,43 @@
+eWALL Healthcare Monitor application
+
+Copyright 
+
+Copyright 2013-2016 Teleinfrastructure Lab, Technical University Sofia (TUS) Bulgaria (http://telilab.tu-sofia.bg) 
+
+
+I. Included Software
+
+Software developed by Teleinfrastructure Lab, Technical University Sofia (TUS) Bulgaria (http://telilab.tu-sofia.bg) for the eWALL project.
+
+
+II. Used Software
+
+This product uses software (jQuery) developed at
+jQuery Foundation (https://jquery.org/).
+Licensed under the MIT License.
+
+
+This product uses software (Moment) developed by 
+Tim Wood, Iskren Chernev, Moment.js contributors (https://github.com/moment/moment/).
+Licensed under the MIT License.
+Copyright (c) 2011-2016 Tim Wood, Iskren Chernev, Moment.js contributors
+
+
+This product uses software (Moment Timezone) developed by 
+Tim Wood (https://github.com/moment/moment-timezone/). 
+Licensed under the MIT License.
+Copyright © 2014, Tim Wood.
+
+
+This product uses software (iscroll) developed by 
+Matteo Spinelli (http://cubiq.org/). 
+Licensed under the MIT License.
+Copyright (c) 2014 Matteo Spinelli.
+
+ 
+III. License Summary
+- Apache License 2.0
+- MIT License
+- Copyright (c) 2011-2016 Tim Wood, Iskren Chernev, Moment.js contributors
+- Copyright (c) 2014, Tim Wood.
+- Copyright (c) 2014 Matteo Spinelli

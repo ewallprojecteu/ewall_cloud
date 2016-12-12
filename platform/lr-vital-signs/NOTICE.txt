@@ -1,0 +1,30 @@
+Vital signs lifestyle reasoner
+
+Copyright 
+
+Copyright 2013-2016 Ss. Cyril and Methodius University in Skopje (https://www.ukim.edu.mk/en_index.php)
+
+
+I. Included Software
+
+Software developed by the Ss. Cyril and Methodius University in Skopje (https://www.ukim.edu.mk/en_index.php) for the eWALL project.
+
+
+II. Used Software
+
+This product uses software developed at
+Pivotal Software, Inc. (Pivotal)  (https://pivotal.io/).
+Licensed under the Apache License 2.0.
+
+This product uses software developed by
+Swagger project  (swagger.io/).
+Licensed under the Apache License 2.0.
+
+For now this product also uses software javax.mail
+Licensed under (CDDL, GPL 1.1. and GPL 2.0).
+Related to the mail messaging that is optional functionality.
+
+
+III. License Summary
+- Apache License 2.0
+- CDDL

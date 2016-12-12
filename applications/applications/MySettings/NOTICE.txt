@@ -1,0 +1,21 @@
+eWALL My Settings application
+
+Copyright 
+
+Copyright 2013-2016 Teleinfrastructure Lab, Technical University Sofia (TUS) Bulgaria (http://telilab.tu-sofia.bg) 
+
+
+I. Included Software
+
+Software developed by Teleinfrastructure Lab, Technical University Sofia (TUS) Bulgaria (http://telilab.tu-sofia.bg) for the eWALL project.
+
+
+II. Used Software
+
+none
+
+
+III. License Summary
+- Apache License 2.0
+
+

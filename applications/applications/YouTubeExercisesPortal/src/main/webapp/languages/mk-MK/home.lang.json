@@ -1,0 +1,12 @@
+{
+    "availableVideos": "",
+    "changeUser": "",
+    "connectToGoogle": "",
+    "disconnectFromGoogle": "",
+    "errorAuthorizing": "",
+    "errorAuthorizingExistAnother": "",
+    "errorRevokingAccess": "",
+    "logout": "Одјавување ",
+    "successfullyAuthorized": "",
+    "successfullyRevokedAccess": ""
+}

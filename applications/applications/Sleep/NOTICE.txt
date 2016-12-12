@@ -1,0 +1,40 @@
+eWALL Sleep application
+
+Copyright 
+
+Copyright 2013-2016 Roessingh Research and Development (RRD) Netherlands (http://www.rrd.nl/) 
+
+
+I. Included Software
+
+Software developed by Roessingh Research and Development (RRD) Netherlands (http://www.rrd.nl/) for the eWALL project.
+
+
+II. Used Software
+
+This product uses software (AngularJS) developed at
+The Google (www.google.com).
+Licensed under the MIT License.
+
+This product uses software (jQuery) developed at
+jQuery Foundation (https://jquery.org/).
+Licensed under the MIT License.
+
+
+This product uses software (Charts.js) developed by
+Nick Downie (http://www.chartjs.org/).
+Licensed under the MIT Licens.
+Copyright (c) 2013-2016 Nick Downie
+
+
+This product uses software (Bootstrap) developed at
+Tweeter (https://github.com/twbs/bootstrap)
+Licensed under the MIT License.
+
+
+III. License Summary
+- Apache License 2.0
+- MIT License
+- Copyright (c) 2013-2016 Nick Downie
+- Copyright (c) 2009-2016 Jeremy Ashkenas, DocumentCloud and Investigative
+- Copyright (c) 2011-2016 Twitter, Inc.

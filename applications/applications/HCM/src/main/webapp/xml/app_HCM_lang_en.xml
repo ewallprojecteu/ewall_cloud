@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="HistoryTxt">
+        <item>Today</item>
+        <item>Last Week</item>
+        <item>Last Month</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </ItemGroup>
+    <ItemGroup name="MeasureTxt">
+        <item>Heart rate</item>
+        <item>Saturation</item>
+        <item>Blood pressure</item>
+    </ItemGroup>
+    <ItemGroup name="MeasureValueTxt">
+        <item>BPM</item>
+        <item>%</item>
+        <item>
+            <subitem>SYS</subitem>
+            <subitem>DIA</subitem>
+        </item>
+    </ItemGroup>
+    <ItemGroup name="SystemMessages">
+        <item>Measurement</item>
+        <item>History</item>
+        <item>Start Measurement</item>
+        <item>Please try again later</item>
+    </ItemGroup>
+    <ItemGroup name="ColorLegendLabels">
+        <Label>Legend</Label>
+        <Color id="1">Low value</Color>
+        <Color id="2">Normal value</Color>
+        <Color id="3">High value</Color>
+    </ItemGroup>
+    <ItemGroup name="MeasureInfoTxt">
+        <item>
+            <subitem>The smart stethoscope is one of the devices of eWALL for monitoring the status of the heart.</subitem>
+            <subitem>It measures the heart rate as well as heart performance.</subitem>
+            <subitem>Pres the "Start" button of the Smart Stethoscope and press it against your chest, close by the heart.</subitem>
+            <subitem>Press "START MEASUREMENT" button on the screen.</subitem>
+        </item>
+        <item>
+            <subitem>The Oximeter measuring and displaying functional oxygen saturation of arterial hemoglobin (% SpO&lt;sub&gt;2&lt;/sub&gt;) and heart rate.</subitem>
+            <subitem>Insert your finger, nail side up, into the Oximeter until the fingertip touches the built-in stop guide.</subitem>
+            <subitem>When a finger is inserted, the device performs a brief startup sequence. Verify that all LEDs illuminate during the startup sequence.</subitem>
+            <subitem>Press "START MEASUREMENT" button on the screen.</subitem>
+        </item>
+        <item>
+            <subitem>The device measures your blood pressure and heart rate simply and quickly.</subitem>
+            <subitem>You can wrap the cuff either on your right or left arm. Apply the cuff so that the air tube is at the side of your elbow.</subitem>
+            <subitem>Select your user ID (A or B).</subitem>
+            <subitem>Press the O/I START button. All symbols appear on the display. The user ID symbol you selected flashes on the display.</subitem>
+            <subitem>Press "START MEASUREMENT" button on the screen.</subitem>
+        </item>
+    </ItemGroup>
+</language_data>

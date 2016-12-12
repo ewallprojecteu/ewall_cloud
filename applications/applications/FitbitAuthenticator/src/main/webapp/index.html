@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content=""> 
+<title>eWALL Fitbit Authenticator</title>
+
+<link rel="stylesheet" href="lib/misc/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/fitbit-authenticator.css">
+
+<script src="lib/js/jquery.min.js"></script>
+<script src="js/fitbit-auth-config.js"></script>
+<script src="js/fitbit-auth-screen.js"></script>
+<script src="js/fitbit-auth-helper.js"></script>
+<script src="js/fitbit-auth-app.js"></script>
+
+<script>	
+$(document).ready(function() {
+	var AppFitbitAuth = new FitbitAuthApp();
+	AppFitbitAuth.Init();
+	
+	$(window).unload(function() {
+	  AppFitbitAuth.PageUnload();
+	});
+});
+</script>
+</head>
+<body>
+<div class="container" style="display:none;">
+	<div id="navContent">
+		<div class="text-right">
+			<span>English (US)</span>
+			<span>&nbsp;</span>
+			<div id="buttonLogout" class="btn btn-default" style="display:none;">
+			<span class="glyphicon glyphicon-log-out"></span>
+				<span>&nbsp;</span>
+				<span data-translate="_logout"></span>
+			</div>
+		</div>
+	</div>
+	
+	<div id="dynamicContent">
+	</div>
+	
+	<error-modal>
+	<div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="errorModalLabel" data-translate="_error"></h4>
+				</div>
+				<div class="modal-body" id="errorModalMessage"></div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal" data-translate="_ok"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	</error-modal>
+	
+	<loading-modal>
+	<div class="modal fade" id="loadingModal" tabindex="-1" role="dialog" aria-labelledby="loadingModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title" id="loadingModalLabel" data-translate="_loading"></h3>
+				</div>
+				<div class="modal-body">
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%;">
+							<span class="sr-only">100% Complete</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</loading-modal>
+	
+	<waiting-modal>
+	<div class="modal fade" id="waitingModal" tabindex="-1" role="dialog" aria-labelledby="waitingModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title" id="waitingModalLabel" data-translate="_waiting"></h3>
+				</div>
+				<div class="modal-body">
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%;">
+							<span class="sr-only">100% Complete</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</waiting-modal>
+	
+	<success-modal>
+	<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="successModalLabel" data-translate="_success"></h4>
+				</div>
+				<div class="modal-body" id="successModalMessage"></div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal" data-translate="_ok"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	</success-modal>
+</div>
+<!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="lib/misc/bootstrap/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="lib/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+eWALL Help application
+
+Copyright 
+
+Copyright 2013-2016 Roessingh Research and Development (RRD) Netherlands (http://www.rrd.nl/) 
+
+
+I. Included Software
+
+Software developed by Roessingh Research and Development (RRD) Netherlands (http://www.rrd.nl/) for the eWALL project.
+
+
+II. Used Software
+
+This product uses software (jQuery) developed at
+jQuery Foundation (https://jquery.org/).
+Licensed under the MIT License.
+
+This product uses software (pdf.js) developed at
+Mozilla (https://github.com/mozilla/pdf.js).
+Licensed under Apache License 2.0.
+
+This product uses software (turn.js) developed by 
+Emmanuel Garcia (http://www.turnjs.com). 
+Licensed under the MIT License.
+Copyright (c) 2012, Emmanuel Garcia All rights reserved.
+
+ 
+III. License Summary
+- Apache License 2.0
+- MIT License
+- Copyright (c) 2012, Emmanuel Garcia

@@ -1,0 +1,12 @@
+{
+    "availableVideos": "Video disponibili",
+    "changeUser": "Cambia utente",
+    "connectToGoogle": "Connettiti a Google",
+    "disconnectFromGoogle": "Scollegati da Google",
+    "errorAuthorizing": "Errore durante l'autorizzazione dell'utente e il salvataggio delle credenziali di Google nel database",
+    "errorAuthorizingExistAnother": "Un utente è già connesso a Google con l'indirizzo email corrente (token di accesso concesso). Provare con un altro indirizzo email o disconnettersi da Google e riprovare.",
+    "errorRevokingAccess": "Errore durante la cancellazione delle credenziali e la revoca del token di accesso a Google",
+    "logout": "Disconnetti",
+    "successfullyAuthorized": "Utente autorizzato con successo e credenziali di Google salvate nel database",
+    "successfullyRevokedAccess": "Cancellazione delle credenziali e revoca del token di accesso a Google avvenuta con successo"
+}

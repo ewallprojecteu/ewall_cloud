@@ -1,0 +1,98 @@
+<title>eWall - Snap Puzzle</title>
+<script src="../snap-puzzle/js/snap-puzzle.js" type="text/javascript"></script>
+<script src="../snap-puzzle/js/jquery.snap-puzzle.js" type="text/javascript"></script>
+<script src="../snap-puzzle/js/jquery-ui.min.js" type="text/javascript"></script>
+<script src="../snap-puzzle/js/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+<script src="../snap-puzzle/js/translations.js" type="text/javascript"></script>
+
+<link rel="stylesheet" type="text/css" href="../snap-puzzle/css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="../snap-puzzle/css/grids-responsive-min.css">
+<link rel="stylesheet" type="text/css" href="../snap-puzzle/css/pure-min.css">
+<link rel="stylesheet" type="text/css" href="../snap-puzzle/css/snap-puzzle.css">
+<link rel='stylesheet' type="text/css" href="../snap-puzzle/fonts/oswald.css">
+<link rel='stylesheet' type="text/css" href="../snap-puzzle/fonts/passion-one.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!-- Game window wrapper -->
+<style>
+.gwd-div-17ar {
+	position: absolute;
+	left: 387px;
+	top: 138px;
+	height: 802px;
+	width: 1191px;
+	background-image: none;
+	background-color: rgb(0, 0, 0);
+}
+
+.gwd-div-zsuw {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 50px;
+	font-family: Lobster;
+	font-size: 32px;
+	text-align: center;
+	color: white;
+	background-image: linear-gradient(rgb(229, 112, 231) 0%,
+		rgb(200, 94, 199) 47%, rgb(168, 73, 163) 100%);
+	background-attachment: initial;
+	background-size: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background-position: initial;
+	background-repeat: initial;
+}
+
+.gwd-div-3lek {
+	position: absolute;
+	left: 0px;
+	top: 50px;
+	width: 100%;
+	height: 751px;
+	background-image: none;
+	background-color: #ffffff;
+}
+
+#game-body {
+	background-image: url("../snap-puzzle/img/back.jpg");
+	background-repeat: no-repeat;
+}
+
+</style>
+<img src="assets/game-frame.png" class="gwd-img-o7sj gwd-img-mmom gwd-img-j7j3" id="layer-8-gameframe">
+<div class="gwd-div-17ar" id="game-frame-filler" style="">
+	<div class="gwd-div-zsuw" id="game-header">Snap Puzzle</div>
+	<div class="gwd-div-3lek" id="game-body">
+		<div ui-view>
+			<div ng-controller="snapWelcomeCtrl">
+				<div class="h1 text-center welcome">
+					{{labels.welcome}}
+				</div>
+				<div class="h2 text-center">
+					{{labels.choose}}
+				</div>
+				<div class="pics">
+					<div class="text-center preview col-md-3" ng-repeat="item in items" style="margin-top:15px">
+		            	<a href="#" ng-click="selectPic($index)">
+		                	<img class="img-responsive" ng-class="{ 'selected-image': $index == selectedIndex }" ng-click="itemClicked($index)" http-src="{{ item }}">
+		            	</a>
+		        	</div>
+	        	</div>
+				<div class="main text-center col-md-12 levels" ng-show="selected != ''">
+					<a class="col-md-offset-3 col-md-2" href="#" ui-sref="main.snapPuzzle.game({level:'easy',image:imageName})">
+						<p class="h2">{{labels.easy}}</p>
+					</a>
+					<a class="col-md-2" href="#" ui-sref="main.snapPuzzle.game({level:'medium',image:imageName})">
+						<p class="h2">{{labels.medium}}</p>
+					</a>
+					<a class="col-md-2" href="#" ui-sref="main.snapPuzzle.game({level:'hard',image:imageName})">
+						<p class="h2">{{labels.hard}}</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

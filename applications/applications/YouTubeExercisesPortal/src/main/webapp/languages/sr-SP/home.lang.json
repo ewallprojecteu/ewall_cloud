@@ -1,0 +1,12 @@
+{
+    "availableVideos": "Dostupni video",
+    "changeUser": "Promijeni korisnika",
+    "connectToGoogle": "Poveži se na Google ({1})",
+    "disconnectFromGoogle": "Raskini vezu sa Google-om ({1})",
+    "errorAuthorizing": "Autorizacija korisnika i spremanje korisničkih podataka u bazu nije uspjelo",
+    "errorAuthorizingExistAnother": "Neki korisnik je već povezan na Google s trenutnom email adresom (odobren token pristupa). Molimo pokušajte s druge email adrese ili raskinite vezu s Google-om s povezanim korisnikom i pokušajte ponovo.",
+    "errorRevokingAccess": "Brisanje korisničkih podataka i ukidanje Google-ovog tokena pristupa nije uspjelo",
+    "logout": "Odjavljivanje",
+    "successfullyAuthorized": "Uspješno autoriziran korisnik i spremljeni korisnički podaci u bazu",
+    "successfullyRevokedAccess": "Uspješno obrisani korisnički podaci i ukinut Google-ov token pristupa"
+}

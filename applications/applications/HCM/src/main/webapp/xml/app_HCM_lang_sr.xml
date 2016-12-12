@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="HistoryTxt">
+        <item>Danas</item>
+        <item>Prošle sedmice</item>
+        <item>Prošlog mjeseca</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>Ned</item>
+        <item>Pon</item>
+        <item>Uto</item>
+        <item>Sre</item>
+        <item>Čet</item>
+        <item>Pet</item>
+        <item>Sub</item>
+    </ItemGroup>
+    <ItemGroup name="MeasureTxt">
+        <item>Srčani ritam</item>
+        <item>Zasićenje</item>
+        <item>Krvni pritisak</item>
+    </ItemGroup>
+    <ItemGroup name="MeasureValueTxt">
+        <item>OUM</item>
+        <item>%</item>
+        <item>
+            <subitem>SIS</subitem>
+            <subitem>DIA</subitem>
+        </item>
+    </ItemGroup>
+    <ItemGroup name="SystemMessages">
+        <item>Mjerenje</item>
+        <item>Istorija</item>
+        <item>Početak mjerenja</item>
+        <item>Molimo pokušajte ponovo kasnije</item>
+    </ItemGroup>
+    <ItemGroup name="ColorLegendLabels">
+        <Label>Legenda</Label>
+        <Color id="1">Niska vrijednost</Color>
+        <Color id="2">Normalna vrijednost</Color>
+        <Color id="3">Visoka vrijednost</Color>
+    </ItemGroup>
+    <ItemGroup name="MeasureInfoTxt">
+        <item>
+            <subitem>Pametni stetoskop je jedan od eWALL uređaja koji služi za nadgledanje statusa srca.</subitem>
+            <subitem>On mjeri broj otkucaja kao i ponašanje srca.</subitem>
+            <subitem>Pritisnite dugme "Start" pametnog stetoskopa i pritisnite ga na grudi, blizu srca.</subitem>
+            <subitem>Pritisnite dugme "POČETAK MJERENJA" na ekranu.</subitem>
+        </item>
+        <item>
+            <subitem>Oksimetar mjeri i prikazuje funkcionalno zasićenje kiseonikom arterijskog hemoglobina (% SpO&lt;sub&gt;2&lt;/sub&gt;) i srčani ritam.</subitem>
+            <subitem>Umetnite prst, sa noktom naviše, u oksimetar tako da vrh prsta dodiruje ugrađeni zaustavnik.</subitem>
+            <subitem>Kada se prst umetne, uređaj obavlja kratku inicijalizaciju. Provjerite da li sve LED svijetle za vrijeme inicijalizacije.</subitem>
+            <subitem>Pritisnite dugme "POČETAK MJERENJA" na ekranu.</subitem>
+        </item>
+        <item>
+            <subitem>Uređaj mjeri vaš krvni pritisak i srčani ritam jednostavno i brzo.</subitem>
+            <subitem>Možete omotati manžetnu ili na desnu ili na lijevu ruku. Postaviti manžetnu tako da je vazdušna cijev sa strane vašeg lakta.</subitem>
+            <subitem>Izabrati vaš korisnički ID (A ili B)</subitem>
+            <subitem>Pritisnuti dugme O/I START. Svi simboli se pojavljuju na displeju. Simbol za korisnički ID koji ste odabrali blinka na ekranu.</subitem>
+            <subitem>Pritisnite dugme "POČETAK MJERENJA" na ekranu.</subitem>
+        </item>
+    </ItemGroup>
+</language_data>

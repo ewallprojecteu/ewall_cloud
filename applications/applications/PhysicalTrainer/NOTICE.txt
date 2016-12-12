@@ -1,0 +1,37 @@
+eWALL Physical Trainer application
+
+Copyright 
+
+Copyright 2013-2016 Roessingh Research and Development (RRD) Netherlands (http://www.rrd.nl/) 
+
+
+I. Included Software
+
+Software developed by Roessingh Research and Development (RRD) Netherlands (http://www.rrd.nl/) for the eWALL project.
+
+
+II. Used Software
+
+This product uses software (jQuery) developed at
+jQuery Foundation (https://jquery.org/).
+Licensed under the MIT License.
+
+
+This product uses software (Moment) developed by 
+Tim Wood, Iskren Chernev, Moment.js contributors (https://github.com/moment/moment/).
+Licensed under the MIT License.
+Copyright (c) 2011-2016 Tim Wood, Iskren Chernev, Moment.js contributors
+
+
+This product uses software (Moment Timezone) developed by 
+Tim Wood (https://github.com/moment/moment-timezone/). 
+Licensed under the MIT License.
+Copyright © 2014, Tim Wood.
+
+ 
+III. License Summary
+- Apache License 2.0
+- MIT License
+- Copyright (c) 2011-2016 Tim Wood, Iskren Chernev, Moment.js contributors
+- Copyright (c) 2014, Tim Wood.
+

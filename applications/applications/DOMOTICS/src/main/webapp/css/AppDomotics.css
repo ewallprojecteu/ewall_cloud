@@ -1,0 +1,180 @@
+#AppDomotics-DataContainer{z-index:10;width:100%;height:100%;min-width:1100px;min-height:660px;top:0px;left:0px;position:absolute;background-color:transparent;/*#879DCA;*/
+-webkit-touch-callout:none;
+-webkit-user-select:none;
+-khtml-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;}
+
+#AppDomotics-DataContainer * {box-sizing:content-box;}
+
+#AppDomotics-DataContainer #AppDomotics-PartAll{z-index:10;width:1080px;height:640px;top:50%;left:50%;margin-top:-320px;margin-left:-540px;position:absolute;overflow:hidden;}
+
+#AppDomotics-PartAll #AppDomotics-NavPart{z-index:11;width:100%;height:71px;top:0px;left:0px;position:absolute;overflow:hidden;}
+#AppDomotics-PartAll #AppDomotics-ActPart{z-index:10;width:1078px;height:568px;top:70px;left:0px;position:absolute;overflow:hidden;
+background-color:#f6f6f6;border:1px solid #3D475B;
+-moz-border-radius-bottomright:10px;-webkit-border-bottom-right-radius:10px;border-bottom-right-radius:10px;
+-moz-border-radius-bottomleft:10px;-webkit-border-bottom-left-radius:10px;border-bottom-left-radius:10px;}
+
+#AppDomotics-NavPart .AppDomotics-sp{width:25%;height:100%;top:0px;left:0px;position:absolute;}
+#AppDomotics-NavPart .AppDomotics-hp{width:74%;height:100%;float:right;position:relative;}
+
+#AppDomotics-NavPart ul{height:70px;margin:0px;padding:0px;}
+#AppDomotics-NavPart ul li{list-style:none;float:left;width:228px;height:69px;padding:0;margin:0;
+background-color:#abbbdb;border-style:solid;border-width:1px 1px 0px 1px;border-color:#3D475B;
+-moz-border-radius-topright:10px;-webkit-border-top-right-radius:10px;border-top-right-radius:10px;
+-moz-border-radius-topleft:10px;-webkit-border-top-left-radius:10px;border-top-left-radius:10px;
+cursor:pointer;cursor:hand;}
+#AppDomotics-NavPart ul li img{width:64px;height:64px;float:left;margin:4px 6px 0 6px;}
+#AppDomotics-NavPart ul li p{display:table-cell;vertical-align:middle;height:69px;position:relative;overflow:hidden;
+font-size:16px;font-family:Arial,Verdana,Helvetica,sans-serif;
+color:#ffffff;text-align:left;font-weight:bold;padding:0;margin:0;text-transform:uppercase;}
+
+#AppDomotics-NavPart .AppDomotics-hp ul{float:right;}
+#AppDomotics-NavPart .AppDomotics-hp ul li{margin-left:10px;}
+
+#AppDomotics-NavPart ul li:hover, 
+#AppDomotics-NavPart ul .AppDomotics-el-sel{background-color:#f6f6f6;height:70px;}
+#AppDomotics-NavPart ul li:hover p, 
+#AppDomotics-NavPart ul .AppDomotics-el-sel p{color:#3d475b;}
+
+#AppDomotics-ActPart .AppDomotics-hp{width:1040px;height:500px;top:50%;left:50%;margin-top:-250px;margin-left:-520px;position:absolute;overflow:hidden;}
+#AppDomotics-ActPart .AppDomotics-hp .AppDomotics-hp-lp{width:130px;height:300px;top:0px;left:0px;position:absolute;overflow:hidden;}
+#AppDomotics-ActPart .AppDomotics-hp .AppDomotics-hp-vp{width:910px;height:300px;top:0px;left:130px;position:absolute;overflow:hidden;}
+#AppDomotics-ActPart .AppDomotics-hp .AppDomotics-cp{width:910px;height:100px;top:320px;left:130px;position:absolute;overflow:hidden;}
+#AppDomotics-ActPart .AppDomotics-hp .AppDomotics-hp-bp{width:910px;height:70px;top:430px;left:130px;position:absolute;overflow:hidden;}
+
+#AppDomotics-ActPart .AppDomotics-hp-lp ul{width:128px;height:210px;top:55px;left:0px;position:absolute;margin:0;padding:0;overflow:hidden;}
+#AppDomotics-ActPart .AppDomotics-hp-lp ul li{list-style:none;float:left;width:100%;height:100px;margin:0 0 5px 0;padding:0;overflow:hidden;
+background-color:#e6e6e6;-webkit-border-top-left-radius:10px;-webkit-border-bottom-left-radius:10px;
+-moz-border-radius-topleft:10px;-moz-border-radius-bottomleft:10px;
+border-top-left-radius:10px;border-bottom-left-radius:10px;}
+#AppDomotics-ActPart .AppDomotics-hp-lp ul li .AppDomotics-hp-lp-el{display:block;width:100%;height:50%;position:relative;}
+#AppDomotics-ActPart .AppDomotics-hp-lp ul li .AppDomotics-hp-lp-el img{position:absolute;margin:auto;left:0;right:0;bottom:0;}
+#AppDomotics-ActPart .AppDomotics-hp-lp ul li .AppDomotics-hp-lp-el p{display:table-cell;width:128px;height:50px;padding:0 4px;margin:0;
+vertical-align:middle;text-align:center;font-size:17px;font-family:Arial,Verdana,Helvetica,sans-serif;color:#3D475B;font-weight:normal;}
+
+#AppDomotics-ActPart .AppDomotics-hp-vp .AppDomotics-hp-vp-all{height:100%;top:0px;left:0px;position:relative;}
+#AppDomotics-ActPart .AppDomotics-hp-vp .AppDomotics-hp-vp-all .AppDomotics-RowRoom{height:205px;top:55px;left:0px;position:absolute;}
+#AppDomotics-ActPart .AppDomotics-hp-vp .AppDomotics-hp-vp-all ul.AppDomotics-RowHead{height:55px;top:0px;left:0px;position:absolute;margin:0;padding:0;overflow:hidden;}
+#AppDomotics-ActPart .AppDomotics-hp-vp .AppDomotics-hp-vp-all ul.AppDomotics-RowHead li{list-style:none;float:left;height:100%;margin:0 1px;padding:0;overflow:hidden;}
+#AppDomotics-ActPart .AppDomotics-hp-vp .AppDomotics-hp-vp-all ul.AppDomotics-RowData{height:100px;left:0px;position:absolute;margin:0px;padding:0;overflow:hidden;}
+#AppDomotics-ActPart .AppDomotics-hp-vp .AppDomotics-hp-vp-all ul.AppDomotics-RowData li{list-style:none;float:left;height:100%;margin:0px 1px;padding:0;overflow:hidden;}
+#AppDomotics-ActPart .AppDomotics-hp-vp-all ul.AppDomotics-RowData p{text-align:center;font-size:19px;font-family:Arial,Verdana,Helvetica,sans-serif;font-weight:normal;padding:0;margin:7px 0 0 0;}
+
+#AppDomotics-ActPart .AppDomotics-hp-vp-all ul.AppDomotics-RowHead h1, 
+#AppDomotics-ActPart .AppDomotics-hp-lp div h1{text-align:center;font-size:18px;font-family:Arial,Verdana,Helvetica,sans-serif;color:#3D475B;font-weight:normal;padding:0;margin:0 0 5px 0;text-transform:uppercase;}
+#AppDomotics-ActPart .AppDomotics-hp-vp-all ul.AppDomotics-RowHead h2, 
+#AppDomotics-ActPart .AppDomotics-hp-lp div h2{text-align:center;font-size:15px;font-family:Arial,Verdana,Helvetica,sans-serif;color:#3D475B;font-weight:bold;padding:0;margin:0;text-transform:uppercase;}
+
+#AppDomotics-ActPart .AppDomotics-hp-bp ul{width:920px;height:70px;top:0px;left:0px;position:absolute;margin:0;padding:0;}
+#AppDomotics-ActPart .AppDomotics-hp-bp ul li{list-style:none;float:left;width:218px;height:68px;margin:0 10px 0 0;padding:0;
+overflow:hidden;cursor:pointer;cursor:hand;background-color:#abbbdb;border:1px solid #879DCA;
+-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;}
+#AppDomotics-ActPart .AppDomotics-hp-bp ul li img{width:48px;height:48px;float:left;padding:0px;margin:10px;}
+#AppDomotics-ActPart .AppDomotics-hp-bp ul li p{display:table-cell;vertical-align:middle;height:68px;position:relative;overflow:hidden;
+font-size:15px;font-family:Arial,Verdana,Helvetica,sans-serif;color:#ffffff;text-align:left;font-weight:bold;padding:0;margin:0;text-transform:uppercase;}
+#AppDomotics-ActPart .AppDomotics-hp-bp ul li:hover, 
+#AppDomotics-ActPart .AppDomotics-hp-bp ul .AppDomotics-hp-bp-sel{background-color:#6c7ea2;border:1px solid #3D475B;}
+
+#AppDomotics-ActPart .AppDomotics-sp{width:1040px;height:526px;top:50%;left:50%;margin-top:-263px;margin-left:-520px;position:absolute;overflow:hidden;}
+#AppDomotics-ActPart .AppDomotics-sp .AppDomotics-sp-data{width:100%;height:420px;top:0px;left:0px;position:absolute;overflow:hidden;}
+#AppDomotics-ActPart .AppDomotics-sp .AppDomotics-cp{width:1012px;height:76px;top:450px;left:0px;padding:0 14px;position:absolute;overflow:hidden;}
+
+#AppDomotics-ActPart .AppDomotics-sp-data ul{width:100%;height:420px;top:0px;left:50%;margin:0 0 0 -50%;padding:0;position:absolute;overflow:hidden;}
+#AppDomotics-ActPart .AppDomotics-sp-data ul li{list-style:none;float:left;width:250px;height:418px;margin:0 4px;padding:0;overflow:hidden;
+background-color:#ffffff;border:1px solid #3d475b;
+-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;}
+#AppDomotics-ActPart .AppDomotics-sp-data ul li .AppDomotics-sp-head{width:248px;height:68px;top:1px;left:1px;position:relative;overflow:hidden;
+background-color:#6c7ea2;-webkit-border-top-right-radius:10px;-webkit-border-top-left-radius:10px;
+-moz-border-radius-topright:10px;-moz-border-radius-topleft:10px;
+border-top-right-radius:10px;border-top-left-radius:10px;}
+#AppDomotics-ActPart .AppDomotics-sp-data ul li .AppDomotics-sp-head img{width:48px;height:48px;float:left;margin:10px 8px;}
+#AppDomotics-ActPart .AppDomotics-sp-data ul li .AppDomotics-sp-head p{display:table-cell;height:68px;position:relative;overflow:hidden;
+text-align:left;vertical-align:middle;font-size:18px;font-family:Arial,Verdana,Helvetica,sans-serif;color:#ffffff;font-weight:bold;text-transform:uppercase;
+padding:0;margin:0;}
+
+#AppDomotics-ActPart .AppDomotics-sp-data ul li .AppDomotics-actuator{width:248px;height:134px;top:0px;left:1px;margin-top:5px;position:relative;}
+#AppDomotics-ActPart .AppDomotics-actuator .AppDomotics-actuator-cs{width:240px;height:50px;top:5px;left:50%;margin-left:-120px;position:absolute;overflow:hidden;}
+#AppDomotics-ActPart .AppDomotics-actuator .AppDomotics-actuator-ci{width:240px;height:70px;top:59px;left:50%;margin-left:-120px;position:absolute;overflow:hidden;}
+
+#AppDomotics-ActPart .AppDomotics-actuator .AppDomotics-ForLoad{width:100%;height:100%;top:0px;left:0px;position:absolute;
+background-color:rgba(230, 230, 230, 0.6);-webkit-border-bottom-right-radius:10px;-webkit-border-bottom-left-radius:10px;
+-moz-border-radius-bottomright:10px;-moz-border-radius-bottomleft:10px;
+border-bottom-right-radius:10px;border-bottom-left-radius:10px;}
+#AppDomotics-ActPart .AppDomotics-actuator .AppDomotics-ForLoad div{width:243px;height:100%;}
+
+#AppDomotics-ActPart .AppDomotics-actuator-cs img{float:left;width:40px;height:40px;margin:5px 0 5px 5px;}
+#AppDomotics-ActPart .AppDomotics-actuator-cs p{display:table-cell;width:140px;height:50px;overflow:hidden;
+text-align:center;vertical-align:middle;font-size:18px;font-family:Arial,Verdana,Helvetica,sans-serif;color:#3d475b;font-weight:normal;
+padding:0;margin:0;}
+#AppDomotics-ActPart .AppDomotics-actuator-cs .AppDomotics-actuator-OnOff{width:50px;height:50px;top:0px;left:190px;position:absolute;
+cursor:pointer;cursor:hand;}
+#AppDomotics-ActPart .AppDomotics-actuator-cs .AppDomotics-actuator-On{width:50px;height:50px;
+background:url(../images/AppDomotics_icon_turn-on-off.png) 0 0;}
+#AppDomotics-ActPart .AppDomotics-actuator-cs .AppDomotics-actuator-Off{width:50px;height:50px;
+background:url(../images/AppDomotics_icon_turn-on-off.png) 0 -50px;}
+
+#AppDomotics-ActPart .AppDomotics-actuator-ci .AppDomotics-actuator-bg-base{width:240px;height:20px;top:15px;left:0px;position:absolute;
+background:#dddddd;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;
+-webkit-box-shadow: inset 1px 1px 6px 0px #909090;
+-moz-box-shadow: inset 1px 1px 6px 0px #909090;
+box-shadow: inset 1px 1px 6px 0px #909090;}
+#AppDomotics-ActPart .AppDomotics-actuator-ci .AppDomotics-actuator-bg-fill{width:239px;height:10px;top:20px;left:0px;position:absolute;
+background: #879DCA;
+background: -webkit-linear-gradient(left, rgba(137, 157, 202, 1), rgba(137, 157, 202, 0.4));
+background: -o-linear-gradient(left, rgba(137, 157, 202, 1), rgba(137, 157, 202, 0.4));
+background: -moz-linear-gradient(left, rgba(137, 157, 202, 1), rgba(137, 157, 202, 0.4));
+background: linear-gradient(to right, rgba(137, 157, 202, 1), rgba(137, 157, 202, 0.4));
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF879DCA', endColorstr='#50879DCA', GradientType=1);
+-webkit-box-shadow: inset 1px 1px 6px 0px #909090;
+-moz-box-shadow: inset 1px 1px 6px 0px #909090;
+box-shadow: inset 1px 1px 6px 0px #909090;
+}
+#AppDomotics-ActPart .AppDomotics-actuator-ci .AppDomotics-actuator-vp{width:240px;height:50px;top:0px;left:0px;position:absolute;overflow:hidden;}
+#AppDomotics-ActPart .AppDomotics-actuator-ci .AppDomotics-actuator-container{width:430px;height:50px;top:0px;left:0px;position:absolute;}
+#AppDomotics-ActPart .AppDomotics-actuator-ci .AppDomotics-actuator-slider{width:240px;height:50px;}
+#AppDomotics-ActPart .AppDomotics-actuator-ci .AppDomotics-actuator-handle-base{width:215px;height:8px;top:50%;left:25px;margin-top:-4px;position:absolute;background-color:#c4d0e6;}
+#AppDomotics-ActPart .AppDomotics-actuator-ci .AppDomotics-actuator-handle{width:50px;height:50px;top:0px;left:0px;position:absolute;cursor:move;
+background:url(../images/AppDomotics_icon_slide.png) no-repeat center center;}
+
+#AppDomotics-ActPart .AppDomotics-sp-data ul li .AppDomotics-sp-data-one{width:250px;height:100px;top:0px;left:0px;margin-top:5px;position:relative;overflow:hidden;}
+#AppDomotics-ActPart .AppDomotics-sp-data ul li .AppDomotics-sp-data-label{width:128px;height:100px;top:0px;left:5px;position:absolute;overflow:hidden;
+background-color:#e6e6e6;-webkit-border-top-left-radius:10px;-webkit-border-bottom-left-radius:10px;
+-moz-border-radius-topleft:10px;-moz-border-radius-bottomleft:10px;
+border-top-left-radius:10px;border-bottom-left-radius:10px;}
+#AppDomotics-ActPart .AppDomotics-sp-data ul li .AppDomotics-sp-data-label .AppDomotics-sp-data-label-el{display:block;width:100%;height:50%;position:relative;}
+#AppDomotics-ActPart .AppDomotics-sp-data ul li .AppDomotics-sp-data-label-el img{position:absolute;margin:auto;left:0;right:0;bottom:0;}
+#AppDomotics-ActPart .AppDomotics-sp-data ul li .AppDomotics-sp-data-label-el p{display:table-cell;width:128px;height:50px;padding:0 4px;margin:0;
+vertical-align:middle;text-align:center;font-size:17px;font-family:Arial,Verdana,Helvetica,sans-serif;color:#3D475B;font-weight:normal;}
+#AppDomotics-ActPart .AppDomotics-sp-data ul li .AppDomotics-sp-data-value{width:110px;height:100px;top:0px;left:135px;position:absolute;overflow:hidden;
+-webkit-border-top-right-radius:10px;-webkit-border-bottom-right-radius:10px;
+-moz-border-radius-topright:10px;-moz-border-radius-bottomright:10px;
+border-top-right-radius:10px;border-bottom-right-radius:10px;}
+#AppDomotics-ActPart .AppDomotics-sp-data ul li .AppDomotics-sp-data-value p{width:110px;height:100px;display:table-cell;
+vertical-align:middle;text-align:center;font-size:19px;font-family:Arial,Verdana,Helvetica,sans-serif;font-weight:normal;padding:0 4px;margin:0;}
+
+#AppDomotics-ActPart .AppDomotics-cp ul{width:100%;height:30px;position:relative;margin:0;padding:0;overflow:hidden;}
+#AppDomotics-ActPart .AppDomotics-cp ul li{list-style:none;float:left;height:100%;margin:0 15px 0 0;padding:0;}
+#AppDomotics-ActPart .AppDomotics-cp ul li div{height:30px;position:relative;}
+#AppDomotics-ActPart .AppDomotics-cp ul li span{display:table-cell;width:60px;height:30px;}
+#AppDomotics-ActPart .AppDomotics-cp ul li p, 
+#AppDomotics-ActPart .AppDomotics-cp label{font-size:16px;font-family:Verdana,Arial,Helvetica,sans-serif;color:#3D475B;font-weight:normal;}
+#AppDomotics-ActPart .AppDomotics-cp ul li p{display:table-cell;height:30px;position:relative;
+text-align:center;vertical-align:middle;margin:0;padding:0 10px;}
+#AppDomotics-ActPart .AppDomotics-cp label{display:block;height:26px;margin-bottom:10px;padding-top:7px;
+border-top:1px dashed #999999;border-bottom:1px dashed #999999;}
+
+#AppDomotics-ActPart .AppDomotics-actuator .AppDomotics-ForLoad .AppDomotics-loading{background:url(../images/AppDomotics_loading_1.gif) no-repeat center center;}
+#AppDomotics-DataContainer.AppDomotics-loading{background:url(../images/AppDomotics_loading_1.gif) no-repeat center center;}
+#AppDomotics-ActPart.AppDomotics-loading{background: #f6f6f6 url(../images/AppDomotics_loading.gif) no-repeat center center;}
+
+#AppDomotics-DataContainer .AppDomotics-overlay{z-index:15;width:100%;height:100%;top:0px;left:0px;position:absolute;}
+
+#AppDomotics-ActPart .AppDomotics-hp .AppDomotics-hp-vp .iScrollHorizontalScrollbar{z-index:20;height:40px;top:260px;left:0px;right:0px;position:absolute;overflow:hidden;}
+#AppDomotics-ActPart .AppDomotics-hp .AppDomotics-hp-vp .iScrollIndicator{width:325px;height:30px;top:5px;position:absolute;background-color:#cccccc;
+-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;
+-webkit-box-shadow: inset 1px 1px 6px 0px #909090;
+-moz-box-shadow: inset 1px 1px 6px 0px #909090;
+box-shadow: inset 1px 1px 6px 0px #909090;}

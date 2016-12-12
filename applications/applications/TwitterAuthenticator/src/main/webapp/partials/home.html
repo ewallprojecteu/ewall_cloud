@@ -1,0 +1,16 @@
+<section>
+	<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+		<h2 class="form-signin-heading">Twitter authenticator</h2>
+
+		<select ng-change="checkIfCredentialsExist()" ng-model="user" ng-options="user.username for user in users" class="form-control">
+			<option value="" ng-show="!user">--- Select one user for authorizing with Twitter ---</option>
+		</select>
+		<p ng-show="credentialsExist" class="navbar-text navbar-left text-muted">Credentials already exist</p>
+		<br />
+		
+		<button ng-click="authorizeUser()" class="btn btn-success btn-block"
+			ng-disabled="!user">Authorize user with Twitter</button>
+		<br />
+		<button ng-click="logoutUser()" class="btn btn-danger center-block">Logout</button>
+	</div>
+</section>

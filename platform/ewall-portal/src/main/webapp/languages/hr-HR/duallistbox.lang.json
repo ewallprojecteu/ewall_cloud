@@ -1,0 +1,11 @@
+{
+    "filterPlaceHolder": "Filter",
+    "filterTextClear": "prikaži sve",
+    "infoText": "Prikazuje sve [0]",
+    "infoTextEmpty": "Prazna lista",
+    "infoTextFiltered": "Filtrirano",
+    "moveAllLabel": "Premjesti sve",
+    "moveSelectedLabel": "Premjesti izabrane",
+    "removeAllLabel": "Ukloni sve",
+    "removeSelectedLabel": "Ukloni izabrane"
+}

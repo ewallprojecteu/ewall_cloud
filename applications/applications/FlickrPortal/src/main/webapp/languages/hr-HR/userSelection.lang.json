@@ -1,0 +1,10 @@
+{
+    "authUser": "Autoriziraj korisnika na mreži Flickr",
+    "credentialsExist": "Flickr korisnički podaci postoje",
+    "credentialsMissing": "Nedostaju Flickr korisnički podaci",
+    "failedAuthorizing": "Pogreška za vrijeme autoriziranja korisnika i pohrane Flickr korisničkih podataka",
+    "openPortal": "Otvori Flickr Portal",
+    "selectUserHint": "Odaberite jednog korisnika za korištenje Flickr portala",
+    "successfullyAuthorized": "Uspješno autoriziranje korisnika i pohranjeni Flickr korisnički podaci",
+    "title": "Odabir korisnika za Flickr Portal"
+}

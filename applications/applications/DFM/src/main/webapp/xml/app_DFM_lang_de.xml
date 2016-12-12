@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="LongMonths">
+        <item>Januar</item>
+        <item>Februar</item>
+        <item>März</item>
+        <item>April</item>
+        <item>Mai</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>August</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Dezember</item>
+    </ItemGroup>
+    <ItemGroup name="ShortMonths">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mär</item>
+        <item>Apr</item>
+        <item>Mai</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Okt</item>
+        <item>Nov</item>
+        <item>Dez</item>
+    </ItemGroup>
+    <ItemGroup name="LongDays">
+        <item>Sonntag</item>
+        <item>Montag</item>
+        <item>Dienstag</item>
+        <item>Mittwoch</item>
+        <item>Donnerstag</item>
+        <item>Freitag</item>
+        <item>Samstag</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>So</item>
+        <item>Mo</item>
+        <item>Di</item>
+        <item>Mi</item>
+        <item>Do</item>
+        <item>Fr</item>
+        <item>Sa</item>
+    </ItemGroup>
+    <ItemGroup name="AppLabels">
+        <item>Dauer</item>
+        <item>Std.</item>
+        <item>Stunde</item>
+        <item>Stunden</item>
+        <item>Minute</item>
+        <item>Minuten</item>
+        <item>Sekunde</item>
+        <item>Sekunden</item>
+        <item>Keine Information verfügbar</item>
+    </ItemGroup>
+    <ItemGroup name="ExtDataMessage">
+        <item name="sleeping">
+            <subitem>Schlafen</subitem>
+            <subitem>Unser Bettsensor fand Sie im Bett</subitem>
+        </item>
+        <item name="showering">
+            <subitem>Duschen</subitem>
+            <subitem>Unser Feuchtigkeitssensor erfasste Sie unter der Dusche im Badezimmer</subitem>
+        </item>
+        <item name="entertaining">
+            <subitem>Rasten &amp; Unterhalten</subitem>
+            <subitem>Unser Positionssensor erfasste Sie im Wohnzimmer</subitem>
+        </item>
+        <item name="cooking">
+            <subitem>Kochen und essen</subitem>
+            <subitem>Unser Positionssensor fand Sie in der Küche</subitem>
+        </item>
+        <item name="sanitary_visits">
+            <subitem>Hygiene Aktivitäten</subitem>
+            <subitem>
+            </subitem>
+        </item>
+        <item name="getting_out">
+            <subitem>Außer Haus gehen</subitem>
+            <subitem>Wir haben erkannt, dass Sie das Haus verlassen</subitem>
+        </item>
+        <item name="houseworks">
+            <subitem>Hausarbeit</subitem>
+            <subitem>eWALL hat Sie bei Hausarbeitstätigkeiten erkannt</subitem>
+        </item>
+        <item name="visits">
+            <subitem>Hausbesuchen</subitem>
+            <subitem>
+            </subitem>
+        </item>
+    </ItemGroup>
+</language_data>

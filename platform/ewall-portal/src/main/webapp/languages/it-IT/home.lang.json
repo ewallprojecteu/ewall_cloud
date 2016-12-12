@@ -1,0 +1,10 @@
+{
+    "applications": "Applicazioni",
+    "devices": "Device",
+    "home": "Home",
+    "logout": "Disconnetti ({username})",
+    "regions": "Regioni",
+    "sensingEnvs": "Ambienti di rilevamento",
+    "services": "Servizi",
+    "users": "Utenti"
+}

@@ -1,0 +1,10 @@
+{
+    "applications": "Applikationer",
+    "devices": "Device",
+    "home": "Hjem",
+    "logout": "Log ud ({username})",
+    "regions": "Regioner",
+    "sensingEnvs": "Registrerer omgivelserne",
+    "services": "Service",
+    "users": "Brugere"
+}

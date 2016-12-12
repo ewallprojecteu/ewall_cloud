@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="HistoryTxt">
+        <item>I Dag</item>
+        <item>Sidste uge</item>
+        <item>Sidste måned</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>Søn</item>
+        <item>Man</item>
+        <item>Tirs</item>
+        <item>Ons</item>
+        <item>Tors</item>
+        <item>Fre</item>
+        <item>Lør</item>
+    </ItemGroup>
+    <ItemGroup name="MeasureTxt">
+        <item>Hjertefrekvens</item>
+        <item>Iltmætning</item>
+        <item>Blodtryk</item>
+    </ItemGroup>
+    <ItemGroup name="MeasureValueTxt">
+        <item>BPM</item>
+        <item>%</item>
+        <item>
+            <subitem>SYS</subitem>
+            <subitem>DIA</subitem>
+        </item>
+    </ItemGroup>
+    <ItemGroup name="SystemMessages">
+        <item>Måling</item>
+        <item>Historie</item>
+        <item>Start målingen</item>
+        <item>Prøv igen</item>
+    </ItemGroup>
+    <ItemGroup name="ColorLegendLabels">
+        <Label>Forklaring</Label>
+        <Color id="1">Lav værdi</Color>
+        <Color id="2">Normal værdi</Color>
+        <Color id="3">Høj værdi</Color>
+    </ItemGroup>
+    <ItemGroup name="MeasureInfoTxt">
+        <item>
+            <subitem>Stetoskopen er en del af eWALL, som måler hjertets tilstand</subitem>
+            <subitem>Den/det måler hjertefrekvensen, det vil sige hjertets ydeevne</subitem>
+            <subitem>Tryk på 'Start-knappen' på stetoskopen og placer det så nært dit hjerte som muligt</subitem>
+            <subitem>Tryk på knappen "START MÅLINGEN"</subitem>
+        </item>
+        <item>
+            <subitem><![CDATA[<b>Foretag en måling:</b> For at foretage en måling af hvor godt dit blod er iltet, skal du bruge en <b>saturationsmåler</b> (se billede ovenfor). Saturationsmåleren virker ved at gennemlyse din finger med infrarødt lys.]]></subitem>
+            <subitem><![CDATA[<b>Korrekt brug af udstyr:</b> Før du går i gang, skal du tjekke, at du ikke har neglelak eller en kunstig negl på fingeren. Desuden kan du vurdere om du har kolde fingre ved at holde dem på din hals – mærk efter, om de er koldere end din hals. Bruger du ilt, skal du også måle iltmætningen med ilten på.]]></subitem>
+            <subitem>Saturationsmåleren påsættes din pegefinger. Læg hånden på et bord og hold den i ro, mens du måler. På iltmåleren vises efter kort tid din iltmætning og din puls. Din iltmætning er det øverste tal. Din puls er det nederste tal (tallet tættest på det blinkende lys). Iltmåleren sender tallet for iltmætning til eWALL. Tag herefter iltmåleren af fingeren – den slukker selv kort tid efter.</subitem>
+            <subitem><![CDATA[<b>Betydning af blink:</b> <b>Grønt blink</b> = Tilfredsstillende signal. <b>Gult blink</b> = dårligt pulssignal. Hold hånden i ro mens du måler. <b>Rødt blink</b> = utilfredsstillende pulssignal.]]></subitem>
+            <subitem><![CDATA[<b>Manglende målinger:</b> Ved kolde fingre eller dårlig blodforsyning kan saturationsmåleren have svært ved at måle. Prøv en anden finger eller varm din finger eller hele hånden op i varmt vand, eller ved at placere hånden i armhulen.]]></subitem>
+            <subitem>Hvis der ikke fremkommer målinger på din saturationsmåler efter, at den har siddet på din finger i ca. 30 sekunder, kan det være fordi der ikke er mere strøm på saturationsmåleren.  Skift batterier ved: Skub overdel og underdel mod hinanden. Skil herefter de to dele ad. Fjern de brugte batterier. Indsæt herefter 2 stk. AAA batterier (husk at vende batterierne modsat hinanden).</subitem>
+            <subitem>Tryk på knappen "START MÅLINGEN"</subitem>
+        </item>
+        <item>
+            <subitem><![CDATA[<b>Foretag en måling:</b> For at fortage en måling af dit blodtryk, skal du bruge et <b>blodtryksapparat</b>. Blodtryksapparatet består af 3 dele: En manchet, en slange og et apparat. Det er vigtigt, at de tre dele er koblet sammen, ellers kan du ikke gennemføre en blodtryksmåling.]]></subitem>
+            <subitem><![CDATA[Placer blodtryksapparatet på et bord foran dig, og sæt dig afslappet på en stol med armen hvilende i dit skød. Placer herefter manchetten på din venstre overarm. Den skal ikke være stramt klistret rundt om din arm, men sådan, at du med lethed kan sætte en finger ind under manchetten. Du kan måle oven på et tyndt ærme. Sid herefter i 5 minutter – herved får du så korrekte målinger af dit blodtryk. Herefter kan du nu trykke med din højre pegefinger på knappen <b>Start</b>. Manchetten vil nu blive pustet op. Når manchetten er så fyldt som den skal være for at kunne måle dit blodtryk, stopper den selv med at puste luft i manchetten. Afbryd ikke, men vent. Langsomt vil dit blodtryksapparat begynde at blive løsere. Det kan svinge hvor lang tid det tager at måle dit blodtryk.]]></subitem>
+            <subitem><![CDATA[<b>Afbryd målingen:</b> Ønsker du at <b>afbryde</b> tryk på <b>start</b>.]]></subitem>
+            <subitem><![CDATA[<b>Manglende målinger:</b> Hvis blodtryksapparatet ikke begynder at puste luft i manchetten og der ikke fremkommer tal på skærmen, kan det skyldes, at der ikke er mere strøm på batterierne. Skift da batterier.]]></subitem>
+            <subitem><![CDATA[<b>Skift af batteri:</b> Læg blodtryksapparatet med bunden op. Tag låget til batterirummet af ved at skubbe opad på låget. Fjern de brugte batterier. Indsæt 4 stk. AAA batterier – batteriernes retning er vist i bunden af apparatet. Sæt herefter låg på ved at skubbe de små ”tænder” ned i hullerne. Tjek at låget sidder godt fast, før du vender blodtryksapparatet igen.]]></subitem>
+            <subitem><![CDATA[<b>Skift manchet:</b> Tjek at manchetten sidder godt fast. Hvis du efter aftale får tilsendt en anden manchet, udskiftes denne således: monter slangen på koblingen. Den skal slutte tæt. Sæt koblingen i blodtryksapparatet.]]></subitem>
+            <subitem>Tryk på knappen "START MÅLINGEN"</subitem>
+        </item>
+    </ItemGroup>
+</language_data>

@@ -1,0 +1,99 @@
+#AppDFM_AppDataContainer{z-index:10;width:100%;height:100%;min-width:1254px;min-height:874px;top:0px;left:0px;position:absolute;background-color:#ffffff;
+-webkit-touch-callout:none;
+-webkit-user-select:none;
+-khtml-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;}
+
+#AppDFM_AppDataContainer * {box-sizing:content-box;}
+
+#AppDFM_AppDataContainer .AppDFM-BaseTop{width:100%;height:50%;top:0px;left:0px;position:absolute;background-color:#e6e6e6;}
+
+#AppDFM_AppDataContainer .AppDFM-Parts{z-index:10;width:100%;height:874px;top:50%;left:0px;margin-top:-437px;position:absolute;overflow:hidden}
+#AppDFM_AppDataContainer .AppDFM-Parts .AppDFM-Container{height:100%;top:0px;left:50%;position:absolute;overflow:hidden;}
+#AppDFM_AppDataContainer .AppDFM-Parts #AppDFM-ExtData{width:100%;height:688px;top:0px;left:0px;position:relative;overflow:hidden;background-color:#e6e6e6;}
+#AppDFM_AppDataContainer .AppDFM-Parts #AppDFM-Slider{width:100%;height:186px;top:0px;left:0px;position:relative;overflow:hidden;background-color:#ffffff;}
+
+#AppDFM-ExtData .AppDFM-Container{width:1134px;margin-left:-567px;}
+#AppDFM-Slider .AppDFM-Container{width:1254px;margin-left:-627px;}
+
+#AppDFM-ExtData .AppDFM-TlArrow{width:100%;height:40px;left:0px;position:absolute;cursor:pointer;cursor:hand;}
+#AppDFM-ExtData .AppDFM-TlArrow.AppDFM-TlUp{top:10px;background:url(../images/AppDFM_ext_data_arrow_up.png) no-repeat center center;}
+#AppDFM-ExtData .AppDFM-TlArrow.AppDFM-TlDown{top:638px;background:url(../images/AppDFM_ext_data_arrow_down.png) no-repeat center center;}
+#AppDFM-ExtData .AppDFM-TlUp:hover{background:url(../images/AppDFM_ext_data_arrow_up_over.png) no-repeat center center;}
+#AppDFM-ExtData .AppDFM-TlDown:hover{background:url(../images/AppDFM_ext_data_arrow_down_over.png) no-repeat center center;}
+#AppDFM-ExtData .AppDFM-TlVisPart{width:100%;height:588px;top:50px;left:0px;position:absolute;overflow:hidden;}
+
+#AppDFM-ExtData .AppDFM-TlInfo{width:324px;height:588px;top:50px;left:810px;position:absolute;overflow:hidden;}
+#AppDFM-ExtData .AppDFM-TlInfo label{display:table-cell;width:324px;height:84px;position:relative;
+font-size:18px;font-family:Arial,Verdana,Helvetica,sans-serif;color:#191919;
+text-align:center;vertical-align:middle;line-height:1.5;text-transform:uppercase;}
+
+#AppDFM-ExtData .AppDFM-TlVisPart .AppDFM-NoData{width:100%;height:100%;top:0px;left:0px;position:absolute;}
+#AppDFM-ExtData .AppDFM-TlVisPart .AppDFM-NoData p{display:block;font-size:18px;font-family:Arial,Verdana,Helvetica,sans-serif;
+color:#191919;text-align:center;width:100%;height:22px;padding:0;text-transform:uppercase;
+top:50%;left:0px;margin:-11px 0 0 0;position:absolute;}
+
+#AppDFM-ExtData .AppDFM-TlVisPart ul{position:relative;margin:0;padding:0;background:url(../images/AppDFM_ext_data_ul.gif) repeat-y top center;}
+#AppDFM-ExtData .AppDFM-TlVisPart ul li{list-style:none;float:left;width:100%;height:84px;margin:0;padding:0;overflow:hidden;}
+#AppDFM-ExtData .AppDFM-TlVisPart ul li .AppDFM-TlEl{width:100%;height:100%;top:0px;left:0px;position:relative;overflow:hidden;}
+#AppDFM-ExtData .AppDFM-TlVisPart ul li .AppDFM-TlEl .AppDFM-Tl-line{width:567px;height:3px;top:50%;left:0px;position:absolute;}
+#AppDFM-ExtData .AppDFM-TlVisPart ul li .AppDFM-TlEl .AppDFM-Tl-badge{z-index:11;width:70px;height:70px;top:50%;left:50%;margin-top:-35px;margin-left:-35px;position:absolute;
+background-color:#ffffff;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;}
+#AppDFM-ExtData .AppDFM-TlVisPart ul li .AppDFM-TlEl .AppDFM-Tl-icon{width:64px;height:64px;top:3px;left:50%;margin-left:-32px;
+position:absolute;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;background-size:42px 42px;background-repeat:no-repeat;background-position:center center;}
+#AppDFM-ExtData .AppDFM-TlVisPart ul li .AppDFM-TlEl .AppDFM-Tl-panel{width:510px;height:70px;top:50%;left:0px;margin-top:-37px;position:absolute;
+background-color:#ffffff;border:2px solid #d4d4d4;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;
+-moz-box-shadow:0 1px 6px rgba(0, 0, 0, 0.175);-webkit-box-shadow:0 1px 6px rgba(0, 0, 0, 0.175);box-shadow:0 1px 6px rgba(0, 0, 0, 0.175);}
+
+#AppDFM-ExtData .AppDFM-TlVisPart ul li .AppDFM-TlEl .AppDFM-Tl-panel div{display:table-cell;width:480px;height:70px;position:relative;padding-left:30px;
+text-align:left;vertical-align:middle;font-size:24px;font-family:Calibri,Arial,Verdana,Helvetica,sans-serif;color:#7f7f7f;white-space:nowrap;}
+#AppDFM-ExtData .AppDFM-TlVisPart ul li .AppDFM-TlEl .AppDFM-Tl-panel div small{font-size:20px;color:#000000;}
+
+#AppDFM-ExtData .AppDFM-TlVisPart ul li .AppDFM-TlEl .AppDFM-Tl-time{height:70px;top:50%;left:614px;margin-top:-35px;position:absolute;}
+#AppDFM-ExtData .AppDFM-TlVisPart ul li .AppDFM-TlEl .AppDFM-Tl-time div{display:table-cell;height:70px;position:relative;
+text-align:left;vertical-align:middle;font-size:18px;font-family:Arial,Verdana,Helvetica,sans-serif;color:#191919;}
+
+#AppDFM-ExtData .AppDFM-TlVisPart ul li .AppDFM-TlEl .AppDFM-Tl-ArtStart{z-index:10;width:10px;height:74px;top:0px;left:50%;margin-left:-5px;position:absolute;background-color:#e6e6e6;}
+#AppDFM-ExtData .AppDFM-TlVisPart ul li .AppDFM-TlEl .AppDFM-Tl-ArtEnd{z-index:10;width:10px;height:100px;top:10px;left:50%;margin-left:-5px;position:absolute;background-color:#e6e6e6;}
+
+#AppDFM-Slider .AppDFM-SlBorder{width:100%;height:156px;top:0px;left:0px;position:absolute;
+border-top:2px solid #d9d9d9;border-bottom:2px solid #d9d9d9;}
+
+#AppDFM-Slider .AppDFM-SlArrow{width:50px;height:160px;top:0px;position:absolute;cursor:pointer;cursor:hand;}
+#AppDFM-Slider .AppDFM-SlArrow.AppDFM-SlLeft{left:0px;background:url(../images/AppDFM_slider_arrow_left.png) no-repeat center center;}
+#AppDFM-Slider .AppDFM-SlArrow.AppDFM-SlRight{left:1204px;background:url(../images/AppDFM_slider_arrow_right.png) no-repeat center center;}
+#AppDFM-Slider .AppDFM-SlLeft:hover{background:url(../images/AppDFM_slider_arrow_left_over.png) no-repeat center center;}
+#AppDFM-Slider .AppDFM-SlRight:hover{background:url(../images/AppDFM_slider_arrow_right_over.png) no-repeat center center;}
+#AppDFM-Slider .AppDFM-SlVisPart{width:1134px;height:100%;top:0px;left:60px;position:absolute;overflow:hidden;}
+
+#AppDFM-Slider .AppDFM-SlVisPart ul{height:100%;position:relative;margin:0;padding:0;}
+#AppDFM-Slider .AppDFM-SlVisPart ul li{list-style:none;float:left;width:156px;height:100%;margin:0 3px;padding:0;cursor:pointer;cursor:hand;}
+#AppDFM-Slider .AppDFM-SlVisPart ul li .AppDFM-SlEl{width:100%;height:100%;top:0px;left:0px;position:relative;overflow:hidden;}
+#AppDFM-Slider .AppDFM-SlVisPart ul li .AppDFM-SlEl .AppDFM-box{width:100%;height:160px;top:0px;left:0px;position:absolute;
+-webkit-box-shadow: inset 0px 0px 3px 2px rgba(217,217,217,1);
+-moz-box-shadow: inset 0px 0px 3px 2px rgba(217,217,217,1);
+box-shadow: inset 0px 0px 3px 2px rgba(217,217,217,1);}
+#AppDFM-Slider .AppDFM-SlVisPart ul li .AppDFM-SlEl .AppDFM-mood{width:100%;height:70px;top:70px;left:0px;position:absolute;text-align:center;}
+#AppDFM-Slider .AppDFM-SlVisPart ul li .AppDFM-SlEl label{color:#7F7F7F;font-family:Arial,Verdana,Helvetica,sans-serif;font-weight:normal;text-transform:uppercase;cursor:pointer;cursor:hand;}
+#AppDFM-Slider .AppDFM-SlVisPart ul li .AppDFM-SlEl .AppDFM-el1{width:100%;height:25px;top:15px;left:0px;position:absolute;margin:0;padding:0;text-align:center;}
+#AppDFM-Slider .AppDFM-SlVisPart ul li .AppDFM-SlEl .AppDFM-el2{width:100%;height:20px;top:162px;left:0px;position:absolute;margin:0;padding:0;text-align:center;}
+#AppDFM-Slider .AppDFM-SlVisPart ul li .AppDFM-SlEl .AppDFM-el1 label{font-size:18px;}
+#AppDFM-Slider .AppDFM-SlVisPart ul li .AppDFM-SlEl .AppDFM-el2 label{font-size:16px;}
+
+#AppDFM-Slider .AppDFM-SlVisPart ul li:hover .AppDFM-SlEl .AppDFM-el1 label, 
+#AppDFM-Slider .AppDFM-SlVisPart ul li:hover .AppDFM-SlEl .AppDFM-el2 label, 
+#AppDFM-Slider .AppDFM-SlVisPart ul li.AppDFM-el-sel .AppDFM-el1 label, 
+#AppDFM-Slider .AppDFM-SlVisPart ul li.AppDFM-el-sel .AppDFM-el2 label{color:#191919;}
+#AppDFM-Slider .AppDFM-SlVisPart ul li:hover .AppDFM-SlEl .AppDFM-box, 
+#AppDFM-Slider .AppDFM-SlVisPart ul li.AppDFM-el-sel .AppDFM-box {
+-webkit-box-shadow: inset 0px 0px 0px 3px rgba(217,84,79,1);
+-moz-box-shadow: inset 0px 0px 0px 3px rgba(217,84,79,1);
+box-shadow: inset 0px 0px 0px 3px rgba(217,84,79,1);}
+
+#AppDFM_AppDataContainer.AppDFM-loading, 
+#AppDFM-ExtData .AppDFM-TlVisPart.AppDFM-loading{background:#e6e6e6 url(../images/AppDFM_loading.gif) no-repeat center center;}
+
+#AppDFM_AppDataContainer .AppDFM-overlay{z-index:15;width:100%;height:100%;top:0px;left:0px;position:absolute;}

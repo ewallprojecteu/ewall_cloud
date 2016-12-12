@@ -1,0 +1,10 @@
+{
+    "browsePhotos": "Hent billeder",
+    "changePhoto": "Skift billede",
+    "description": "Beskrivelse",
+    "descriptionHint": "Noget beskrivelse",
+    "failedUploading": "Fejl ved upload af billede",
+    "successfullyUploaded": "Succesfuld upload af billede",
+    "title": "Titel",
+    "uploadToFlicker": "Upload på Flickr"
+}

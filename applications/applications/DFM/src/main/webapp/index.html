@@ -1,0 +1,59 @@
+<script type="text/javascript" src="../DFM/js/app_DFM.js"></script>
+<link rel="stylesheet" type="text/css" href="../DFM/css/app_DFM.css">
+
+<script language="javascript">
+$(document).ready(function() {
+	var AppObjectDFM_NewInstance = new AppObjectDFM();
+	AppObjectDFM_NewInstance.SetPathToExecuteDirectory('../DFM/');
+	AppObjectDFM_NewInstance.InitAppObject();
+});
+</script>
+
+<style>
+.window-book-filler {
+    position: absolute;
+    top: 25px;
+    left: 344px;
+    width: 1356px;
+    height: 1014px;
+    background: transparent;
+}
+.window-book-filler-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #b0bec5;
+}
+.window-book-filler-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #ffffff;
+}
+.gwd-img-o7sj {
+    position: absolute;
+}
+.gwd-img-mmom {
+    top: 0px;
+}
+.gwd-img-j7j3 {
+    width: 1920px;
+    height: 1080px;
+    left: 40px;
+}
+</style>
+
+<div id="window-book-filler" class="window-book-filler">
+    <div id="window-book-filler-header" class="window-book-filler-header">DFM</div>
+    <div id="window-book-filler-body" class="window-book-filler-body">
+    
+        <div id="AppDFM_AppDataContainer"></div>
+        
+    </div>
+    <div id="window-book-filler-footer" class="window-book-filler-footer"></div>
+</div>
+<img src="assets/6-book1.png" class="gwd-img-o7sj gwd-img-mmom gwd-img-j7j3" id="layer-8-book2">

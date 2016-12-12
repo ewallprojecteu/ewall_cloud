@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.2.3.RELEASE</version>
+	</parent>
+
+	<groupId>eu.ewall.platform</groupId>
+	<artifactId>ewall-platform-pom</artifactId>
+	<!-- Also update ewall.version when changing this -->
+	<version>1.1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>commons-data-model</module>
+		<module>ewall-common-libs</module>
+		<module>ewall-swagger-ui</module>
+		<module>data-manager</module>
+		<module>cloud-gateway</module>
+		<module>ewall-portal</module>
+		<module>ewall-platform-login</module>
+		<module>notification-manager</module>
+		<module>profiling-server</module>
+		<module>idss-core</module>
+		<module>idss-lib</module>
+		<module>idss-reasoner-activitycoach</module>
+		<module>idss-sleep-reasoner</module>
+		<module>idss-automatic-goal-setting</module>
+		<module>idss-reasoner-wellbeing-ads</module>
+		<module>lr-mood</module>
+		<module>lr-physical-activity</module>
+		<module>lr-sleep-monitor</module>
+		<module>lr-environment</module>
+		<module>lr-habits</module>
+		<module>ewallet</module>
+		<module>user-interaction-logger</module>
+		<module>ekitchen</module>
+	</modules>
+
+	<name>eWall Platform Super POM</name>
+	<description>The eWall platform Super POM</description>
+	<organization>
+		<name>eWall Consortium</name>
+		<url>http://ewallproject.eu/</url>
+	</organization>
+	<inceptionYear>2014</inceptionYear>
+	<licenses>
+		<license>
+			<name>Apache License 2.0</name>
+		</license>
+	</licenses>
+
+	<issueManagement>
+		<system>eWall GitLab Issue Tracker</system>
+		<url>to be added</url>
+	</issueManagement>
+
+
+	<properties>
+		<!-- Also update project.version when changing this -->
+		<ewall.version>1.1.0-SNAPSHOT</ewall.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<spring.boot.version>1.2.3.RELEASE</spring.boot.version>
+		<targetJdk>1.7</targetJdk>
+		<java.version>1.7</java.version>
+		<maven.compile.testSource>1.7</maven.compile.testSource>
+		<maven.compile.testTarget>1.7</maven.compile.testTarget>
+		<maven.compile.source>1.7</maven.compile.source>
+		<maven.compile.target>1.7</maven.compile.target>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.mangofactory</groupId>
+				<artifactId>swagger-springmvc</artifactId>
+				<version>0.9.5</version>
+			</dependency>
+			<dependency>
+				<groupId>eu.ewall.platform</groupId>
+				<artifactId>ewall-common-libs</artifactId>
+				<version>${ewall.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>eu.ewall.platform</groupId>
+				<artifactId>ewall-swagger-ui</artifactId>
+				<version>${ewall.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>eu.ewall.platform</groupId>
+				<artifactId>commons-data-model</artifactId>
+				<version>${ewall.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>eu.ewall.platform</groupId>
+				<artifactId>data-manager</artifactId>
+				<version>${ewall.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>eu.ewall.platform.idss</groupId>
+				<artifactId>idss-lib</artifactId>
+				<version>${ewall.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-war-plugin</artifactId>
+					<configuration>
+						<archive>
+							<manifest>
+								<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+							</manifest>
+							<manifestEntries>
+								<Implementation-Description>${project.description}</Implementation-Description>
+								<Mailing-List>${project.mailingLists[0].post}</Mailing-List>
+							</manifestEntries>
+						</archive>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<!-- <plugin> -->
+			<!-- <groupId>org.springframework.boot</groupId> -->
+			<!-- <artifactId>spring-boot-maven-plugin</artifactId> -->
+			<!-- </plugin> -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>generate-javadoc</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.9.1</version>
+				<reportSets>
+					<reportSet>
+						<reports>
+							<report>aggregate</report>
+							<report>javadoc</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+				<configuration>
+					<doclet>org.umlgraph.doclet.UmlGraphDoc</doclet>
+					<docletArtifact>
+						<groupId>org.umlgraph</groupId>
+						<artifactId>doclet</artifactId>
+						<version>5.1</version>
+					</docletArtifact>
+					<additionalparam>-views</additionalparam>
+					<useStandardDocletOptions>true</useStandardDocletOptions>
+					<docfilessubdirs>true</docfilessubdirs>
+				</configuration>
+			</plugin>
+		</plugins>
+	</reporting>
+
+	<repositories>
+		<repository>
+			<id>ewall-snapshots</id>
+			<url>http://ewall.radio.pub.ro/nexus/content/repositories/snapshots/</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>ewall-releases</id>
+			<url>http://ewall.radio.pub.ro/nexus/content/repositories/releases/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>ewall-thirdparty</id>
+			<url>http://ewall.radio.pub.ro/nexus/content/repositories/thirdparty/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+</project>

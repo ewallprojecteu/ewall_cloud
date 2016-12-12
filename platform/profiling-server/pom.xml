@@ -1,0 +1,139 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>eu.ewall.platform</groupId>
+		<artifactId>ewall-platform-pom</artifactId>
+		<version>1.1.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>profiling-server</artifactId>
+	<packaging>war</packaging>
+
+	<name>eWall Profiling Server</name>
+	<description>eWall Profiling Server communicating with eWall Mongo DB and managing user profile information</description>
+
+	<properties>
+		<start-class>eu.ewall.platform.profilingserver.Application</start-class>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<!-- data-manager includes commons-data-model dependency -->
+		<dependency>
+			<groupId>eu.ewall.platform</groupId>
+			<artifactId>data-manager</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>eu.ewall.platform</groupId>
+			<artifactId>ewall-common-libs</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.mangofactory</groupId>
+			<artifactId>swagger-springmvc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>eu.ewall.platform</groupId>
+			<artifactId>ewall-swagger-ui</artifactId>
+		</dependency>
+
+		<!-- enables /metrics endpoint to show different metrics on profiling server 
+			http://docs.spring.io/spring-boot/docs/1.2.1.RELEASE/reference/htmlsingle/#production-ready-metrics 
+			http://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.springframework.boot</groupId> -->
+		<!-- <artifactId>spring-boot-starter-actuator</artifactId> -->
+		<!-- </dependency> -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-crypto</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+			<version>1.0.1.RELEASE</version>
+		</dependency>
+
+		<!-- for base 64 encoding of the user profile image -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>1.3.2</version>
+		</dependency>
+
+		<!-- Test Artifacts -->
+		<!-- <dependency> -->
+		<!-- <groupId>junit</groupId> -->
+		<!-- <artifactId>junit</artifactId> -->
+		<!-- <scope>test</scope> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.springframework</groupId> -->
+		<!-- <artifactId>spring-test</artifactId> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.mockito</groupId> -->
+		<!-- <artifactId>mockito-core</artifactId> -->
+		<!-- <scope>test</scope> -->
+		<!-- </dependency> -->
+	</dependencies>
+
+	<build>
+		<finalName>profiling-server</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<mainClass>${start-class}</mainClass>
+					<!-- defined in spring-cloud-starter-parent pom (as documentation hint), 
+						but needs to be repeated here -->
+					<requiresUnpack>
+						<dependency>
+							<groupId>com.netflix.eureka</groupId>
+							<artifactId>eureka-core</artifactId>
+						</dependency>
+						<dependency>
+							<groupId>com.netflix.eureka</groupId>
+							<artifactId>eureka-client</artifactId>
+						</dependency>
+					</requiresUnpack>
+				</configuration>
+			</plugin>
+			<!-- <plugin> -->
+			<!-- <groupId>org.codehaus.enunciate</groupId> -->
+			<!-- <artifactId>maven-enunciate-plugin</artifactId> -->
+			<!-- <version>1.28</version> -->
+			<!-- <executions> -->
+			<!-- <execution> -->
+			<!-- <goals> -->
+			<!-- <goal>docs</goal> -->
+			<!-- </goals> -->
+			<!-- </execution> -->
+			<!-- </executions> -->
+			<!-- <configuration> -->
+			<!-- the directory where to put the docs -->
+			<!-- <docsDir>${project.build.directory}/docs</docsDir> -->
+			<!-- <configFile>enunciate.xml</configFile> -->
+			<!-- </configuration> -->
+			<!-- </plugin> -->
+		</plugins>
+	</build>
+
+</project>

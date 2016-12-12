@@ -1,0 +1,14 @@
+{
+    "addExternalVideo": "Tilføj film",
+    "addHealthImpairmentTag": "",
+    "description": "Beskrivelse",
+    "descriptionHint": "en kort beskrivelse",
+    "error": "Fejl",
+    "loading": "Loading...",
+    "loginFailed": "Fejl ved login",
+    "ok": "OK",
+    "privacy": "Privathed",
+    "success": "Succes",
+    "uploadVideo": "Upload billede",
+    "videoSuitableForPersonHint": "Filmen er tilgængelig for personer med svækket helbred"
+}

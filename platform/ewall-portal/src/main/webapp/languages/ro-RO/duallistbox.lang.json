@@ -1,0 +1,11 @@
+{
+    "filterPlaceHolder": "Filtru",
+    "filterTextClear": "Arată tot",
+    "infoText": "Arătând toate [0]",
+    "infoTextEmpty": "Listă goală",
+    "infoTextFiltered": "<span class=\"label label-warning\">Filtrat</span> [0] din [1]",
+    "moveAllLabel": "Mută tot",
+    "moveSelectedLabel": "Mută cele selectate",
+    "removeAllLabel": "Înlătură tot",
+    "removeSelectedLabel": "Înlătură cele selectate"
+}

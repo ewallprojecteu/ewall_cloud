@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="NavigationTxt">
+        <item>Status</item>
+        <item>Verlauf</item>
+    </ItemGroup>
+    <ItemGroup name="HistoryTxt">
+        <item>Heute</item>
+        <item>Letzte Woche</item>
+        <item>Letztes Monat</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>So</item>
+        <item>Mo</item>
+        <item>Di</item>
+        <item>Mi</item>
+        <item>Do</item>
+        <item>Fr</item>
+        <item>Sa</item>
+    </ItemGroup>
+    <ItemGroup name="ParamLabelTxt">
+        <item>Temperatur</item>
+        <item>Luftfeuchtigkeit</item>
+        <item>Beleuchtungsstärke</item>
+    </ItemGroup>
+    <ItemGroup name="ParamDimensionTxt">
+        <item>&#176;C</item>
+        <item>%</item>
+        <item>lux</item>
+    </ItemGroup>
+    <ItemGroup name="LocationTxt">
+        <item>Küche</item>
+        <item>Wohnzimmer</item>
+        <item>Schlafzimmer</item>
+        <item>Badezimmer</item>
+    </ItemGroup>
+    <ItemGroup name="AppLabels">
+        <item>Keine Information verfügbar</item>
+    </ItemGroup>
+    <ItemGroup name="ColorLegendLabels">
+        <Label>Legende</Label>
+        <Color id="1">Niedriger Wert</Color>
+        <Color id="2">Normaler Wert</Color>
+        <Color id="3">Hoher Wert</Color>
+    </ItemGroup>
+</language_data>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" ng-app="ewallApp">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>eWALL Main Screen</title>
+<!-- utility dependencies -->
+<script src="lib/jquery.js"></script>
+<script src="lib/underscore.js"></script>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-cookies.js"></script>
+<script src="lib/angular-animate.js"></script>
+<script src="lib/angular-ui-router.js"></script>
+<script src="lib/angular-resource.js"></script>
+<script src="lib/angular-sanitize.min.js"></script>
+<script src="lib/angular-q.js"></script>
+<script src="lib/angular-interval.js"></script>
+<script src="lib/moment.js"></script>
+<script src="lib/localization.js"></script>
+<script src="lib/moment-timezone-with-data.js"></script>
+<script src="lib/app.js"></script>
+<script src="lib/controllers.js"></script>
+<script src="lib/services.js"></script>
+<script src="lib/touchSelect.js"></script>
+<script src="lib/slider.js"></script>
+<script src="lib/angular-bootstrap-slider.js"></script>
+<script src="lib/jquery-ui.min.js"></script>
+
+<!-- -- for bike trainer -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/three.js/r70/three.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+<!-- -- END for bike trainer -->
+
+<!-- for memory quiz -->
+<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/ui-bootstrap-tpls-0.14.3.js"></script>
+<script type="text/javascript" src="lib/Chart.min.js"></script>
+<script type="text/javascript" src="lib/angular-chart.min.js"></script>
+<!-- END for memory quiz -->
+
+<script src="lib/angular-local-storage.js"></script>
+<script src="lib/angular-jwt.js"></script>
+<script src="lib/iscroll_TUS.js"></script> 
+<!-- END utility dependencies -->
+    
+<!-- translation dependencie -->
+<script type="text/javascript" src="lib/translation.js"></script>
+<!-- END translation dependencie -->
+  
+<!-- widget dependencies -->
+<script src="widgets/weather/lib/weather.js"></script>    
+<script src="widgets/dpam/lib/widget_activity_DPAM.js"></script>
+<script src="widgets/domotics/lib/widget_domotics.js"></script>
+<script src="widgets/photo-frame/lib/widget-photo-frame.js"></script>
+<script src="widgets/agenda/agenda.js"></script>
+<script src="widgets/background-switch/js/background-switch.js"></script>
+<!-- END widget dependencies -->
+    
+<!-- notification dependencies -->
+<script src="notifications/recommendation/js/recommendationCtrl.js"></script>
+<script src="notifications/general/js/generalCtrl.js"></script>
+<script src="notifications/virtual_coach/js/virtualCoachCtrl.js"></script>
+<script type="text/javascript" src="lib/hueNotificationService.js"></script>
+<!-- END notification dependencies -->
+
+<!-- user interaction library -->
+<script src="lib/userInteractionLogger.js"></script>
+    
+</head>
+<body ng-controller="ApplicationController">
+	<div ui-view></div>
+</body>
+<script>
+  var userInteractionLogger = new UILoggerEWALL(); 
+ </script>  
+</html>

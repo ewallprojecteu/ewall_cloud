@@ -1,0 +1,11 @@
+{
+    "filterPlaceHolder": "Filtro",
+    "filterTextClear": "mostra tutto",
+    "infoText": "Mostrati tutti [0]",
+    "infoTextEmpty": "Lista vuota",
+    "infoTextFiltered": "<span class=\"label label-warning\">Filtrati</span> [0] di [1]",
+    "moveAllLabel": "Sposta tutti",
+    "moveSelectedLabel": "Sposta i selezionati",
+    "removeAllLabel": "Rimuovi tutto",
+    "removeSelectedLabel": "Rimuovi i selezionati"
+}

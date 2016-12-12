@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>eu.ewall.application</groupId>
+    <artifactId>ewall-libraries-pom</artifactId>
+    <version>1.1.0-SNAPSHOT</version>
+  </parent>
+  
+  <artifactId>domotics-common</artifactId>
+  <name>Domotics endpoint service brick common library</name>
+  <description>Contains common code for the domotics end point service brick</description>
+  
+  <dependencies>
+		<dependency>
+			<groupId>eu.ewall.application</groupId>
+			<artifactId>service-brick-common</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>eu.ewall.platform</groupId>
+			<artifactId>commons-data-model</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-mongodb</artifactId>
+		</dependency>
+	</dependencies>
+</project>

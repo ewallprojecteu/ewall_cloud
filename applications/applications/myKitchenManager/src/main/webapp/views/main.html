@@ -1,0 +1,201 @@
+<img ng-src="../myKitchenManager/images/openBook.png" id="book">
+<img ng-src="../myKitchenManager/images/myKitchenManager.png" id="logo" ng-click="model.menuSelection=0">
+<img ng-src="../myKitchenManager/images/fridge.png" id="fridge" ng-click="model.menuSelection=1">
+<img ng-src="../myKitchenManager/images/pantry.png" id="pantry" ng-click="model.menuSelection=2">
+<img ng-src="../myKitchenManager/images/recipes.png" id="recipes" ng-click="model.menuSelection=3">
+<img ng-src="../myKitchenManager/images/shoppingList.png" id="shoppingList" ng-click="model.menuSelection=4;model.selectForFridge=false;model.selectForPantry=false">
+<div id="title">
+    <h1 class="largeFont">{{model.overview[model.menuSelection].title}}</h1>
+</div>
+
+<div ng-show="model.menuSelection==0">
+    <div class="description">
+        <p class="regularFont">{{model.intro}}</p>
+        <table>
+            <tr ng-repeat="selection in model.overview">
+                <td align="center"><img ng-src="../myKitchenManager/images/{{selection.image}}" height="64"></td>
+                <td>
+                    <p class="regularFont">{{selection.title}}</p>
+                    <p>{{selection.description}}</p>
+                </td>
+            </tr>
+        </table>
+        <div style="float: right; background-color: #2b542c; width: 70px">
+            <img src="https://spoonacular.com/application/frontend/images/spoonacular-logo.svg">
+        </div>
+        <div style="float: right;">
+            <p>Powered by <a href="https://spoonacular.com/food-api">Spoonacular's Food API</a></p>
+        </div>
+    </div>
+</div>
+
+<div ng-show="model.menuSelection==1">
+    <div class="description">
+        <div class="button-box col-lg-12">
+            <button type="button" ng-class="!model.fridgeView ? 'btn btn-danger' : 'btn btn-warning'" ng-click="model.fridgeView=false">Ingredients list</button>
+            <button type="button" ng-class="model.fridgeView ? 'btn btn-danger' : 'btn btn-warning'" ng-click="model.fridgeView=true">Fridge contents</button>
+        </div>
+        <div class="col-lg-12" ng-show="!model.fridgeView" style="border:5px solid #d9534f;border-radius: 5px;">
+            <div class="button-box col-lg-12">
+                <span ng-repeat="aisle in ingredients.aisles">
+                    <button type="button" ng-show="aisle.storage!='pantry'" ng-class="model.fridgeAisleSelection==$index ? 'btn btn-primary' : 'btn btn-info'" ng-click="model.fridgeAisleSelection=$index">{{aisle.aisle}}</button>
+                </span>
+            </div>
+            <div class="button-box col-lg-12">
+                <span ng-repeat="ingredient in ingredients.aisles[model.fridgeAisleSelection].ingredients">
+                    <button type="button" ng-class="model.inFridge.indexOf(ingredient.id)>-1 ? 'btn btn-primary height-120' : 'btn btn-default height-120'" ng-click="toggleFridge(ingredient.id)"><img ng-src="{{ingredient.image}}" class="img-circle"> {{ingredient.name}}</button>
+                </span>
+            </div>
+        </div>
+        <div class="col-lg-12" ng-show="model.fridgeView" style="border:5px solid #d9534f;border-radius: 5px;">
+            <p ng-show="model.inFridge.length==0">... empty</p>
+            <div class="button-box col-lg-12">
+                <span ng-repeat="aisle in ingredients.aisles">
+                    <span ng-repeat="ingredient in aisle.ingredients">
+                        <button type="button" class="btn btn-info height-120" ng-show="model.inFridge.indexOf(ingredient.id)>-1" ng-click="toggleFridge(ingredient.id)"><img ng-src="{{ingredient.image}}" class="img-circle"> {{ingredient.name}}</button>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div ng-show="model.menuSelection==2">
+    <div class="description">
+        <div class="button-box col-lg-12">
+            <button type="button" ng-class="!model.pantryView ? 'btn btn-danger' : 'btn btn-warning'" ng-click="model.pantryView=false">Ingredients list</button>
+            <button type="button" ng-class="model.pantryView ? 'btn btn-danger' : 'btn btn-warning'" ng-click="model.pantryView=true">Pantry contents</button>
+        </div>
+        <div class="col-lg-12" ng-show="!model.pantryView" style="border:5px solid #d9534f;border-radius: 5px;">
+            <div class="button-box col-lg-12">
+                <span ng-repeat="aisle in ingredients.aisles">
+                    <button type="button" ng-show="aisle.storage!='fridge'" ng-class="model.pantryAisleSelection==$index ? 'btn btn-primary' : 'btn btn-info'" ng-click="model.pantryAisleSelection=$index">{{aisle.aisle}}</button>
+                </span>
+            </div>
+            <div class="button-box col-lg-12">
+                <span ng-repeat="ingredient in ingredients.aisles[model.pantryAisleSelection].ingredients">
+                    <button type="button" ng-class="model.inPantry.indexOf(ingredient.id)>-1 ? 'btn btn-primary height-120' : 'btn btn-default height-120'" ng-click="togglePantry(ingredient.id)"><img ng-src="{{ingredient.image}}" class="img-circle"> {{ingredient.name}}</button>
+                </span>
+            </div>
+        </div>
+        <div class="col-lg-12" ng-show="model.pantryView" style="border:5px solid #d9534f;border-radius: 5px;">
+            <p ng-show="model.inPantry.length==0">... empty</p>
+            <div class="button-box col-lg-12">
+                <span ng-repeat="aisle in ingredients.aisles">
+                    <span ng-repeat="ingredient in aisle.ingredients">
+                        <button type="button" class="btn btn-info height-120" ng-show="model.inPantry.indexOf(ingredient.id)>-1" ng-click="togglePantry(ingredient.id)"><img ng-src="{{ingredient.image}}" class="img-circle"> {{ingredient.name}}</button>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div ng-show="model.menuSelection==3">
+    <div class="description">
+        <div class="button-box col-lg-12">
+            <button type="button" ng-class="model.recipesBrowse ? 'btn btn-danger' : 'btn btn-warning'" ng-click="model.recipesBrowse=true;resetRecipes()">Browse</button>
+            <button type="button" ng-class="!model.recipesBrowse ? 'btn btn-danger' : 'btn btn-warning'" ng-click="model.recipesBrowse=false">Search by ingredients</button>
+        </div>
+        <div class="col-lg-12" ng-show="!model.recipesBrowse" style="border:5px solid #d9534f;border-radius: 5px;">
+            <div class="col-lg-12" ng-show="!model.searchResults">
+                <div class="button-box col-lg-12">
+                    <span ng-repeat="aisle in ingredients.aisles">
+                        <button type="button" ng-class="model.searchAisleSelection==$index ? 'btn btn-primary' : 'btn btn-info'" ng-click="model.searchAisleSelection=$index">{{aisle.aisle}}</button>
+                    </span>
+                </div>
+                <div class="button-box col-lg-12">
+                    <span ng-repeat="ingredient in ingredients.aisles[model.searchAisleSelection].ingredients">
+                        <button type="button" ng-class="model.forSearch.indexOf(ingredient.id)>-1 ? 'btn btn-primary height-120' : 'btn btn-default height-120'" ng-click="toggleSearch(ingredient.id)"><img ng-src="{{ingredient.image}}" class="img-circle"> {{ingredient.name}}</button>
+                    </span>
+                </div>
+                <div class="button-box col-lg-12">
+                    <button type="button" class="btn btn-success" ng-click="searchForRecipes();model.searchResults=true">Search for recipes</button>
+                    <button type="button" class="btn btn-default" ng-click="model.forSearch=[]">Reset ingredients</button>
+                </div>
+            </div>
+            <div class="col-lg-12" ng-show="model.searchResults">
+                <h1 class="mediumFont">{{recipes[model.selectedRecipes[model.currentRecipe]].title}}</h1>
+                <table>
+                    <tr>
+                        <td><img ng-src="{{recipes[model.selectedRecipes[model.currentRecipe]].image}}" width="270px"></td>
+                        <td>
+                            <div class="button-box col-lg-12">
+                            <span ng-repeat="ingredient in recipes[model.selectedRecipes[model.currentRecipe]].extendedIngredients">
+                                <button type="button" ng-class="model.inFridge.indexOf(ingredient.id)>-1 ? 'btn btn-primary height-60 no-padding' : (model.inPantry.indexOf(ingredient.id)>-1 ? 'btn btn-success height-60 no-padding' : (model.inList.indexOf(ingredient.id)>-1 ? 'btn btn-warning height-60 no-padding' : 'btn btn-default height-60 no-padding'))" ng-click="addToList(ingredient.id)">
+                                    <div class="recipeIngredientImage"><img ng-src="{{ingredient.image}}" style="max-width: 100%;max-height: 100%" class="img-circle"></div>
+                                    <div class="recipeIngredientDescription"><p>{{ingredient.originalString}}</p></div>
+                                </button>
+                            </span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <p>{{recipes[model.selectedRecipes[model.currentRecipe]].instructions}}</p>
+                <div class="button-box col-lg-12">
+                    <button type="button" class="btn btn-default" ng-show="model.currentRecipe>0" ng-click="model.currentRecipe=model.currentRecipe-1">Previous</button>
+                    <button type="button" class="btn btn-default" ng-show="model.currentRecipe<model.selectedRecipes.length-1" ng-click="model.currentRecipe=model.currentRecipe+1">Next</button>
+                </div>
+                <button type="button" class="btn btn-success" ng-click="model.searchResults=false">Look for different ingredients</button>
+            </div>
+        </div>
+        <div class="col-lg-12" ng-show="model.recipesBrowse" style="border:5px solid #d9534f;border-radius: 5px;">
+            <h1 class="mediumFont">{{recipes[model.selectedRecipes[model.currentRecipe]].title}}</h1>
+            <table>
+                <tr>
+                    <td><img ng-src="{{recipes[model.selectedRecipes[model.currentRecipe]].image}}" width="300px"></td>
+                    <td>
+                        <div class="button-box col-lg-12">
+                            <span ng-repeat="ingredient in recipes[model.selectedRecipes[model.currentRecipe]].extendedIngredients">
+                                <button type="button" ng-class="model.inFridge.indexOf(ingredient.id)>-1 ? 'btn btn-primary height-60 no-padding' : (model.inPantry.indexOf(ingredient.id)>-1 ? 'btn btn-success height-60 no-padding' : (model.inList.indexOf(ingredient.id)>-1 ? 'btn btn-warning height-60 no-padding' : 'btn btn-default height-60 no-padding'))" ng-click="addToList(ingredient.id)">
+                                    <div class="recipeIngredientImage"><img ng-src="{{ingredient.image}}" style="max-width: 100%;max-height: 100%" class="img-circle"></div>
+                                    <div class="recipeIngredientDescription"><p>{{ingredient.originalString}}</p></div>
+                                </button>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <p>{{recipes[model.selectedRecipes[model.currentRecipe]].instructions}}</p>
+            <div class="button-box col-lg-12">
+                <button type="button" class="btn btn-default" ng-show="model.currentRecipe>0" ng-click="model.currentRecipe=model.currentRecipe-1">Previous</button>
+                <button type="button" class="btn btn-default" ng-show="model.currentRecipe<model.selectedRecipes.length-1" ng-click="model.currentRecipe=model.currentRecipe+1">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div ng-show="model.menuSelection==4">
+    <div class="description">
+        <div class="button-box col-lg-12">
+            <button type="button" ng-class="!model.listView ? 'btn btn-danger' : 'btn btn-warning'" ng-click="model.listView=false">Ingredients list</button>
+            <button type="button" ng-class="model.listView ? 'btn btn-danger' : 'btn btn-warning'" ng-click="model.listView=true">Shopping list contents</button>
+        </div>
+        <div class="col-lg-12" ng-show="!model.listView" style="border:5px solid #d9534f;border-radius: 5px;">
+            <div class="button-box col-lg-12">
+                <span ng-repeat="aisle in ingredients.aisles">
+                    <button type="button" ng-class="model.listAisleSelection==$index ? 'btn btn-primary' : 'btn btn-info'" ng-click="model.listAisleSelection=$index">{{aisle.aisle}}</button>
+                </span>
+            </div>
+            <div class="button-box col-lg-12">
+                <span ng-repeat="ingredient in ingredients.aisles[model.listAisleSelection].ingredients">
+                    <button type="button" ng-class="model.inList.indexOf(ingredient.id)>-1 ? 'btn btn-primary height-120' : 'btn btn-default height-120'" ng-click="toggleList(ingredient.id)"><img ng-src="{{ingredient.image}}" class="img-circle"> {{ingredient.name}}</button>
+                </span>
+            </div>
+        </div>
+        <div class="col-lg-12" ng-show="model.listView" style="border:5px solid #d9534f;border-radius: 5px;">
+            <p ng-show="model.inList.length==0">... empty</p>
+            <div ng-show="model.inList.length>0" class="button-box col-lg-12">
+                <button type="button" ng-class="model.selectForFridge==true ? 'btn btn-primary' : 'btn btn-default'" ng-click="model.selectForFridge=!model.selectForFridge;model.selectForPantry=false">Select for fridge</button>
+                <button type="button" ng-class="model.selectForPantry==true ? 'btn btn-success' : 'btn btn-default'" ng-click="model.selectForPantry=!model.selectForPantry;model.selectForFridge=false">Select for pantry</button>
+            </div>
+            <div class="button-box col-lg-12">
+                <span ng-repeat="aisle in ingredients.aisles">
+                    <span ng-repeat="ingredient in aisle.ingredients">
+                        <button type="button" class="btn btn-info height-120" ng-show="model.inList.indexOf(ingredient.id)>-1" ng-click="toggleList(ingredient.id,(model.selectForFridge==true?1:0)+(model.selectForPantry==true?2:0))"><img ng-src="{{ingredient.image}}" class="img-circle"> {{ingredient.name}}</button>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

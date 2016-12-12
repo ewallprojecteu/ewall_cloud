@@ -1,0 +1,43 @@
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed"
+				data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+				aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" ui-sref="home.welcome">eWALL Portal</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li ui-sref-active="active"><a ui-sref="home.welcome"
+					i18n="home.home"></a></li>
+				<li ng-if="isPlatformAdmin()" ui-sref-active="active"><a
+					ui-sref="home.regions" i18n="home.regions"></a></li>
+				<li ui-sref-active="active"><a ui-sref="home.users"
+					i18n="home.users"></a></li>
+				<li ng-if="isPlatformAdmin()" ui-sref-active="active"><a
+					ui-sref="home.services" i18n="home.services"></a></li>
+				<li ng-if="isPlatformAdmin()" ui-sref-active="active"><a
+					ui-sref="home.applications" i18n="home.applications"></a></li>
+				<li ui-sref-active="active"><a ui-sref="home.sensingEnvs"
+					i18n="home.sensingEnvs"></a></li>
+				<li ui-sref-active="active"><a ui-sref="home.devices"
+					i18n="home.devices"></a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><language-picker currentlanguage="currentlanguage"
+						languages="supportedLangs" on-change="onLanguageChange(language)"></language-picker></li>
+				<li><a href="" ng-click="logout()" data-i18n="home.logout"
+					data-username="{{currentSession.user.username}}"></a></li>
+			</ul>
+		</div>
+		<!--/.nav-collapse -->
+	</div>
+	<!--/.container-fluid -->
+</nav>
+
+<!-- Main component for a primary marketing message or call to action -->
+<div ui-view></div>

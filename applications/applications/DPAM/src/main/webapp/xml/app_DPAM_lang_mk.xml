@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="LongMonths">
+        <item>Јануари</item>
+        <item>Февруари</item>
+        <item>Март</item>
+        <item>Април</item>
+        <item>Мај</item>
+        <item>Јуни</item>
+        <item>Јули</item>
+        <item>Август</item>
+        <item>Септември</item>
+        <item>Октомври</item>
+        <item>Ноември</item>
+        <item>Декември</item>
+    </ItemGroup>
+    <ItemGroup name="ShortMonths">
+        <item>Јан</item>
+        <item>Фев</item>
+        <item>Мар</item>
+        <item>Апр</item>
+        <item>Мај</item>
+        <item>Јун</item>
+        <item>Јул</item>
+        <item>Авг</item>
+        <item>Сеп</item>
+        <item>Окт</item>
+        <item>Ное</item>
+        <item>Дек</item>
+    </ItemGroup>
+    <ItemGroup name="LongDays">
+        <item>Недела</item>
+        <item>Понеделник</item>
+        <item>Вторник</item>
+        <item>Среда</item>
+        <item>Четврток</item>
+        <item>Петок</item>
+        <item>Сабота</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>Нед</item>
+        <item>Пон</item>
+        <item>Вто</item>
+        <item>Сре</item>
+        <item>Чет</item>
+        <item>Пет</item>
+        <item>Саб</item>
+    </ItemGroup>
+    <ItemGroup name="ChartTitle">
+        <item>Растојание во чекори</item>
+        <item>Растојание во километри</item>
+        <item>Потрошени калории</item>
+    </ItemGroup>
+    <ItemGroup name="yTitle">
+        <item>Чекори</item>
+        <item>Километри</item>
+        <item>Калории</item>
+    </ItemGroup>
+    <ItemGroup name="ChartNavLabels">
+        <item>Чекори</item>
+        <item>Километри</item>
+        <item>Калории</item>
+    </ItemGroup>
+    <ItemGroup name="NavActLabels">
+        <item>Активности во текот на</item>
+        <item>Денот</item>
+        <item>Неделата</item>
+        <item>Месецот</item>
+    </ItemGroup>
+    <ItemGroup name="Messages">
+        <item>
+            <Title>Честитки</Title>
+            <Content>Ја постигнавте вашата цел за избраниот период.</Content>
+        </item>
+    </ItemGroup>
+    <ItemGroup name="AppLabels">
+        <item>
+            <shorthour>ч</shorthour>
+            <steps>Чекори</steps>
+        </item>
+    </ItemGroup>
+    <ItemGroup name="ColorLegendLabels">
+        <Label>Movement Legend</Label>
+        <Color id="1">Very low</Color>
+        <Color id="2">Low</Color>
+        <Color id="3">Medium</Color>
+        <Color id="4">High</Color>
+        <Color id="5">Very high</Color>
+    </ItemGroup>
+</language_data>

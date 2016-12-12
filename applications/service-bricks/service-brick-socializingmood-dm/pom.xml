@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+        <groupId>eu.ewall.application</groupId>
+        <artifactId>ewall-service-bricks-pom</artifactId>
+        <version>1.1.0-SNAPSHOT</version>
+    </parent>
+	
+    <artifactId>service-brick-socializingmood-dm</artifactId>
+    <packaging>war</packaging>
+
+	<name>Socializing and Mood Data Manager Service Brick</name>
+	<description>Socializing and Mood Data Manager Service Brick</description>
+	
+	<build>
+		<finalName>service-brick-socializingmood-dm</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<mainClass>eu.ewall.servicebrick.socializingmood.Application</mainClass>
+					<requiresUnpack>
+						<dependency>
+							<groupId>com.netflix.eureka</groupId>
+							<artifactId>eureka-core</artifactId>
+						</dependency>
+						<dependency>
+							<groupId>com.netflix.eureka</groupId>
+							<artifactId>eureka-client</artifactId>
+						</dependency>
+					</requiresUnpack>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>eu.ewall.application</groupId>
+			<artifactId>socializingmood-common</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>eu.ewall.application</groupId>
+			<artifactId>service-brick-common</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+ 			<version>1.0.1.RELEASE</version>
+ 		</dependency>
+ 		<dependency>
+            <groupId>eu.ewall.platform</groupId>
+            <artifactId>ewall-common-libs</artifactId>
+ 		</dependency>
+	</dependencies>
+
+</project>

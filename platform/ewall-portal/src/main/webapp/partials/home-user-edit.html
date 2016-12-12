@@ -1,0 +1,323 @@
+<h1 i18n="users.detail"></h1>
+<form name="userForm" ng-submit="userForm.$valid && submit()" novalidate>
+	<div class="row">
+		<div class="col-md-3 form-group">
+			<div class="fileinput fileinput-new">
+				<div class="fileinput-preview thumbnail" style="width: 150px; height: 150px;">
+					<img ng-show="base64ProfilePhoto" ng-src="{{base64ProfilePhoto}}" />
+				</div>
+				<div>
+					<span class="btn btn-default btn-file">
+						<span i18n="users.browsePhotos"></span>
+						<input type="file" fileread="base64ProfilePhoto" name="..." accept="image/*" onchange="angular.element(this).scope().preparePhotoForUpload(this.files[0])" />
+					</span>
+					<a ng-show="base64ProfilePhoto" href="#" class="btn btn-default" i18n="users.removePhoto" ng-click="removePhoto()"></a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-9 form-group">
+			<div class="row">
+				<div class="col-md-4 form-group">
+					<label for="inputUsername" i18n="users.username"></label> <input
+					type="text" class="form-control" id="inputUsername"
+					i18n-attr="{placeholder: 'users.enterUsername'}"
+					ng-model="user.username" ng-disabled="editing" required autofocus>
+				</div>
+				<div class="col-md-4 form-group">
+					<label for="selectUserRole" i18n="users.userRole"></label> <select
+					class="form-control" id="selectUserRole" ng-model="user.userRole"
+					required>
+						<option value="" default selected i18n="users.selectUserRole"></option>
+						<option ng-repeat="role in roles" value="{{role.value}}">{{role.lable}}</option>
+					</select>
+				</div>
+				<div class="col-md-4 form-group">
+					<label for="selectRegion" i18n="regions.region"></label>
+
+					<div ng-if="!isPlatformAdmin()">
+						<select ng-init="user.userProfile.eWallSubProfile.regionName = userRegion"
+								ng-disabled="!isPlatformAdmin()" class="form-control"
+								id="selectRegion"
+								ng-model="user.userProfile.eWallSubProfile.regionName">
+							<option ng-repeat="region in regions">{{region}}</option>
+						</select>
+					</div>
+					<div ng-if="isPlatformAdmin()">
+						<select class="form-control" id="selectRegion"
+								ng-model="user.userProfile.eWallSubProfile.regionName" required>
+							<option value="" default selected i18n="regions.selectRegion"></option>
+							<option ng-repeat="region in regions">{{region}}</option>
+						</select>
+					</div>
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 form-inline">
+				<label class="checkbox" for="cbAccountEnabled"><span i18n="users.accountIsEnabled"></span><span>&nbsp;</span>
+						<input type="checkbox" ng-model="user.userProfile.eWallSubProfile.accountEnabled" id="cbAccountEnabled" />
+					</label>
+				</div>
+				<div class="col-md-4 form-inline">
+					<label class="checkbox" for="cbMonitoringAllowed"><span i18n="users.realTimeMonitoringAllowed"></span><span>&nbsp;</span>
+						<input type="checkbox" ng-model="user.userProfile.eWallSubProfile.realTimeMonitoringAllowed" id="cbMonitoringAllowed" />
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br />
+	<div class="row" ng-show="showpassowrdfield">
+		<div class="col-md-4 form-group">
+			 <label for="passwordField1" i18n="{{ passLabel }}"></label>
+		     <input class="form-control" type="password" id="password1" name="password1" ng-model="pwd.password1" ng-required placeholder="Password"/>
+	    </div>
+	    <div class="col-md-4 form-group"> 
+		     <label for="passowrdField2"  i18n="users.verifyPassword"></label>
+		     <input class="form-control" type="password" id="password2" name="password2" ng-model="pwd.password2" ng-required placeholder="Password Check" password-match="pwd.password1" />
+<!-- 		</div> -->
+<!-- 		<div class="col-md-4 form-group">  -->
+		     <span class="label label-danger" ng-show="userForm.password2.$error.matching" i18n="users.mismatchPassword"></span>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 form-group">
+			<label for="inputFirstName" i18n="users.firstName"></label> <input
+				type="text" class="form-control" id="inputFirstName"
+				i18n-attr="{placeholder: 'users.enterFirstName'}"
+				ng-model="user.firstName" required>
+		</div>
+		<div class="col-md-4 form-group">
+			<label for="inputLastName" i18n="users.lastName"></label> <input
+				type="text" class="form-control" id="inputLastName"
+				i18n-attr="{placeholder: 'users.enterLastName'}"
+				ng-model="user.lastName" required>
+		</div>
+		<div class="col-md-4 form-group">
+			<label for="inputNickname" i18n="users.nickname"></label> <input
+				type="text" class="form-control" id="inputNickname"
+				i18n-attr="{placeholder: 'users.enterNickname'}"
+				ng-model="user.userProfile.vCardSubProfile.nickname">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 form-group">
+			<label for="selectGender" i18n="users.gender"></label> <select
+				class="form-control" id="selectGender"
+				ng-model="user.userProfile.vCardSubProfile.gender">
+				<option value="" default selected i18n="users.selectGender"></option>
+				<option value="FEMALE" i18n="users.female"></option>
+				<option value="MALE" i18n="users.male"></option>
+				<option value="NONE" i18n="common.none"></option>
+				<option value="OTHER" i18n="common.other"></option>
+				<option value="UNKNOWN" i18n="common.unknown"></option>
+			</select>
+		</div>
+		<div class="col-md-4 form-group">
+			<label for="inputBirthday" i18n="users.birthday"></label> <input
+				type="text" class="form-control" id="inputBirthday"
+				i18n-attr="{placeholder: 'users.enterBirthday'}"
+				ng-model="user.userProfile.vCardSubProfile.birthday">
+		</div>
+		<div class="col-md-2 form-group">
+			<label for="inputAge" i18n="users.age"></label> <input type="number"
+				class="form-control" id="inputAge"
+				i18n-attr="{placeholder: 'users.age'}"
+				ng-model="user.userProfile.vCardSubProfile.age" readonly>
+		</div>
+		<div class="col-md-4 form-group">
+			<label for="inputBirthplace" i18n="users.birthplace"></label> <input
+				type="text" class="form-control" id="inputBirthplace"
+				i18n-attr="{placeholder: 'users.enterBirthplace'}"
+				ng-model="user.userProfile.vCardSubProfile.birthplace">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-8 form-group">
+			<label for="inputAddress" i18n="users.address"></label> <input
+				type="text" class="form-control" id="inputAddress"
+				i18n-attr="{placeholder: 'users.enterAddress'}"
+				ng-model="user.userProfile.vCardSubProfile.address">
+		</div>
+		<div class="col-md-4 form-group">
+			<label for="inputCity" i18n="users.city"></label> <input type="text"
+				class="form-control" id="inputCity"
+				i18n-attr="{placeholder: 'users.enterCity'}"
+				ng-model="user.userProfile.vCardSubProfile.city" required>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 form-group">
+			<label for="inputState" i18n="users.state"></label> <input
+				type="text" class="form-control" id="inputState"
+				i18n-attr="{placeholder: 'users.enterState'}"
+				ng-model="user.userProfile.vCardSubProfile.state">
+		</div>
+		<div class="col-md-4 form-group">
+			<label for="inputCountry" i18n="common.country"></label> <input
+				type="text" class="form-control" id="inputCountry"
+				i18n-attr="{placeholder: 'common.enterCountry'}"
+				ng-model="user.userProfile.vCardSubProfile.country">
+		</div>
+		<div class="col-md-4 form-group">
+			<label for="inputPostcode" i18n="users.postcode"></label> <input
+				type="text" class="form-control" id="inputPostcode"
+				i18n-attr="{placeholder: 'users.enterPostcode'}"
+				ng-model="user.userProfile.vCardSubProfile.postcode">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 form-group">
+			<label for="userTimeZoneDdl" i18n="users.timezone"></label> 
+			<select id="userTimeZoneDdl" class="form-control"></select>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 form-group">
+			<label for="prefLangDdl" i18n="users.preferredLanguage"></label> 
+			<select id="prefLangDdl" class="form-control" ng-model="user.userProfile.userPreferencesSubProfile.systemPreferences.preferredLanguage" 
+				ng-options="lang.key as lang.value for lang in ISOLanguages">
+				<option value="" i18n="users.selectPreferredLanguage"></option>
+			</select>
+		</div>
+		<div class="col-md-4 form-group">
+			<label for="secLangDdl" i18n="users.secondaryLanguage"></label> 
+			<select id="secLangDdl" class="form-control" ng-model="user.userProfile.userPreferencesSubProfile.systemPreferences.secondaryLanguage" 
+				ng-options="lang.key as lang.value for lang in ISOLanguages">
+				<option value="" i18n="users.selectSecondaryLanguage"></option>
+			</select>
+		</div>
+		<div class="col-md-4 form-group">
+			<label for="metricSystemDdl" i18n="users.unitSystem"></label> 
+			<select id="metricSystemDdl" class="form-control" ng-model="user.userProfile.userPreferencesSubProfile.systemPreferences.preferredUnitSystem">
+				<option value="" default selected i18n="users.selectUnitSystem"></option>
+				<option value="METRIC" i18n="users.metricSystem"></option>
+				<option value="IMPERIAL" i18n="users.imperialSystem"></option>
+				<option value="SI_STANDARD" i18n="users.siStandard"></option>
+			</select>
+		</div>
+	</div>
+	<div ng-show="user.userRole == userRoles.primaryUser" class="row">
+		<div class="col-md-4 form-group">
+			<label for="inputWeight" i18n="users.weight"></label> <input
+			i18n-attr="{placeholder: 'users.enterWeight'}"
+			type="number" class="form-control" id="inputWeight" 
+			ng-model="user.userProfile.healthSubProfile.healthMeasurements.weight">
+		</div>
+		<div class="col-md-4 form-group">
+			<label for="inputHeight" i18n="users.height"></label> <input
+			i18n-attr="{placeholder: 'users.enterHeight'}"
+			type="number" class="form-control" id="inputHeight"
+			ng-model="user.userProfile.healthSubProfile.healthMeasurements.height">
+		</div>
+	</div>
+
+
+	<div ng-show="user.userRole == userRoles.primaryUser" class="row">
+		<div ng-init="diagnosisCollapsed = true" class="col-md-12 form-group">
+			<button type="button" class="btn btn-default btn-block"
+				ng-click="diagnosisCollapsed = diagnosisCollapsed"
+				data-toggle="collapse" data-target="#diagnosisCollapsible">
+				<strong><span i18n="healthDiagnosis.diagnosis"></span><span>&nbsp;&nbsp;&nbsp;</span></strong>
+				<span
+					class="diagnosisCollapsed ? 'glyphicon glyphicon-collapse-down' : 'glyphicon glyphicon-collapse-up'}}"></span>
+			</button>
+			<div id="diagnosisCollapsible" class="collapse well well-lg in">
+				<div class="row ">
+					<div class="col-md-4 form-inline">
+						<label class="checkbox" for="isCopd1"><span
+							i18n="healthDiagnosis.copd1"></span><span>&nbsp;</span> <input
+							type="checkbox" ng-model="diagnosis.isCopd1" id="diagnosis.isCopd1" /> </label>
+					</div>
+					<div class="col-md-4 form-inline">
+						<label class="checkbox" for="isCopd4"><span
+							i18n="healthDiagnosis.copd4"></span><span>&nbsp;</span> <input
+							type="checkbox" ng-model="diagnosis.isCopd4" id="diagnosis.isCopd4" /> </label>
+					</div>
+					<div class="col-md-4 form-inline">
+						<label class="checkbox" for="isMci"><span
+							i18n="healthDiagnosis.mci"></span><span>&nbsp;</span> <input
+							type="checkbox" ng-model="diagnosis.isMci" id="diagnosis.isMci" /> </label>
+					</div>
+					<div class="col-md-4 form-inline">
+						<label class="checkbox" for="isCopd2"><span
+							i18n="healthDiagnosis.copd2"></span><span>&nbsp;</span> <input
+							type="checkbox" ng-model="diagnosis.isCopd2" id="diagnosis.isCopd2" /> </label>
+					</div>
+					<div class="col-md-4 form-inline">
+						<label class="checkbox" for="isFrail"><span
+							i18n="healthDiagnosis.frail"></span><span>&nbsp;</span> <input
+							type="checkbox" ng-model="diagnosis.isFrail" id="diagnosis.isFrail" /> </label>
+					</div>
+					<div class="col-md-4 form-inline">
+						<label class="checkbox" for="isOther"><span
+							i18n="common.other"></span><span>&nbsp;</span> <input
+							type="checkbox" ng-model="diagnosis.isOther" id="diagnosis.isOther" /> </label>
+					</div>
+					<div class="col-md-4 form-inline">
+						<label class="checkbox" for="isCopd3"><span
+							i18n="healthDiagnosis.copd3"></span><span>&nbsp;</span> <input
+							type="checkbox" ng-model="diagnosis.isCopd3" id="diagnosis.isCopd3" /> </label>
+					</div>
+					<div class="col-md-4 form-inline">
+						<label class="checkbox" for="isPreFrail"><span
+							i18n="healthDiagnosis.prefrail"></span><span>&nbsp;</span> <input
+							type="checkbox" ng-model="diagnosis.isPreFrail" id="diagnosis.isPreFrail" />
+						</label>
+					</div>
+					<div class="col-md-4 form-inline">
+						<label class="checkbox" for="isUnknown"><span
+							i18n="common.unknown"></span><span>&nbsp;</span> <input
+							type="checkbox" ng-model="diagnosis.isUnknown" id="diagnosis.isUnknown" />
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div ng-show="user.userRole == userRoles.primaryUser" class="row">
+		<div class="col-md-12 form-group">
+			<ng-include src="'partials/includes/home-user-edit-health-impairments.html'"></ng-include>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 form-group">
+			<label for="inputEmail" i18n="users.email"></label> <input
+				type="email" class="form-control" id="inputEmail"
+				i18n-attr="{placeholder: 'users.enterEmail'}"
+				ng-model="user.userProfile.vCardSubProfile.email">
+		</div>
+		<div class="col-md-4 form-group">
+			<label for="inputMobile" i18n="users.mobile"></label> <input
+				type="text" class="form-control" id="inputMobile"
+				i18n-attr="{placeholder: 'users.enterMobile'}"
+				ng-model="user.userProfile.vCardSubProfile.mobile">
+		</div>
+		<div class="col-md-4 form-group">
+			<label for="inputTelephone" i18n="users.telephone"></label> <input
+				type="text" class="form-control" id="inputTelephone"
+				i18n-attr="{placeholder: 'users.enterTelephone'}"
+				ng-model="user.userProfile.vCardSubProfile.telephone">
+		</div>
+	</div>
+	<div ng-show="user.userRole == userRoles.primaryUser"
+		class="row col-md-12 form-group">
+		<label class="sr-only" for="caregivers" i18n="users.caregivers"></label>
+		<select id="caregivers" class="form-control"
+			ng-options="el for el in caregiversUsernamesList" multiple
+			ng-model="user.caregiversUsernamesList" bs-duallistbox preserve-selection="moved"
+			move-on-select="false"></select> <br>
+	</div>
+	<div class="row col-md-12 form-group">
+		<label class="sr-only" for="applications" i18n="home.applications"></label>
+		<select id="applications" class="form-control"
+			ng-options="el for el in applicationNamesList" multiple
+			ng-model="user.applicationNamesList" bs-duallistbox
+			preserve-selection="moved" move-on-select="false"></select> <br>
+	</div>
+	<div class="row col-md-2 form-group">
+		<button type="submit" ng-disabled="userForm.$invalid"
+		class="form-control btn btn-primary" i18n="common.submit"></button>
+	</div>
+</form>

@@ -1,0 +1,22 @@
+<h1 i18n="services.detail"></h1>
+<form name="serviceForm" ng-submit="serviceForm.$valid && submit()"
+	novalidate>
+	<div class="row">
+		<div class="col-md-4 form-group">
+			<label for="inputName" i18n="services.name"></label> <input
+				type="text" class="form-control" id="inputName"
+				i18n-attr="{placeholder: 'services.enterName'}"
+				ng-model="service.name" required autofocus>
+		</div>
+		<div class="col-md-4 form-group">
+			<label for="inputEndpoint" i18n="services.endpoint"></label> <input
+				type="text" class="form-control" id="inputEndpoint"
+				i18n-attr="{placeholder: 'services.enterEndpoint'}"
+				ng-model="service.links[0].href" required>
+		</div>
+	</div>
+	<div class="row col-md-2 form-group">
+		<button type="submit" ng-disabled="serviceForm.$invalid"
+			class="form-control btn btn-primary" i18n="common.submit"></button>
+	</div>
+</form>

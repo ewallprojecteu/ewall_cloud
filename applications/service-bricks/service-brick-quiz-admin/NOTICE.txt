@@ -1,0 +1,64 @@
+eWALL quiz-admin service brick
+
+Copyright 
+
+Copyright 2013-2016 Hewlett Packard Enterprise (HPE) Italy (https://www.hpe.com/it/it/home.html),
+University Politehnica of Bucharest (UPB) Romania (http://www.upb.ro/)
+
+
+I. Included Software
+
+Software developed by Hewlett Packard Enterprise (HPE) Italy (https://www.hpe.com/it/it/home.html),
+University Politehnica of Bucharest (UPB) Romania (http://www.upb.ro/) for the eWALL project.
+
+
+II. Used Software
+
+This product uses software developed at
+Pivotal Software, Inc. (Pivotal)  (https://pivotal.io/).
+Licensed under the Apache License 2.0.
+
+This product uses software developed at
+The Apache Software Foundation (http://www.apache.org/).
+Licensed under the Apache License 2.0.
+
+This product uses software developed by
+Swagger project  (swagger.io/).
+Licensed under the Apache License 2.0.
+
+This product uses software developed by
+FasterXML (https://github.com/FasterXML/jackson-datatype-joda).
+Licensed under the Apache License 2.0.
+
+This product uses software developed at
+Couchbase Inc. (http://www.couchbase.org/code/couchbase/java).
+Licensed under the Apache License 2.0.
+
+This product uses software developed at
+Joda.org (http://www.joda.org/joda-time/).
+Licensed under the Apache License 2.0.
+
+This product uses software developed at
+Junit (http://www.junit.org/).
+Licensed under Common Public License 1.0.
+
+This product uses software developed by
+Mockito contributers (http://www.mockito.org/).
+Licensed under MIT License.
+
+This product uses software developed by
+Ceki Gulcu and Joern Huxhorn  (https://mvnrepository.com/artifact/ch.qos.logback/logback-core/1.1.7).
+Licensed under the EPL 1.0 and LGPL 2.1.
+
+This product uses software developed at
+Amazon Web Services (https://aws.amazon.com/sdkforjava).
+Licensed under the Apache License 2.0.
+
+ 
+III. License Summary
+- Apache License 2.0
+- Common Public License 1.0.
+- MIT license
+- EPL 1.0 and LGPL 2.1.
+
+

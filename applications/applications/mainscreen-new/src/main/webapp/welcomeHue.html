@@ -1,0 +1,248 @@
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../hue/css/animate.min.css">
+
+<style>
+    .wrap {
+        display: block;
+        text-align: center;
+        position: relative;
+        float: left;
+        margin-left: 15px;
+        pointer-events: painted;
+    }
+    
+    .mainPanel{
+	    position: absolute; 
+	    z-index: 900; 
+	    top: 10%; 
+	    left: 30%; 
+	    background-color: #2f323c; 
+	    width: 60%; 
+	    height: 70%; 
+	    margin-left: -300px;
+	    box-shadow:0px 8px 50px #2f323c,
+               	   0px 8px 50px #2f323c,
+               	   0px 8px 80px #2f323c,
+               	   0px 8px 120px #2f323c;
+    }
+    
+    .background{
+    	position: absolute;
+    	z-index: 900;
+    	width: 100%;
+    	height: 100%;
+    	left: 0px;
+    	top: 0px;
+    	background-repeat: no-repeat;
+    	background-position: center center;
+    	background-size: cover;
+    	background-image: url('assets/1-login-bck.png');
+    }
+    
+    .text{
+        position:absolute;
+		left: 499px;
+		top: 230px;
+    	color:white;
+    	font-family: "Helvetica", sans-serif;
+    }
+    
+    .title{
+    	position:absolute;
+		left: 499px;
+		top: 170px;
+    	color:white;
+    	font-family: "Helvetica", sans-serif;
+    }
+    
+    .image{
+    	position:absolute;
+		left: 129px !important;
+		top: 130px !important;
+		width:300px !important;
+		height:300px !important;
+    }
+    
+    #bridge{
+    	zoom:1.8;
+    }
+    
+    .myBtn{
+    	position:absolute;
+    	left:499px;
+    	top:330px;
+    }
+    
+    .myBtn a {
+		border-radius: 17px;
+  		box-shadow: 0px 1px 3px #666666;
+  		font-family: "Helvetica", sans-serif;
+  		color: #ffffff;
+  		font-size: 20px;
+  		background: #3fb5ab;
+  		padding: 10px 20px 10px 20px;
+  		text-decoration: none;
+	}
+	.myBtn:hover {
+  		text-decoration: none;
+	}
+    
+    .ng-hide-remove{ 
+		animation:1s fadeIn ease;
+	}
+
+	.ng-hide-add{ 
+		animation:1s fadeOut ease;
+	}  
+</style>
+
+<div class="background">
+    <div class="mainPanel">
+		<div ng-controller="welcomeHueCtrl" style="display: table; position: absolute; z-index: 900; width: 100%; height: 100%; left: 0px; top: 0px; background-color: #2f323c; padding:20px;">
+			<div ui-view>
+				<div class="">
+					<div class="image">
+						<img src="assets/hue/hue.png"></img>
+					</div>				
+					<div ng-show="showPage<=2" class="h1 title" style="color:white;">{{labels.title}}</div>
+					<div ng-show="showPage==0">
+						<div class="h3 text">
+							{{labels.welcome}}<br/>{{labels.welcome2}}
+						</div>
+						<div class="myBtn">
+							<a type="button" ng-click="showPage=1">{{labels.ok}}</a>
+						</div>
+					</div>
+					<div ng-show="showPage==1">
+						<div class="h3 text">
+							<p>{{labels.ensureAccess}}<br/>{{labels.ensureAccess2}}
+						</div>
+						<div class="myBtn">
+							<a type="button" ng-click="sendPost(1); showPage=2">{{labels.next}}</a>
+						</div>
+					</div>
+					<div ng-show="showPage==2">
+						<div class="h3 text">
+							{{labels.pressButton}}<br/>{{labels.pressButton2}}
+						</div>
+						<div class="myBtn">
+							<a type="button" ng-click="sendPost(2); showPage=3">{{labels.ok}}</a>
+						</div>
+					</div>
+					<div ng-show="showPage==3">
+						<div class="h1 title">{{labels.congrats}}</div>
+						<div class="h3 text">
+							<p>{{labels.youAreDone}}</p>
+						</div>
+						<div class="myBtn">
+							<a type="button" ng-click="goToMain()">{{labels.ok}}</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+
+<script>
+
+ewallApp.service('welcomeHueTranslation', function($http){
+    var appLabels = [
+        {
+            lang : 'en',
+            labels : {
+            	next: 'Next',
+            	ok: 'Ok',
+            	title: 'Welcome to Philips Hue configuration',
+                welcome: 'eWall found a Philips Hue in your home.',
+                welcome2: 'This simple procedure will help you to get started.',
+                ensureAccess: 'Ensure you have access to Hue Bridge,',
+                ensureAccess2: 'then select "Next"',
+                pressButton: 'Now press the button in Hue bridge within 30 seconds,',
+                pressButton2: 'then press Ok',
+                congrats: 'Congratulations!',
+                youAreDone: 'Your Philips Hue is ready to be used.'
+            }
+        }, {
+            lang : 'nl',
+            labels : {
+            	next: 'Next',
+            	ok: 'Ok',
+            	title: 'Welcome to Philips Hue configuration',
+                welcome: 'eWall found a Philips Hue in your home.',
+                welcome2: 'This simple procedure will help you to get started.',
+                ensureAccess: 'Ensure you have access to Hue Bridge,',
+                ensureAccess2: 'then select "Next"',
+                pressButton: 'Now press the button in Hue bridge within 30 seconds,',
+                pressButton2: 'then press Ok',
+                congrats: 'Congratulations!',
+                youAreDone: 'Your Philips Hue is ready to be used.'
+            }
+        }, {
+            lang : 'da',
+            labels : {
+            	next: 'Next',
+            	ok: 'Ok',
+            	title: 'Welcome to Philips Hue configuration',
+                welcome: 'eWall found a Philips Hue in your home.',
+                welcome2: 'This simple procedure will help you to get started.',
+                ensureAccess: 'Ensure you have access to Hue Bridge,',
+                ensureAccess2: 'then select "Next"',
+                pressButton: 'Now press the button in Hue bridge within 30 seconds,',
+                pressButton2: 'then press Ok',
+                congrats: 'Congratulations!',
+                youAreDone: 'Your Philips Hue is ready to be used.'
+            }
+        }, {
+            lang : 'de',
+            labels : {
+            	next: 'Next',
+            	ok: 'Ok',
+            	title: 'Welcome to Philips Hue configuration',
+                welcome: 'eWall found a Philips Hue in your home.',
+                welcome2: 'This simple procedure will help you to get started.',
+                ensureAccess: 'Ensure you have access to Hue Bridge,',
+                ensureAccess2: 'then select "Next"',
+                pressButton: 'Now press the button in Hue bridge within 30 seconds,',
+                pressButton2: 'then press Ok',
+                congrats: 'Congratulations!',
+                youAreDone: 'Your Philips Hue is ready to be used.'
+            }
+        }, {
+            lang : 'it',
+            labels : {
+            	next: 'Avanti',
+            	ok: 'Ok',
+            	title: 'Benvenuto: configuriamo Philips Hue',
+                welcome: 'eWall ha trovato una Philips Hue a casa tua.',
+                welcome2: 'Questa semplice procedura ti aiutera\' ad iniziare.',
+                ensureAccess: 'Assicurati di avere accesso al tuo bridge Hue,',
+                ensureAccess2: 'quindi seleziona "Avanti"',
+                pressButton: 'Ora premi il tasto del bridge Hue entro 30 secondi,',
+                pressButton2: 'quindi seleziona "Ok"',
+                congrats: 'Congratulazioni!',
+                youAreDone: 'Il tuo Philips Hue e\' pronto per essere usato.'
+            }
+        } ];
+
+    var hueLabels = function(language) {
+        var lab =  _.find(appLabels, function(l){
+            return l.lang == language;
+        });
+        return lab.labels;
+    };
+
+    return {
+        getLabels: function(language) {
+            return hueLabels(language);
+        }
+    };
+
+});
+
+</script>
+
+
+
+
+

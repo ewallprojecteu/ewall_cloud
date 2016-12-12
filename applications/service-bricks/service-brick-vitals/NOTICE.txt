@@ -1,0 +1,41 @@
+eWALL vitals service brick
+
+Copyright 
+
+Copyright 2013-2016 Hewlett Packard Enterprise (HPE) Italy (https://www.hpe.com/it/it/home.html) 
+
+
+I. Included Software
+
+Software developed by Hewlett Packard Enterprise (HPE) Italy (https://www.hpe.com/it/it/home.html) for the eWALL project.
+
+
+II. Used Software
+
+This product uses software developed at
+Pivotal Software, Inc. (Pivotal)  (https://pivotal.io/).
+Licensed under the Apache License 2.0.
+
+This product uses software developed by
+Swagger project  (swagger.io/).
+Licensed under the Apache License 2.0.
+
+This product uses software developed by
+FasterXML (https://github.com/FasterXML/jackson-datatype-joda).
+Licensed under the Apache License 2.0.
+
+This product uses software developed at
+Couchbase Inc. (http://www.couchbase.org/code/couchbase/java).
+Licensed under the Apache License 2.0.
+
+This product uses software developed at
+Joda.org (http://www.joda.org/joda-time/).
+Licensed under the Apache License 2.0.
+
+
+ 
+III. License Summary
+- Apache License 2.0
+
+
+

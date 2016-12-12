@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="LongMonths">
+        <item>januari</item>
+        <item>februari</item>
+        <item>maart</item>
+        <item>april</item>
+        <item>mei</item>
+        <item>juni</item>
+        <item>juli</item>
+        <item>augustus</item>
+        <item>september</item>
+        <item>oktober</item>
+        <item>november</item>
+        <item>december</item>
+    </ItemGroup>
+    <ItemGroup name="ShortMonths">
+        <item>jan</item>
+        <item>feb</item>
+        <item>maa</item>
+        <item>apr</item>
+        <item>mei</item>
+        <item>jun</item>
+        <item>jul</item>
+        <item>aug</item>
+        <item>sep</item>
+        <item>okt</item>
+        <item>nov</item>
+        <item>dec</item>
+    </ItemGroup>
+    <ItemGroup name="LongDays">
+        <item>zondag</item>
+        <item>maandag</item>
+        <item>dinsdag</item>
+        <item>woensdag</item>
+        <item>donderdag</item>
+        <item>vrijdag</item>
+        <item>zaterdag</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>zon</item>
+        <item>maa</item>
+        <item>din</item>
+        <item>woe</item>
+        <item>don</item>
+        <item>vrij</item>
+        <item>zat</item>
+    </ItemGroup>
+    <ItemGroup name="ChartTitle">
+        <item>Loopafstand in stappen</item>
+        <item>Loopafstand in kilometers</item>
+        <item>Calorieën verbrand</item>
+    </ItemGroup>
+    <ItemGroup name="yTitle">
+        <item>Stappen</item>
+        <item>Kilometers</item>
+        <item>Calorieën</item>
+    </ItemGroup>
+    <ItemGroup name="ChartNavLabels">
+        <item>Stappen</item>
+        <item>Kilometers</item>
+        <item>Calorieën</item>
+    </ItemGroup>
+    <ItemGroup name="NavActLabels">
+        <item>Activiteit per</item>
+        <item>Dag</item>
+        <item>Week</item>
+        <item>Maand</item>
+    </ItemGroup>
+    <ItemGroup name="Messages">
+        <item>
+            <Title>Gefeliciteerd</Title>
+            <Content>U heeft uw doel voor de geselecteerde periode bereikt.</Content>
+        </item>
+    </ItemGroup>
+    <ItemGroup name="AppLabels">
+        <item>
+            <shorthour>u</shorthour>
+            <steps>Stappen</steps>
+        </item>
+    </ItemGroup>
+    <ItemGroup name="ColorLegendLabels">
+        <Label>Bewegingslegenda</Label>
+        <Color id="1">Zeer laag</Color>
+        <Color id="2">Laag</Color>
+        <Color id="3">Gemiddeld</Color>
+        <Color id="4">Hoog</Color>
+        <Color id="5">Zeer hoog</Color>
+    </ItemGroup>
+</language_data>

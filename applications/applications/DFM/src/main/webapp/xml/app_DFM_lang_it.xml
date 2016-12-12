@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="LongMonths">
+        <item>gennaio</item>
+        <item>febbraio</item>
+        <item>marzo</item>
+        <item>aprile</item>
+        <item>maggio</item>
+        <item>giugno</item>
+        <item>luglio</item>
+        <item>agosto</item>
+        <item>settembre</item>
+        <item>ottobre</item>
+        <item>novembre</item>
+        <item>dicembre</item>
+    </ItemGroup>
+    <ItemGroup name="ShortMonths">
+        <item>gen</item>
+        <item>feb</item>
+        <item>mar</item>
+        <item>apr</item>
+        <item>mag</item>
+        <item>giu</item>
+        <item>lu</item>
+        <item>ago</item>
+        <item>sett</item>
+        <item>ott</item>
+        <item>nov</item>
+        <item>dic</item>
+    </ItemGroup>
+    <ItemGroup name="LongDays">
+        <item>domenica</item>
+        <item>lunedì</item>
+        <item>martedì</item>
+        <item>mercoledì</item>
+        <item>giovedì</item>
+        <item>venerdì</item>
+        <item>sabato</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>dom</item>
+        <item>lu</item>
+        <item>ma</item>
+        <item>me</item>
+        <item>gio</item>
+        <item>ve</item>
+        <item>sa</item>
+    </ItemGroup>
+    <ItemGroup name="AppLabels">
+        <item>Durata</item>
+        <item>h</item>
+        <item>ora</item>
+        <item>ore</item>
+        <item>minuto</item>
+        <item>minuti</item>
+        <item>secondo</item>
+        <item>secondi</item>
+        <item>Nessuna informazione disponibile</item>
+    </ItemGroup>
+    <ItemGroup name="ExtDataMessage">
+        <item name="sleeping">
+            <subitem>Dormire</subitem>
+            <subitem>Il nostro sensore di letto ti ha trovato a letto</subitem>
+        </item>
+        <item name="showering">
+            <subitem>Fare una doccia</subitem>
+            <subitem>Il nostro sensore di umidità ha rilevato che stavi facendo una doccia in bagno</subitem>
+        </item>
+        <item name="entertaining">
+            <subitem>Relax &amp; Intrattenimento</subitem>
+            <subitem>Il nostro sensore di posizione ti ha trovato nel soggiorno</subitem>
+        </item>
+        <item name="cooking">
+            <subitem>Cucinare &amp; Mangiare</subitem>
+            <subitem>Il nostro sensore di posizione ti ha trovato in cucina</subitem>
+        </item>
+        <item name="sanitary_visits">
+            <subitem>Visita sanitaria</subitem>
+            <subitem>
+            </subitem>
+        </item>
+        <item name="getting_out">
+            <subitem>Uscire</subitem>
+            <subitem>Abbiamo rilevato che sei uscito all'aperto</subitem>
+        </item>
+        <item name="houseworks">
+            <subitem>Faccende domestiche</subitem>
+            <subitem>eWALL ha rilevato che stai sbrigando le faccende domestiche</subitem>
+        </item>
+        <item name="visits">
+            <subitem>Visite a domicilio</subitem>
+            <subitem>
+            </subitem>
+        </item>
+    </ItemGroup>
+</language_data>

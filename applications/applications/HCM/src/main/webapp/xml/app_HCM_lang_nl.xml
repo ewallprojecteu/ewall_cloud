@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="HistoryTxt">
+        <item>Vandaag</item>
+        <item>Vorige Week</item>
+        <item>Vorige Maand</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>zon</item>
+        <item>maa</item>
+        <item>din</item>
+        <item>woe</item>
+        <item>don</item>
+        <item>vrij</item>
+        <item>zat</item>
+    </ItemGroup>
+    <ItemGroup name="MeasureTxt">
+        <item>Hartslag</item>
+        <item>Verzadiging</item>
+        <item>Bloeddruk</item>
+    </ItemGroup>
+    <ItemGroup name="MeasureValueTxt">
+        <item>SPM</item>
+        <item>%</item>
+        <item>
+            <subitem>SYS</subitem>
+            <subitem>DIA</subitem>
+        </item>
+    </ItemGroup>
+    <ItemGroup name="SystemMessages">
+        <item>Meting</item>
+        <item>Geschiedenis</item>
+        <item>Start Meting</item>
+        <item>Probeert u het later nog eens</item>
+    </ItemGroup>
+    <ItemGroup name="ColorLegendLabels">
+        <Label>Legenda</Label>
+        <Color id="1">Lage waarde</Color>
+        <Color id="2">Normale waarde</Color>
+        <Color id="3">Hoge waarde</Color>
+    </ItemGroup>
+    <ItemGroup name="MeasureInfoTxt">
+        <item>
+            <subitem>De slimme stethoscoop is een van de eWALL apparaten die gebruikt kunnen worden voor het monitoren van het hart</subitem>
+            <subitem>Het meet de hartslag en de prestaties van het hart</subitem>
+            <subitem>Druk op de "Start" knop op de slimme stethoscoop and hou hem tegen de borstkas gedrukt, nabij het hart.</subitem>
+            <subitem>Druk op de "START METING" knop op het scherm.</subitem>
+        </item>
+        <item>
+            <subitem>De zuurstofsaturatie meter meet en toont de functionele zuurstof saturatie van het hemoglobine (% SpO&lt;sub&gt;2&lt;/sub&gt;) alsmede de hartslag.</subitem>
+            <subitem>Steek uw vinger, met de nagel naar boven gericht in de zuurstofsaturatie meter totdat uw vingertop de ingebouwde stop raakt.</subitem>
+            <subitem>Zodra uw vinger in het apparaat zit, zal het apparaat een korte start procedure doorlopen. Controleer of alle lampjes aangaan gedurende deze opstart procedure.</subitem>
+            <subitem>Druk op de "START METING" knop op het scherm.</subitem>
+        </item>
+        <item>
+            <subitem>Het apparaat meet uw bloeddruk en hartslag eenvoudig en snel.</subitem>
+            <subitem>U kunt de band om uw linker- of rechter arm binden. Bind de band zo om dat het slangetje aan de kant van uw elleboog zit.</subitem>
+            <subitem>Selecteer uw gebruikers ID (A of B).</subitem>
+            <subitem>Druk op de O/I START knop. Alle symbolen zullen op het display verschijnen. Het gebruikers ID symbool dat u geselecteerd heeft zal knipperen op het display.</subitem>
+            <subitem>Druk op de "START METING" knop op het scherm.</subitem>
+        </item>
+    </ItemGroup>
+</language_data>

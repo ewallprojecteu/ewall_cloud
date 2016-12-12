@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="NavigationTxt">
+        <item>Статус</item>
+        <item>История</item>
+    </ItemGroup>
+    <ItemGroup name="HistoryTxt">
+        <item>Днес</item>
+        <item>Last Week</item>
+        <item>Last Month</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>Нед.</item>
+        <item>Пон.</item>
+        <item>Вт.</item>
+        <item>Ср.</item>
+        <item>Чет.</item>
+        <item>Пет.</item>
+        <item>Съб.</item>
+    </ItemGroup>
+    <ItemGroup name="ParamLabelTxt">
+        <item>Температура</item>
+        <item>Влажност</item>
+        <item>Осветеност</item>
+    </ItemGroup>
+    <ItemGroup name="ParamDimensionTxt">
+        <item>&#176;C</item>
+        <item>%</item>
+        <item>lux</item>
+    </ItemGroup>
+    <ItemGroup name="LocationTxt">
+        <item>Кухня</item>
+        <item>Всекидневна</item>
+        <item>Спалня</item>
+        <item>Баня</item>
+    </ItemGroup>
+    <ItemGroup name="AppLabels">
+        <item>No information available</item>
+    </ItemGroup>
+    <ItemGroup name="ColorLegendLabels">
+        <Label>Legend</Label>
+        <Color id="1">Low value</Color>
+        <Color id="2">Normal value</Color>
+        <Color id="3">High value</Color>
+    </ItemGroup>
+</language_data>

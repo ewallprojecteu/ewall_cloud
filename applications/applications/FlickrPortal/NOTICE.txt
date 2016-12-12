@@ -1,0 +1,113 @@
+eWALL FlickrPortal application
+
+Copyright 
+
+Ericsson Nikola Tesla d.d. (http://www.ericsson.hr/homepage)
+
+
+I. Included Software
+
+Ericsson Nikola Tesla d.d. (http://www.ericsson.hr/homepage) for the eWALL project.
+
+
+II. Used Software
+
+This product uses software (AngularJS) developed at
+The Google (www.google.com).
+Licensed under the MIT License.
+
+This product uses software (jasny-bootstrap)  developed by 
+Arnold Daniels (https://github.com/jasny/bootstrap)
+Licensed under the Apache 2.0 and MIT License.
+
+This product uses (flag-icons-css)  developed by 
+Panayiotis Lipiridis (https://github.com/lipis/flag-icon-css)
+Licensed under the MIT License.
+Copyright (c) 2013 Panayiotis Lipiridis
+
+This product includes jquery software developed at
+jQuery Foundation (https://jquery.org/).
+Licensed under the MIT License.
+
+This product uses software (angular-cookies) developed at
+Angular (https://github.com/angular/bower-angular-cookies).
+Licensed under the MIT License.
+
+This product uses software (angular-bootstrap) developed by
+he AngularUI team (https://github.com/organizations/angular-ui/teams/291112).
+Licensed under the MIT License.
+
+This product uses software (angular-jwt) developed by
+Auth0 (https://github.com/auth0/angular-jwt).
+Licensed under the MIT License.
+
+This product uses software (angular-ui-router) developed by
+The AngularUI team (http://angular-ui.github.io/).
+Licensed under the MIT License.
+
+This product uses software (angular-resources) developed by
+Angular (https://github.com/angular/bower-angular-resource).
+Licensed under the MIT License.
+
+This product uses software (angular-sanitize) developed by
+Angular (https://github.com/angular/bower-angular-sanitize).
+Licensed under the MIT License.
+
+This product uses software (angular-local-storage) developed by
+Gregory Pike (https://github.com/grevory/angular-local-storage).
+Licensed under the MIT License.
+Copyright (c) 2016 Gregory Pike
+
+This product uses software (angular-localalization) developed by
+Rahul Doshi (https://github.com/doshprompt/angular-localization).
+Licensed under the MIT License.
+Copyright (c) 2014 Rahul Doshi
+
+This product uses software (angular-language-picker) developed by
+azachar (https://github.com/azachar/angular-language-picker).
+Licensed under the MPL-2.0 License.
+
+This product uses software (angular-modal-service) developed by
+Dave Kerr (https://github.com/dwmkerr/angular-modal-service).
+Licensed under the MIT License.
+Copyright (c) 2014 Dave Kerr
+
+This product uses Bootstrap software developed at
+Tweeter (https://github.com/twbs/bootstrap)
+Licensed under the MIT License.
+
+Copyright (c) 2011-2016 Twitter, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+This product uses software (font-awesome) developed by
+The Font Awesome (https://github.com/FontAwesome)
+Licensed under the SIL OFL 1.1 License.
+
+This product uses software (Font Awesome CSS, LESS, and SCSS files ) developed by
+The Font Awesome (https://github.com/FontAwesome)
+Licensed under the MIT License.
+
+ 
+III. License Summary
+- Apache License 2.0
+- MIT License
+- SIL OFL 1.1 License
+

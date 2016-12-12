@@ -1,0 +1,28 @@
+<div id="puzzle-containment" ng-init="init()">
+    <div class="pure-g" style="max-width:1280px;margin:auto">
+        <div class="ewall-item pure-u-7-12">        
+            <img id="source_image" class="pure-img" http-src="{{image}}">
+        </div>
+        <div class="ewall-item pure-u-5-12">
+            <div id="pile"></div>
+            <div id="puzzle_solved" class="well-done" style="zoom:1.5">
+				<i class="fa fa-star fa-4x icon" aria-hidden="true"></i>
+				<h1>{{labels.well}}</h1>
+				<!--
+				<div class="col-md-3 col-md-offset-3 text-center">
+					<div class="h3">{{labels.time}}</div>
+					<div class="text-center number">{{time}}s</div>
+				</div>
+				<div class="col-md-3 text-center">
+					<div class="h3">{{labels.moves}}</div>
+					<div class="text-center number">{{moves}}</div>
+				</div>
+				-->
+			</div>
+        </div>
+    </div>
+</div>
+<div class="text-center" style="margin-top:8px;">
+	<a class="h3" href="#" ng-click="gameInterrupted()" style="margin-right:20px">{{labels.back}}</a>
+    <a class="h3" href="#" ng-click="restartPuzzle()" style="margin-left:20px">{{labels.restart}}</a>
+</div>

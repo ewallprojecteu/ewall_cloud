@@ -1,0 +1,25 @@
+Profiling Server
+
+Copyright 
+
+Copyright 2013-2016 Ericsson Nikola Tesla d.d. (http://www.ericsson.hr/homepage)
+
+
+I. Included Software
+
+Software developed by Ericsson Nikola Tesla d.d. (http://www.ericsson.hr/homepage) for the eWALL project.
+
+
+II. Used Software
+
+This product uses software developed at
+Pivotal Software, Inc. (Pivotal)  (https://pivotal.io/).
+Licensed under the Apache License 2.0.
+
+This product uses software developed by
+Swagger project  (swagger.io/).
+Licensed under the Apache License 2.0.
+
+
+III. License Summary
+- Apache License 2.0

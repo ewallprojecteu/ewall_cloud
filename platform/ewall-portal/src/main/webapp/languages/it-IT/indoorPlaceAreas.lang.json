@@ -1,0 +1,18 @@
+{
+    "bathroom": "Bagno",
+    "bedroom": "Camera da letto",
+    "cellar": "Cantina",
+    "corridor": "Corridoi",
+    "diningRoom": "Sala da pranzo",
+    "entranceHall": "Ingresso",
+    "guestRoom": "Stanza degli ospiti",
+    "hobbyRoom": "Sala hobby",
+    "kitchen": "Cucina",
+    "livingRoom": "Soggiorno",
+    "selectArea": "Selezionare l'area",
+    "staircase": "Scale",
+    "storageRoom": "Sgabuzzino",
+    "unknown": "Sconosciuto",
+    "wardrobe": "Guardaroba",
+    "workRoom": "Studio"
+}

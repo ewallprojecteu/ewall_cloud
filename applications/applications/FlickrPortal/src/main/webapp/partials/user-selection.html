@@ -1,0 +1,23 @@
+<section>
+	<p class="text-right" style="margin-top: 40px;">
+		<language-picker currentlanguage="currentlanguage"
+			languages="supportedLangs" on-change="onLanguageChange(language)"></language-picker>
+	</p>
+	<div class=row>
+		<div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+			<form class="form-signin" role="form">
+				<h2 class="form-signin-heading" i18n="userSelection.title"></h2>
+			
+				<select ng-change="getCredentialsFor(user.username)" ng-model="user" ng-options="user.username for user in users" class="form-control">
+					<option value="" ng-show="!user" i18n="userSelection.selectUserHint"></option>
+				</select>
+				<p ng-show="user && credentialsExist" class="navbar-text navbar-left text-muted" i18n="userSelection.credentialsExist"></p>
+				<p ng-show="user && !credentialsExist" class="navbar-text navbar-left text-muted" i18n="userSelection.credentialsMissing"></p>
+				<br />
+				
+				<button ng-show="user && credentialsExist" ng-click="setUser()" class="btn btn-success btn-block" ui-sref="home.availablePhotos" i18n="userSelection.openPortal"></button>
+				<button ng-show="user && !credentialsExist" ng-click="authorizeUser()" class="btn btn-primary btn-block" i18n="userSelection.authUser"></button>
+			</form>
+		</div>
+	</div>
+</section>

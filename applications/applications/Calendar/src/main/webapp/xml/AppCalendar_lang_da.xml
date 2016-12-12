@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="Dialog">
+        <item name="Header">
+            <Add>Tilføj en ny begivenhed</Add>
+            <Edit>Rediger/slet begivenhed</Edit>
+        </item>
+        <item name="Labels">
+            <Title>Overskrift</Title>
+            <StartDate>Startdato</StartDate>
+            <EndDate>Slutdato</EndDate>
+            <StartTime>Starttidspunkt</StartTime>
+            <EndTime>Sluttidspunkt</EndTime>
+            <Location>Lokation</Location>
+            <Indoor>Inden døre</Indoor>
+            <Outdoor>Unden døre</Outdoor>
+            <Question1>Hvad har du brug for at have med dig?</Question1>
+            <Question2>Hvordan vil du nå derhen?</Question2>
+            <Question3>Vil du vælge dine øvelser fra videotræneren?</Question3>
+            <Question4>Vil du spille et af eWALL spillene?</Question4>
+            <RepeatInterval>Gentag handling</RepeatInterval>
+            <RepeatTimes>Gentag tider</RepeatTimes>
+            <ReminderTime>Påmindelse</ReminderTime>
+            <Hourly>Hver time</Hourly>
+            <Daily>Dagligt</Daily>
+            <Weekly>Ugentligt</Weekly>
+            <Monthly>Månedligt</Monthly>
+            <Yearly>Årligt</Yearly>
+            <ReminderTimeVal15>15 min.</ReminderTimeVal15>
+            <ReminderTimeVal30>30 min.</ReminderTimeVal30>
+            <ReminderTimeVal120>2 timer</ReminderTimeVal120>
+            <ReminderTimeVal1440>1 dag før</ReminderTimeVal1440>
+            <TransportationFoot>Til fods</TransportationFoot>
+            <TransportationCar>Bil</TransportationCar>
+            <TransportationTaxi>Taxa</TransportationTaxi>
+            <TransportationOther>Andet</TransportationOther>
+            <DoctorName>Læges navn</DoctorName>
+            <DoctorPhone>Læges telefonnummer</DoctorPhone>
+            <MedExam>Lægelig undersøgelse</MedExam>
+            <InsCard>Sundhedskort</InsCard>
+            <OtherDocs>Andet</OtherDocs>
+            <Wallet>Pung</Wallet>
+            <Keys>Nøgler</Keys>
+            <OtherBelongings>Andet</OtherBelongings>
+            <Yes>Ja</Yes>
+            <No>Nej</No>
+            <Shower>Bad</Shower>
+            <Groom>Soignering</Groom>
+            <Bloodpressure>Blodtryk</Bloodpressure>
+            <SPO2>Iltmætning</SPO2>
+            <Heartrate>Hjerterytme</Heartrate>
+            <Breakfast>Morgenmad</Breakfast>
+            <Lunch>Frokost</Lunch>
+            <Dinner>Aftensmad</Dinner>
+            <TitleMedicalVal>Tjek hos lægen</TitleMedicalVal>
+            <TitlePhysicalVal>Fysisk træning</TitlePhysicalVal>
+            <TitleCognitiveVal>Kognitiv træning</TitleCognitiveVal>
+        </item>
+        <item name="Buttons">
+            <Add>Tilføj begivenhed</Add>
+            <Edit>Rediger begivenhed</Edit>
+            <Delete>Slet begivenhed</Delete>
+            <DeleteAll>Slet alt</DeleteAll>
+            <Cancel>Annuller</Cancel>
+        </item>
+    </ItemGroup>
+</language_data>

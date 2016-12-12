@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="HistoryTxt">
+        <item>Astăzi</item>
+        <item>Last Week</item>
+        <item>Last Month</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>Du</item>
+        <item>Lu</item>
+        <item>Ma</item>
+        <item>Mi</item>
+        <item>Jo</item>
+        <item>Vi</item>
+        <item>Sa</item>
+    </ItemGroup>
+    <ItemGroup name="MeasureTxt">
+        <item>Rata bătăilor inimii</item>
+        <item>Satuartion</item>
+        <item>Presiunea sângelui</item>
+    </ItemGroup>
+    <ItemGroup name="MeasureValueTxt">
+        <item>BIPM</item>
+        <item>%</item>
+        <item>
+            <subitem>SYS</subitem>
+            <subitem>DIA</subitem>
+        </item>
+    </ItemGroup>
+    <ItemGroup name="SystemMessages">
+        <item>Măsurătoare</item>
+        <item>Istorie</item>
+        <item>Start măsurători</item>
+        <item>Vă rugăm să încercați mai târziu</item>
+    </ItemGroup>
+    <ItemGroup name="ColorLegendLabels">
+        <Label>Legend</Label>
+        <Color id="1">Low value</Color>
+        <Color id="2">Normal value</Color>
+        <Color id="3">High value</Color>
+    </ItemGroup>
+    <ItemGroup name="MeasureInfoTxt">
+        <item>
+            <subitem>Stetoscopul Deștept este unul din dispozitivele eWALL pentru monitorizarea stării inimii.</subitem>
+            <subitem>Acesta măsoară rata bătăilor inimii și permormanța inimii.</subitem>
+            <subitem>Apasă butonul "Start" al Stetoscopului Deștept și apasă-l contrar pieptului tău, în apropierea inimii.</subitem>
+            <subitem>Apasă butonul "START MĂSURĂTORI" de pe ecran.</subitem>
+        </item>
+        <item>
+            <subitem>Oximetrul măsoară și afișează saturația de oxigen din homoglobina arterială și rata bătăilor inimii.</subitem>
+            <subitem>Introdu degetul, cu unghia în sus, în Oximetru până când vârful degetului atinge zona de oprire.</subitem>
+            <subitem>Atunci când degetul este introdus dispozitivul execută o scurtă secvență de început. Controlează ca toate ledurile să luminează pe parcursul secvenței de început.</subitem>
+            <subitem>Apasă butonul "START MĂSURĂTORI" de pe ecran.</subitem>
+        </item>
+        <item>
+            <subitem>Dispozitivul măsoară presiunea sângelui și rata de bătăi a inimii simplu și rapid.</subitem>
+            <subitem>Puteți înveli manșeta fie pe brațul drept sau stâng. Aplicați manșeta astfel încât tubul de aer să fie la marginea cotului.</subitem>
+            <subitem>Selectează ID-ul tău (A sau B).</subitem>
+            <subitem>Apasă butonul START O/I. Toate simbolurile apar pe ecran. Simbolul ID-ul pe care l-ai selectat clipește pe ecran.</subitem>
+            <subitem>Apasă butonul "START MĂSURĂTORI" de pe ecran.</subitem>
+        </item>
+    </ItemGroup>
+</language_data>

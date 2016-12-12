@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="NavigationTxt">
+        <item>Status</item>
+        <item>Geschiedenis</item>
+    </ItemGroup>
+    <ItemGroup name="HistoryTxt">
+        <item>Vandaag</item>
+        <item>Vorige Week</item>
+        <item>Vorige Maand</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>zon</item>
+        <item>maa</item>
+        <item>din</item>
+        <item>woe</item>
+        <item>don</item>
+        <item>vrij</item>
+        <item>zat</item>
+    </ItemGroup>
+    <ItemGroup name="ParamLabelTxt">
+        <item>Temperatuur</item>
+        <item>Vochtigheid</item>
+        <item>Verlichtingssterkte</item>
+    </ItemGroup>
+    <ItemGroup name="ParamDimensionTxt">
+        <item>&#176;C</item>
+        <item>%</item>
+        <item>lux</item>
+    </ItemGroup>
+    <ItemGroup name="LocationTxt">
+        <item>Keuken</item>
+        <item>Woonkamer</item>
+        <item>Slaapkamer</item>
+        <item>Badkamer</item>
+    </ItemGroup>
+    <ItemGroup name="AppLabels">
+        <item>Geen informatie beschikbaar</item>
+    </ItemGroup>
+    <ItemGroup name="ColorLegendLabels">
+        <Label>Legenda</Label>
+        <Color id="1">Lage waarde</Color>
+        <Color id="2">Normale waarde</Color>
+        <Color id="3">Hoge waarde</Color>
+    </ItemGroup>
+</language_data>

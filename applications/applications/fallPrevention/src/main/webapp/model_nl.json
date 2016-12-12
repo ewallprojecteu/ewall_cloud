@@ -1,0 +1,235 @@
+{
+  "slices": [
+    {
+      "id": "Home",
+      "coordinates": "413,435,1,436,12,333,46,248,123,144",
+      "title": "Risico's gerelateerd aan uw huis omgeving",
+      "intro": ", de meeste huizen hebben potentiele gevaren, en veel ouderen hebben spullen waarover ze kunnen struikelen of uitglijden in huis of rond huis liggen.",
+      "action": "Selecteer de items die u terug vindt in uw huis en druk op GO!",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "carpets",
+          "danger": false,
+          "mode": "user",
+          "activeText": "U heeft losse vloedkleden of karpet in huis liggen. Verwijder deze of zorg ervoor dat ze goed gelegd zijn. Let erop dat er geen opstaande randen zijn en dat het karpet niet gevouwen is.",
+          "inactiveText": "Heeft u losse vloerkleden of karpet?"
+        },
+        {
+          "id": "floors",
+          "danger": false,
+          "mode": "user",
+          "activeText": "U heeft gladde vloeren. Maak deze zelf niet schoon, vraag uw familie of uw hulp in de huishouding.",
+          "inactiveText": "Heeft u gladde vloeren?"
+        },
+        {
+          "id": "stairs",
+          "danger": false,
+          "mode": "user",
+          "activeText": "U heeft trappen in huis. Gebruik altijd de handreling, ga de trap niet op of af terwijl u veel spullen in uw handen heeft en draag goed schoeisel.",
+          "inactiveText": "Heeft u trappen in huis?"
+        },
+        {
+          "id": "poorLight",
+          "danger": false,
+          "mode": "user",
+          "activeText": "De verlichting in uw huis is zwak. Probeer de verlichting te verbeteren. Doe dit door lampen te vervangen of door het licht in donkere kamers te optimaliseren.",
+          "inactiveText": "Heeft u slecht verlichte kamers in uw huis?"
+        }
+      ]
+    },
+    {
+      "id": "Medication",
+      "coordinates": "129,130,215,64,320,23,419,10,418,420",
+      "title": "Risico's gerelateerd aan medicijn gebruik",
+      "intro": ", Medicatie kan in verband worden gebracht met een verhoogd risico op vallen.",
+      "action": "Kijk naar onderstaande informatie die verstrekt is door uw huisarts of zorgverlener. Wanneer u meer informatie nodig hebt, neem dan contact met hen op. Wanneer u klaar bent, druk op OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "polipharmacotherapy",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Let er op dat, indien u veel medicatie gebruikt, dit kan leiden tot een vergrote kans op vallen. Wees er bewust van dat andere factoren uw risico op vallen nog verder vergroten.",
+          "inactiveText": "Uw huisarts of zorgverlener heeft indicatie gegeven voor risico op veel medicatie inname."
+        },
+        {
+          "id": "frid",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Let er op dat u medicatie neemt die het risico op vallen vergroot. Wees er bewust van dat andere factoren het risico op vallen nog verder vergroten.",
+          "inactiveText": "Uw huisarts of zorgverlener heeft geen indicatie gegeven dat u medicatie neemt die het risico op vallen verhoogt."
+        }
+      ]
+    },
+    {
+      "id": "Vitals",
+      "coordinates": "434,4,544,18,656,66,722,122,432,414",
+      "title": "Risico's gerelateerd aan uw gezondheids factoren",
+      "intro": ", sommige vitale waarden kunnen gerelateerd zijn aan het risico op vallen, deze zouden gemeten moeten worden.",
+      "action": "Kijk eens naar de resultaten van uw vitale waarden hieronder en kijk of de volgende items van toepassing zijn voor u. Wanneer u klaar bent druk op OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "hypertension",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "U zou kunnen leiden aan orthostatsiche hypotensie, de eWALL heeft namelijk gemerkt dat uw bloeddruk daalt als u opstaat. Het is aan te raden om een afspraak met uw huisarts of zorgverlener te maken voor verdere informatie en behandeling.",
+          "inactiveText": "Heeft u last van plotselinge bloeddrukdalen bij opstaan?"
+        },
+        {
+          "id": "dizziness",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Als u zich licht in het hoofd voelt of duizelig bent, is het aan te raden om een afspraak te maken met uw huisarts of zorgverlener voor verdere informatie en behandeling.",
+          "inactiveText": "Voelt u zich licht in het hoofd of duizelig?"
+        }
+      ]
+    },
+    {
+      "id": "Eyesight",
+      "coordinates": "447,419,737,130,800,210,840,306,857,417",
+      "title": "Risico's gerelateerd aan uw gezichtsvermogen",
+      "intro": ", ouder worden gaat vaak gepaard met verandering in uw zicht, welke kunnen leiden tot een verhoogd risico op vallen. Gelukkig is het risico van deze factoren gemakkelijk te verminderen door veranderingen in het individueel gedrag en door veranderingen in huis.",
+      "action": "Kijk naar de onderstaande informatie, die verstrekt is door uw huisarts of zorgverlener. Wanneer u meer informatie nodig hebt, neem dan contact met hen op. Als u klaar bent, druk op OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "multifocal",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Let er op dat u bij gebruik van een multifocale bril of lenzen moeite kan hebben met het inschatten van diepte van afstand tussen obstakels en uzelf. Let er op dat u geen of weinig obstakels op de vloer hebt staan.",
+          "inactiveText": "Uw huisarts of zorgverleners heeft geen indicatie dat u gebruik maakt van een multifocale bril of lenzen."
+        },
+        {
+          "id": "impairments",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "U heeft verminderd zicht, vergeet niet om uw zicht regelmatig te laten controleren bij de opticien. Goed onderhoud van ziekten die effect kunnen hebben op uw ogen kunnen helpen om het resterende zicht te behouden.",
+          "inactiveText": "U huisarts of zorgverlener heeft aangegeven dat u geen last heeft van oog of ooggerelateerde problemen"
+        }
+      ]
+    },
+    {
+      "id": "Cognitive",
+      "coordinates": "455,435,866,432,851,535,804,647,746,725",
+      "title": "Risico's gerelateerd aan uw cognitieve vermogen",
+      "intro": ", Mensen met neurlogische ziekten zoals Parkinson, Multiple Sclerosis, hersenbloeding en Alzheimer hebben meer kans om te vallen.",
+      "action": "Kijk eens naar de informatie die gegeven is door uw huisarts of zorgverlener. Wanneer u meer informatie wilt hebben, neem dan contact met hen op. Selecteer ook de items die bij u van toepassing is, wanneer u klaar bent druk op OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "fear",
+          "danger": false,
+          "mode": "user",
+          "activeText": "U bent bang om te vallen. Laat dit niet uw dagelijks leven beperken. Neem contact op met uw huisarts, hij/zij kan u specifieke trainingen geven die aansluiten op uw behoeften.",
+          "inactiveText": "Bent u bang om te vallen?"
+        },
+        {
+          "id": "cognitive",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "U leidt aan een verminderd cognitief vermogen, vergeet niet om uw hersenen regelmatig te trainen. Speel een spel om dit te doen!",
+          "inactiveText": "Uw huisarts of zorgverlener heeft aangegeven dat u niet leidt aan cognitieve problemen."
+        },
+        {
+          "id": "extrapyramidal",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Als u last heeft van onwillekeurige bewegingen, veroorzaakt door medicatie, dan is het belangrijk dat u regelmatig controles heeft bij uw huisarts of neuroloog.",
+          "inactiveText": "Gebruikt u anti-psychotische of anti-depressieve medicatie dat kan leiden tot onwillekeurige bewegingen?"
+        }
+      ]
+    },
+    {
+      "id": "Feet",
+      "coordinates": "447,448,734,735,648,804,557,841,447,856",
+      "title": "Risico's gerelateerd aan uw voeten",
+      "intro": ", voet problemen is een veel voorkomend probleem bij ouderen en kan worden geassocieerd met balans problemen en verstoorde functionele mogelijkheden. Deze problemen kunnen voortkomen uit ouderdom, specifieke stoornissen of na een langere periode van inactiviteit. Dit zijn de meest voorkomende oorzaken van vallen.",
+      "action": "Kijk of u last heeft van pijn in uw voeten. Bekijk ook de informatie gegeven door uw huisarts of zorgverlener. Wilt u meer informatie, neem dan contact met hen op. Wanneer u klaar bent, druk op OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "pain",
+          "danger": false,
+          "mode": "user",
+          "activeText": "U heeft last van pijn in uw voeten. Uw huisarts kan u een efficientere pijnbestrijding aanbieden. Plan regelmatig controles.",
+          "inactiveText": "Heeft u last van pijn in uw voeten?"
+        },
+        {
+          "id": "ankle",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "u heeft last van verminderde flexibiliteit in uw enkels. Om risico's op vallen te verminderen, is het belangrijk dat u goed schoeisel draagt, en dat u regelmatig controles plant met uw podotherapeut.",
+          "inactiveText": "Uw huisarts of zorgverlener heeft aangegeven dat u geen last heeft van enkel problemen."
+        },
+        {
+          "id": "hallux",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "U kan last hebben van een afwijkende voetstand. Om risico's op vallen te verminderen, is het belangrijk dat u goed schoeisel draagt en dat u regelmatig controles plant met uw podotherapeut.",
+          "inactiveText": "Uw huisarts of zorgverlener heeft aangegeven dat u geen last heeft van een afwijkende voetstand."
+        },
+        {
+          "id": "tactile",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "U heeft last van verminderde gevoeligheid in uw voetzool. Om risico's op vallen te verminderen, is het belangrijk dat u goed schoeisel draagt en dat u regelmatig controles plant met uw podotherapeut.",
+          "inactiveText": "Uw huisarts of zorgverlener heeft aangegeven dat u geen problemen heeft met uw voetzool"
+        },
+        {
+          "id": "toe",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "U heeft last van verminderde spieractiviteit in uw hiel. Om risico's op vallen te verminderen, is het belangrijk dat u goed schoeisel draagt en dat u regelmatig controles plant met uw podotherapeut.",
+          "inactiveText": "Uw huisarts of zorgverlener heeft aangegeven dat u geen problemen heeft met de spieren in uw hiel"
+        }
+      ]
+    },
+    {
+      "id": "Social",
+      "coordinates": "434,456,139,747,222,806,319,848,437,862",
+      "title": "Risico's gerelateerd aan een gebrek aan sociale activiteiten",
+      "intro": ", anst om te vallen is de meest voorkomende reden waarom mensen zich sociaal terugtrekken.",
+      "action": "Kijk of de volgende informatie op u van toepassing is",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "avoidance",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Uw sociale leven is verminderd. Als uw angst om te vallen ervoor zorgt dat u zich sociaal afzondert, is het aan te raden dat u contact opneemt met uw huisarts. Hij/zij kan u specifieke training aanbieden die aansluit op uw behoeften.",
+          "inactiveText": "Vermijdt u het omgaan met andere mensen regelmatig, thuis of ergerns anders?"
+        }
+      ]
+    },
+    {
+      "id": "Legs",
+      "coordinates": "10,448,419,447,129,737,59,641,19,531",
+      "title": "Risico's gerelateerd aan uw benen",
+      "intro": ",loop problemen kunnen ontstaan door ouderdom, specifieke stoornissen of door langere perioden van inactiviteit. Dit zijn de meest voorkomende oorzaken van vallen.",
+      "action": "Kijk of de volgende items op u van toepasing zijn, en kijk naar de informatie die de eWALL heeft verzameld. Wanneer u klaar bent, druk op OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "exercise",
+          "danger": false,
+          "mode": "home",
+          "activeText": "eWALL heeft gemiddeld slechts XXX stappen geregistreerd de afgelopen YYY dagen, Probeer meer actief te zijn!",
+          "inactiveText": "Heel goed! eWALL heeft gemiddeld XXX stappen geregistreerd de afgelopen YYY dagen. Uw benen zijn sterk!"
+        },
+        {
+          "id": "knee",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Als u last heeft van pijn in uw knieeen, is het aan te raden dat u regelmatig controles plant met uw orthopedist. Op deze manier kunt u het risico op vallen vermijden.",
+          "inactiveText": "Heeft u pijn in uw knieeen"
+        }
+      ]
+    }
+  ],
+  "fitbitnosteps": "eWALL heeft geen stappen kunnen detecteren in de afgelopen dagen. Zorg dat u uw Fitbit activiteiten meter gebruikt!",
+  "fitbitnodata": "eWALL is niet in staat om uw activiteiten data op te halen!",
+  "fitbitok": "Heel goed! eWALL heeft gemiddeld XXX stappen geregistreerd de afgelopen YYY dagen. Uw benen zijn sterk!"
+
+}

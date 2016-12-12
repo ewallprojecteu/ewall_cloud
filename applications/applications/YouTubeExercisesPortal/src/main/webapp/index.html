@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="fusionerYoutube">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>YouTube exercises portal</title>
+    
+    <link rel="stylesheet" href="lib/misc/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="lib/misc/jasny-bootstrap/css/jasny-bootstrap.min.css"/>
+    <link rel="stylesheet" href="lib/css/angular-language-picker.min.css"/>
+    <link rel="stylesheet" href="lib/misc/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="lib/misc/flag-icon-css/css/flag-icon.css">
+
+    <link rel="stylesheet" href="css/custom.css"/>
+    <link rel="stylesheet" href="css/signin.css">
+
+    <script src="lib/js/jquery/jquery.min.js"></script>
+    <script src="lib/js/angular/angular.min.js"></script>
+    <script src="lib/js/angular-ui-router/angular-ui-router.min.js"></script>
+    <script src="lib/js/angular-resource/angular-resource.min.js"></script>
+    <script src="lib/js/angular-local-storage/angular-local-storage.min.js"></script>
+    <script src="lib/js/angular-cookies/angular-cookies.min.js"></script>
+    <script src="lib/js/angular-localization/angular-localization.min.js"></script>
+    <script src="lib/js/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="lib/js/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="lib/js/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+    <script src="js/fusioner-youtube.js"></script>
+    <script src="js/fusioner-youtube-constants.js"></script>
+    <script src="js/fusioner-youtube-directives.js"></script>
+    <script src="js/fusioner-youtube-language-picker.js"></script>
+    <script src="js/fusioner-youtube-utility.js"></script>
+    <script src="js/controllers/fusioner-youtube-application-controller.js"></script>
+    <script src="js/controllers/fusioner-youtube-login-controller.js"></script>
+    <script src="js/controllers/fusioner-youtube-user-selection-controller.js"></script>
+    <script src="js/controllers/fusioner-youtube-home.controller.js"></script>
+    <script src="js/controllers/fusioner-youtube-available-videos-controller.js"></script>
+    <script src="js/controllers/fusioner-youtube-upload-video-controller.js"></script>
+    <script src="js/controllers/fusioner-youtube-add-external-video-controller.js"></script>
+    <script src="js/controllers/fusioner-youtube-health-impairment-tags-controllers.js"></script>
+    <script src="js/controllers/extracted-controllers/fusioner-youtube-prepare-hosts-controller.js"></script>
+    <script src="js/services/fusioner-youtube-users-service.js"></script>
+    <script src="js/services/fusioner-youtube-user-helper-service.js"></script>
+    <script src="js/services/fusioner-youtube-authentication-service.js"></script>
+    <script src="js/services/fusioner-youtube-videos-service.js"></script>
+    <script src="js/services/fusioner-youtube-health-impairment-tags-service.js"></script>
+    <script src="js/services/fusioner-youtube-login-service.js"></script>
+</head>
+<body ng-controller="ApplicationController">
+    <div class="container">
+        <div ui-view></div>
+        <success-modal></success-modal>
+        <error-modal></error-modal>
+        <loading-modal></loading-modal>
+    </div>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="lib/misc/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/misc/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
+</body>
+</html>

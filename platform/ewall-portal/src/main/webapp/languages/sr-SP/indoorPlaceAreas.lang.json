@@ -1,0 +1,18 @@
+{
+    "bathroom": "Kupatilo",
+    "bedroom": "Spavaća soba",
+    "cellar": "Podrum",
+    "corridor": "Hodnik",
+    "diningRoom": "Trpezarija",
+    "entranceHall": "Predsoblje",
+    "guestRoom": "Soba za goste",
+    "hobbyRoom": "Soba za hobije",
+    "kitchen": "Kuhinja",
+    "livingRoom": "Dnevna soba",
+    "selectArea": "Odaberite područje",
+    "staircase": "Stepenište",
+    "storageRoom": "Ostava",
+    "unknown": "Nepoznato",
+    "wardrobe": "Garderoba",
+    "workRoom": "Radna soba"
+}

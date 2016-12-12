@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="Buttons">
+        <item name="Save">Save</item>
+        <item name="Cancel">Cancel</item>
+        <item name="Back">Back</item>
+    </ItemGroup>
+    <ItemGroup name="AppData">
+        <item name="SubTitle">It is always possible to change a selection.</item>
+        <item name="UserSettings">{firstName}'s settings</item>
+    </ItemGroup>
+    <ItemGroup name="StartPage">
+        <item name="Title">My Settings</item>
+        <item name="sharingData">Sharing data with others</item>
+        <item name="notifications">My Notifications</item>
+        <item name="appearance">My eWall Appearance</item>
+    </ItemGroup>
+    <ItemGroup name="SharingPage">
+        <item name="Title">Sharing data with others</item>
+        <item name="SubTitle">Here, you can select who else is allowed to see the different types of data that e Wall stores about you.</item>
+        <item name="Message">Share my address information, data about my sleep, my daily phisical activity, my phisical exercises, my house with:</item>
+        <item name="Nobody">Nobody</item>
+        <item name="Everybody">Everybody</item>
+        <item name="Somebody">Let me decide</item>
+        <item name="sharingFamily">My family</item>
+        <item name="sharingGP">My general practitioner</item>
+    </ItemGroup>
+    <ItemGroup name="NotificationsPage">
+        <item name="Title">My Notifications</item>
+        <item name="SubTitle">Here, you can decide which types of notifications you would like to receive and how often.</item>
+        <item name="healthNotifications">How often do you want health advice or do you want to talk about your health?</item>
+        <item name="houseNotifications">How often do you want to know about your house (like smoke detection, oxygen level)?</item>
+        <item name="medicalNotifications">How often do you want to know about your medical signs (like blood oxygen level, blood pressure and heart rate)?</item>
+        <item name="Value0">Never</item>
+        <item name="Value1">Only when something is wrong</item>
+        <item name="Value2">Keep me updated constantly</item>
+    </ItemGroup>
+    <ItemGroup name="AppearancePage">
+        <item name="Title">My eWall Appearance</item>
+        <item name="SubTitle">Here, you can determine what your eWall looks like. It is always possible to change a selection.</item>
+        <item name="Wallpaper">Please select your eWall wallpaper</item>
+        <item name="Books">Please select which books and games you want to have</item>
+        <item name="Photoframe">What do you want to see in your photo frame?</item>
+        <item name="Screensaver">Do you want to have the screensaver on or off?</item>
+        <item name="WP0">Wallpaper 1</item>
+        <item name="WP1">Wallpaper 2</item>
+        <item name="WP2">Wallpaper 3</item>
+        <item name="mySleep">My sleep</item>
+        <item name="myHealth">My health</item>
+        <item name="myDailylife">My daily life</item>
+        <item name="myDailyactivity">My daily activity</item>
+        <item name="myGames">Games</item>
+        <item name="PF0">Family pictures</item>
+        <item name="PF1">eWall photos</item>
+        <item name="SSOn">ON</item>
+        <item name="SSOff">OFF</item>
+    </ItemGroup>
+</language_data>

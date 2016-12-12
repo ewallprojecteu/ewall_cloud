@@ -1,0 +1,16 @@
+{
+    "error": "Fejl",
+    "family": "Familie",
+    "friends": "Venner",
+    "friendsAndFamily": "Venner og familie",
+    "loading": "Loading...",
+    "loginFailed": "Fejl ved login",
+    "ok": "Ok",
+    "privacy": "Privatliv",
+    "private": "Privat",
+    "public": "Offentlig",
+    "success": "Succes",
+    "tags": "Tags",
+    "uploadPhoto": "Upload billede",
+    "uploading": "Uploading..."
+}

@@ -1,0 +1,10 @@
+{
+    "authUser": "Godkend bruger på Flickr",
+    "credentialsExist": "Flickr bruger data eksisterer",
+    "credentialsMissing": "Manglende Flickr bruger data",
+    "failedAuthorizing": "Fejl ved godkendelse af bruger og gemt Flickr bruger data",
+    "openPortal": "Åbn Flickr Portalen",
+    "selectUserHint": "Vælg en bruger på Flickr portalen",
+    "successfullyAuthorized": "Succesfuld godkendelse af bruger og gemt Flickr bruger data",
+    "title": "Vælg bruger Plickr portal "
+}

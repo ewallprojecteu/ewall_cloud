@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="LongMonths">
+        <item>Ianuarie</item>
+        <item>Februarie</item>
+        <item>Martie</item>
+        <item>Aprilie</item>
+        <item>Mai</item>
+        <item>Iunie</item>
+        <item>Iulie</item>
+        <item>August</item>
+        <item>Septembrie</item>
+        <item>Octombrie</item>
+        <item>Noiembrie</item>
+        <item>Decembrie</item>
+    </ItemGroup>
+    <ItemGroup name="ShortMonths">
+        <item>Ian</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>Mai</item>
+        <item>Iun</item>
+        <item>Iul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Noi</item>
+        <item>Dec</item>
+    </ItemGroup>
+    <ItemGroup name="LongDays">
+        <item>Duminică</item>
+        <item>Luni</item>
+        <item>Marți</item>
+        <item>Miercuri</item>
+        <item>Joi</item>
+        <item>Vineri</item>
+        <item>Sâmbătă</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>Du</item>
+        <item>Lu</item>
+        <item>Ma</item>
+        <item>Mi</item>
+        <item>Jo</item>
+        <item>Vi</item>
+        <item>Sa</item>
+    </ItemGroup>
+    <ItemGroup name="AppLabels">
+        <item>Durată</item>
+        <item>h</item>
+        <item>oră</item>
+        <item>ore</item>
+        <item>minut</item>
+        <item>minute</item>
+        <item>secundă</item>
+        <item>secunde</item>
+        <item>No information available</item>
+    </ItemGroup>
+    <ItemGroup name="ExtDataMessage">
+        <item name="sleeping">
+            <subitem>Dormind</subitem>
+            <subitem>Senzorul nostru v-a detectat în pat</subitem>
+        </item>
+        <item name="showering">
+            <subitem>La Duș</subitem>
+            <subitem>Senzorul nostru de umiditate a detectat că faceți duș în baie</subitem>
+        </item>
+        <item name="entertaining">
+            <subitem>Odihnă &amp; Distracție</subitem>
+            <subitem>Senzorul nostru de poziționare v-a găsit în sufragerie</subitem>
+        </item>
+        <item name="cooking">
+            <subitem>Gătind &amp; mâncând</subitem>
+            <subitem>Senzorul nostru de poziționare v-a găsit în bucătărie</subitem>
+        </item>
+        <item name="sanitary_visits">
+            <subitem>Vizite la toaletă</subitem>
+            <subitem>
+            </subitem>
+        </item>
+        <item name="getting_out">
+            <subitem>Ieșire</subitem>
+            <subitem>Am observat că ieșiți afară</subitem>
+        </item>
+        <item name="houseworks">
+            <subitem>Treburi casnice</subitem>
+            <subitem>eWALL a detectat că faci treburi casnice</subitem>
+        </item>
+        <item name="visits">
+            <subitem>Vizite la domiciliu</subitem>
+            <subitem>
+            </subitem>
+        </item>
+    </ItemGroup>
+</language_data>

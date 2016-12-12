@@ -1,0 +1,14 @@
+{
+    "addExternalVideo": "externes Video hochladen",
+    "addHealthImpairmentTag": "gesundheitliche Beeinträchtigung hinzufügen",
+    "description": "Erklärung",
+    "descriptionHint": "Erklärung",
+    "error": "Fehler",
+    "loading": "Lädt...",
+    "loginFailed": "Einloggen fehlgeschlagen",
+    "ok": "OK",
+    "privacy": "Privatsphäre",
+    "success": "Erfolg",
+    "uploadVideo": "Video hochladen",
+    "videoSuitableForPersonHint": "Video ist passend für Personen mit gesundheitlichen Beeinträchtigungen"
+}

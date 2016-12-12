@@ -1,0 +1,24 @@
+<div class="h1 text-center welcome">
+	{{labels.welcome}}
+</div>
+<div class="h2 text-center">
+	{{labels.choose}}
+</div>
+<div class="pics">
+	<div class="text-center preview col-md-3" ng-repeat="item in items" style="margin-top:15px">
+          	<a href="#" ng-click="selectPic($index)">
+              	<img class="img-responsive" ng-class="{ 'selected-image': $index == selectedIndex }" http-src="{{ item }}">
+          	</a>
+      	</div>
+     	</div>
+<div class="main text-center col-md-12 levels" ng-show="selected != ''">
+	<a class="col-md-offset-3 col-md-2" href="#" ui-sref="main.snapPuzzle.game({level:'easy',image:imageName})">
+		<p class="h2">{{labels.easy}}</p>
+	</a>
+	<a class="col-md-2" href="#" ui-sref="main.snapPuzzle.game({level:'medium',image:imageName})">
+		<p class="h2">{{labels.medium}}</p>
+	</a>
+	<a class="col-md-2" href="#" ui-sref="main.snapPuzzle.game({level:'hard',image:imageName})">
+		<p class="h2">{{labels.hard}}</p>
+	</a>
+</div>

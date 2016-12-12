@@ -1,0 +1,157 @@
+﻿/* body */
+body {
+    background-color: #fff;
+    overflow: hidden;   
+    margin: 0;
+}
+
+/* PIE */
+img#pie1 {
+    position: absolute;
+    left: 959px;
+    top: 109px;
+}
+img#pie2 {
+    position: absolute;
+    left: 973px;
+    top: 235px;
+}
+img#pie3 {
+    position: absolute;
+    left: 981px;
+    top: 539px;
+}
+img#pie4 {
+    position: absolute;
+    left: 973px;
+    top: 553px;
+}
+img#pie5 {
+    position: absolute;
+    left: 669px;
+    top: 561px;
+}
+img#pie6 {
+    position: absolute;
+    left: 537px;
+    top: 553px;
+}
+img#pie7 {
+    position: absolute;
+    left: 529px;
+    top: 249px;
+}
+img#pie8 {
+    position: absolute;
+    left: 655px;
+    top: 117px;
+}
+img#pieCenter {
+    position: absolute;
+    left: 834px;
+    top: 401px;
+}
+img#circle {
+    position: absolute;
+    left: 528px;
+    top: 108px;
+}
+
+/* Factor Views */
+.factorBkg {
+    position: absolute;
+    left: 387px;
+    top: 138px;
+    height: 802px;
+    width: 1191px;
+    background-image: none;
+    background-color: #92D050;
+    border-radius: 25px;
+    border: 4px solid #5050FF;
+}
+.factorDescription {
+    position: absolute;
+    left: 40px;
+    top: 160px;
+    height: auto;
+    width: 1111px;
+    font-size: 20px
+}
+img#fallLogo {
+    position: absolute;
+    left: -126px;
+    top: -113px;
+}
+img#factorLogo {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+img#OKbutton {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+img#Vitals {
+    position: absolute;
+    left: 959px;
+    top: 109px;
+}
+img#Eyesight {
+    position: absolute;
+    left: 973px;
+    top: 235px;
+}
+img#Cognitive {
+    position: absolute;
+    left: 981px;
+    top: 539px;
+}
+img#Feet {
+    position: absolute;
+    left: 973px;
+    top: 553px;
+}
+img#Social {
+    position: absolute;
+    left: 669px;
+    top: 561px;
+}
+img#Legs {
+    position: absolute;
+    left: 537px;
+    top: 553px;
+}
+img#Home {
+    position: absolute;
+    left: 529px;
+    top: 249px;
+}
+img#Medication {
+    position: absolute;
+    left: 655px;
+    top: 117px;
+}
+img#PieCenter {
+    position: absolute;
+    left: 834px;
+    top: 421px;
+}
+img#Circle {
+    position: absolute;
+    left: 528px;
+    top: 108px;
+}
+
+.medMode {
+    font-size: 17pt !important;
+}
+
+.homeMode {
+    font-size: 17pt !important;
+}
+
+.disabledImg {
+    opacity: 0.5;
+}

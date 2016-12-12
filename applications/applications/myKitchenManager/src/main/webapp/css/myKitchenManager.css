@@ -1,0 +1,117 @@
+﻿body {
+    background-color: #fff;
+    overflow: hidden;   
+    margin: 0;
+}
+
+table {
+    border-spacing: 5px;
+}
+
+th, td {
+    padding: 10px; !important;
+}
+
+.largeFont {
+    font-size: 400%;
+    font-weight: bold;
+}
+
+.mediumFont {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.regularFont {
+    font-size: 150%;
+}
+
+img#book {
+    position: absolute;
+    left: 290px;
+    width: 75% !important;
+    height: auto !important;
+}
+
+img#logo {
+    position: absolute;
+    left: 343px;
+    top: 50px;
+}
+
+img#fridge {
+    position: absolute;
+    left: 347px;
+    top: 260px;
+}
+
+img#pantry {
+    position: absolute;
+    left: 340px;
+    top: 490px;
+}
+
+img#recipes {
+    position: absolute;
+    left: 380px;
+    top: 610px;
+}
+
+img#shoppingList {
+    position: absolute;
+    left: 355px;
+    top: 780px;
+}
+
+div#title {
+    position: absolute;
+    left: 480px;
+    top: 80px;
+    width: 1200px;
+    text-align: center;
+}
+
+div.description {
+    position: absolute;
+    left: 480px;
+    top: 170px;
+    width: 1200px;
+    text-align: left;
+}
+
+div.recipeIngredientImage {
+    float: left;
+    width: 60px;
+}
+
+div.recipeIngredientDescription {
+    float: left;
+    width: 340px;
+    text-align: left;
+    font-size: 9pt;
+}
+
+.medMode {
+    font-size: 17pt !important;
+}
+
+.homeMode {
+    font-size: 17pt !important;
+}
+
+.disabledImg {
+    opacity: 0.5;
+}
+
+.height-120 {
+    height: 120px !important;
+}
+
+.height-60 {
+    height: 60px !important;
+}
+
+.no-padding {
+    padding: 1px !important;
+    white-space: normal !important
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="LongMonths">
+        <item>Януари</item>
+        <item>Февруари</item>
+        <item>Март</item>
+        <item>Април</item>
+        <item>Май</item>
+        <item>Юни</item>
+        <item>Юли</item>
+        <item>Август</item>
+        <item>Септември</item>
+        <item>Октомври</item>
+        <item>Ноември</item>
+        <item>Декември</item>
+    </ItemGroup>
+    <ItemGroup name="ShortMonths">
+        <item>Ян.</item>
+        <item>Фев.</item>
+        <item>Мар.</item>
+        <item>Апр.</item>
+        <item>Май</item>
+        <item>Юни</item>
+        <item>Юли</item>
+        <item>Авг.</item>
+        <item>Сеп.</item>
+        <item>Окт.</item>
+        <item>Ноем.</item>
+        <item>Дек.</item>
+    </ItemGroup>
+    <ItemGroup name="LongDays">
+        <item>Неделя</item>
+        <item>Понеделник</item>
+        <item>Вторник</item>
+        <item>Сряда</item>
+        <item>Четвъртък</item>
+        <item>Петък</item>
+        <item>Събота</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>Нед.</item>
+        <item>Пон.</item>
+        <item>Вт.</item>
+        <item>Ср.</item>
+        <item>Чет.</item>
+        <item>Пет.</item>
+        <item>Съб.</item>
+    </ItemGroup>
+    <ItemGroup name="AppLabels">
+        <item>Продължителност</item>
+        <item>ч</item>
+        <item>час</item>
+        <item>часа</item>
+        <item>минута</item>
+        <item>минути</item>
+        <item>секунда</item>
+        <item>секунди</item>
+        <item>No information available</item>
+    </ItemGroup>
+    <ItemGroup name="ExtDataMessage">
+        <item name="sleeping">
+            <subitem>Спане</subitem>
+            <subitem>Сензорите Ви откриват в леглото</subitem>
+        </item>
+        <item name="showering">
+            <subitem>Къпане</subitem>
+            <subitem>Сензорът за влажност открива, че се къпете в банята</subitem>
+        </item>
+        <item name="entertaining">
+            <subitem>Почивка и Забавление</subitem>
+            <subitem>Сензорът за позициониране Ви открива във всекидневната</subitem>
+        </item>
+        <item name="cooking">
+            <subitem>Готвене и Ядене</subitem>
+            <subitem>Сензорът за позициониране Ви открива в кухнята</subitem>
+        </item>
+        <item name="sanitary_visits">
+            <subitem>Посещение на санитарно помещение</subitem>
+            <subitem>
+            </subitem>
+        </item>
+        <item name="getting_out">
+            <subitem>Излизане навън</subitem>
+            <subitem>Засичаме, че излизате навън</subitem>
+        </item>
+        <item name="houseworks">
+            <subitem>Домакинска работа</subitem>
+            <subitem>eWALL засича, че извършвате домакинска работа</subitem>
+        </item>
+        <item name="visits">
+            <subitem>Домашни посещения</subitem>
+            <subitem>
+            </subitem>
+        </item>
+    </ItemGroup>
+</language_data>

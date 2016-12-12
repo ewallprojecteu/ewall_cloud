@@ -1,0 +1,153 @@
+<!-- Cristian, please check and correct the paths to files -->
+<!-- For deployment -->
+<!-- -->
+<link href="../Sleep/css/style_polly.css" rel="stylesheet">
+<script src="../Sleep/js/Chart.Core.js"></script>
+<script src="../Sleep/js/Chart.Line.js"></script>
+ 
+<!-- For local host testing -->
+<!-- 
+ <link href="../../../../Sleep/src/main/webapp/css/style_polly.css" rel="stylesheet">  
+ <script src="../../../../Sleep/src/main/webapp/js/Chart.Core.js"></script>
+ <script src="../../../../Sleep/src/main/webapp/js/Chart.Line.js"></script>
+-->
+
+<style>
+    .window-book-filler {
+        position: absolute;
+        top: 25px;
+        left: 344px;
+        width: 1356px;
+        height: 1014px;
+        background: transparent;
+        
+    }
+    
+    .window-book-filler-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: #b0bec5;
+    }
+    .window-book-filler-body {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 874px;
+    background: #ffffff;
+        z-index: 2;
+}
+    .window-book-filler-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        background: #ffffff;
+    }
+    
+    .gwd-img-o7sj {
+        position: absolute;
+    }
+    
+    .gwd-img-mmom {
+        top: 0px;
+    }
+    
+    .gwd-img-j7j3 {
+        width: 1920px;
+        height: 1080px;
+        left: 40px;
+    }
+</style>
+</head>
+
+<body style="padding:0;margin:0;">
+<div id="window-book-filler" class="window-book-filler" >
+    <div id="window-book-filler-header" class="window-book-filler-header"></div>
+    <div id="sleep-window-book-filler-body" class="window-book-filler-body">
+        
+   <!-- <div class="gwd-div-5hlk" id="sleep-body" style=""> -->
+        <div class="gwd-div-1d1u" id="dashboard-top">
+            <div class="gwd-div-19s5 border-info" id="went-to-bed">You went to bed at <b id="went-to-bed-data">NAN</b>.
+                <br> <i> You usually go to bed at arround <b id="went-to-bed-LR-data">NAN</b> </i>
+            </div>
+            <div class="gwd-div-mlph border-info" id="wake-up-times">During the night, you woke-up <b id="wake-up-times-data">NAN</b> times
+
+            </div>
+            <div class="gwd-div-oqh6 border-info" id="morning-wake-up">You woke up at <b id="morning-wake-up-data">NAN</b>
+                <br> <i> Usually you wake up at <b id="morning-woke-up-LR-data">NAN</b> </i>
+            </div>
+            <div class="gwd-div-1v8g " id="conclusion">
+                <br>Sleep efficiency: <b id="sleep-efficiency-data">NAN</b>
+                <br>Total sleep time: <b id="total-sleep-time-data">NAN</b>.
+            </div>
+        </div>
+        <div class="gwd-div-tcql" id="dashboard-week" style="">
+            <div class="chart-title">
+                <div id="chart-title"></div>
+                <div id="chart-legend" class="chart-legend">
+                    <div id="present-bullet"  class="present-bullet chart-item"></div>
+                    <div id="present-label" class="chart-item">present monitoring</div>
+                    <div id="usually-bullet" class="usually-bullet chart-item"></div>
+                    <div id="usually-label" class="chart-item">usually monitoring</div>
+                </div>
+            </div>
+            <canvas id="chart-area" width="1000" height="400" class="gwd-img-1a3b"></canvas>
+            <div class="gwd-div-1ber" id="dashboard-week-ctrl">
+                <div class="gwd-div-fsum selected effect1" id="sleep-efficiency-week">Efficiency (%)</div>
+                <div class="gwd-div-8wp9 effect1" id="sleep-time-week">Sleep time (hrs)</div>
+                <div class="gwd-div-esfs effect1" id="sleep-awakenings-week">Awakenings (no.)</div>
+                <!-- <div class="gwd-div-14s3 effect1" id="sleep-snoring-week">Snoring time (min)</div> -->
+            </div>
+        </div>
+        <div class="gwd-div-japc" id="list-down">
+        	<!--Add by Polly-->
+        	<div class="sleep-slider">
+        		<div class="sleep-slider-border"></div>
+        		<div class="sleep-slider-container">
+		            <div class="sleep-sl-arrow sleep-sl-left" id="left-nav"></div>
+		            <div class="sleep-sl-vp" id="middle-nav-list-days"></div>
+		            <div class="sleep-sl-vp" id="middle-nav-list-weeks"></div>
+		            <div class="sleep-sl-arrow sleep-sl-right" id="right-nav"></div>
+	            </div>
+			</div>
+			<!--End Adding-->
+			
+			<!--Comment by Polly
+			<div class="gwd-div-da38" id="left-nav">
+                <div id="arrow-left" class="arrow-left"></div>
+            </div>
+    		
+            <div class="gwd-div-11mb" id="middle-nav-list-days"></div>
+            <div class="gwd-div-11mb" id="middle-nav-list-weeks"></div>
+
+            <div class="gwd-div-qyz5" id="right-nav">
+                <div id="arrow-right" class="arrow-right"></div>
+            </div>
+            -->
+			
+            <div class="gwd-div-1tzb tab-selected" id="today-tab">NIGHT</div>
+            <div class="gwd-div-zwmw" id="week-tab">WEEK</div>
+        </div>
+   <!-- </div> -->
+    
+        </div>
+    <div id="window-book-filler-footer" class="window-book-filler-footer"></div>
+</div>
+<img src="assets/6-book2.png" class="gwd-img-o7sj gwd-img-mmom gwd-img-j7j3" id="layer-8-book2">
+
+<!-- Cristian, please check and correct the paths to files -->
+<!-- For deplyment -->
+<!--  -->   
+<script src="../Sleep/js/translation.js"></script>
+<script src="../Sleep/js/app_polly2.js"></script>
+ 
+<!-- For localhost testing -->
+<!--  
+<script src="../../../../Sleep/src/main/webapp/js/translation.js"></script>
+<script src="../../../../Sleep/src/main/webapp/js/app_polly2.js"></script>
+-->

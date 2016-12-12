@@ -1,0 +1,14 @@
+{
+    "addExternalVideo": "Voeg externe video toe",
+    "addHealthImpairmentTag": "Voeg ziektebeeld label toe",
+    "description": "Omschrijving",
+    "descriptionHint": "Een omschrijving",
+    "error": "Fout",
+    "loading": "Laden...",
+    "loginFailed": "Inloggen mislukt",
+    "ok": "OK",
+    "privacy": "Privacy",
+    "success": "Succes",
+    "uploadVideo": "Upload video",
+    "videoSuitableForPersonHint": "Video is geschikt voor gebruikers met ziektebeeld"
+}

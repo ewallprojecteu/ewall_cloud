@@ -1,0 +1,10 @@
+{
+    "browsePhotos": "Browse photos",
+    "changePhoto": "Change photo",
+    "description": "Description",
+    "descriptionHint": "Some description",
+    "failedUploading": "Failed uploading photo",
+    "successfullyUploaded": "Successfully uploaded photo",
+    "title": "Title",
+    "uploadToFlicker": "Upload on Flickr"
+}

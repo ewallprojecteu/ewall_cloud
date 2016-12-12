@@ -1,0 +1,234 @@
+{
+  "slices": [
+    {
+      "id": "Home",
+      "coordinates": "413,435,1,436,12,333,46,248,123,144",
+      "title": "Risks related  to home status",
+      "intro": ", most homes contain potential hazards, and many older people attribute their falls to trips or slips inside their home or immediate home surroundings.",
+      "action": "Please select the items you find in your home and press OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "carpets",
+          "danger": false,
+          "mode": "user",
+          "activeText": "You have loose carpets. Remove them from floors or be sure they are laid securely, paying attention to the edges and to the fact that they do not form folds.",
+          "inactiveText": "Do you have loose carpets?"
+        },
+        {
+          "id": "floors",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Your floors are slippery. Do not wax them. Talk to your caregivers and house helpers!",
+          "inactiveText": "Do you have slippery floors?"
+        },
+        {
+          "id": "stairs",
+          "danger": false,
+          "mode": "user",
+          "activeText": "You have stairs at home. Make sure you always use the handrail, do not go up or down stairs transporting bulky items and make sure you have proper footwear.",
+          "inactiveText": "Do you have stairs at home?"
+        },
+        {
+          "id": "poorLight",
+          "danger": false,
+          "mode": "user",
+          "activeText": "The illumination in your rooms is poor. Try to use stronger light in your house, change bulbs or try to optimize darker rooms' illumination.",
+          "inactiveText": "Do you have poor light in any room at home?"
+        }
+      ]
+    },
+    {
+      "id": "Medication",
+      "coordinates": "129,130,215,64,320,23,419,10,418,420",
+      "title": "Risks related to medication",
+      "intro": ", drugs assumption in older people is associated with an increase in the risk of falls.",
+      "action": "Please observe the information entered by your GP or caregivers. If you need further information, consult with them. When done, press OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "polipharmacotherapy",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Remember, you are exposed to a pharmacotherapy that could increase the risk of falling. Please, be aware of other factors that could further increase this risk!",
+          "inactiveText": "Your GP or caregivers have not indicated any risk of polipharmacotherapy."
+        },
+        {
+          "id": "frid",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Remember, you are taking drugs that could increase the risk of falling. Please, be aware of other factors that could further increase this risk!",
+          "inactiveText": "Your GP or caregivers have not indicated any risk from FRIDs (Fall Risk Increasing Drugs) intake"
+        }
+      ]
+    },
+    {
+      "id": "Vitals",
+      "coordinates": "434,4,544,18,656,66,722,122,432,414",
+      "title": "Risks associated to vital signs",
+      "intro": ", some of your vital signs can be related to falls and should be monitored.",
+      "action": "Please observe the results of your related vitals measurements, indicate the items that apply to you and press OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "hypertension",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "You might be suffering from orthostatic hypotension, since eWALL measured a drop in your blood pressure! You should visit your GP for further information and assessments.",
+          "inactiveText": "Do you experience orthostatic hypotension?"
+        },
+        {
+          "id": "dizziness",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Since you feel light-headed or dizzy, you should visit your GP for further information and assessments.",
+          "inactiveText": "Do you feel light-headed or dizzy?"
+        }
+      ]
+    },
+    {
+      "id": "Eyesight",
+      "coordinates": "447,419,737,130,800,210,840,306,857,417",
+      "title": "Risks related  to eyesight",
+      "intro": ", aging is often accompanied by changes in the eyes that can increase the risk of falls. Fortunately, many of the factors that place visually impaired older adults at risk for falling can be addressed through modifications to individual behavior and to the home environment.",
+      "action": "Please observe the information entered by your GP or caregivers. If you need further information, consult with them. When done, press OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "multifocal",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Remember, using multifocal lenses you may experience an altered perception of the distance between you and objects. Pay more attention and remove any obstacle on the floor.",
+          "inactiveText": "Your GP or caregivers have indicated that you do not use multifocal lenses"
+        },
+        {
+          "id": "impairments",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "Since you suffer from visual impairments, don’t forget to have regular checkups with your oculist. Proper maintenance of diseases that affect the eyes can help to preserve residual vision!",
+          "inactiveText": "Your GP or caregivers have indicated that you do not suffer from any visual impairments (Cataracts, glaucoma, macular degeneration, etc.)"
+        }
+      ]
+    },
+    {
+      "id": "Cognitive",
+      "coordinates": "455,435,866,432,851,535,804,647,746,725",
+      "title": "Risks related to cognitive state",
+      "intro": ", patients with neurological diseases, such as Parkinson’s disease, multiple sclerosis, stroke or Alzheimer’s disease, experience falls more frequently.",
+      "action": "Please observe the information entered by your GP or caregivers. If you need further information, consult with them. Also, indicate the items that apply to you and press OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "fear",
+          "danger": false,
+          "mode": "user",
+          "activeText": "You are afraid of falling. Do not allow this to limit your daily activities! Please contact your GP, he/she can suggest the most specific training suitable with your needs.",
+          "inactiveText": "Are you afraid you might fall?"
+        },
+        {
+          "id": "cognitive",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "You suffer from cognitive impairments, so do not forget your cognitive training program. Train your brain!",
+          "inactiveText": "Your GP or caregivers have indicated that you do not suffer from any cognitive impairments"
+        },
+        {
+          "id": "extrapyramidal",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Since you suffer from drug-induced movement disorders (extrapyramidal symptoms), have regular checkups with your GP and neurologist.",
+          "inactiveText": "Are you taking any anti-psychotic or anti-depressant drugs that might cause drug-induced movement disorders (Extrapyramidal symptoms)?"
+        }
+      ]
+    },
+    {
+      "id": "Feet",
+      "coordinates": "447,448,734,735,648,804,557,841,447,856",
+      "title": "Risks related  to feet",
+      "intro": ", foot problems are common in older people and are associated with impaired balance and functional ability. They stem from simple age-related changes, as well as from specific dysfunctions, or from de-conditioning following a period of inactivity. They are the most common cause of falls.",
+      "action": "Please indicate if you are feeling foot pain. Then observe the information entered by your GP or caregivers. If you need further information, consult with them. When done, press OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "pain",
+          "danger": false,
+          "mode": "user",
+          "activeText": "You suffer from disabling foot pain. Your GP can suggest a more efficient foot pain management. Schedule regular checkups.",
+          "inactiveText": "Do you suffer from disabling foot pain?"
+        },
+        {
+          "id": "ankle",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "You suffer from decreased ankle flexibility. To avoid risks of falling, it is suggested to wear proper footwear, moreover, it is important to have regular checkups with a podiatrist.",
+          "inactiveText": "Your GP or caregivers have indicated that you do not suffer from decreased ankle flexibility"
+        },
+        {
+          "id": "hallux",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "You suffer from severe hallux valgus problems. To avoid risks of falling, it is suggested to wear proper footwear, moreover, it is important to have regular checkups with a podiatrist.",
+          "inactiveText": "Your GP or caregivers have indicated that you do not suffer from severe hallux valgus problems"
+        },
+        {
+          "id": "tactile",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "You suffer from decreased plantar tactile sensitivity. To avoid risks of falling, it is suggested to wear proper footwear, moreover, it is important to have regular checkups with a podiatrist.",
+          "inactiveText": "Your GP or caregivers have indicated that you do not suffer from decreased plantar tactile sensitivity"
+        },
+        {
+          "id": "toe",
+          "danger": false,
+          "mode": "doctor",
+          "activeText": "You suffer from decreased toe plantar flexor strength. To avoid risks of falling, it is suggested to wear proper footwear, moreover, it is important to have regular checkups with a podiatrist.",
+          "inactiveText": "Your GP or caregivers have indicated that you do not suffer from decreased toe plantar flexor strength"
+        }
+      ]
+    },
+    {
+      "id": "Social",
+      "coordinates": "434,456,139,747,222,806,319,848,437,862",
+      "title": "Risks related to lack of social activity",
+      "intro": ", fear of falling is the main driver of avoidance and social isolation.",
+      "action": "Please consider your social activity and press OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "avoidance",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Your social activity is decreased. If your fear of falling is driving to social avoidance, please contact your GP, he/she can suggest the most specific training suitable with your needs.",
+          "inactiveText": "Do you avoid meeting with other people regularly, at home or elsewhere?"
+        }
+      ]
+    },
+    {
+      "id": "Legs",
+      "coordinates": "10,448,419,447,129,737,59,641,19,531",
+      "title": "Risks related  to legs",
+      "intro": ", gait problems can stem from simple age-related changes in gait and balance, as well as from specific dysfunctions, or from de-conditioning following a period of inactivity. They are the most common cause of falls.",
+      "action": "Please indicate if you are feeling knees' extension. Then observe the physical activity measured by eWALL. When done, press OK.",
+      "danger": false,
+      "constituents": [
+        {
+          "id": "exercise",
+          "danger": false,
+          "mode": "home",
+          "activeText": "eWALL detected only XXX steps on average in the past YYY days, try to be more active!",
+          "inactiveText": "Excellent! eWALL detected XXX steps on average in the past YYY days. Your legs are strong!"
+        },
+        {
+          "id": "knee",
+          "danger": false,
+          "mode": "user",
+          "activeText": "Since you experience knees' extension, it is suggested to have regular checkups with a orthopedist to avoid risks of falling.",
+          "inactiveText": "Do you experience knees' extension?"
+        }
+      ]
+    }
+  ],
+  "fitbitnosteps": "eWALL has not detected any steps in the past days. Make sure you use your Fitbit ChargeHR tracker device!",
+  "fitbitnodata": "eWALL is not able to get your activity data!",
+  "fitbitok": "Excellent! eWALL detected XXX steps on average in the past YYY days. Your legs are strong!"
+}

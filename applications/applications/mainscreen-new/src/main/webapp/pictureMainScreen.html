@@ -1,0 +1,991 @@
+<!--
+<!DOCTYPE html>
+<html>
+
+<head>    
+-->
+<script src="lib/jquery.js"></script>
+<!-- <script data-source="js/custom.elements.min.js" type="text/javascript" src="js/custom.elements.min.js"></script> -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="generator" content="Google Web Designer 1.3.2.0521">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Junge|Satisfy|Lobster|Press+Start+2P" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/main-screen.css">
+<link rel="stylesheet" type="text/css" href="css/clock.css">
+<link rel="stylesheet" type="text/css" href="css/lava-lamp.css">
+
+<!--
+</head>
+
+<body>
+-->
+
+<div id="main-screen-body" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; " ng-cloak>
+    <!-- layer 1 -->
+    <div ng-controller="WeatherWidgetController">
+        <video ng-src="{{ weather.animationSrc }}" autoplay loop class="gwd-img-rmf1 gwd-img-d3za gwd-img-t5fw" style="transform: translateZ(-200px); background: black" id="layer-1-weather">
+
+            <!-- <source src="assets/fall-rainy-night.webm"> -->
+            Your browser does not support the video tag.
+        </video>
+        <div id="weather-widget" class="gwd-div-nks0">
+
+            <div class="gwd-div-fhta" id="celsius">{{weather.list[0].main.temp | number:0}}°C</div>
+            <!-- 
+        <div class="gwd-div-e1rm" id="temperature-max-min">            
+            <div class="gwd-div-668m" id="temperature-max-min-icon"></div>            
+            <div class="gwd-div-itin" id="temperature-max-min-label-min">min</div>
+            <div class="gwd-div-n4c0" id="temperature-max-min-label-max">max</div>
+            <div class="gwd-div-8qg2" id="temperature-max-min-value-min">12°C</div>
+            <div class="gwd-div-4wcy" id="temperature-max-min-value-max">29°C</div>            
+        </div>
+-->
+            <div class="gwd-div-1erb" id="humidity">
+                <div class="gwd-div-r429" id="icon-humidity"></div>
+                <div class="gwd-div-xnja" id="value-humidity"> {{weather.list[0].main.humidity | number:0}}% </div>
+            </div>
+            <!--
+        <div class="gwd-div-i7ba" id="wind">
+            <div class="gwd-div-ns88" id="icon-wind"></div>
+            <div class="gwd-div-5an0" id="value-wind"> 1.5 m/s</div>
+        </div>
+        -->
+            <div class="gwd-div-pfhs" id="clouds">
+                <div class="gwd-div-dlxw" id="icon-clouds"></div>
+                <div class="gwd-div-covv" id="value-clouds"> {{weather.list[0].clouds.all | number:0}}% <span id="value-clouds-text" style="font-size: 10pt;">cahnce</span></div>
+            </div>
+            <div class="gwd-div-ubf0" id="future-forecast">
+                <div class="gwd-div-gq5r" id="future-forecast-panel-right">
+                    <div class="gwd-div-2jds" id="future-forecast-panel-right-label">next 3 hours</div>
+                    <div class="gwd-div-6c7y" id="future-forecast-panel-right-tempvalue">{{weather.list[1].main.temp | number:0}}°C</div>
+                    <img src="http://openweathermap.org/img/w/{{weather.list[1].weather[0].icon}}.png" class="gwd-div-w15j" id="future-forecast-panel-right-icon">
+                    <!-- replace icon with SB provided icon -->
+
+                </div>
+                <div class="gwd-div-owhj" id="future-forecast-panel-left">
+                    <div class="gwd-div-2jds" id="future-forecast-panel-left-label">tomorrow</div>
+                    <div class="gwd-div-6c7y" id="future-forecast-panel-left-tempvalue">{{weather.tomorrow_avg_temp | number:0}}°C</div>
+                    <img src="http://openweathermap.org/img/w/{{weather.tomorrow_icon}}.png" class="gwd-div-w15j" id="future-forecast-panel-right-icon">
+                    <!-- replace icon with SB provided icon -->
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- layer 2 -->
+    <div class="gwd-img-1q8n gwd-img-as50 gwd-img-65sn cf7" id="layer-2-wallpaper">
+        <img id="wallpaper-1" class="opaque" ng-src="assets/2-wallpaper01-extended.png">
+        <img id="wallpaper-2" ng-src="assets/2-wallpaper02-extended.png">
+        <img id="wallpaper-3" ng-src="assets/2-wallpaper03-extended.png">
+        <img id="wallpaper-4" ng-src="assets/2-wallpaper04-extended.png">
+        <img id="wallpaper-5" ng-src="assets/2-wallpaper05-extended.png">
+    </div>
+
+    <!-- layer 3 -->
+    <img ng-src="assets/3-wall-floor.png" class="gwd-img-dlrq gwd-img-k0qn gwd-img-stretch" id="layer-3-wall-floor">
+
+    <!-- ARI & COPD photo frame -->
+    <div ng-controller="photoFrameWidgetController" id="photoFrame" class="gwd-photo-frame"></div>
+    <img ng-src="assets/3-wall-photoframe.png" class="gwd-img-dlrq gwd-img-k0qn gwd-img-lftk" id="layer-3-wall-photoframe">
+    <img ng-src="assets/3-wall-thermostat2.png" class="gwd-img-dlrq gwd-img-k0qn gwd-img-lftk" id="layer-3-wall-thermostat">
+
+    <!-- MCI photo frame -->
+    <!-- NOT FINISHED - waiting on requirements from the MCI TF -->
+    <!--
+    <img src="assets/MCI-agenda.png" class="gwd-img-z8o9" id="agenda">
+ -->
+    <img ng-src="assets/3-wall-window.png" class="gwd-img-dlrq gwd-img-k0qn gwd-img-lftk" id="layer-3-wall-window">
+
+
+    <!-- layer 4 -->
+    <img ng-src="assets/4-cabinet.png" class="gwd-img-o7sj gwd-img-mmom gwd-img-j7j3" id="layer-4-cabinet">
+    <img ng-src="assets/4-cabinet-chessboard.png" class="gwd-img-o7sj gwd-img-mmom gwd-img-j7j3" id="layer-4-cabinet-chessboard">
+    <div class="gwd-div-1m3w" id="games-label">GAMES</div>
+
+    <!-- layer 5 -->
+    <div class="tv-agenda" id="agenda" ng-controller="AgendaWidgetController">
+        <div class="gwd-div-1ba4" id="agenda-title">
+            <span id="agenda-title-text" class="gwd-span-1m8k">Agenda for </span>
+            <span id="agenda-title-date" class="gwd-span-1m8k">{{ today }}</span>
+        </div>
+        <div class="gwd-div-1558" id="agenda-item-1">
+            <div class="gwd-div-hrn8" id="agenda-item-time">{{ agendaItem[0].start }}</div>
+            <div class="gwd-div-414f" id="agenda-item-text">{{ agendaItem[0].title }}</div>
+        </div>
+        <div class="gwd-div-1558" id="agenda-item-2">
+            <div class="gwd-div-hrn8" id="agenda-item-time2">{{ agendaItem[1].start }}</div>
+            <div class="gwd-div-414f" id="agenda-item-text2">{{ agendaItem[1].title }}</div>
+        </div>
+    </div>
+
+    <div id="advertisment" class="tv-advertisment" ng-controller="ewallRecommendationNotificationController" style="{{ currentAddSrc }}">
+        <!-- <div class="gwd-div-i75d" id="tv-add-header-1">In the mood for some reading?</div>
+    <div class="gwd-div-i8ru" id="tv-add-header-2">Best enjoyed with a cup of tea.</div> -->
+
+    </div>
+
+    <div id="video-trainer-tv-ad" class="video-trainer-tv-ad" style="">
+        <div class="gwd-div-i75d" id="tv-vt-header-1">Welcome to your video trainer</div>
+        <div class="gwd-div-i8ru" id="tv-vt-header-2">Time for some sport!</div>
+
+    </div>
+
+    <img ng-src="assets/5-TV-v3-small.png" class="gwd-img-izuq gwd-img-hp1r gwd-img-6wyh" id="layer-5-tvset">
+
+
+    <!-- layer 6 -->
+    <div class="clock-area" style="position: absolute; left: 1490px; top: 144px;">
+
+        <div class="clock">
+            <div class="numbers">
+                <ul>
+                    <li>12</li>
+                    <li>3</li>
+                    <li>6</li>
+                    <li>9</li>
+                </ul>
+            </div>
+            <div class="clockwise">
+                <div class="hand-second" id="analogsecond"></div>
+                <div class="hand-minute" id="analogminute"></div>
+                <div class="hand-hour" id="analoghour"></div>
+                <div class="center"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="MySettings" class="mySettings" ng-repeat="app in contactsApps" ng-if="app.camelCaseName == 'mySettings'" ng-click="loadApp(app, $event);logInteraction('mainScreen','MySettings','User launches '+app.name+' application');logEWallet('USAGE', 1)">
+        </div>
+        
+    <div id="light-switch" class="gwd-wall-lamp"></div>
+
+
+
+    <!-- --------------------- -->
+    <!-- controller layer -->
+    <!-- --------------------- -->
+
+    <!-- Background switcher -->
+    <div class="gwd-div-ecs7" id="background-switch" style="" ng-controller="backgroundSwitchController">
+        <div class="background-switcher-option wallpaper-switcher-1 selected" id="option-1">
+            <!-- this is the default background-->
+        </div>
+        <div class="background-switcher-option wallpaper-switcher-2 background-switcher-option-locked" id="option-2-locked" ng-hide="unlockedOptions.indexOf('WALLPAPER_ONE_SIXTIES') !== -1">
+            <img width="32" src="assets/ic_lock_black_24px.svg">
+        </div>
+        <div class="background-switcher-option wallpaper-switcher-2 background-switcher-option-locked" id="option-2" ng-show="unlockedOptions.indexOf('WALLPAPER_ONE_SIXTIES') !== -1">
+        </div>
+        <div class="background-switcher-option wallpaper-switcher-3 background-switcher-option-locked" id="option-3-locked" ng-hide="unlockedOptions.indexOf('WALLPAPER_TWO_STRIPES') !== -1">
+            <img width="32" src="assets/ic_lock_black_24px.svg">
+        </div>
+        <div class="background-switcher-option wallpaper-switcher-3 background-switcher-option-locked" id="option-3" ng-show="unlockedOptions.indexOf('WALLPAPER_TWO_STRIPES') !== -1">
+        </div>
+        <div class="background-switcher-option wallpaper-switcher-4 background-switcher-option-locked" id="option-4-locked" ng-hide="unlockedOptions.indexOf('WALLPAPER_THREE_BLUE') !== -1">
+            <img width="32" src="assets/ic_lock_black_24px.svg">
+        </div>
+        <div class="background-switcher-option wallpaper-switcher-4 background-switcher-option-locked" id="option-4" ng-show="unlockedOptions.indexOf('WALLPAPER_THREE_BLUE') !== -1">
+        </div>
+        <div class="background-switcher-option wallpaper-switcher-5 background-switcher-option-locked" id="option-5-locked" ng-hide="unlockedOptions.indexOf('WALLPAPER_FOUR_YELLOW') !== -1">
+            <img width="32" src="assets/ic_lock_black_24px.svg">
+        </div>
+        <div class="background-switcher-option wallpaper-switcher-5 background-switcher-option-locked" id="option-5" ng-show="unlockedOptions.indexOf('WALLPAPER_FOUR_YELLOW') !== -1">
+        </div>
+    </div>
+
+    <!-- Logout button -->
+    <div id="logOutBtn" ng-click="doLogout()" style="background:rgba(255, 255, 255, 0.8); position: absolute; border: 2px solid white; color: #791313; height: 50px; left: 80px; top: 10px; /* float: right; *//* margin-left: 289px; */position: absolute; cursor: pointer; z-index: 900; width: 120px; text-align: center; font-family: Roboto;line-height: 300%; box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);">Logout</div>
+
+    <!-- Physical Activity widget -->
+    <div id="physiscalActivityWidget" ng-controller="physicalActivityWidgetController" class="gwd-physical-activity-widget dailyPhysicalActivityMonitoring" ng-repeat="app in healthApps" ng-if="app.camelCaseName == 'dailyPhysicalActivityMonitoring'" ng-click="loadApp(app, $event);logInteraction('mainScreen','myActivityApplication','User launches '+app.name+' application');logEWallet('USAGE', 1)">
+        <img ng-src="assets/4-cabinet-book1-btn.png" class="gwd-img-physical-activity-book-icon">
+        <div class="gwd-div-7f42 gwd-div-7f42-2" style="" id="vertical-label-book-1"><b>{{ app.localizedName }}</b> </div>
+        <div class="gwd-div-1r1r" id="step-badge">0</div>
+        <div id="animation">
+            <div class="glass">
+                <div class="blobs">
+                    <div><span></span></div>
+                    <div><span></span></div>
+                    <div><span></span></div>
+                    <div><span></span></div>
+                    <div><span></span></div>
+                    <div><span></span></div>
+                </div>
+            </div>
+        </div>
+
+        <img ng-src="assets/4-cabinet-lavalamp-v3.png" class="gwd-img-lavalamp" id="layer-4-cabinet-lavalamp">
+        <div class="gwd-div-1sbr" id="activity-label">ACTIVITY</div>
+    </div>
+
+    <!-- Domotics widget and app trigger -->
+    <div class="gwd-div-1em5 domotics" id="domotics-widget" ng-repeat="app in houseApps" ng-if="app.camelCaseName == 'domotics'" ng-click="loadApp(app, $event);logInteraction('mainScreen','domoticsApplication','User launches '+app.name+' application');logEWallet('USAGE', 1)">
+        <div class="gwd-div-1b6v" id="domotics-widget-temp">
+            <img ng-src="assets/temp-icon.png" class="gwd-img-1c16" id="domotics-widget-temp-icon">
+            <span style="font-size: 26px; font-family: Roboto;">25 °C</span>
+        </div>
+        <div class="gwd-div-1ehl" id="domotics-widget-humidity">
+            <img ng-src="assets/humidity-icon.png" class="gwd-img-29fd" id="domotics-widget-humidity-icon">
+            <span style="font-size: 26px; font-family: Roboto;">50 %</span>
+        </div>
+    </div>
+
+
+    <!--Books/Monitoring app launcher controllers-->
+    <div id="layer-4-controller-for-books" class="" style="position: absolute; width: 330px; height: 285px;  top: 296px; left: 1260px;">
+        <!-- <div id="dailyPhysicalActivityMonitoring" class="dailyPhysicalActivityMonitoring" ng-repeat="app in healthApps" ng-if="app.camelCaseName == 'dailyPhysicalActivityMonitoring'" ng-click="loadApp(app, $event)">
+        <div class="gwd-div-7f42 gwd-div-7f42-1" style="" id="vertical-label-book-1"><b>MY ACTIVITY</b>
+        </div>
+    </div> -->
+        <div id="rewardSystem" class="rewardSystem" ng-repeat="app in healthApps" ng-if="app.camelCaseName == 'rewardSystem'" ng-click="loadApp(app, $event);logInteraction('mainScreen','rewardApplication','User launches '+app.name+' application');logEWallet('USAGE', 1)">
+        </div>
+        <div id="myKitchenManager" class="myKitchenManager" ng-repeat="app in healthApps" ng-if="app.camelCaseName == 'myKitchenManager'" ng-click="loadApp(app, $event);logInteraction('mainScreen','myKitchenManager','User launches '+app.name+' application');logEWallet('USAGE', 1)">
+        </div>
+        <div id="sleep" class="sleepMonitoring" ng-repeat="app in healthApps" ng-if="app.camelCaseName == 'sleep'" ng-click="loadApp(app, $event);logInteraction('mainScreen','sleepApplication','User launches '+app.name+' application');logEWallet('USAGE', 1)">
+            <div class="gwd-div-7f42 gwd-div-7f42-2" style="" id="vertical-label-book-2"><b>{{ app.localizedName }}</b>
+            </div>
+        </div>
+        <div id="healthcareMonitor" class="healthcareMonitor" ng-repeat="app in healthApps" ng-if="app.camelCaseName == 'healthcareMonitor'" ng-click="loadApp(app, $event);logInteraction('mainScreen','myHealthApplication','User launches '+app.name+' application');logEWallet('USAGE', 1)">
+            <div class="gwd-div-7f42 gwd-div-7f42-2" style="" id="vertical-label-book-4"><b>{{ app.localizedName }}</b>
+            </div>
+        </div>
+        <div id="dailyFunctioningMonitoring" class="dailyFunctioningMonitoring" ng-repeat="app in healthApps" ng-if="app.camelCaseName == 'dailyFunctioningMonitoring'" ng-click="loadApp(app, $event);logInteraction('mainScreen','myDailyLifeApplication','User launches '+app.name+' application');logEWallet('USAGE', 1)">
+            <div class="gwd-div-7f42 gwd-div-7f42-3" style="" id="vertical-label-book-3"><b>{{ app.localizedName }}</b>
+            </div>
+        </div>
+
+        <div id="help" class="help" ng-repeat="app in healthApps" ng-if="app.camelCaseName == 'help'" ng-click="loadApp(app, $event);logInteraction('mainScreen','helpApplication','User launches '+app.name+' application');logEWallet('USAGE', 1)">
+            <div class="gwd-div-7f42 gwd-div-7f42-2" style="" id="vertical-label-book-5"><b>{{ app.localizedName }}</b>
+            </div>
+        </div>
+        <div id="fallPrevention" class="fallPrevention" ng-repeat="app in healthApps" ng-if="app.camelCaseName == 'fallsPreventionChecklist'" ng-click="loadApp(app, $event);logInteraction('mainScreen','fallPreventionApplication','User launches '+app.name+' application');logEWallet('USAGE', 1)">
+        </div>
+    </div>
+
+    <!--Chessboard/ Cognitive Games launcher controller-->
+    <div id="layer-4-cabinet-chessboard" class="cabinet-chessboard" style="">
+        <div id="layer-4-chessboard-button" class="chessboard-button" style=""></div>
+    </div>
+
+    <!-- Calendar app launcher -->
+    <img id="calendarApp" ng-src="assets/calendar-icon-small.png" class="gwd-img-f6mq calendar" ng-repeat="app in contactsApps" ng-if="app.camelCaseName == 'calendar'" ng-click="loadApp(app, $event);logInteraction('mainScreen','calendarApplication','User launches Calendar application');logEWallet('USAGE', 1)">
+
+    <!-- Hue app launcher -->
+    <img id="hueApp" ng-src="assets/lamp.png" class="gwd-img-f7mq lamp" ng-repeat="app in houseApps" ng-if="app.camelCaseName == 'hue'" ng-click="loadApp(app, $event);logInteraction('mainScreen','hueApplication','User launches Hue application');logEWallet('USAGE', 1)">
+
+
+    <!--Videos/Video Trainer app launcher controller-->
+    <div class="gwd-div-gst6 physicalTrainer" id="layer-4-video-button" ng-repeat="app in healthApps" ng-if="app.camelCaseName == 'physicalTrainer'" ng-click="loadApp(app, $event); logInteraction('mainScreen','videoExerciseApplication','User launches Video Exercise application');logEWallet('EXERCISE', 20)">
+        <div class="gwd-div-1vtz" id="video-label" style="">{{ app.localizedName }}</div>
+
+    </div>
+
+    <div class="gwd-div-gst7 bikeTrainer" id="bike-trainer-icon" ng-repeat="app in gamesApps" ng-if="app.camelCaseName == 'bikeTrainer'" ng-click="loadApp(app, $event);logEWallet('EXERCISE', 20)">
+        <div class="gwd-div-1vtz" id="bike-label" style="">{{ app.localizedName }}</div>
+
+    </div>
+    <!-- Robin the helpful robot -->
+    <div class="robin-place-holder" ng-controller="ewallVirtualCoachPAMMController" ng-hide="$parent.showBigRobin">
+
+        <div id="robin-robot-active" class="robin-active" ng-show="PAMMAvailable" ng-click="sendPAMMAvailable()">
+            <div id="robin-active-badge" class="robin-active-badge" ng-show="PAMMAvailable">{{ PAMMAvailableNr }}</div>
+        </div>
+        <div id="robin-robot-passive" class="robin-passive" ng-hide="PAMMAvailable" ng-click="sendUserDialogue()"></div>
+    </div>
+
+
+    <!-- Byke trainer app launcher -->
+    <!--
+    <img src="assets/byke_trofee_thin.png" ng-repeat="app in gamesApps" ng-if="app.camelCaseName == 'bikeTrainer'" ng-click="loadApp(app, $event)" class="gwd-img-1pa9" id="bike-trainer-icon">
+-->
+
+    <!-- --------------------- -->
+    <!-- window layer -->
+    <!-- --------------------- -->
+
+    <!-- opened book images -->
+    <img ng-src="assets/6-book1.png" class="gwd-img-o7sj gwd-img-mmom gwd-img-j7j3" id="layer-8-book4">
+    <img ng-src="assets/6-book3.png" class="gwd-img-o7sj gwd-img-mmom gwd-img-j7j3" id="layer-8-book1">
+    <img ng-src="assets/6-book2.png" class="gwd-img-o7sj gwd-img-mmom gwd-img-j7j3" id="layer-8-book2">
+    <img ng-src="assets/6-book4.png" class="gwd-img-o7sj gwd-img-mmom gwd-img-j7j3" id="layer-8-book3">
+    <!-- big chessboard -->
+    <img ng-src="assets/6-chessboard.png" class="gwd-img-o7sj gwd-img-mmom gwd-img-j7j3" id="layer-8-chessboard">
+    <!-- chessboard filler - goes on top of the chessboarg image -->
+    <div id="chessboard-filler" class="gwd-div-m1yp" style="">
+        <div ng-repeat="app in gamesApps">
+
+            <!-- game buttons -->
+            <div class="gwd-div-pw9r" id="cognitive-game-{{app.camelCaseName}}" ng-click="loadApp(app, $event);logInteraction('cognitiveExerciseApplication',app.camelCaseName+'Icon','User launches '+app.name+' application');logEWallet('USAGE', 1)" onclick="showBackButton()">
+                <div class="gwd-div-1hx8" id="cognitive-game-label-{{app.camelCaseName}}">{{ app.localizedName }}</div>
+                <img ng-src="{{arrayChessIcons[$index]}}" class="gwd-img-1uy0">
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- APP Window layer -->
+    <div id="AppWindow" class="window-blur">
+        <div style="position: absolute; top: 0; left:0; width: 100%; height: 100%" ui-view></div>
+    </div>
+
+    <!-- Window close buttons -->
+    <img id="book-window-close-button" class="book-window-close-button" ng-src="assets/close-button.png">
+    <img id="chessboard-window-close-button" class="chessboard-window-close-button" ng-src="assets/close-button.png">
+    <img id="tv-window-close-button" class="tv-window-close-button" ng-src="assets/close-button.png">
+    <img id="game-frame-close-button" class="game-frame-close-button" ng-src="assets/close-button.png" style="">
+    <img id="app-window-close-button" class="game-frame-close-button" ng-src="assets/close-button.png" style="">
+    <div class="gwd-div-1cj3" id="game-frame-back-button">BACK</div>
+</div>
+
+<!-- Transparent overlay which removes the possibility of launching applications in passive screen mode -->
+<div id="main-screen-passive" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: transparent;"></div>
+<!-- The virtual coach big robot pannel -->
+<!-- -->
+<div id="main-notification-panel" class="main-notification-panel" style="" ng-controller="ewallVirtualCoachNotificationController" ng-show="showNotification">
+    <div class="glow" style="position: absolute; background: yellow; width: 100px; height: 100px; left: 524px; top: 161px; border-radius: 50%; box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;" ng-hide="showNotificationSpinner"></div>
+    <img class="notification-robot" ng-src="assets/notification-robot-v4.png">
+    <div class="notification notification-panel">
+        <!-- <div class="notification-header"></div> -->
+        <div class="notification-body">
+            <div class="choices-available-body" ng-repeat="choiceItem in choices" ng-hide="inDialogue == true || choices.length <2">
+
+                <!-- make choice buttons -->
+                <span class="notification-feedback-button" ng-click="sendChoice(choiceItem.callbackURL)"> 
+                    &rarr; {{ choiceItem.content }} 
+                </span>
+
+            </div>
+
+
+            <div class="conversation-body" ng-show="inDialogue">
+                <span style="display: block; width: 100%;" ng-repeat="statement in dialogueData.statements">
+                Robin: 
+            </span>
+                <span style="display: block; width: 100%;" ng-repeat="statement in dialogueData.statements">
+                {{ statement.value }}
+            </span>
+
+                <div class="loader1" style="display: block; margin: 0 auto;" ng-show="waitingForServer">
+                    <div class="ball"></div>
+                    <div class="ball"></div>
+                    <div class="ball"></div>
+                    <div class="ball"></div>
+                </div>
+                <br>
+                <span style="display: block; width: 100%; color: white" ng-repeat="statement in dialogueData.statements">
+                {{ userFirstName }}: 
+            </span>
+
+                <div class="responses-body" style="margin-top: 20px; padding-top: 5px;padding-bottom: 15px;" ng-repeat="responseItem in dialogueData.responses">
+                    <!-- if the feedback type == basic -->
+                    <span ng-if="responseItem.type == 'basic'" class="notification-feedback-button" style="" ng-click="responseAction(responseItem.action, responseItem.url)"> 
+                &rarr; {{ responseItem.label }} 
+                </span>
+                    <!-- if the feedback type == slider
+                <div ng-if="feedbackItem.type == 'range'" class="notification-feedback">
+                    <input type="range" style="width: 60%" id="$index" max="{feedbackItem.max}" min="{feedbackItem.min}" ng-model="feedbackItem.value" oninput="rangevalue.value=value" />
+                    <output id="rangevalue"> </output>
+                </div>
+                 -->
+                </div>
+            </div>
+
+        </div>
+        <!-- <div id="notification-footer" style="position: relative; height: 93px; width: 979px;"></div> -->
+    </div>
+    <div id="closeNotification" style="position:  absolute; width: 100px; height: 100px; top: 635px; left: 1369px; border-radius: 50%; background: #f3f3f3; border: 5px solid gray; text-align: center; /* content: 'X'; */ font-family: Roboto; font-size: 70px; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); text-shadow: -1px -1px 1px #EFEFEF, 2px 2px 1px #CAC6C6; letter-spacing: .1em;" ng-show="showNotificationSpinner" ng-click="closeNotification()"> x </div>
+</div>
+
+<!-- The notification robot pannel -->
+<div id="main-alarm-notification-panel" class="main-notification-panel" style="" ng-controller="ewallGeneralIDSSNotificationController" ng-show="showNotification">
+    <!-- <div id="glow" style="position: absolute; background: yellow; width: 100px; height: 100px; left: 1510px;
+    top: 161px; border-radius: 50%; box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;" ng-hide="showNotificationSpinner"></div> -->
+    <div class="alarm-overlay"></div>
+    <img class="notification-robot" ng-src="assets/notification-robot-v4-alarm.png">
+    <div class="notification notification-panel">
+
+        <div class="notification-body">
+            <span style="display: block; width: 80%; margin-left: 0; margin-right: 10%; text-align: left;">
+                 Robin: <br>
+                {{ notificationContent }}
+            </span>
+            <div class="loader1" style="display: block; margin: 0 auto;" ng-show="showNotificationSpinner">
+                <div class="ball"></div>
+                <div class="ball"></div>
+                <div class="ball"></div>
+                <div class="ball"></div>
+            </div>
+            <br> <span style="color: white;">  {{ userFirstName }}:  </span>
+            <br>
+            <div id="feddback-body" style="margin-top: 20px; padding-top: 5px;padding-bottom: 15px;" ng-repeat="feedbackItem in notificationFeedbackSet">
+                <!-- if the feedback type == button -->
+                <span ng-if="feedbackItem.type == 'button'" class="notification-feedback-button" style="" ng-click="sendFeedback( feedbackItem.url )">
+                    &rarr; {{ feedbackItem.label }} </span>
+                <!-- if the feedback type == slider -->
+                <div ng-if="feedbackItem.type == 'range'" class="notification-feedback">
+                    <input type="range" style="width: 60%" id="$index" max="{feedbackItem.max}" min="{feedbackItem.min}" ng-model="feedbackItem.value" oninput="rangevalue.value=value" />
+                    <output id="rangevalue"> </output>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="closeNotification" style="position:  absolute; width: 100px; height: 100px; top: 635px; left: 1369px; border-radius: 50%; background: #f3f3f3; border: 5px solid gray; text-align: center; /* content: 'X'; */ font-family: Roboto; font-size: 70px; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); text-shadow: -1px -1px 1px #EFEFEF, 2px 2px 1px #CAC6C6; letter-spacing: .1em;" ng-show="showNotificationSpinner" ng-click="closeNotification()"> x </div>
+</div>
+<!-- </div> -->
+
+<!-- Brightness controll  -->
+<div id="screen-dimmer" class="gwd-wall-lamp-overlay" ng-click="switchDimmer(); logInteraction('mainScreen','lightSwitch','Switched light');">
+    OFF
+</div>
+
+
+<script src="js/clock.js"></script>
+<script>
+    var isPassive = false;
+    var enablePassiveSwitch = true;
+    var userName = ewallApp.currentSession.user.username;
+    var helpMode = false;
+    var lang = ewallApp.preferedLanguage;
+
+    function showBackButton() {
+        $('#game-frame-back-button').show();
+    }
+
+    function hideWindows() {
+        //this uses a backward visual hierarchy
+
+        //first hide close buttons
+        $('#app-window-close-button').hide();
+        $('#book-window-close-button').hide();
+        $('#chessboard-window-close-button').hide();
+        $('#tv-window-close-button').hide();
+        $('#game-frame-close-button').hide();
+        $('#game-frame-back-button').hide();
+        //than hide window fillers
+        //$('#window-book-filler').hide();
+        $('#chessboard-filler').hide();
+        $('#game-frame-filler').hide();
+        $('#tv-fillers').hide();
+        //than hide window frames
+        $('#layer-8-book1').hide();
+        $('#layer-8-book2').hide();
+        $('#layer-8-book3').hide();
+        $('#layer-8-book4').hide();
+        $('#layer-8-chessboard').hide();
+        $('#layer-8-gameframe').hide();
+        $('#layer-8-tv').hide();
+
+        // than hide window blur
+        //$('#window-blur').hide();
+        $('#AppWindow').hide();
+        //finally hide main screen temprorary visuals
+        $('#video-trainer-tv-ad').hide();
+    };
+
+    // *** [PART] change Philips Hue to the color of the lavalamp widget ***
+    // define CSS hoock for getting background color in hex
+
+    $.cssHooks.elementBackgroundColor = {
+            get: function (elem) {
+                if (elem.currentStyle)
+                    var bg = elem.currentStyle["elementBackgroundColor"];
+                else if (window.getComputedStyle)
+                    var bg = document.defaultView.getComputedStyle(elem,
+                        null).getPropertyValue("background-color");
+                if (bg.search("rgb") == -1)
+                    return bg;
+                else {
+                    bg = bg.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+
+                    function hex(x) {
+                        return ("0" + parseInt(x).toString(16)).slice(-2);
+                    }
+                    return "#" + hex(bg[1]) + hex(bg[2]) + hex(bg[3]);
+                }
+            }
+        }
+        // *** END [PART] change Philips Hue to the color of the lavalamp widget ***
+
+    window.onkeydown = function () {
+        switch (window.event.keyCode) {
+        case 65: // if 'A'+'shift'+'ctrl' key is pressed, do this
+            if (isPassive && window.event.shiftKey && window.event.ctrlKey) {
+                isPassive = false;
+                //active mode
+                $('#main-screen-body').removeClass('passive');
+                $('#layer-4-video-button').removeClass('hidden');
+                $('#bike-trainer-icon').removeClass('hidden');
+                $('#main-screen-passive').hide();
+
+                setTimeout(function () {
+                    $('body').css('overflow', 'hidden');
+                    $('#screen-dimmer').show();
+                }, 1500);
+
+                // *** [PART]change Philips Hue to the color of the lavalamp widget ***
+                // get lavalamp color
+                var lavaLampColor = $("#animation .blobs").find('span').css("elementBackgroundColor");
+                console.log("lava lamp color " + lavaLampColor);
+
+                // parse color to RGB integer
+                var intLavaLampColor = 0;
+                intLavaLampColor = parseInt(lavaLampColor.split('#')[1], 16);
+                // for localhost
+                /* 
+                var hueServiceURL = "http://localhost/cloud-gateway/users/" + userName + "/actuators/lights/setColor?rgb="+intLavaLampColor;
+                */
+                // for depoyment
+                /* */
+
+                var hueServiceURL = window.location.protocol + '//' + window.location.hostname + "/platform-[env]/cloud-gateway/users/" + userName + "/actuators/lights/setColor?rgb=" + intLavaLampColor;
+
+                var env = "";
+                var pathname = window.location.pathname;
+                if (pathname.match(/-dev/g)) {
+                    env = "dev"
+                } else if (pathname.match(/-int-level-1/g)) {
+                    env = "int-level-1"
+                } else if (pathname.match(/-int-level-2/g)) {
+                    env = "int-level-2"
+                } else if (pathname.match(/-prod-aws/g)) {
+                    env = "prod-aws"
+                } else if (pathname.match(/-prod/g)) {
+                    env = "prod"
+                }
+                hueServiceURL = hueServiceURL.replace("[env]", env);
+
+                // build Ph. Hue call url
+                try {
+                    ewallApp.ajax({
+                        url: hueServiceURL,
+                        type: "PUT",
+                        beforeSend: function (xhr) {
+                            xhr.setRequestHeader("Content-type", "text/plain");
+                        },
+                        async: true,
+                        success: function () {
+                            console.log('changed color to: ' + lavaLampColor);
+                        }
+                    })
+                } catch (hueServiceERR) {
+                    console.log(hueServiceERR)
+                }
+                // call Ph. Hue service
+
+                // *** END [PART]change Philips Hue to the color of the lavalamp widget ***
+                console.log("active mode");
+
+                //log user interaction
+                userInteractionLogger.sendInteractionWithComment("mainScreen", "activeModeKinectEvent", "User in front of the screen - active mode");
+            }
+
+            break;
+        case 75: // if 'k'+'shift'+'ctrl' key is pressed, do this
+            /*before: case 80:*/
+            if (!isPassive && window.event.shiftKey && window.event.ctrlKey && enablePassiveSwitch) {
+                isPassive = true;
+                // close eventual oppend applications
+                $('#app-window-close-button').trigger('click');
+                $('#chessboard-window-close-button').trigger('click');
+                //passive mode
+                $('#main-screen-body').addClass('passive');
+                $('#layer-4-video-button').addClass('hidden');
+                $('#bike-trainer-icon').addClass('hidden');
+                $('#screen-dimmer').hide();
+
+                $('#main-screen-passive').show();
+
+                console.log("passive mode");
+
+                //log user interaction
+                userInteractionLogger.sendInteractionWithComment("mainScreen", "passiveModeKinectEvent", "User away from the screen - passive mode");
+            }
+            break;
+
+        default:
+            break;
+        };
+    };
+
+
+    $(document).ready(function () {
+
+        //log user has pressed the loggin button
+        userInteractionLogger.sendInteractionWithComment("mainScreen", "login", "User logs into eWALL");
+
+        /* make passive mode default */
+        //$('body').addClass('passive');
+        $('body').css('overflow', 'hidden');
+        //$('#layer-4-video-button').addClass('hidden');
+
+        /* screen blur event handler*/
+        $('#screen-dimmer').on('click', function () {
+            // if the body does not have the dimm-brightnes class, then add it
+            if ($('#main-screen-body').hasClass('dimm-brightnes')) {
+                // remove the class to make the screen bright
+                $('#main-screen-body').removeClass('dimm-brightnes');
+                // add backgorund to main screen
+                $(this).html('OFF');
+            } else {
+                // add the dimm-brightnes class
+                $('#main-screen-body').addClass('dimm-brightnes');
+                //remove background from main screen
+                $(this).html('ON');
+            }
+        });
+
+        /* wallpaper options */
+        $('#option-1').on('click', function () {
+            $(".cf7 img").removeClass("opaque");
+            $("#wallpaper-1").addClass("opaque");
+            $('#background-switch div').removeClass("selected");
+            $(this).addClass("selected");
+
+            // set localstorage backgorund preference
+            localStorage.setItem('preferedBGcolor', 'option-1');
+
+            //log user 
+            userInteractionLogger.sendInteractionWithComment("mainScreen", "switchWallpaper1Button", "User selects different wallpaper - option 1");
+        });
+
+        $('#option-2').on('click', function () {
+            $(".cf7 img").removeClass("opaque");
+            $("#wallpaper-2").addClass("opaque");
+            $('#background-switch div').removeClass("selected");
+            $(this).addClass("selected");
+
+            // set localstorage backgorund preference
+            localStorage.setItem('preferedBGcolor', 'option-2');
+
+            // log user 
+            userInteractionLogger.sendInteractionWithComment("mainScreen", "switchWallpaper2Button", "User selects different wallpaper - option 2");
+        });
+
+        $('#option-3').on('click', function () {
+            $(".cf7 img").removeClass("opaque");
+            $("#wallpaper-3").addClass("opaque");
+            $('#background-switch div').removeClass("selected");
+            $(this).addClass("selected");
+
+            // set localstorage backgorund preference
+            localStorage.setItem('preferedBGcolor', 'option-3');
+
+            //log user 
+            userInteractionLogger.sendInteractionWithComment("mainScreen", "switchWallpaper3Button", "User selects different wallpaper - option 3");
+        });
+
+        $('#option-4').on('click', function () {
+            $(".cf7 img").removeClass("opaque");
+            $("#wallpaper-4").addClass("opaque");
+            $('#background-switch div').removeClass("selected");
+            $(this).addClass("selected");
+
+            // set localstorage backgorund preference
+            localStorage.setItem('preferedBGcolor', 'option-4');
+
+            //log user 
+            userInteractionLogger.sendInteractionWithComment("mainScreen", "switchWallpaper4Button", "User selects different wallpaper - option 4");
+        });
+
+        $('#option-5').on('click', function () {
+            $(".cf7 img").removeClass("opaque");
+            $("#wallpaper-5").addClass("opaque");
+            $('#background-switch div').removeClass("selected");
+            $(this).addClass("selected");
+
+            // set localstorage backgorund preference
+            localStorage.setItem('preferedBGcolor', 'option-5');
+
+            //log user 
+            userInteractionLogger.sendInteractionWithComment("mainScreen", "switchWallpaper5Button", "User selects different wallpaper - option 5");
+        });
+        /* window controllers */
+        $('#app-window-close-button').on('click', function () {
+            hideWindows();
+            ewallApp.closeApp();
+            enablePassiveSwitch = true;
+
+            //log user 
+            userInteractionLogger.sendInteractionWithComment("mainScreen", "closeApplication", "User closes application and return to main screen");
+        });
+
+        $('#book-window-close-button').on('click', function () {
+            hideWindows();
+            ewallApp.closeApp();
+
+        });
+
+        $('#chessboard-window-close-button').on('click', function () {
+            hideWindows();
+
+            //log user 
+            userInteractionLogger.sendInteractionWithComment("mainScreen", "closeGameBoard", "User closes Game Board pannel");
+        });
+
+        $('#tv-window-close-button').on('click', function () {
+            hideWindows();
+            ewallApp.closeApp();
+
+        });
+
+        $('#game-frame-close-button').on('click', function () {
+            hideWindows();
+            ewallApp.closeApp();
+
+        });
+        $('#game-frame-back-button').on('click', function () {
+            hideWindows();
+            ewallApp.closeApp();
+
+            //log user 
+            userInteractionLogger.sendInteractionWithComment("mainScreen", "backToGameBoard", "User touched the Back to Game Board button");
+
+            $('#layer-4-chessboard-button').trigger('click');
+
+
+        });
+
+        $('#physiscalActivityWidget').on('click', function () {
+            /*
+            hideWindows();
+            $('#window-blur').show();
+            $('#window-book-filler').show();
+            $('#layer-8-book1').show();
+            $('#book-window-close-button').show();
+            */
+
+        });
+
+        $('#sleep').on('click', function () {
+            /*
+            hideWindows();
+            $('#window-blur').show();
+            $('#window-book-filler').show();
+            $('#layer-8-book2').show();
+            $('#book-window-close-button').show();   
+            */
+
+        });
+
+        $('#healthcareMonitor').on('click', function () {
+            /*
+            hideWindows();
+            $('#window-blur').show();
+            $('#window-book-filler').show();
+            $('#layer-8-book3').show();
+            $('#book-window-close-button').show();
+            */
+
+        });
+        
+        $('#dailyFunctioningMonitoring').on('click', function () {
+            /* 
+            hideWindows();
+            $('#window-blur').show();
+            $('#window-book-filler').show();
+            $('#layer-8-book4').show();
+            $('#book-window-close-button').show();
+            */
+
+        });
+
+        $('#layer-4-chessboard-button').on('click', function () {
+            hideWindows();
+            // $('#window-blur').show();
+            $('#layer-8-chessboard').show();
+            $('#chessboard-filler').css('display', 'flex');
+            $('#chessboard-window-close-button').show();
+
+            //log user
+            userInteractionLogger.sendInteractionWithComment("mainScreen", "gameBoardIcon", "User launches Game Board pannel");
+
+        });
+
+        $('#layer-4-video-button').on('click', function () {
+            //hideWindows();
+            $('#video-trainer-tv-ad').show();
+            enablePassiveSwitch = false;
+
+            setTimeout(function () {
+                //  $('#window-blur').show();
+                //  $('#layer-8-tv').show();
+                //  $('#tv-fillers').show();
+                //  $('#tv-window-close-button').show();
+            }, 1000);
+
+            //log user
+
+
+        });
+
+        $('#bike-trainer-icon').on('click', function () {
+            enablePassiveSwitch = false;
+        });
+
+        $('#domotcs-widget').on('click', function () {
+            //enablePassiveSwitch = false;
+
+        });
+
+        $('#calendarApp').on('click', function () {
+            //enablePassiveSwitch = false;
+
+            //log user
+
+        });
+
+        $('#logOutBtn').on('click', function () {
+            //enablePassiveSwitch = false;
+
+            //log user
+
+            //logged in the controller
+        });
+
+        $('#cognitive-game-1').on('click', function () {
+            // hideWindows();
+            // $('#window-blur').show();
+            //$('#layer-8-gameframe').show();
+            // $('#game-frame-close-button').show();
+            //$('#game-frame-back-button').show();
+            // $('#game-frame-filler').show();
+
+
+        });
+
+        $('#cognitive-game-2').on('click', function () {
+            // hideWindows();
+            // $('#window-blur').show();
+            //$('#layer-8-gameframe').show();
+            // $('#game-frame-close-button').show();
+            //$('#game-frame-back-button').show();
+            // $('#game-frame-filler').show();
+
+
+        });
+        $('#cognitive-game-3').on('click', function () {
+            // hideWindows();
+            // $('#window-blur').show();
+            // $('#layer-8-gameframe').show();
+            // $('#game-frame-close-button').show();
+            //$('#game-frame-back-button').show();
+            // $('#game-frame-filler').show();
+
+        });
+        $('#cognitive-game-4').on('click', function () {
+            // hideWindows();
+            // $('#window-blur').show();
+            // $('#layer-8-gameframe').show();
+            // $('#game-frame-close-button').show();
+            //$('#game-frame-back-button').show();
+            // $('#game-frame-filler').show();
+
+        });
+        $('#cognitive-game-5').on('click', function () {
+            // hideWindows();
+            //  $('#window-blur').show();
+            // $('#layer-8-gameframe').show();
+            // $('#game-frame-close-button').show();
+            //$('#game-frame-back-button').show();
+            // $('#game-frame-filler').show();
+
+        });
+        $('#cognitive-game-6').on('click', function () {
+            // hideWindows();
+            //  $('#window-blur').show();
+            // $('#layer-8-gameframe').show();
+            // $('#game-frame-close-button').show();
+            //$('#game-frame-back-button').show();
+            // $('#game-frame-filler').show();
+
+        });
+        $('#cognitive-game-7').on('click', function () {
+            // hideWindows();
+            //   $('#window-blur').show();
+            // $('#layer-8-gameframe').show();
+            //  $('#game-frame-close-button').show();
+            //$('#game-frame-back-button').show();
+            // $('#game-frame-filler').show();
+
+        });
+        $('#cognitive-game-8').on('click', function () {
+            //  hideWindows();
+            //   $('#window-blur').show();
+            // $('#layer-8-gameframe').show();
+            //  $('#game-frame-close-button').show();
+            //$('#game-frame-back-button').show();
+            // $('#game-frame-filler').show();
+
+        });
+
+
+        // hide passive screen overlay
+        $('#main-screen-passive').hide();
+
+        // hide all windows
+        hideWindows();
+
+        // translate the UI
+        translateLabels(lang);
+        translateWeather(lang);
+        translateTVAdd(lang);
+        translateTVVideoTrainer(lang);
+        translateTVAgenda(lang);
+        translateLogOutBtn(lang);
+
+        //remove default wiping on the body
+        $('body').on('wheel', function (e) {
+            e.preventDefault();
+        });
+        // remove touchmove from the DOM
+        document.addEventListener('touchmove', function (e) {
+            e.preventDefault();
+        }, false);
+
+        // bind to activity service
+        //         var WidgetActivityObjectDPAM_NewInstance = new WidgetActivityObjectDPAM();
+        //         WidgetActivityObjectDPAM_NewInstance.SetIntervalMS(60 * 1000);
+        //         /*set interval in milliseconds: 5*1000=5sec; 0 - get data from SBs only once;*/
+        //         WidgetActivityObjectDPAM_NewInstance.InitWidgetActivityObject();
+
+        // bind to domotics service
+        //         var WidgetObjectDomotics_NewInstance = new WidgetObjectDomotics();
+        //         WidgetObjectDomotics_NewInstance.SetIntervalMS(60 * 1000);
+        //         /*set interval in milliseconds: 
+        // 60*1000=60sec; 0 - get data from SBs only once;*/
+        //         WidgetObjectDomotics_NewInstance.InitWidgetObject();
+
+        //         // bind to photo frame service
+        //         var WidgetObjectPhotoFrame_NewInstance = new WidgetObjectPhotoFrame();
+        //         WidgetObjectPhotoFrame_NewInstance.SetPathToExecuteDirectory('widgets/photo-frame/');
+        //         WidgetObjectPhotoFrame_NewInstance.SetIntervalMS(10 * 1000); /*set interval in milliseconds for testing; by default interval is 30min*/
+        //         WidgetObjectPhotoFrame_NewInstance.InitWidgetObject();
+
+
+
+
+        // looking for a prefered background to set at document.load
+        if (!localStorage.getItem('preferedBGcolor')) {
+            $('#option-1').click();
+        } else {
+            $('#' + localStorage.getItem('preferedBGcolor')).click();
+        }
+
+    });
+    
+</script>
+
+<!--
+</body>
+
+</html>
+-->

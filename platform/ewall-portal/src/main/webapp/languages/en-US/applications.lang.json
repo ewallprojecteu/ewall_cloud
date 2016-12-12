@@ -1,0 +1,17 @@
+{
+    "addNew": "Add new application",
+    "availableServices": "Available services",
+    "contacts": "Contacts",
+    "dependsOnServices": "Depends on services",
+    "detail": "Application detail",
+    "enterName": "Enter application name",
+    "games": "Games",
+    "health": "Health",
+    "hidden": "Hidden",
+    "house": "House",
+    "minimized": "Minimized",
+    "name": "Application name",
+    "selectType": "Select type",
+    "type": "Type",
+    "web_app": "Web App"
+}

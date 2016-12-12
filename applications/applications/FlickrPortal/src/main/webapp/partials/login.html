@@ -1,0 +1,20 @@
+<p class="text-right">
+	<language-picker currentlanguage="currentlanguage"
+		languages="supportedLangs" on-change="onLanguageChange(language)"></language-picker>
+</p>
+<form class="form-signin" role="form" name="loginForm"
+	ng-submit="loginForm.$valid && login(credentials)" novalidate>
+	<h2 class="form-signin-heading" i18n="login.title"></h2>
+
+	<label for="inputUsername" class="sr-only" i18n="login.username"></label>
+	<input type="text" ng-model="credentials.username" id="inputUsername"
+		name="username" class="form-control"
+		i18n-attr="{placeholder: 'login.username'}" required autofocus>
+	<label for="inputPassword" class="sr-only" i18n="login.password"></label>
+	<input type="password" ng-model="credentials.password"
+		id="inputPassword" name="password" class="form-control"
+		i18n-attr="{placeholder: 'login.password'}" required>
+
+	<button class="btn btn-lg btn-primary btn-block" type="submit"
+		i18n="login.signIn"></button>
+</form>

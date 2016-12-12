@@ -1,0 +1,14 @@
+{
+    "addExternalVideo": "Dodaj vanjski video",
+    "addHealthImpairmentTag": "Dodaj oznaku zdravstvene poteškoće",
+    "description": "Opis",
+    "descriptionHint": "Neki opis",
+    "error": "Greška",
+    "loading": "Učitavanje...",
+    "loginFailed": "Neuspješno prijavljivanje",
+    "ok": "U redu",
+    "privacy": "Privatnost",
+    "success": "Uspjeh",
+    "uploadVideo": "Prenesi video",
+    "videoSuitableForPersonHint": "Video je prilagođen za osobu sa zdravstvenim poteškoćama"
+}

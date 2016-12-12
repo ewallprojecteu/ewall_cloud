@@ -1,0 +1,30 @@
+<h1 i18n="sensingEnvs.configuration"></h1>
+<form name="sensingEnvConfigForm"
+	ng-submit="sensingEnvConfigForm.$valid && submit()" novalidate>
+
+	<div class="form-group"
+		ng-repeat="(property, propertyValue) in sensEnvConfiguration" ng-switch="property">
+		
+		<!-- disable editing of uuid field -->
+		<div class="col-md-12 form-group" ng-switch-when="eu.ewall.platform.remoteproxy.sensingenvironment.id">
+			<label for="{{property}}">{{property}}</label>
+			<input type="text" class="form-control" id="{{property}}"
+				ng-model="sensEnvConfiguration[property]" autofocus disabled>
+		</div>
+		
+		<div class="col-md-12 form-group" ng-switch-default>
+			<label for="{{property}}">{{property}}</label>
+			<input type="text" class="form-control" id="{{property}}"
+				ng-model="sensEnvConfiguration[property]" autofocus>
+		</div>
+	</div>
+	
+	
+	<div class="form-group">
+		<div ng-init="sensEnvBtnDisabled = false">
+			<input type="submit" class="btn btn-primary" 
+				ng-disabled="sensEnvBtnDisabled" i18n="common.submit">
+		</div>
+	</div>
+
+</form>

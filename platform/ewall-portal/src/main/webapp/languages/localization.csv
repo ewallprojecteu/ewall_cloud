@@ -1,0 +1,285 @@
+keys,en-US,it-IT,da-DK,de-AT,nl-NL,sr-SP,mk-MK,bg-BG,hr-HR,ro-RO
+applications.addNew,Add new application,Aggiungi nuova applicazione,tilføj en ny applikation,neue Anwendung hinzufügen,Nieuwe applicatie toevoegen,Dodaj novi program,Додади нова апликација,Добави нова програма,Dodaj novi program,Adaugă aplicație nouă
+applications.availableServices,Available services,Servizi disponibili,tilgængelig service,verfügbare Services,Beschikbare diensten,Dostupni servisi,Достапни сервиси,Налични услуги,Dostupne usluge,Serviciu disponibil
+applications.contacts,Contacts,Contatti,kontakter,Kontakte,Contacten,Kontakti,Контакти,контакти,Kontakti,Contacte
+applications.dependsOnServices,Depends on services,Dipende dai servizi,afhænger af service,Abhängig vom Service,Hangt af van diensten,Zavisi od usluga,Зависи од услугата, зависи от услуги,Zavisi od usluga,Depinde de servicii
+applications.detail,Application detail,Dettaglio applicazione,detaljer om applikationerne,Details der Anwendung,Applicatie detail,Detalji programa,Детали на апликацијата,детайли,Detalji programa,Detaliu aplicație
+applications.enterName,Enter application name,Inserisci il nome dell'applicazione,indtast navnet på applikationen ,Name der Anwendung eingeben,Voer applicatie naam in,Unesi naziv programa,Внеси го името на апликацијата,въведи име,Unesi naziv programa,Introdu numele aplicației
+applications.games,Games,Giochi,spil ,Spiele,Spellen,Igre,Игри,Игри,Igre,Jocuri
+applications.health,Health,Salute,sundhed,Gesundheit,Gezondheid,Zdravlje,Здравје,Здраве,Zdravlje,Sănătate
+applications.hidden,Hidden,Nascosta,Gemt,,Verborgen,Sakriven,,,Sakriven,
+applications.house,House,Casa,Hjem ,Haus,Huis,Kuća,Куќа,Къща,Kuća,Casă
+applications.minimized,Minimized,Minimizzata,Minimeret,,Geminimaliseerd,Minimizovan,,,Minimiziran,
+applications.name,Application name,Nome dell'applicazione,Navn på applikation,Name der Anwendung,Applicatie naam,Naziv programa,Име на апликацијата,Име,Naziv programa,Numele aplicației
+applications.selectType,Select type,Seleziona il tipo,Vælg type,Typ auswählen,Selecteer type,Izaberi tip,Одбери тип,Избери тип,Izaberi tip,Selectează tipul
+applications.type,Type,Tipo,Type,Typ,Type,Tip,Тип,Тип,Tip,Tip
+applications.web_app,Web App,Web App,Web App,Web App,Web applicatie,Web aplikacija,,,Web aplikacija,
+common.actions,Actions,Azioni,Handling,Tätigkeiten,Acties,Akcije,Акции,Действие,Akcije,Acțiuni
+common.all,All,Tutti,All,alle,Alles,Sve,Сите,всички,Sve,Toate
+common.cancel,Cancel,Annulla,Annuller,Löschen,Annuleer,Odustani,Откажи,отказ,Odustani,Închide
+common.country,Country,Paese,Land,Staat,Land,Država,Држава,държава,Država,Țara
+common.dataError,Error while fetching the data!,Errore durante il recupero dei dati!,Fejl ved hentning af data,Fehler beim Laden der Daten!,Er is een fout opgetreden bij het laden van de data!,Greška prilikom preuzimanja podataka!,Грешка при превземање на податоците,грешка в данните,Greška prilikom preuzimanja podataka!,Eroare la prelucrarea datelor
+common.deleteError,Delete failed!,Eliminazione fallita!,Slet fejlen,Löschen fehlgeschlagen!,Verwijderen mislukt!,Neuspješno brisanje!,Неуспешно бришење,изтрий грешката,Neuspješno brisanje!,Ștergere nereușită
+common.details,details,dettagli,detaljer,Details,details,detalji,Детали,детайли,detalji,Detalii
+common.enterCountry,Enter country,Inserisci il paese,Indtast land,Land eingeben,Voer land in,Unesi državu,Внеси држава,въведи държава,Unesi državu,Introdu țara
+common.enterUrl,Enter url,Inserisci url,Indtast url,Url eingeben,Voer internet adres in,Unesi url,Внеси url,въведи URL,Unesi url,Introdu URL
+common.error,Error,Errore,Fejl,Error,Fout,Greška,Грешка при превземање на податоците,грешка,Greška,Eroare
+common.loading,Loading...,Caricamento...,Loading...,Lädt...,Laden...,Učitavanje...,Вчитување,зареждане,Učitavanje...,Se încarcă...
+common.loginFailed,Log in failed,Accesso fallito,Fejl ved login,Einloggen fehlgeschlagen,Inloggen mislukt,Neuspješno prijavljivanje,Неуспешно пријавување,зареждането неуспешно,Neuspješno prijavljivanje,Autentificare nereușită
+common.name,Name,Nome,Navn,Name,Naam,Ime,Име на апликацијата,име,Ime,Nume
+common.no,No,No,Nej,Nein,Nee,Ne,Не,не,Ne,Nu
+common.none,none,nessuno,ingen,keines,Geen,nijedno,Ниедно,никакво,nijedno,Nimic
+common.ok,Ok,Ok,Ok,OK,Ok,Ok,Во ред,ОК,Ok,OK
+common.other,other,altro,andre,andere,Andere,ostalo,Останато,друго,ostalo,Alte
+common.refreshNow,Refresh now,Aggiorna adesso,Opdater,Jetzt aktualisieren,Ververs nu,Osvježi,,,Osvježi,
+common.refreshInterval,Refresh interval,Aggiorna intervallo,Opdater interval,Intervall aktualisieren,Ververs interval,Interval osvježavanja,,,Interval osvježavanja,
+common.never,never,mai,aldrig,nie,nooit,nikad,,,nikad,
+common.total,total,totale,i alt,total,totaal,ukupno,,,ukupno,
+common.used,used,utilizzato/a,brugt,genutzt,gebruikt,iskorišćeno,,,iskorišteno,
+common.free,free,libero/a,fri,frei,vrij,slobodno,,,slobodno,
+common.CPU,CPU,processore,CPU,Prozessor,CPU,CPU,,,CPU,
+common.ramMemory,RAM memory,memoria RAM,RAM hukommelse,RAM Speicher,RAM geheugen,RAM memorija,,,RAM memorija,
+common.rootPartition,Root partition,Partizione root,,root-Partition,Root partitie,Root particija,,,Root particija,
+common.searchFor,Search for...,Trova...,Søg efter...,Suchen...,Zoek naar ...,Potraga za...,Пребарување на ...,потърси за,Potraga za...,Caută...
+common.select,select,seleziona,vælg,auswählen,Selecteren,izaberi,Одбери,избери,izaberi,Selectează
+common.sessionExpired,Session expired,Sessione scaduta,Sessionen er udløbet,Sitzung abgelaufen,Sessie verlopen,Sesija istekla,Истечена сесија,сесията е изтекла,Sesija istekla,Sesiune expirată
+common.submit,Submit,Invia,Indsend,Absenden,Indienen,Poslati,Поднеси,изпрати,Predati,Execută
+common.submitSuccessed,Data submitted successfully,Dati inviati correttamente,Data sendt,Daten erfolgreich abgegeben,Gegevens met succes ingediend,Podaci uspješno poslati,Податоци успешно испратена,Data изпратена успешно,Podaci uspješno poslani,Date prezentate cu succes
+common.submitError,Error during submit!,Errore durante l'invio dei dati!,Fejl ved din indsending!,Fehler bei der Übersendung!,Er is een fout opgetreden bij het indienen!,Greška tokom predaje,Грешка при поднесување,изпрати грешка,Greška tokom predaje,Eroare în timpul execuției!
+common.success,Success,Successo,Succes,Erfolg,Succes,Uspjeh,успех,успех,Uspjeh,Succes
+common.unknown,unknown,sconosciuto,ukendt,unbekannt,Onbekend,nepoznat,Непознат,непознат,nepoznat,Necunoscut
+common.url,Url,Url,Url,Url,Url,Url,Url,Url,Url,Url
+common.yes,Yes,Si,Ja,Ja,Ja,Da,Да,да,Da,Da
+common.undefined,Undefined,Indefinito,Udefineret,undefiniert,Ongedefiniëerd,Nedefinisano,,,Nedefinirano,
+common.notAtAll,None,Nessuno,Ingen,kein/-e/-es,Geen,Nimalo,,,Nimalo,
+common.low,Low,Basso,Lavt,niedrig,Laag,Malo,,,Malo,
+common.medium,Medium,Medio,Medium,mittel,Middel,Srednje,,,Srednje,
+common.high,High,Alto,Højt,hoch,Hoog,Jako,,,Jako,
+common.extreme,Extreme,Estremo,Ekstremt,extrem,Extreem,Ekstremno,,,Ekstremno,
+common.noItemsFound,No items found,Nessun elemento trovato,Ingen emner fundet,Suchbegriff nicht gefunden,Geen items gevonden,Nema rezultata,,,Nema rezultata,
+common.selectUsername,Select username,Seleziona un utente,,Username auswählen,Selecteer gebruikersnaam,Odaberite korisničko ime,,,Odaberite korisničko ime,
+common.searchUsername,Search username...,Cerca un utente,,Usernamen suchen...,Zoek gebruikersnaam,Traži korisničko ime...,,,Traži korisničko ime...,
+common.autoGenerated,Automatically generated,Generato automaticamente,,automatisch generiert,Automatisch gegenereerd,Automatski generirano,,,Automatski generirano,
+delete.body,Are you sure you want to delete {name}?,Sei sicuro di voler eliminare {name}?,"Er du sikker på, at du vil slette {name}?",Wollen Sie {name} wirklich löschen?,Weet u zeker dat u {name} wilt verwijderen?,Jeste li sigurni da želite brisanje {name},Дали сте сигурни за бришењето на {name},тяло,Jeste li sigurni da želite brisanje {name},Sunteți sigur că doriți să ștergeți {name}?
+delete.title,Deleting {name},Eliminazione di {name},Slet {name},{name} löschen,{name} aan het verwijderen,Brisanje {name},Бришење {name},заглавие,Brisanje {name},Ștergere {name}
+devicesSetConfirm.body,Are you sure you want to add default devices set for selected sensing environment?,,,,,Jeste li sigurni da želite dodati inicijalni skup uređaja za odabrano senzorsko okruženje?,,,Jeste li sigurni da želite dodati inicijalni skup uređaja za odabrano senzorsko okruženje?,
+devicesSetConfirm.title,Adding default devices set,Sto aggiungendo Il set di dispositivi di base,,,,Dodavanje inicijalnog skupa uređaja,,,Dodavanje inicijalnog skupa uređaja,
+duallistbox.filterPlaceHolder,Filter,Filtro,Filter,Filtern,Filter,Filter,Филтер,филтър,Filter,Filtru
+duallistbox.filterTextClear,show all,mostra tutto,vis alt,alle anzeigen,Laat alles zien,prikaži sve,Прикажи се,покажи всички,prikaži sve,Arată tot
+duallistbox.infoText,Showing all [0],Mostrati tutti [0],Vis alt [0],alle anzeigen [0],Alles,Prikazuje sve,Прикажување на се,показване на всички,Prikazuje sve [0],Arătând toate [0]
+duallistbox.infoTextEmpty,Empty list,Lista vuota,Tøm listen,leere Liste,Lege lijst,Prazna lista,Празна листа,плазен лист,Prazna lista,Listă goală
+duallistbox.infoTextFiltered,"<span class=""label label-warning"">Filtered</span> [0] from [1]","<span class=""label label-warning"">Filtrati</span> [0] di [1]",????,"<span class=""label label-warning"">Gefiltert</span> [0] von [1]",Gefiltered,Filtrirano,Филтрирано,,Filtrirano,"<span class=""label label-warning"">Filtrat</span> [0] din [1]"
+duallistbox.moveAllLabel,Move all,Sposta tutti,Flyt alt,Alle verschieben,Verplaats alles,Premjesti sve,Премести се,премести всички,Premjesti sve,Mută tot
+duallistbox.moveSelectedLabel,Move selected,Sposta i selezionati,Flyt det valgte,Auswahl verschieben,Verplaats geselecteerde,Premjesti izabrane,Премести означено,премести маркираните,Premjesti izabrane,Mută cele selectate
+duallistbox.removeAllLabel,Remove all,Rimuovi tutto,Fjern alt,Alle entfernen,Verwijder alles,Ukloni sve,Отстрани се,премахни всички,Ukloni sve,Înlătură tot
+duallistbox.removeSelectedLabel,Remove selected,Rimuovi i selezionati,Fjern det valgte,Auswahl entfernen,Verwijder geselecteerde,Ukloni izabrane,Отстрани означено,премани маркираните,Ukloni izabrane,Înlătură cele selectate
+home.applications,Applications,Applicazioni,Applikationer,Anwendungen,Applicaties,Programi,Апликации,програми,Programi,Aplicații
+home.home,Home,Home,Hjem,Zuhause,Thuis,Kuća,Дома,начало,Kuća,Acasă
+home.logout,Logout ({username}),Disconnetti ({username}),Log ud ({username}),({username}) ausloggen,Log uit,Odjavljivanje,Одјавување ,отписване,Odjavljivanje({username}),Deconectare ({username})
+home.regions,Regions,Regioni,Regioner,Regionen,Regios,Regioni,Региони,региони,Regije,Regiuni
+home.sensingEnvs,Sensing environments,Ambienti di rilevamento,Registrerer omgivelserne,Messumgebungen,Meet omgevingen,Senzorsko okruženje,Сензорски средини,сензорна среда,Senzorsko okruženje,Detectare mediu
+home.devices,Devices,Device,Device,Gerät,Apparaten,Uređaji,,,Uređaji,
+home.services,Services,Servizi,Service,Services,Diensten,Servisi,Сервиси,услуги,Servisi,Servicii
+home.users,Users,Utenti,Brugere,Nutzer,Gebruikers,Korisnici,Корисници,потребители,Korisnici,Utilizatori
+language.available,We are available in {nlang} languages,Sono disponibili {nlang} lingue,Vi er tilgængelige i {nlang} sprog,Sie können {} verschiedene Sprachen auswählen,We zijn beschikbaar in {nlang} talen,Dostupni smo u {nlang} jezicima,,,Dostupni smo u  {nlang} jezicima,
+language.changeLanguage,Change language,Cambia la lingua,Skift sprog,Sprache ändern,Verander taal,Promjeni jezik,Промени јазик,смяна на език,Promjeni jezik,Schimbă limba
+language.chooseLanguage,Choose a language,Scegli una lingua,Vælg et sprog,Sprache auswählen,Kies een taal,Izaberi jezik,Изберете јазик,Изберете език,Izaberi jezik,Alege o limbă
+language.plusMore,plus {nlang} more,più altre {nlang},samt mere,und {} mehr,en nog {nlang} talen,Prikaži još,,,Prikaži još,
+language.search,Search languages...,Trova lingue...,Søg efter sprog...,Sprachen suchen...,Zoeken talen...,Traži jezike...,Барај јазици...,Търсене езици...,Traži jezici...,Căutare limbi...
+login.password,Password,Password,Password,Passwort,Wachtwoord,Lozinka,Лозинка,парола,Lozinka,Parolă
+login.rememberMe,Remember me,Ricordami,Husk mig,Erinnere mich,Onthoud mij,Zapamti me,Запомни ме,запомни ме,Zapamti me,Ține-mă minte
+login.signIn,Sign in,Accedi,Log ind,einschreiben,Inloggen,Prijavi se,Пријави се,вписване,Prijavi se,Conectare
+login.title,eWALL Portal sign in,Accesso eWALL Portal,eWall Portal log ind ,eWALL Portal Einschreibung,eWALL portaal inlog,Prijavljivanje na eWall portal,Пријавување на eWALL портал,вписване в eWall,Prijavljivanje na eWall portal,Conectare la portalul eWALL
+regions.addNew,Add new region,Aggiungi nuova regione,Tilføj en ny region,Neue Region hinzufügen,Voeg nieuwe regio toe,Dodaj novi region,Додади нов регион,добави нов регион,Dodaj novu regiju,Adaugă o nouă regiune
+regions.all,All,Tutte,Alt,Alle,Alles,Sve,Сите,всички,Sve,Tot
+regions.detail,Region detail,Dettaglio regione,Detaljer om regionen,Details der Region,Regio details,Detalji o regionu,Детали за регион,Подробносит за регион,Detalji o regiji,Detaliu regiune
+regions.enterName,Enter region name,Inserisci il nome della regione,Indtast navnet på regionen,Namen der Region eingeben,Voeg regio naam in,Unesi naziv regiona,Внеси име на регион,въведи име на регион,Unesi naziv regije,Introdu numele regiunii
+regions.name,Region name,Nome regione,Regionens navn,Name der Region,Regio naam,Naziv regiona,Име на регион,име на регион,Naziv regije,Numele regiunii
+regions.region,Region,Regione,Region,Region ,Regio,Regioni,Регион,регион,Regije,Regiune
+regions.selectRegion,Select region,Seleziona la regione,Vælg region,Wählen Sie die Region,Selecteer regio,Izaberi region,Избери регион,избери регион,Izaberi regiju,Selectează regiunea
+sensingEnvs.addNew,Add new,Aggiungi nuovo,Tilføj ny ,Neue hinzufügen,Voeg nieuwe toe,Dodaj novi,Додади нов,добави нов регион,Dodaj novi,Adaugă nou
+sensingEnvs.detail,Sensing environment detail,Dettaglio dell'ambiente di rilevamento,Registrerer deltaljer om omgivelserne,Umgebungsdetails messen,Meet omgeving details,Detalji senzorskog okruženja,Детали за сензорската средина,детайли за сензорната среда,Detalji senzorskog okruženja,Detaliu detectare mediu
+sensingEnvs.enabled,Enabled,Abiilitato,,,,Omogućen,,,Omogućen,
+sensingEnvs.enterId,Enter ID,Inserisci ID,Indtast ID,ID eingeben,Vul ID in,Unesi ID,Внеси ID,въведи ID,Unesi ID,Introdu ID
+sensingEnvs.enterName,Enter sensing environment name,Inserisci il nome della rilevazione ambientale,"Indtast navnet på det lokale, som du befinder dig i",Name der Sensorumgebung eingeben,,Unesi ime senzorskog okruženja,,,Unesi ime senzorskog okruženja,
+sensingEnvs.name,Name,Nome,Navn,Name,,Naziv,,,Naziv,
+sensingEnvs.uniqueName,Unique name,Nome univoco,Unikt navn,eindeutiger Name,,Jedinstveni naziv,,,Jedinstveni naziv,
+sensingEnvs.uuid,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID
+sensingEnvs.selectUser,Select a user from list below,Seleziona un utente dalla lista sottostante,Vælg en bruger fra listen herunder,Wählen Sie einen Nutzer aus der Liste,Selecteer een gebruiker uit onderstaande lijst,Izaberi korisnika sa donje liste,Одбери корисник од листата подолу,избери потребител от листа ,Izaberi korisnika sa donje liste,Selectează un utilizator din lista de mai jos
+sensingEnvs.user,Associated to user,Associato all'utente,Forbundet til brugeren,dem Nutzer zugewiesen,Geassocieerd met gebruiker,Pridruži korisniku,Придружи на корисникот,асоцииран потребител,Pridruži korisniku,Asociate utilizatorului
+sensingEnvs.status,Sensing environment status,Stato dell'ambiente di rilevamento,Opfanger hvad du foretager dig,Status der Messumgebung,,Status,,,Status,
+sensingEnvs.configuration,Sensing environment configuration,Configurazione dell'ambiente di rilevamento,,Konfiguration der Messumgebung ,,Konfiguracija,,,Konfiguracija,
+sensingEnvs.registrationStatus,Registration status,Stato della registrazione,Registreringsstatus,Registrierungsstatus,,Status registracije,,,Status registracije,
+sensingEnvs.lastModifiedTime,Last modified time,Ora dell'ultima modifica,Sidste ændrede status,Zeitpunkt der letzten Änderung,,Vrijeme zadnje promjene,,,Vrijeme zadnje promjene,
+sensingEnvs.creationTime,Creation time,Ora di creazione,Sidste ændringstidspunkt,Erstellungszeit,,Datum stvaranja,,,Datum stvaranja,
+sensingEnvs.proxyStatus,Proxy status,Stato del proxy,,Proxy-Status,,Status posrednika,,,Status posrednika,
+sensingEnvs.indoorPlaces,Indoor places,Posti al chiuso,Indendørs placering,Innenplätze,,Unutrašnji prostori,,,Unutarnji prostori,
+sensingEnvs.indoorPlaceArea,Indoor place area,Area al chiuso,Område indenfor,Innenplatzbereiche,,Područje unutrašnjeg prostora,,,Područje unutarnjeg prostora,
+sensingEnvs.deletePlace,Delete place,Cancella posto,Slet placering,Platz löschen,,Ukloni prostor,,,Ukloni prostor,
+sensingEnvs.addPlace,Add place,Aggiungi posto,Tilføj placering,Platz hinzufügen,,Dodaj prostor,,,Dodaj prostor,
+sensingEnvs.addingIndoorPlaceTitle,Adding sensing environment indoor place,Aggiungi una sensorizzazione di ambiente di posto al chiuso,,Messumgebungs-Innenplatz hinzufügen,,Dodavanje unutrašnjeg prostora u senzorsko okruženje,,,Dodavanje unutarnjeg prostora u senzorsko okruženje,
+sensingEnvs.errorAddingPlaceNotUnique,Indoor places names must be unique,Il nome del posto al chiuso deve essere univoco,,Innenplatznamen müssen unverwechselbar sein,,Imena unutrašnjih prostora moraju biti jedinstvena,,,Imena unutarnjih prostora moraju biti jedinstvena,
+sensingEnvs.errorLongPollingDisabled,Error while retrieving configuration because of long polling mechanism is disabled for chosen sensing environment.,,,,,Greška prilikom dohvaćanja konfiguracije zato što je long polling mehanizam onemogućen za odabrano senzorsko okruženje.,,,Greška prilikom dohvaćanja konfiguracije zato što je long polling mehanizam onemogućen za odabrano senzorsko okruženje.,
+sensingEnvs.version,Version,Versione,,,,,,,Verzija,
+devices.sensEnvUuid,Sensing environment ID,ID ambiente sensorizzato,,Messumgebungs-ID,,Senzorsko okruženje ID,,,Senzorsko okruženje ID,
+devices.enterSensEnvUuid,Enter sensing environment ID,Inserire ID ambiente sensorizzato,,Messumgebungs-ID hinzufügen,,Unesi ID senzorskog okruženja,,,Unesi ID senzorskog okruženja,
+devices.type,Type,Tipo,Type,Typ,Type,Tip,Тип,Тип,Tip,Tip
+devices.addNew,Add new,Aggiungi nuovo,Tilføj ny ,Neue hinzufügen,Voeg nieuwe toe,Dodaj novi,Додади нов,добави нов регион,Dodaj novi,Adaugă nou
+devices.addDevicesSet,Add devices set,Aggiungi set di dispositivi,,,,Dodaj skup uređaja,,,Dodaj skup uređaja,
+devices.detail,Device detail,Dettagli device,Detaljer om device,Gerätedetail,,Detalji uređaja,,,Detalji uređaja,
+devices.uuid,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID
+devices.name,Name,Nome,Navn,Name,,Naziv,,,Naziv,
+devices.serialNumber,Serial number,Numero di serie,Serienavn,Seriennummer,,Serijski broj,,,Serijski broj,
+devices.manufacturerName,Manufacturer name,Nome del produttore,,Name des Herstellers,,Naziv proizvođača,,,Naziv proizvođača,
+devices.manufacturerDescription,Manufacturer description,Descrizione del produttore,,Beschreibung des Herstellers,,Opis proizvođača,,,Opis proizvođača,
+devices.actuator,Actuator,Attuatore,,Aktuator,,Pokretač,,,Pokretač,
+devices.sensor,Sensor,Sensore,Sensorer,Sensor,,Senzor,,,Senzor,
+devices.wearable,Wearable,Indossabile,Sensorer,Wearable,,Nosivo,,,Nosivo,
+devices.enterName,Enter name,Inserire il nome,Indtast dit navn,Namen eingeben,,Unesi naziv,,,Unesi naziv,
+devices.indoorPlaceName,Indoor place name,Nome di posto al chiuso,,Name des Innenplatzes,,Naziv unutrašnjeg prostora,,,Naziv unutrašnjeg prostora,
+devices.enterSerialNumber,Enter serial number,Inserire il numero di serie,Indtast serienummer,Seriennummer eingeben,,Unesi serijski broj,,,Unesi serijski broj,
+devices.enterManufacturerName,Enter manufacturer name,Inserire il nome del fabbricante,,Name des Herstellers eingeben,,Unesi naziv proizvođača,,,Unesi naziv proizvođača,
+devices.enterManufacturerDescription,Enter manufacturer description,Inserire la descrizione del fabbricante,,Beschreibung des Herstellers eingeben,,Unesi opis proizvođača,,,Unesi opis proizvođača,
+devices.enterIndoorPlaceName,Enter indoor place name,Inserire il nome di posto al chiuso,,Name des Innenplatzes eingeben,,Unesi naziv unutrašnjeg prostora,,,Unesi naziv unutrašnjeg prostora,
+devices.lightActuator,Light actuator,Attuatore per la luce,,Lichtaktuator,,Pokretač svjetla,,,Pokretač svjetla,
+devices.powerActuator,Power actuator,Attuatore per la potenza,,Energieaktuator,,Pokretač snage,,,Pokretač snage,
+devices.furnitureSensor,Furniture sensor,Furniture sensor,Furniture sensor,Furniture sensor,Furniture sensor,Senzor namještaja,Furniture sensor,Furniture sensor,Senzor namještaja,Furniture sensor
+devices.audioSensor,Audio sensor,Audio sensor,Audio sensor,Audio sensor,Audio sensor,Audio senzor,Audio sensor,Audio sensor,Audio senzor,Audio sensor
+devices.visualSensor,Visual sensor,Visual sensor,Visual sensor,Visual sensor,Visual sensor,Vizualni senzor,Visual sensor,Visual sensor,Vizualni sensor,Visual sensor
+devices.vitalsSensor,Vitals sensor,Vitals sensor,Vitals sensor,Vitals sensor,Vitals sensor,Senzor vitalnih parametara,Vitals sensor,Vitals sensor,Senzor vitalnih parametara,Vitals sensor
+devices.activitySensor,Activity sensor,Activity sensor,Activity sensor,Activity sensor,Activity sensor,Senzor aktivnosti,Activity sensor,Activity sensor,Senzor aktivnosti,Activity sensor
+devices.environmentalSensor,Environmental sensor,Sensore ambientale,Environmental sensor,Umbebungssensor,Environmental sensor,Senzor okoline,Environmental sensor,Environmental sensor,Senzor okoline,Environmental sensor
+devices.powerSensor,Power sensor,Sensore di potenza,Power sensor,Energiesensor,Power sensor,Senzor snage,Power sensor,Power sensor,Senzor snage,Power sensor
+services.addNew,Add new service,Aggiungi nuovo servizio,Tilføj en ny service,neues Service hinzufügen,Voeg nieuwe dienst toe,Dodaj novu uslugu,Додади нов сервис,добави нова услуга,Dodaj novu uslugu,Adaugă serviciu nou
+services.detail,Service detail,Dettaglio servizio,Detaljer om service,Servicedetails,Dienst detail,Detalji usluge,Детали за сервисот,детайли за услугата,Detalji usluge,Detaliu serviciu
+services.endpoint,Endpoint,Terminale,Slutpunkt,Endpunkt,Eindpunt,Krajnja tačka,Крајна точка,крайна точка,Krajnja točka,Punct final
+services.enterEndpoint,Enter endpoint,Inserisci il terminale,Indtast slutpunkt,Endpunkt eingeben,Voeg eindpunt in,Unesi krajnju tačku,Внеси крајна точка,въведете крайна точка,Unesi krajnju točku,Introdu punct final
+services.enterName,Enter service name,Inserisci il nome del servizio,Indtast service navn,Servicenamen eingeben,Voeg dienst naam in,Unesi naziv usluge,Внеси име на сервис,въведете име на услуга,Unesi naziv usluge,Introdu nume serviciu
+services.name,Service name,Nome servizio,Service navn,Name des Service,Dienst naam,Naziv usluge,Име на сервис,име на услуга,Naziv usluge,Nume serviciu
+users.accountEnabled,Account enabled,Utente abilitato,Konto aktiveret,Nutzerkonte aktiviert,Account geactiveerd,Nalog je omogućen,Корисничкиот профил е овозможен,аканута ативиран,Nalog je omogućen,Cont activat
+users.addNew,Add new user,Aggiungi nuovo utente,TIlføj ny bruger,Neuen Nutzer/ User hinzufügen,Voeg nieuwe gebruiker toe,Dodaj novog korisnika,Додади нов корисник,добавяне на нов потребител,Dodaj novog korisnika,Adaugă utilizator nou
+users.address,Address,Indirizzo,Adresse,Adresse,Adres,Adresa,Адреса,адрес,Adresa,Adresă
+users.age,Age,Età,Alder,Alter,Leeftijd,Starost,Возраст,възраст,Starost,Vârstă
+users.all,All,Tutti,Alt,Alle,Alles,Sve,Сите,всички,Sve,Tot
+users.assignedCaregivers,Assigned caregivers,Assistenti assegnati,Tildelt omsorgsperson,zugeteilte Betreuungspersonen,Toegewezen zorgverleners,Dodijeljeni staratelji,Доделени старатели,вписани грижещи се,Dodjeljeni staratelji,Îngrijitor desemnat
+users.availableApplications,Available applications,Applicazioni disponibili,Tilgængelige applikationer,verfügbare Anwendungen,Beschikbare applicaties,Raspoloživi programi,Расположливи апликации,налични приложения,Raspoloživi programi,Aplicații disponibile
+users.availableCaregivers,Available caregivers,Assistenti disponibili,Tilgængelige omsorgspersoner,verfügbare Betreuungspersonen,Beschikbare zorgverleners,Raspoloživi staratelji,Расположливи старатели,налични грижещи се,Raspoloživi staratelji,Îngrijitori disponibili
+users.birthday,Birthday,Data di nascita,Fødselsdag,Geburtstag,Verjaardag,Datum rođenja,Роденден,дата на раждане,Datum rođenja,Zi de naștere
+users.birthplace,Birthplace,Luogo di nascita,Fødselssted ,Geburtsort,Geboorteplaats,Mjesto rođenja,Место на раѓање,месторождение,Mjesto rođenja,Locul nașterii
+users.caregivers,Caregivers,Assistenti,Omsorgsperson,Betreuungspersonen,Zorgverleners,Staratelji,Старатели,грижещи се,Staratelji,Îngrijitori
+users.changePassword,Change the current password,Cambia la password corrente,Ændre det nuværende password,Aktuelles Passwort ändern,,Promijeni lozinku,,,Promijeni lozinku,
+users.city,City,Città,By,Stadt,Stad,Grad,Град,град,Grad,Oraș
+users.detail,User detail,Dettaglio utente,Detaljer om bruger,Details zum Nutzer,Detail,Detalji korisnika,Детали за корисникот,детайли за потребителя,Detalji korisnika,Detaliu utilizator
+users.email,Email,Email,Email ,E-Mail,Email,Email,Електронска пошта,имейл,Email,Email
+users.enabledApplications,Enabled applications,Applicazioni abilitate,Aktiverede applikationer,aktivierte Anwendungen,Geactiveerd applicaties,Dostupni programi,Овозможени апликации,аквивни приложения,Dostupni programi,Aplicații active
+users.enterAddress,Enter address,Inserisci indirizzo,Indtast adresse,Adresse eingeben,Voer adres in,Unesi adresu,Внеси адреса,въведете адрес,Unesi adresu,Introdu adresa
+users.enterAge,Enter age,Inserisci l'età,Indtast alder,Alter eingeben,Voer leeftijd in,Unesi godine,Внеси возраст,въведете години,Unesi godine,Introdu vârsta
+users.enterBirthday,Enter birthday,Inserisci data di nascita,Indtast fødselsdag,Geburtstag eingeben,Voer verjaardag in,Unesi datum rođenja,Внеси роденден,въведете дата на раждане,Unesi datum rođenja,Introdu ziua nașterii
+users.enterBirthplace,Enter birthplace,Inserisci luogo di nascita,Indtast fødselssted,Geburtsort eingeben,Voer geboorteplaats in,Unesi mjesto rođenja,Внеси место на раѓање,въведете място на раждане,Unesi mjesto rođenja,Introdu locul nașterii
+users.enterCity,Enter city,Inserisci città,Indtast by ,Stadt eingeben,Voer stad in,Unesi grad,Внеси град,въведете град,Unesi grad,Introdu oraș
+users.enterEmail,Enter email,Inserisci email,Indtast email,E-Mail-Adresse eingeben,Voer email in,Unesi email,Внеси електронска пошта,въведете имейл,Unesi email,Introdu email
+users.enterFirstName,Enter first name,Inserisci il nome,Indtast fornavn,Vornamen eingeben,Voer voornaam in,Unesi ime,Внеси име,въведете собствено име,Unesi ime,Introdu prenume
+users.enterLastName,Enter last name,Inserisci il cognome,Indtast efternavn,Nachnamen eingeben,Voer achternaam in,Unesi prezime,Внеси презиме,въведете фамилия,Unesi prezime,Introdu nume de familie
+users.enterMobile,Enter mobile,Inserisci numero di cellulare,Indtast dit mobilnummer,mobile Telefonnummer eingeben,Voer mobiel telefoonnummer in,Unesi broj mobilnog telefona,Внеси мобилен телефон,въведете мобилен телефон,Unesi broj mobilnog telefona,Introdu număr de telefon mobil
+users.enterNickname,Enter nickname,Inserisci il soprannome,Indtast dit kaldenavn,Nicknamen eingeben,Voer bijnaam in,Unesi nadimak,Внеси прекар,въведете прякор,Unesi nadimak,Introdu nume de alint
+users.enterPassword,Enter password,Inserisci la password,Indtast password,Passwort eingeben,,Unesi lozinku,,,Unesi lozinku,
+users.enterPostcode,Enter postcode,Inserisci CAP,Indtast postnummer,Postleitzahl eingeben,Voer postcode in,Unesi poštanski broj,Внеси поштенски код,въведете пощенски код,Unesi poštanski broj,Introdu cod poștal
+users.enterState,Enter state,Inserisci stato,We do not have state in Denmark. Only regions and cities. ,Staat eingeben,Voer provincie in,Unesi državu,Внеси држава,въведете държава,Unesi državu,Intrudu stare
+users.enterTelephone,Enter telephone,Inserisci numero di telefono,Indtast telefonnummer,Telefonnummer eingeben,Voer telefoonnummer in,Unesi broj telefona,Внеси телефон,въведете телефон,Unesi broj telefona,Introdu număr de telefon fix
+users.enterUsername,Enter username,Inserisci il nome utente,Indtast brugernavn,Benutzernamen eingeben,Voer gebruiksnaam in,Unesi korisničko ime,Внеси корисничко име,въведете потребителско име,Unesi korisničko ime,Introdu nume utilizator
+users.weight,Weight (kg),Peso (Kg),Vægt (kg),Gewicht (kg),,Težina (kg),,,Težina (kg),
+users.enterWeight,Enter weight,Inserire il peso,Indtast vægt,Gewicht eingeben,,Unesite težinu,,,Unesite težinu,
+users.height,Height (cm),Altezza (cm),Højde (cm),Größe (cm),,Visina (cm),,,Visina (cm),
+users.enterHeight,Enter height,Inserire l'altezza,Indtast højde,Größe eingeben,,Unesite visinu,,,Unesite visinu,
+users.suffers,Suffers,Soffre,,Leidet,,Obolijeva,,,Oboljeva,
+users.notSuffers,Not suffers,Non soffre,,Leidet nicht,,Ne obolijeva,,,Ne oboljeva,
+users.female,female,femmina,kvinde,weiblich,vrouwelijk,žensko,Женски,жена,žensko,femeie
+users.firstName,First name,Nome,Fornavn,Vorname,Voornaam,Ime,Име,собствено име,Ime,Prenume
+users.formalCaregiver,Formal caregiver,Assistente formale,Sundhedsprofessionelle,medizinische Betreuungsperson,Professionele zorgverlener,Formalni staratelj,Формален старател,формален грижещ се,Formalni staratelj,Îngrijitor formal
+users.gender,Gender,Sesso,køn,Geschlecht,Geslacht,Pol,Пол,пол,Pol,Sex
+users.informalCaregiver,Informal caregiver,Assistente informale,Private personer,Angehörige,Mantelzorger,Neformalni staratelj,Неформален старател,неформален грижещ се,Neformalni staratelj,Îngrijitor informal
+users.lastName,Last name,Cognome,Efternavn,Nachname,Achternaam,Prezime,Презиме,фамилно име,Prezime,Nume de familie
+users.male,male,maschio,mand ,männlich,Mannelijk,muško,Машки,мъж,muško,bărbat
+users.mismatchPassword,Passwords do not match,Le password non coincidono,Forkert password,falsches Passwort,,Lozinka se ne poklapa,,,,
+users.mobile,Mobile,Telefono cellulare,Mobiltelefon,Mobiltelefon,Mobiele telefoon,Mobilni telefon,Мобилен телефон,мобилен телефон,Mobilni telefon,Mobil
+users.nickname,Nickname,Soprannome,Kaldenavn,Nickname,Bijnaam,Nadimak,Прекар,прякор,Nadimak,Nume de alint
+users.onlineStatus,Online,Connesso,Online,Online,Online,Online,Online,Online,Online,Online
+users.platformAdministrator,Platform administrator,Amministratore piattaforma,Platforms administrator,Plattform Administrator,Platform beheerder,Administrator platforme,Администратор на платформа,администратор на платформа,Administrator platforme,Administrator platformă
+users.postcode,Postcode,CAP,Postnummer,Postleitzahl,Postcode,Poštanski broj,Поштенски код,пощенски код,Poštanski broj,Cod poștal
+users.primaryUser,Primary user,Utente primario,Primær bruger,primärer Nutzer,Primaire gebruiker,Primarni korisnik,Примарен корисник,освновен потребител,Primarni korisnik,Utilizator primar
+users.regionAdministrator,Region administrator,Amministratore regione,Regions administrator,Regionenadministrator,Regio beheerder,Administrator regiona,Администратор на регион,регионален администратор,Administrator regije,Administrator regiune
+users.searchUser,Search user...,Trova utente...,Søg efter...,Nutzer suchen...,Zoek gebruiker ...,Traži korisnika...,Барање на корисник,търсене за потребител,Traži korisnika...,Caută utilizator...
+users.selectGender,Select gender,Seleziona il sesso,Vælg køn,Geschlecht auswählen,Selecteer geslacht,Izaberi pol,Одбери пол,изберете пол,Izaberi pol,Selectează sex
+users.selectTimezone,Select time zone,Seleziona il fuso orario,Vælg tidszone,Zeitzone auswählen,,Odaberi vremensku zonu,,,Odaberite vremensku zonu,
+users.selectUser,Select user,Seleziona utente,Vælg bruger,Nutzer auswählen,Selecteer gebruiker,Izaberi korisnika,Одбери корисник ,изберете потребител,Izaberi korisnika,Selectează utilizator
+users.selectUserRole,Select user role,Seleziona il ruolo utente,Vælge brugerens rolle,Nutzerrolle auswählen,Selecteer gebruikers rol,Izaberi ulogu korisnika,Одбери улога на корисникот,изберете роля на потребител,Izaberi ulogu korisnika,Selectează rolul utilizatorului
+users.state,State,Stato,Stat,Staat,Provincie,Država,Држава,държава,Država,Stare
+users.telephone,Telephone,Telefono,Telefon,Telefon,Telefoon,Telefon,Телефон,телефон,Telefon,Telefon
+users.timezone,Time zone,Fuso orario,Tidszone,Zeitzone,,Vremenska zona,,,Vremenska zona,
+users.user,User,Utente,Bruger ,Nutzer,Gebruiker,Korisnik,Корисник,потребител,Korisnik,Utilizator
+users.username,Username,Nome utente,Brugernavn,Benutzername,Gebruikersnaam,Korisničko ime,Корисничко име,Потребителско име,Korisničko ime,Nume utilizator
+users.userRole,User role,Ruolo utente,Brugerens rolle,Nutzerrolle,Gebruikers rol,Uloga korisnika,Улога на корисникот,роля на потребителя,Uloga korisnika,Rolul utilizatorului
+users.verifyPassword,Insert the password again,Reinserisci la password,Indsæt dit password igen,Passwort nochmals eingeben,,Potvrdi lozinku,,,Potvrdi lozinku,
+users.accountIsEnabled,Account enabled,Account abilitato,,Konto wurde erstellt,,Račun omogućen,,,Račun omogućen,
+users.realTimeMonitoringAllowed,Real time monitoring allowed,Monitoraggio in tempo reale permesso,,Echtzeitübertragung erlaubt,,Nadgledanje u stvarnom vremenu dozvoljeno,,,Nadgledanje u stvarnom vremenu dozvoljeno,
+users.preferredLanguage,Preferred language,Lingua preferita,,bevorzugte Sprache,,Preferirani jezik,,,Preferirani jezik,
+users.selectPreferredLanguage,Select preferred language,Seleziona lingua preferita,,bevorzugte Sprache auswählen,,Odaberi preferirani jezik,,,Odaberi preferirani jezik,
+users.secondaryLanguage,Secondary language,Lingua secondaria,,Zweitsprache,,Sekundarni jezik,,,Sekundarni jezik,
+users.selectSecondaryLanguage,Select secondary language,Seleziona lingua secondaria,,Zweitsprache auswählen,,Odaberi sekundarni jezik,,,Odaberi sekundarni jezik,
+users.submitPhotoError,Error during submitting photo!,Errore nella presentazione della foto!,,Es ist ein Fehler beim Übersenden des Fotos autgetreten!,,Greška tokom predaje slike,,,Greška tokom predaje slike,
+users.removePhotoError,Error during removing photo!,Errore nella rimozione della foto!,,Es ist ein Fehler beim Löschen des Fotos autgetreten!,,Greška tokom brisanja slike,,,Greška tokom brisanja slike,
+users.browsePhotos,Browse photos,Scorri le foto,,Fotos durchsuchen,,Pretraži slike,,,Pretraži slike,
+users.removePhoto,Remove photo,Rimuovi la foto,,Fotos löschen,,Ukloni sliku,,,Ukloni sliku,
+users.selectUnitSystem,Select unit system,Seleziona il sistema di unità,,Einheitssystem auswählen,,Odaberi sustav jedinica,,,Odaberi sustav jedinica,
+users.unitSystem,Unit system,Sistema di unità,,Einheitssystem,,Sustav jedinica,,,Sustav jedinica,
+users.metricSystem,Metric system,Sistema metrico Decimale,,Metrisches System,,Metrički sustav,,,Metrički sustav,
+users.imperialSystem,Imperial system,Sistema Imperiale Britannico,,Imeriales System,,Imperijalni sustav,,,Imperijalni sustav,
+users.siStandard,International System of Units,Sistema di unità internazionale,,Internationales Einheitssystem,,Međunarodni sustav jedinica,,,Međunarodni sustav jedinica,
+welcome.hello,Hello {username}!,Ciao {username}!,Hej {username}!,Hallo {username}!,Hallo {username}!,Zdravo {username}!,Здраво {username}!,Здравейте {username},Zdravo {username}!,Bună {username}!
+welcome.role,Role:,Ruolo:,Rolle: ,Rolle:,Rol:,Uloga:,Улога:,Роля:,Uloga:,Rol:
+healthImpairments.sensoryRelatedHealthImpairments,Sensory related health impairments,Disturbo di natura sensoriale,Sensorer relateret til svækket sundhed,Gesundheitsbeeinträchtigungen der Sinneswahrnehmung,,Zdravstvene poteškoće čula,,,Zdravstvene poteškoće osjetila,
+healthImpairments.skeletalRelatedHealthImpairments,Skeletal related health impairments,Disturbo di natura scheletrica,?,Gesundheitsbeeinträchtigungen des Bewegungsapparats,,Koštane zdravstvene poteškoće,,,Koštane zdravstvene poteškoće,
+healthImpairments.languageRelatedHealthImpairments,Language related health impairments,Disturbo del linguaggio,Sprog relateret til svækket sundhed,Gesundheitsbeeinträchtigungen des Sprachgebrauchs,,Zdravstvene poteškoće govora,,,Zdravstvene poteškoće govora,
+healthImpairments.memoryRelatedHealthImpairments,Memory related health impairments,Disturbo di memoria,Hukommelse relateret til svækket sundhed,Gesundheitsbeeinträchtigungen der Gedächtnisfunktionen,,Zdravstvene poteškoće pamćenja,,,Zdravstvene poteškoće pamćenja,
+healthImpairments.astigmatism,Astigmatism,Astigmatismo,Bygningsfejl,Astigmatismus,,Astigmatizam,,,Astigmatizam,
+healthImpairments.colorBlindness,Color blindness,Daltonismo,Farveblind,Farbenblindheit,,Daltonizam,,,Daltonizam,
+healthImpairments.farSightedness,Far sightedness,Presbiopia,Fremsynethed,Weitsichtigkeit,,Dalekovidan,,,Dalekovidan,
+healthImpairments.lightSensitivity,Light sensitivity,Sensibilità alla luce,Lysfølsomhed,Lichtempfindlichkeit,,Osjetljivost na svjetlost,,,Osjetljivost na svjetlost,
+healthImpairments.shortSightedness,Short sightedness,Mipia,Kortsynethed,Kurzsichtigkeit,,Kratkovidan,,,Kratkovidan,
+healthImpairments.visionLoss,Vision loss,Cecità,Tabt synssans,Sehverlust,,Gubitak vida,,,Gubitak vida,
+healthImpairments.hearLoss,Hear loss,Sordità,Tabt høresans,Hörverlust,,Gubitak sluha,,,Gubitak sluha,
+healthImpairments.neckMotorImpairment,Neck motor impairment,Disabilità motoria del collo,Nakkeproblemer,Motorische Beeinträchtigung des Nackens,,Vratne poteškoće,,,Vratne poteškoće,
+healthImpairments.shoulderImpairment,Shoulder impairment,Disabilità della spalla,skulderproblemer,Beeinträchtigung der SChulter,,Poteškoće ramena,,,Poteškoće ramena,
+healthImpairments.armImpairment,Arm impairment,Disabilità del braccio,Albueproblemer,Beeinträchtigung des Armes,,Poteškoće ruke,,,Poteškoće ruke,
+healthImpairments.wristImpairment,Wrist impairment,Disabilità del polso,Håndledsproblemer,Beeinträchtigung des Handgelenks,,Poteškoće zgloba na ruci,,,Poteškoće zgloba na ruci,
+healthImpairments.hipImpairment,Hip impairment,Disabilità dell'anca,Hofteproblemer,Beeinträchtigung der Hüfte,,Poteškoće kuka,,,Poteškoće kuka,
+healthImpairments.kneeImpairment,Knee impairment,Disabilità del ginocchio,Knæproblemer,Beeinträchtigung der Knie,,Poteškoće koljena,,,Poteškoće koljena,
+healthImpairments.legImpairment,Leg impairment,Disabilità della gamba,Benproblemer,Beeinträchtigung der Beine,,Poteškoće noge,,,Poteškoće noge,
+healthImpairments.anckleImpairment,Ankle impairment,Disabilità della caviglia,ankelproblemer,Beeinträchtigung der Sprunggelenke,,Poteškoće članka,,,Poteškoće gležnja,
+healthImpairments.footImpairment,Foot impairment,Disabilità del piede,fodproblemer,Beeinträchtigung der Füße,,Poteškoće noge,,,Poteškoće noge,
+healthImpairments.dislexia,Dislexia,Dislessia,?,Dyslexie,,Disleksija,,,Disleksija,
+healthImpairments.amnesia,Amnesia,Amnesia,hukommelsestab,Amnesie,,Amnezija,,,Amnezija,
+indoorPlaceAreas.selectArea,Select area,Selezionare l'area,vælg område,Bereich auswählen,,Odaberite područje,,,Odaberite područje,
+indoorPlaceAreas.bathroom,Bathroom,Bagno,badeværelse,Badezimmer,,Kupatilo,,,Kupaonica,
+indoorPlaceAreas.bedroom,Bedroom,Camera da letto,soveværelse,Schlafzimmer,,Spavaća soba,,,Spavaća soba,
+indoorPlaceAreas.kitchen,Kitchen,Cucina,køkken,Küche,,Kuhinja,,,Kuhinja,
+indoorPlaceAreas.livingRoom,Living room,Soggiorno,stue,Wohnzimmer,,Dnevna soba,,,Dnevna soba,
+indoorPlaceAreas.cellar,Cellar,Cantina,kælder,Keller,,Podrum,,,Podrum,
+indoorPlaceAreas.guestRoom,Guest room,Stanza degli ospiti,gæsteværelse,Gestezimmer,,Soba za goste,,,Soba za goste,
+indoorPlaceAreas.diningRoom,Dining room,Sala da pranzo,spisestue,Esszimmer,,Trpezarija,,,Blagavonica,
+indoorPlaceAreas.workRoom,Work room,Studio,arbejdsværelse,Arbeitszimmer,,Radna soba,,,Radna soba,
+indoorPlaceAreas.corridor,Corridor,Corridoi,korridor,Korridor,,Hodnik,,,Hodnik,
+indoorPlaceAreas.entranceHall,Entrance hall,Ingresso,Entre,Vorraum,,Predsoblje,,,Predvorje,
+indoorPlaceAreas.staircase,Staircase,Scale,trappeopgang,Stiegenhaus,,Stepenište,,,Stubište,
+indoorPlaceAreas.hobbyRoom,Hobby room,Sala hobby,Hobbyværelse,Hobbyraum,,Soba za hobije,,,Soba za hobije,
+indoorPlaceAreas.storageRoom,Storage room,Sgabuzzino,opbevaringsrum,Lagerraum,,Ostava,,,Ostava,
+indoorPlaceAreas.unknown,Unknown,Sconosciuto,ukendt,unbekannt,,Nepoznato,,,Nepoznato,
+indoorPlaceAreas.wardrobe,Wardrobe,Guardaroba,gardarobe,Garderobe,,Garderoba,,,Garderoba,
+healthDiagnosis.diagnosis,Health diagnosis,Health diagnosis,Health diagnosis,Health diagnosis,Health diagnosis,Health diagnosis,Health diagnosis,Health diagnosis,Health diagnosis,Health diagnosis
+healthDiagnosis.mci,MCI,MCI,MCI,MCI,MCI,MCI,MCI,MCI,MCI,MCI
+healthDiagnosis.copd1,COPD_GOLD1,COPD_GOLD1,COPD_GOLD1,COPD_GOLD1,COPD_GOLD1,COPD_GOLD1,COPD_GOLD1,COPD_GOLD1,COPD_GOLD1,COPD_GOLD1
+healthDiagnosis.copd2,COPD_GOLD2,COPD_GOLD2,COPD_GOLD2,COPD_GOLD2,COPD_GOLD2,COPD_GOLD2,COPD_GOLD2,COPD_GOLD2,COPD_GOLD2,COPD_GOLD2
+healthDiagnosis.copd3,COPD_GOLD3,COPD_GOLD3,COPD_GOLD3,COPD_GOLD3,COPD_GOLD3,COPD_GOLD3,COPD_GOLD3,COPD_GOLD3,COPD_GOLD3,COPD_GOLD3
+healthDiagnosis.copd4,COPD_GOLD4,COPD_GOLD4,COPD_GOLD4,COPD_GOLD4,COPD_GOLD4,COPD_GOLD4,COPD_GOLD4,COPD_GOLD4,COPD_GOLD4,COPD_GOLD4
+healthDiagnosis.frail,FRAIL,FRAIL,FRAIL,FRAIL,FRAIL,FRAIL,FRAIL,FRAIL,FRAIL,FRAIL
+healthDiagnosis.prefrail,PRE_FRAIL,PRE_FRAIL,PRE_FRAIL,PRE_FRAIL,PRE_FRAIL,PRE_FRAIL,PRE_FRAIL,PRE_FRAIL,PRE_FRAIL,PRE_FRAIL

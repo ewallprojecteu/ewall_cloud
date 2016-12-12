@@ -1,0 +1,9 @@
+/target/
+/.settings/
+/.classpath
+/.project
+/.springBeans
+/.checkstyle
+/.pmd
+/WebContent/
+/.htaccess

@@ -1,0 +1,14 @@
+{
+    "addExternalVideo": "Aggiungi un video esterno",
+    "addHealthImpairmentTag": "Aggiungi un tag per il disturbo della salute",
+    "description": "Descrizione",
+    "descriptionHint": "Suggerimento",
+    "error": "Errore",
+    "loading": "Caricamento...",
+    "loginFailed": "Accesso fallito",
+    "ok": "OK",
+    "privacy": "Privacy",
+    "success": "Successo",
+    "uploadVideo": "Carica video",
+    "videoSuitableForPersonHint": "Il video è adatto a persone con disturbi della salute"
+}

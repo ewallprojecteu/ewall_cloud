@@ -1,0 +1,34 @@
+<script type="text/javascript" src="../DOMOTICS/js/draggabilly.pkgd-v1.min.js"></script>
+<script type="text/javascript" src="../DOMOTICS/js/AppDomotics.js"></script>
+<link rel="stylesheet" type="text/css" href="../DOMOTICS/css/AppDomotics.css">
+
+<script language="javascript">
+$(document).ready(function() {
+	var AppObjectDomotics_NewInstance = new AppObjectDomotics();
+	AppObjectDomotics_NewInstance.SetPathToExecuteDirectory('../DOMOTICS/');
+	AppObjectDomotics_NewInstance.InitAppObject();
+});
+</script>
+
+<style>
+.window-thermostat-large-filler {
+    position: absolute;
+    top: 181px;
+    left: 424px;
+    width: 1166px;
+    height: 662px;
+    background: transparent;
+}
+.window-thermostat-large-img {
+	position: absolute;
+	top: 0px;
+	left: 40px;
+	width: 1920px;
+    height: 1080px;
+}
+</style>
+
+<div class="window-thermostat-large-filler">
+	<div id="AppDomotics-DataContainer"></div>
+</div>
+<img src="assets/3-wall-thermostat_large.png" class="window-thermostat-large-img">

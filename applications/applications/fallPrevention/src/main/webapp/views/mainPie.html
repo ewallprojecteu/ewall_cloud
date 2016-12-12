@@ -1,0 +1,16 @@
+<div ng-repeat="slice in model.slices" ng-switch="slice.danger">
+    <div ng-switch-when=true>
+        <img ng-src="../fallPrevention/images/high{{slice.id}}Pie.png" id="{{slice.id}}">
+    </div>
+    <div ng-switch-when=false>
+        <img ng-src="../fallPrevention/images/low{{slice.id}}Pie.png" id="{{slice.id}}">
+    </div>
+</div>
+
+<img src="../fallPrevention/images/transparentMap.png" id="Circle" usemap="#pieMap">
+<img src="../fallPrevention/images/pieCenter.png" id="PieCenter">
+<map name="pieMap">
+    <area ng-repeat="slice in model.slices" shape="poly" title="{{slice.id}}"
+          coords="{{slice.coordinates}}" ui-sref="main.fallsPreventionChecklist.factor"
+          ng-click="model.selectedSlice=$index" />
+</map>

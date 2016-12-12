@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="LongMonths">
+        <item>januari</item>
+        <item>februari</item>
+        <item>maart</item>
+        <item>april</item>
+        <item>mei</item>
+        <item>juni</item>
+        <item>juli</item>
+        <item>augustus</item>
+        <item>september</item>
+        <item>oktober</item>
+        <item>november</item>
+        <item>december</item>
+    </ItemGroup>
+    <ItemGroup name="ShortMonths">
+        <item>jan</item>
+        <item>feb</item>
+        <item>maa</item>
+        <item>apr</item>
+        <item>mei</item>
+        <item>jun</item>
+        <item>jul</item>
+        <item>aug</item>
+        <item>sep</item>
+        <item>okt</item>
+        <item>nov</item>
+        <item>dec</item>
+    </ItemGroup>
+    <ItemGroup name="LongDays">
+        <item>zondag</item>
+        <item>maandag</item>
+        <item>dinsdag</item>
+        <item>woensdag</item>
+        <item>donderdag</item>
+        <item>vrijdag</item>
+        <item>zaterdag</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>zon</item>
+        <item>maa</item>
+        <item>din</item>
+        <item>woe</item>
+        <item>don</item>
+        <item>vrij</item>
+        <item>zat</item>
+    </ItemGroup>
+    <ItemGroup name="AppLabels">
+        <item>Duur</item>
+        <item>u</item>
+        <item>uur</item>
+        <item>uur</item>
+        <item>minuut</item>
+        <item>minuten</item>
+        <item>seconde</item>
+        <item>seconden</item>
+        <item>Geen informatie beschikbaar</item>
+    </ItemGroup>
+    <ItemGroup name="ExtDataMessage">
+        <item name="sleeping">
+            <subitem>Slapen</subitem>
+            <subitem>Onze bedsensor plaatste u in uw bed</subitem>
+        </item>
+        <item name="showering">
+            <subitem>Douchen</subitem>
+            <subitem>Onze luchtvochtigheidssensor heeft gedetecteerd dat u aan het douchen was</subitem>
+        </item>
+        <item name="entertaining">
+            <subitem>Rusten en vermaak</subitem>
+            <subitem>Onze locatie sensor heeft gedetecteerd dat u in the woonkamer was</subitem>
+        </item>
+        <item name="cooking">
+            <subitem>Koken en eten</subitem>
+            <subitem>Onze locatie sensor heeft gedetecteerd dat u in de keuken was</subitem>
+        </item>
+        <item name="sanitary_visits">
+            <subitem>Toilet bezoeken</subitem>
+            <subitem>
+            </subitem>
+        </item>
+        <item name="getting_out">
+            <subitem>Het huis verlaten</subitem>
+            <subitem>We hebben gedetecteerd dat u het huis heeft verlaten</subitem>
+        </item>
+        <item name="houseworks">
+            <subitem>Huishouden</subitem>
+            <subitem>eWALL heeft gedetecteerd dat u met het huishouden bezig bent</subitem>
+        </item>
+        <item name="visits">
+            <subitem>Huisbezoeken</subitem>
+            <subitem>
+            </subitem>
+        </item>
+    </ItemGroup>
+</language_data>

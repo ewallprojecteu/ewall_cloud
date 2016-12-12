@@ -1,0 +1,66 @@
+<section>
+    <form name="uploadPhotoForm" ng-submit="uploadPhotoForm.$valid && submit()" novalidate>
+	    <div class="table-responsive">
+	        <table class="table">
+	        	<tr>
+	                <td colspan="2">
+	                    <div class="fileinput fileinput-new" data-provides="fileinput">
+					        <span class="btn btn-danger btn-file">
+					            <span class="fileinput-new" i18n="uploadPhoto.browsePhotos"></span>
+					            <span class="fileinput-exists" i18n="uploadPhoto.changePhoto"></span>
+					            <input type="file" fileread="photo.encoded" name="..." accept="image/*">
+					        </span>
+					        <span class="fileinput-filename"></span>
+					        <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">&times;</a>
+					    </div>
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                    <label for="txtTitle" i18n="uploadPhoto.title"></label>
+	                </td>
+	                <td>
+	                    <input type="text" i18n-attr="{placeholder: 'uploadPhoto.title'}" ng-model="photo.title" class="form-control" id="txtTitle" required autofocus />
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                    <label for="txtDescription" i18n="uploadPhoto.description"></label>
+	                </td>
+	                <td>
+	                    <textarea i18n-attr="{placeholder: 'uploadPhoto.descriptionHint'}" ng-model="photo.description" rows="4" cols="50" class="form-control" id="txtDescription"></textarea>
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                    <label for="ddlPrivacy" i18n="common.privacy"></label>
+	                </td>
+	                <td ng-init="photo.privacy = 'PRIVATE'">
+	                    <select id="ddlPrivacy" class="form-control" ng-model="photo.privacy">
+	                    	<option value="PRIVATE" i18n="common.private"></option>
+	                    	<option value="PUBLIC" i18n="common.public"></option>
+	                    	<option value="FRIENDS" i18n="common.friends"></option>
+	                    	<option value="FAMILY" i18n="common.family"></option>
+	                    	<option value="FRIENDS_AND_FAMILY" i18n="common.friendsAndFamily"></option>
+	                    </select>
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                    <label for="txtTags" i18n="common.tags"></label>
+	                </td>
+	                <td>
+	                    <textarea placeholder="Tag1, Tag2" ng-model="photo.tags" rows="1" cols="50" class="form-control" id="txtTags" required></textarea>
+	                </td>
+	            </tr>
+	        </table>
+	    </div>
+
+		<div class="row">
+			<div class="col-md-3 form-group">
+				<button type="submit" ng-disabled="uploadPhotoForm.$invalid || !photo.encoded"
+						class="form-control btn btn-primary" i18n="uploadPhoto.uploadToFlicker"></button>
+			</div>
+		</div>
+    </form>
+</section>

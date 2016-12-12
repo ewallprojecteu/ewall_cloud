@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="Dialog">
+        <item name="Header">
+            <Add>Voeg nieuwe activiteit toe</Add>
+            <Edit>Bewerk/verwijder activiteit</Edit>
+        </item>
+        <item name="Labels">
+            <Title>Titel</Title>
+            <StartDate>Begin datum</StartDate>
+            <EndDate>Eind datum</EndDate>
+            <StartTime>Begin tijd</StartTime>
+            <EndTime>Eind tijd</EndTime>
+            <Location>Locatie</Location>
+            <Indoor>Binnen</Indoor>
+            <Outdoor>Buiten</Outdoor>
+            <Question1>Wat heeft u nodig om mee te nemen?</Question1>
+            <Question2>Hoe wilt u naar de bestemming toe reizen?</Question2>
+            <Question3>Wilt u uw oefeningen uit de Video Trainer kiezen?</Question3>
+            <Question4>Wilt u cognitieve spelletjes van eWALL spelen?</Question4>
+            <RepeatInterval>Gebeurtenis herhalen</RepeatInterval>
+            <RepeatTimes>Aantal keren herhalen</RepeatTimes>
+            <ReminderTime>Herinnering</ReminderTime>
+            <Hourly>Ieder uur</Hourly>
+            <Daily>Dagelijks</Daily>
+            <Weekly>Wekelijks</Weekly>
+            <Monthly>Maandelijks</Monthly>
+            <Yearly>Jaarlijks</Yearly>
+            <ReminderTimeVal15>15 min.</ReminderTimeVal15>
+            <ReminderTimeVal30>30 min.</ReminderTimeVal30>
+            <ReminderTimeVal120>2 uur</ReminderTimeVal120>
+            <ReminderTimeVal1440>1 dag voor</ReminderTimeVal1440>
+            <TransportationFoot>Te voet</TransportationFoot>
+            <TransportationCar>Auto</TransportationCar>
+            <TransportationTaxi>Taxi</TransportationTaxi>
+            <TransportationOther>Overig</TransportationOther>
+            <DoctorName>Naam dokter</DoctorName>
+            <DoctorPhone>Telefoonnummer dokter</DoctorPhone>
+            <MedExam>Medische onderzoeken</MedExam>
+            <InsCard>Verzekeringsbewijs</InsCard>
+            <OtherDocs>Overig</OtherDocs>
+            <Wallet>Portemonnee</Wallet>
+            <Keys>Sleutels</Keys>
+            <OtherBelongings>Overig</OtherBelongings>
+            <Yes>Ja</Yes>
+            <No>Nee</No>
+            <Shower>Douche</Shower>
+            <Groom>Verzorging</Groom>
+            <Bloodpressure>Bloeddruk</Bloodpressure>
+            <SPO2>Zuurstofverzadiging</SPO2>
+            <Heartrate>Hartslag</Heartrate>
+            <Breakfast>Ontbijt</Breakfast>
+            <Lunch>Middageten</Lunch>
+            <Dinner>Avondeten</Dinner>
+            <TitleMedicalVal>Medische controle</TitleMedicalVal>
+            <TitlePhysicalVal>Lichamelijke activiteit</TitlePhysicalVal>
+            <TitleCognitiveVal>Cognitieve activiteit</TitleCognitiveVal>
+        </item>
+        <item name="Buttons">
+            <Add>Nieuwe activiteit</Add>
+            <Edit>Bewerk activiteit</Edit>
+            <Delete>Verwijder activiteit</Delete>
+            <DeleteAll>Verwijder alles</DeleteAll>
+            <Cancel>Annuleren</Cancel>
+        </item>
+    </ItemGroup>
+</language_data>

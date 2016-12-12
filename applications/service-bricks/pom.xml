@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+	<parent>
+        <groupId>eu.ewall.application</groupId>
+        <artifactId>ewall-application-layer-pom</artifactId>
+        <version>1.1.0-SNAPSHOT</version>
+    </parent>
+	
+    <artifactId>ewall-service-bricks-pom</artifactId>
+    <packaging>pom</packaging>
+
+	<properties>
+		<memcached.version>3.5.0</memcached.version>
+    </properties>
+
+	<modules>
+		<module>service-brick-calendar</module>
+        <module>service-brick-socializingmood</module>
+		<module>service-brick-socializingmood-dm</module>
+		<module>service-brick-dailyfunctioning</module>
+		<module>service-brick-dailyfunctioning-dm</module>
+        <module>service-brick-logicgames</module>
+		<module>service-brick-environment</module>
+		<module>service-brick-physicalactivity</module>
+		<module>service-brick-physicalactivity-dm</module>
+		<module>service-brick-vitals</module>
+		<module>service-brick-weather</module>
+		<module>service-brick-caregiver-webapp</module>
+		<module>service-brick-domotics</module>
+		<module>service-brick-domotics-dm</module>
+        <module>service-brick-quiz-admin</module>
+		<module>service-brick-mysettings</module>
+	</modules>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+					<archive>
+						<manifest>
+							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+						</manifest>
+						<manifestEntries>
+							<Implementation-Description>${project.description}</Implementation-Description>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.fasterxml.jackson.datatype</groupId>
+			<artifactId>jackson-datatype-joda</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.simple-spring-memcached</groupId>
+			<artifactId>spring-cache</artifactId>
+			<version>${memcached.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.simple-spring-memcached</groupId>
+			<artifactId>spymemcached-provider</artifactId>
+			<version>${memcached.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mangofactory</groupId>
+			<artifactId>swagger-springmvc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>eu.ewall.platform</groupId>
+			<artifactId>commons-data-model</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>eu.ewall.platform</groupId>
+			<artifactId>ewall-common-libs</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>eu.ewall.platform</groupId>
+			<artifactId>ewall-swagger-ui</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>2.9.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-tomcat</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	</dependencies>
+	
+</project>

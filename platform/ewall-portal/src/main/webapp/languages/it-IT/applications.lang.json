@@ -1,0 +1,17 @@
+{
+    "addNew": "Aggiungi nuova applicazione",
+    "availableServices": "Servizi disponibili",
+    "contacts": "Contatti",
+    "dependsOnServices": "Dipende dai servizi",
+    "detail": "Dettaglio applicazione",
+    "enterName": "Inserisci il nome dell'applicazione",
+    "games": "Giochi",
+    "health": "Salute",
+    "hidden": "Nascosta",
+    "house": "Casa",
+    "minimized": "Minimizzata",
+    "name": "Nome dell'applicazione",
+    "selectType": "Seleziona il tipo",
+    "type": "Tipo",
+    "web_app": "Web App"
+}

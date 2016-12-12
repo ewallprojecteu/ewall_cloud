@@ -1,0 +1,30 @@
+<div class="modal-content">
+	<div class="modal-header">
+		<button ng-click="close()" class="close">
+			<span class="fa fa-times"></span><span class="sr-only">Close</span>
+		</button>
+		<h3 class="modal-title">
+			<i class="{{ikon}}"></i> <span i18n="language.chooseLanguage"></span>
+		</h3>
+	</div>
+	<div class="modal-body">
+		<div ng-show="languages.length > limitMin" class="form-group">
+			<input type="search" ng-model="search"
+				i18n-attr="{placeholder: 'language.search'}" class="form-control">
+			<h4 data-i18n="language.available" data-nlang="{{languages.length}}"></h4>
+		</div>
+		<div class="row">
+			<div
+				ng-repeat="lang in languages | filter:search | limitTo: limitMax"
+				class="col-xs-6 col-sm-4 col-lg-4">
+				<a ng-click="onLanguageChange({language:lang})" class="language"><span
+					ng-if="flags"><span
+						class="flag-icon flag-icon-{{lang.country}}"></span> </span><span>{{lang.nativeName}}</span></a>
+			</div>
+			<div ng-if="languages.length - limitMax > 0"
+				class="col-xs-6 col-sm-4 col-lg-4" data-i18n="language.plusMore"
+				data-nlang="{{languages.length -
+				limitMax}}"></div>
+		</div>
+	</div>
+</div>

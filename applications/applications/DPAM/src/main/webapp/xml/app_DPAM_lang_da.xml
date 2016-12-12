@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="LongMonths">
+        <item>Januar</item>
+        <item>Februar</item>
+        <item>Marts</item>
+        <item>April</item>
+        <item>Maj</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>August</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>December</item>
+    </ItemGroup>
+    <ItemGroup name="ShortMonths">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>Maj</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Okt</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </ItemGroup>
+    <ItemGroup name="LongDays">
+        <item>Søndag</item>
+        <item>Mandag</item>
+        <item>Tirsdag</item>
+        <item>Onsdag</item>
+        <item>Torsdag</item>
+        <item>Fredag</item>
+        <item>Lørdag</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>Søn</item>
+        <item>Man</item>
+        <item>Tirs</item>
+        <item>Ons</item>
+        <item>Tors</item>
+        <item>Fre</item>
+        <item>Lør</item>
+    </ItemGroup>
+    <ItemGroup name="ChartTitle">
+        <item>Gåafstand i skridt</item>
+        <item>Gåafstand i kilometer</item>
+        <item>Forbrændte kalorier</item>
+    </ItemGroup>
+    <ItemGroup name="yTitle">
+        <item>Skridt</item>
+        <item>Kilometer</item>
+        <item>Kalorier</item>
+    </ItemGroup>
+    <ItemGroup name="ChartNavLabels">
+        <item>Skridt</item>
+        <item>Kilometer</item>
+        <item>Kalorier</item>
+    </ItemGroup>
+    <ItemGroup name="NavActLabels">
+        <item>Aktivitet i</item>
+        <item>Dag</item>
+        <item>Uge</item>
+        <item>Måned</item>
+    </ItemGroup>
+    <ItemGroup name="Messages">
+        <item>
+            <Title>Tillykke</Title>
+            <Content>Du har nået dit mål for den valgte periode.</Content>
+        </item>
+    </ItemGroup>
+    <ItemGroup name="AppLabels">
+        <item>
+            <shorthour>t.</shorthour>
+            <steps>Skridt</steps>
+        </item>
+    </ItemGroup>
+    <ItemGroup name="ColorLegendLabels">
+        <Label>Bevægelsesforklaring</Label>
+        <Color id="1">Meget lav</Color>
+        <Color id="2">Lav</Color>
+        <Color id="3">Medium</Color>
+        <Color id="4">Høj</Color>
+        <Color id="5">Meget høj</Color>
+    </ItemGroup>
+</language_data>

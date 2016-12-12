@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="twitterAuthenticator">
+<head>
+	<meta charset="UTF-8">
+	<title>twitter-authenticator</title>
+	
+	<link rel="stylesheet" href="lib/misc/bootstrap/css/bootstrap.css"/>
+	<link rel="stylesheet" href="lib/misc/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="lib/misc/flag-icon-css/css/flag-icon.css">
+
+    <link rel="stylesheet" href="css/signin.css">
+
+    <script src="lib/js/jquery/jquery.min.js"></script>
+    <script src="lib/js/angular/angular.min.js"></script>
+    <script src="lib/js/angular-resource/angular-resource.min.js"></script>
+    <script src="lib/js/angular-ui-router/angular-ui-router.js"></script>
+	<script src="lib/js/angular-local-storage/angular-local-storage.js"></script>
+    
+    <script src="js/twitter-authenticator.js"></script>
+    <script src="js/twitter-authenticator-utility.js"></script>
+    <script src="js/twitter-authenticator-application-controller.js"></script>
+    <script src="js/twitter-authenticator-home-controller.js"></script>
+    <script src="js/twitter-authenticator-login-controller.js"></script>
+    <script src="js/twitter-authenticator-constants.js"></script>
+    <script src="js/twitter-authenticator-directives.js"></script>
+    <script src="js/twitter-authenticator-users-service.js"></script>
+    <script src="js/twitter-authenticator-credentials-service.js"></script>
+    <script src="js/twitter-authenticator-login-service.js"></script>
+</head>
+<body ng-controller="ApplicationController">
+	<div class="container">
+        <div ui-view></div>
+        <success-modal></success-modal>
+    	<error-modal></error-modal>
+        <loading-modal></loading-modal>
+    </div>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="lib/misc/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

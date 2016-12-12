@@ -1,0 +1,12 @@
+{
+    "availableVideos": "Tilgængelige film",
+    "changeUser": "Skift bruger",
+    "connectToGoogle": "Forbundet til Google ({1})",
+    "disconnectFromGoogle": "Afbrudt fra Google ({1})",
+    "errorAuthorizing": "",
+    "errorAuthorizingExistAnother": "",
+    "errorRevokingAccess": "",
+    "logout": "Log ud",
+    "successfullyAuthorized": "",
+    "successfullyRevokedAccess": ""
+}

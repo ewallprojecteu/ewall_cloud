@@ -1,0 +1,12 @@
+{
+    "availableVideos": "Available videos",
+    "changeUser": "Change user",
+    "connectToGoogle": "Connect to Google ({1})",
+    "disconnectFromGoogle": "Disconnect from Google ({1})",
+    "errorAuthorizing": "Error while authorizing user and saving Google credentials to database",
+    "errorAuthorizingExistAnother": "Some user is already connected to Google with currently email address (granted access token). Please try with another email address or disconnect from Google with connected user and try again.",
+    "errorRevokingAccess": "Error while deleting user credentials and revoking access token from Google",
+    "logout": "Logout",
+    "successfullyAuthorized": "Successfully authorized user and saved Google credentials to database",
+    "successfullyRevokedAccess": "Successfully deleted user credentials and revoked access token from Google"
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+
+<config>
+	<!--<endOfNightTime>13:00:00</endOfNightTime>-->
+	<component class="eu.ewall.platform.idss.utils.log.VirtualClockAwareLoggerFactory" />
+	<component class="eu.ewall.platform.idss.dao.mongodb.MongoDatabaseFactory" />
+</config>

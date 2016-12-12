@@ -1,0 +1,43 @@
+<h1 i18n="applications.detail"></h1>
+<form name="applicationForm"
+	ng-submit="applicationForm.$valid && submit()" novalidate>
+	<div class="row">
+		<div class="col-md-4 form-group">
+			<label for="inputName" i18n="applications.name"></label> <input
+				type="text" class="form-control" id="inputName"
+				i18n-attr="{placeholder: 'applications.enterName'}"
+				ng-model="application.name" ng-disabled="editing" required autofocus>
+		</div>
+		<div class="col-md-4 form-group">
+			<label for="inputUrl" i18n="common.url"></label> <input type="text"
+				class="form-control" id="inputUrl"
+				i18n-attr="{placeholder: 'common.enterUrl'}"
+				ng-model="application.links[0].href" required>
+		</div>
+		<div class="col-md-2 form-group">
+			<label for="selectType" i18n="applications.type"></label> <select
+				class="form-control" id="selectType"
+				ng-model="application.type" required>
+				<option value="" default selected i18n="applications.selectType"></option>
+				<option value="HEALTH" i18n="applications.health"></option>
+				<option value="CONTACTS" i18n="applications.contacts"></option>
+				<option value="HOUSE" i18n="applications.house"></option>
+				<option value="GAMES" i18n="applications.games"></option>
+				<option value="MINIMIZED" i18n="applications.minimized"></option>
+				<option value="HIDDEN" i18n="applications.hidden"></option>
+				<option value="WEB_APP" i18n="applications.web_app"></option>
+			</select>
+		</div>
+	</div>
+	<div class="row col-md-12 form-group">
+		<label class="sr-only" for="services" i18n="home.services"></label> <select
+			id="services" class="form-control"
+			ng-options="el for el in serviceNames" multiple
+			ng-model="application.encompassingServiceNames" bs-duallistbox
+			preserve-selection="moved" move-on-select="false"></select> <br>
+	</div>
+	<div class="row col-md-2 form-group">
+		<button type="submit" ng-disabled="applicationForm.$invalid"
+		 class="form-control btn btn-primary" i18n="common.submit"></button>
+	</div>
+</form>

@@ -1,0 +1,17 @@
+{
+    "addNew": "Dodaj novi program",
+    "availableServices": "Dostupne usluge",
+    "contacts": "Kontakti",
+    "dependsOnServices": "Zavisi od usluga",
+    "detail": "Detalji programa",
+    "enterName": "Unesi naziv programa",
+    "games": "Igre",
+    "health": "Zdravlje",
+    "hidden": "Sakriven",
+    "house": "Kuća",
+    "minimized": "Minimiziran",
+    "name": "Naziv programa",
+    "selectType": "Izaberi tip",
+    "type": "Tip",
+    "web_app": "Web aplikacija"
+}

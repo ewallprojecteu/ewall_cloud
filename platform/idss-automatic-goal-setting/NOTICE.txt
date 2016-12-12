@@ -1,0 +1,25 @@
+IDSS automatic goal setting
+
+Copyright 
+
+Copyright 2013-2016 Roessingh Research and Development, RRD (http://www.rrd.nl/en/)
+
+
+I. Included Software
+
+Software developed by Roessingh Research and Development, RRD (http://www.rrd.nl/en/) for the eWALL project.
+
+
+II. Used Software
+
+This product uses software developed at
+Pivotal Software, Inc. (Pivotal)  (https://pivotal.io/).
+Licensed under the Apache License 2.0.
+
+This product uses software developed at
+Junit (http://www.junit.org/).
+Licensed under Common Public License 1.0.
+
+
+III. License Summary
+- Apache License 2.0

@@ -1,0 +1,68 @@
+{
+  "name": "FlickrPortal",
+  "version": "0.4.0-SNAPSHOT",
+  "dependencies": {
+    "angular": "1.3.x",
+    "angular-bootstrap": "0.12.x",
+    "angular-cookies": "1.3.x",
+    "angular-jwt": "0.0.x",
+    "angular-local-storage": "0.1.x",
+    "angular-localization": "1.2.x",
+    "angular-resource": "1.3.x",
+    "angular-sanitize": "1.3.x",
+    "angular-ui-router": "0.2.x",
+    "bootstrap": "3.3.x",
+    "flag-icon-css": "0.6.x",
+    "font-awesome": "4.3.x",
+    "jasny-bootstrap": "~3.1.3",
+    "jquery": "2.1.x"
+  },
+  "devDependencies": {},
+  "exportsOverride": {
+    "font-awesome": {
+      "misc": "."
+    },
+    "flag-icon-css": {
+      "misc": "."
+    },
+    "bootstrap": {
+      "misc": "dist"
+    },
+    "angular-bootstrap": {
+      "js": "*.js"
+    },
+    "jasny-bootstrap": {
+      "js": "dist/js/*.js",
+      "css": "dist/css/*.css"
+    },
+    "angular-jwt": {
+      "js": "dist/*.js"
+    },
+    "angular-local-storage": {
+      "js": "dist/*.js"
+    },
+    "angular-ui-router": {
+      "js": "release/*.js"
+    },
+    "angular": {
+      "js": "angular*.js"
+    },
+    "angular-*": {
+      "js": "angular-*.js",
+      "css": "angular-*.css"
+    },
+    "jquery": {
+      "js": "dist/*.js"
+    },
+    "*": {
+      "js": "**/*.js",
+      "css": "**/*.css"
+    }
+  },
+  "resolutions": {
+    "angular-cookies": "1.3.x",
+    "angular-sanitize": "1.3.x",
+    "angular": "1.3.x",
+    "jquery": "2.1.x"
+  }
+}

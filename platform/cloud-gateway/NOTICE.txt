@@ -1,0 +1,36 @@
+Cloud Gateway
+
+Copyright 
+
+Copyright 2013-2016 Ericsson Nikola Tesla d.d. (http://www.ericsson.hr/homepage), 
+University POLITEHNICA of Bucharest (UPB) (http://www.upb.ro/en/)
+
+
+I. Included Software
+
+Software developed by Ericsson Nikola Tesla d.d. (http://www.ericsson.hr/homepage), 
+University POLITEHNICA of Bucharest (UPB) (http://www.upb.ro/en/) for the eWALL project.
+
+
+II. Used Software
+
+This product uses software developed at
+Pivotal Software, Inc. (Pivotal)  (https://pivotal.io/).
+Licensed under the Apache License 2.0.
+
+This product uses software developed by
+Swagger project  (swagger.io/).
+Licensed under the Apache License 2.0.
+
+This product uses software developed at
+Jasypt (http://jasypt.sourceforge.net/).
+Licensed under the Apache License 2.0.
+
+For now this product also uses software developed at
+Pivotal Software, Inc. (Pivotal)  (https://pivotal.io/).
+Licensed under (GPL 2.0, MPL 1.1).
+Related to the AMQP messaging that is optional functionality.
+
+
+III. License Summary
+- Apache License 2.0

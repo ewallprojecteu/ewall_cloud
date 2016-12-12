@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="HistoryTxt">
+        <item>Today</item>
+        <item>Last Week</item>
+        <item>Last Month</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>Нед</item>
+        <item>Пон</item>
+        <item>Вто</item>
+        <item>Сре</item>
+        <item>Чет</item>
+        <item>Пет</item>
+        <item>Саб</item>
+    </ItemGroup>
+    <ItemGroup name="MeasureTxt">
+        <item>Пулс</item>
+        <item>Satuartion</item>
+        <item>Крвен притисок</item>
+    </ItemGroup>
+    <ItemGroup name="MeasureValueTxt">
+        <item>Удари во минута</item>
+        <item>%</item>
+        <item>
+            <subitem>СИС</subitem>
+            <subitem>ДИА</subitem>
+        </item>
+    </ItemGroup>
+    <ItemGroup name="SystemMessages">
+        <item>Мерење</item>
+        <item>Историја</item>
+        <item>Започни мерење</item>
+        <item>Ве молиме обидете се повторно</item>
+    </ItemGroup>
+    <ItemGroup name="ColorLegendLabels">
+        <Label>Legend</Label>
+        <Color id="1">Low value</Color>
+        <Color id="2">Normal value</Color>
+        <Color id="3">High value</Color>
+    </ItemGroup>
+    <ItemGroup name="MeasureInfoTxt">
+        <item>
+            <subitem>Паметниот стетоскоп е еден од уредите во eWALL кој е задолжен за мониторирање на статусот на срцето</subitem>
+            <subitem>Тој го мери срцевиот пулс. Исто така тој го мери и перформансот на срцето</subitem>
+            <subitem>Притиснете го "Старт" копчето на паметниот стетоскоп и поставете го на вашите гради, во близина на срцето</subitem>
+            <subitem>Притиснете го "ЗАПОЧНИ МЕРЕЊЕ" копчето на екранот.</subitem>
+        </item>
+        <item>
+            <subitem>Оксиметарот го мери и прикажува функционалното кислородно заситување на артерискиот хемоглобин (% SpO&lt;sub&gt;2&lt;/sub&gt;) и срцевиот пулс</subitem>
+            <subitem>Поставете го вашиот прст, со ноктот нагоре, во оксиметарот така што врвот од прстот го допира вградениот стопер</subitem>
+            <subitem>Кога го поставувате прстот, уредот извршува куса секвенца за подигање. Верификувајте дека сите LED светла се запалени додека се трае секвенцата за подигање.</subitem>
+            <subitem>Притиснете го "ЗАПОЧНИ МЕРЕЊЕ" копчето на екранот.</subitem>
+        </item>
+        <item>
+            <subitem>Уредот го мери вашиот крвен притисок и срцевиот пулс, едноставно и брзо.</subitem>
+            <subitem>Можете да ја замотате манжетната на вашата лева или десна рака. Поставете ја манжетната така што воздушната цевка се наоѓа од странта на лактот.</subitem>
+            <subitem>Изберете го вашето корисничко ID (A или Б)</subitem>
+            <subitem>Притиснете го O/I START копчето. Сите симболи се прикажани на екранот. Корисничкиот ID симбол, што го селектиравте трепка на екранот</subitem>
+            <subitem>Притиснете го "ЗАПОЧНИ МЕРЕЊЕ" копчето на екранот.</subitem>
+        </item>
+    </ItemGroup>
+</language_data>

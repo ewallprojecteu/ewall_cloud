@@ -1,0 +1,41 @@
+<script src="../Calendar/jquery-ui/js/jquery-ui.min.js"></script>
+<script src="../Calendar/jquery-ui/js/jquery.ui.touch.js"></script>
+<script src="../Calendar/fullcalendar/js/fullcalendar.min.js"></script>
+<script src="../Calendar/fullcalendar/js/lang-all.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../Calendar/jquery-ui/css/normal/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="../Calendar/fullcalendar/css/fullcalendar.css">
+
+<script type="text/javascript" src="../Calendar/js/AppCalendar.js"></script>
+<link rel="stylesheet" type="text/css" href="../Calendar/css/AppCalendar.css">
+
+<script>
+$(document).ready(function() {
+	var AppObjectCalendar_NewInstance = new AppObjectCalendar();
+	AppObjectCalendar_NewInstance.SetPathToExecuteDirectory('../Calendar/');
+	AppObjectCalendar_NewInstance.InitAppObject();
+});
+</script>
+
+<style>
+.window-calendar-large-filler {
+    position: absolute;
+    top: 175px;
+    left: 359px;
+    width: 1287px;
+    height: 870px;
+    background: transparent;
+}
+.window-calendar-large-img {
+	position: absolute;
+	top: 0px;
+	left: 40px;
+	width: 1920px;
+    height: 1080px;
+}
+</style>
+
+<div class="window-calendar-large-filler">
+	<div id="AppCalendar-DataContainer"></div>
+</div>
+<img src="assets/calendar-window.png" class="window-calendar-large-img">

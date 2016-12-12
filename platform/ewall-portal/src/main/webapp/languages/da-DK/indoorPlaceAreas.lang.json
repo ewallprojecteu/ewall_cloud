@@ -1,0 +1,18 @@
+{
+    "bathroom": "badeværelse",
+    "bedroom": "soveværelse",
+    "cellar": "kælder",
+    "corridor": "korridor",
+    "diningRoom": "spisestue",
+    "entranceHall": "Entre",
+    "guestRoom": "gæsteværelse",
+    "hobbyRoom": "Hobbyværelse",
+    "kitchen": "køkken",
+    "livingRoom": "stue",
+    "selectArea": "vælg område",
+    "staircase": "trappeopgang",
+    "storageRoom": "opbevaringsrum",
+    "unknown": "ukendt",
+    "wardrobe": "gardarobe",
+    "workRoom": "arbejdsværelse"
+}

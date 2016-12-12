@@ -1,0 +1,81 @@
+﻿body {
+    background-color: #fff;
+    overflow: hidden;   
+    margin: 0;
+}
+
+.largeFont {
+    font-size: 400%;
+    font-weight: bold;
+}
+
+.mediumFont {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+img#board {
+    position: absolute;
+    left: 528px;
+    top: 65px;
+}
+
+div#currentCoins {
+    position: absolute;
+    left: 550px;
+    top: 525px;
+    width: 420px;
+    text-align: center;
+}
+
+div#activityCoins {
+    position: absolute;
+    left: 990px;
+    top: 140px;
+    width: 150px;
+    text-align: left;
+}
+
+div#usageCoins {
+    position: absolute;
+    left: 1160px;
+    top: 300px;
+    width: 150px;
+    text-align: left;
+}
+
+div#exerciseCoins {
+    position: absolute;
+    left: 1220px;
+    top: 500px;
+    width: 150px;
+    text-align: left;
+}
+
+div#sleepCoins {
+    position: absolute;
+    left: 1160px;
+    top: 690px;
+    width: 150px;
+    text-align: left;
+}
+
+div#gameCoins {
+    position: absolute;
+    left: 990px;
+    top: 840px;
+    width: 150px;
+    text-align: left;
+}
+
+.medMode {
+    font-size: 17pt !important;
+}
+
+.homeMode {
+    font-size: 17pt !important;
+}
+
+.disabledImg {
+    opacity: 0.5;
+}

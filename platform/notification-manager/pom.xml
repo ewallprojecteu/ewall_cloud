@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>eu.ewall.platform</groupId>
+		<artifactId>ewall-platform-pom</artifactId>
+		<version>1.1.0-SNAPSHOT</version>
+	</parent>
+
+	<groupId>eu.ewall.platform.notificationmanager</groupId>
+	<artifactId>notification-manager</artifactId>
+	<packaging>war</packaging>
+
+	<name>eWall Notification Manager</name>
+	<description>Single processing entity for managing (i.e. storing, forwarding or deleting) all eWALL notifications.</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>eu.ewall.platform</groupId>
+			<artifactId>commons-data-model</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-mongodb</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>eu.ewall.platform</groupId>
+			<artifactId>ewall-common-libs</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.mangofactory</groupId>
+			<artifactId>swagger-springmvc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>eu.ewall.platform</groupId>
+			<artifactId>ewall-swagger-ui</artifactId>
+		</dependency>
+		<!-- Eureka -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+			<version>1.0.1.RELEASE</version>
+		</dependency>
+
+	</dependencies>
+
+	<properties>
+		<start-class>eu.ewall.platform.middleware.notificationmanager.Application</start-class>
+	</properties>
+
+	<build>
+		<finalName>notification-manager</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
+				<!-- defined in spring-cloud-starter-parent pom (as documentation hint), 
+					but needs to be repeated here -->
+				<configuration>
+					<mainClass>${start-class}</mainClass>
+					<requiresUnpack>
+						<dependency>
+							<groupId>com.netflix.eureka</groupId>
+							<artifactId>eureka-core</artifactId>
+						</dependency>
+						<dependency>
+							<groupId>com.netflix.eureka</groupId>
+							<artifactId>eureka-client</artifactId>
+						</dependency>
+					</requiresUnpack>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>spring-releases</id>
+			<url>http://repo.spring.io/libs-release</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-releases</id>
+			<url>http://repo.spring.io/libs-release</url>
+		</pluginRepository>
+	</pluginRepositories>
+</project>

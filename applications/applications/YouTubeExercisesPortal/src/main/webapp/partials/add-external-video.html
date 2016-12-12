@@ -1,0 +1,19 @@
+<section>
+	<form>
+		<div class="table-responsive">
+	        <table class="table">
+	            <tr>
+	                <td>
+	                    <label for="txtLink" i18n="addExternalVideo.videoLink"></label>
+	                </td>
+	                <td>
+	                    <input type="text" placeholder="https://www.youtube.com/watch?v=ABCdef12345" ng-model="videoLink" class="form-control" id="txtLink" autofocus />
+	                </td>
+	            </tr>
+	            <tr ng-include="'partials/choosing-health-impairment-tags-table-row.html'"></tr>
+	        </table>
+	    </div>
+	    
+	    <button id="addExternalVideoBtn" class="btn btn-primary" ng-click="$(this).blur(); addExternalVideoData()" ng-disabled="!isConnected" i18n="common.addExternalVideo"></button>
+    </form>
+</section>

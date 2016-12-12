@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="HistoryTxt">
+        <item>Днес</item>
+        <item>Последна седмица</item>
+        <item>Последен месец</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>Нед.</item>
+        <item>Пон.</item>
+        <item>Вт.</item>
+        <item>Ср.</item>
+        <item>Чет.</item>
+        <item>Пет.</item>
+        <item>Съб.</item>
+    </ItemGroup>
+    <ItemGroup name="MeasureTxt">
+        <item>Пулс</item>
+        <item>Satuartion</item>
+        <item>Кръвно налягане</item>
+    </ItemGroup>
+    <ItemGroup name="MeasureValueTxt">
+        <item>BPM</item>
+        <item>%</item>
+        <item>
+            <subitem>СИС</subitem>
+            <subitem>ДИА</subitem>
+        </item>
+    </ItemGroup>
+    <ItemGroup name="SystemMessages">
+        <item>Измерване</item>
+        <item>История</item>
+        <item>Започни измерването</item>
+        <item>Моля опитайте отново по-късно</item>
+    </ItemGroup>
+    <ItemGroup name="ColorLegendLabels">
+        <Label>Legend</Label>
+        <Color id="1">Low value</Color>
+        <Color id="2">Normal value</Color>
+        <Color id="3">High value</Color>
+    </ItemGroup>
+    <ItemGroup name="MeasureInfoTxt">
+        <item>
+            <subitem>Елекронният Стетосткоп е едно от устройствата в eWALL за наблюдение на статуса на сърцето</subitem>
+            <subitem>Той измерва пулса и работата на сърцето</subitem>
+            <subitem>Натиснете бутона "Start" на Елекронният Стетосткоп и го поставете върху гърдите си, в близост до сърцето</subitem>
+            <subitem>Натиснете бутона "ЗАПОЧНИ ИЗМЕРВАНЕТО" на екрана</subitem>
+        </item>
+        <item>
+            <subitem>Оксиметърър измерва и показва функционалнтата кислородна наситеност на артериалния хемоглобин (% SpO&lt;sub&gt;2&lt;/sub&gt;) и пулса на сърцето</subitem>
+            <subitem>Поставете пърста си, с със страната на нокътя нагоре, във Оксиметъра</subitem>
+            <subitem>Когато поставите пръста си, устройството извършва кратка настройка. Уверете се, че светлинните индикатори работят по време на настройката</subitem>
+            <subitem>Натиснете бутона "ЗАПОЧНИ ИЗМЕРВАНЕТО" на екрана</subitem>
+        </item>
+        <item>
+            <subitem>Устройстовото измерва вашето кръвно налягане и пулс, бързо и лесно</subitem>
+            <subitem>Можете да увиете маншета на лявата или на дясната си ръка. Поставете маншета така, че тръбичката за въздух да е от страната на лакътя ви.</subitem>
+            <subitem>Изберете вашето ИД (А или Б)</subitem>
+            <subitem>Натистнете бутона O/I STSRT. Всички символи се появяват на дисплея. Потребилеското ИД, което избрахме мига на екрана</subitem>
+            <subitem>Натиснете бутона "ЗАПОЧНИ ИЗМЕРВАНЕТО" на екрана</subitem>
+        </item>
+    </ItemGroup>
+</language_data>

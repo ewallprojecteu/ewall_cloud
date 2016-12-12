@@ -1,0 +1,10 @@
+{
+    "browsePhotos": "Blader door foto's",
+    "changePhoto": "Verander foto",
+    "description": "Omschrijving",
+    "descriptionHint": "Een beschrijving",
+    "failedUploading": "Fout bij het uploaden van foto",
+    "successfullyUploaded": "Foto succesvol geupload",
+    "title": "Titel",
+    "uploadToFlicker": "Upload naar Flickr"
+}

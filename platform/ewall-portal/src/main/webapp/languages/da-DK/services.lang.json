@@ -1,0 +1,8 @@
+{
+    "addNew": "Tilføj en ny service",
+    "detail": "Detaljer om service",
+    "endpoint": "Slutpunkt",
+    "enterEndpoint": "Indtast slutpunkt",
+    "enterName": "Indtast service navn",
+    "name": "Service navn"
+}

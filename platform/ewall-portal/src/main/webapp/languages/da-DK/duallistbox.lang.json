@@ -1,0 +1,11 @@
+{
+    "filterPlaceHolder": "Filter",
+    "filterTextClear": "vis alt",
+    "infoText": "Vis alt [0]",
+    "infoTextEmpty": "Tøm listen",
+    "infoTextFiltered": "????",
+    "moveAllLabel": "Flyt alt",
+    "moveSelectedLabel": "Flyt det valgte",
+    "removeAllLabel": "Fjern alt",
+    "removeSelectedLabel": "Fjern det valgte"
+}

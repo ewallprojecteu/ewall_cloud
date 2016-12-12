@@ -1,0 +1,25 @@
+Fall Prevetnion application
+
+Copyright 
+
+Copyright 2013-2016 Athens Information Technology (http://www.ait.gr)
+
+
+I. Included Software
+
+Software developed by Athens Information Technology (http://www.ait.gr) for the eWALL project.
+
+
+II. Used Software
+
+This product uses software developed at
+fontawesome.io (http://fontawesome.io/).
+Licensed under the MIT License (MIT).
+
+This product uses software developed at
+angularjs.org (https://angularjs.org/).
+Licensed under the MIT License (MIT).
+
+
+III. License Summary
+- Apache License 2.0

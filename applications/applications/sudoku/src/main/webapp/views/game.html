@@ -1,0 +1,15 @@
+<div class="vspace"></div>
+<div class="sudoku" ng-init="newGame()">
+    <div ng-repeat="digit in mask track by $index" ng-style="cellStyle[$index]"
+         touch-selector value-var="mask[$index]" options-var="digits" sudoku-square="{{$index}}" tsl-radial tsl-radius=70>
+    </div>
+</div>
+<div class="solve h2">
+	<a href="#" ng-click="solve()">{{labels.solve}}</a>
+</div>
+<div class="back text-center">
+	<a href="#" ui-sref="main.sudoku.welcome"> <i
+		class="fa fa-fast-backward fa-4x"></i>
+		<p class="h3 fontAwesomeText">{{labels.back}}</p>
+	</a>
+</div>

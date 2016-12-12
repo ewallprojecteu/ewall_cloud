@@ -1,0 +1,25 @@
+eKitchen Backend Service
+
+Copyright 
+
+Copyright 2013-2016 Athens Information Technology (http://www.ait.gr)
+
+
+I. Included Software
+
+Software developed by Athens Information Technology (http://www.ait.gr) for the eWALL project.
+
+
+II. Used Software
+
+This product uses software developed at
+The Apache Software Foundation (http://www.apache.org/).
+Licensed under the Apache License 2.0.
+
+This product uses software developed at
+Junit (http://www.junit.org/).
+Licensed under Common Public License 1.0.
+
+
+III. License Summary
+- Apache License 2.0

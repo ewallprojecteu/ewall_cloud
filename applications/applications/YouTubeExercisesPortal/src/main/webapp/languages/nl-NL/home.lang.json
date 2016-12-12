@@ -1,0 +1,12 @@
+{
+    "availableVideos": "Beschikbare videos",
+    "changeUser": "Verander gebruiker",
+    "connectToGoogle": "Verbind met Google ({1})",
+    "disconnectFromGoogle": "Verbinding met Google ({1}) verbreken",
+    "errorAuthorizing": "",
+    "errorAuthorizingExistAnother": "",
+    "errorRevokingAccess": "",
+    "logout": "Log uit",
+    "successfullyAuthorized": "",
+    "successfullyRevokedAccess": ""
+}

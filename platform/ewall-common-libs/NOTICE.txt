@@ -1,0 +1,37 @@
+eWALL common libs
+
+Copyright 
+
+Copyright 2013-2016 Hewlett Packard Enterprise (HPE) Italy (https://www.hpe.com/it/it/home.html), 
+Ericsson Nikola Tesla d.d. (http://www.ericsson.hr/homepage)
+
+
+I. Included Software
+
+Software developed by Hewlett Packard Enterprise (HPE) Italy (https://www.hpe.com/it/it/home.html), 
+Ericsson Nikola Tesla d.d. (http://www.ericsson.hr/homepage) for the eWALL project.
+
+
+II. Used Software
+
+This product uses software developed at
+Pivotal Software, Inc. (Pivotal)  (https://pivotal.io/).
+Licensed under the Apache License 2.0 and the MIT License.
+
+This product uses software
+Java JWT (https://github.com/jwtk/jjwt).
+Licensed under the Apache License 2.0.
+
+This product uses software developed by
+Nelson Carpentier and Jakub Białek (https://github.com/ragnor/simple-spring-memcached/tree/master/simple-spring-memcached).
+Licensed under the the MIT License.
+
+This product uses software developed at
+The GlassFish Community (https://glassfish.java.net/)
+Licensed under the Common Development and Distribution License (CDDL) and GNU General Public License (GPL).
+
+
+III. License Summary
+- Apache License 2.0
+- MIT License
+- Common Development and Distribution License (CDDL) and GNU General Public License (GPL)

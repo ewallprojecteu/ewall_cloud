@@ -1,0 +1,425 @@
+<style>
+    /*Search input field  --- material design like */
+    /* form starting stylings ------------------------------- */
+    
+    .group {
+        position: absolute;
+        left: 5%;
+        top: 50px;
+        width: 80%
+    }
+    
+    input {
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 25px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 96%;
+        border: none;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        background: transparent
+    }
+    
+    input:focus {
+        outline: none;
+    }
+    /* LABEL ======================================= */
+    
+    label {
+        color: #fff;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 24px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+    /* active state */
+    
+    input:focus ~ label,
+    input:valid ~ label {
+        top: -20px;
+        font-size: 14px;
+        color: #d4d4d4;
+    }
+    /* BOTTOM BARS ================================= */
+    
+    .bar {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+    
+    .bar:before,
+    .bar:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 0px;
+        position: absolute;
+        background: #fdfdfd;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+    
+    .bar:before {
+        left: 50%;
+    }
+    
+    .bar:after {
+        right: 50%;
+    }
+    /* active state */
+    
+    input:focus ~ .bar:before,
+    input:focus ~ .bar:after {
+        width: 50%;
+    }
+    /* HIGHLIGHTER ================================== */
+    
+    .highlight {
+        position: absolute;
+        height: 60%;
+        width: 100px;
+        top: 25%;
+        left: 0;
+        pointer-events: none;
+        opacity: 0.5;
+    }
+    /* active state */
+    
+    input:focus ~ .highlight {
+        -webkit-animation: inputHighlighter 0.3s ease;
+        -moz-animation: inputHighlighter 0.3s ease;
+        animation: inputHighlighter 0.3s ease;
+    }
+    /* ANIMATIONS ================ */
+    
+    @-webkit-keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+    
+    @-moz-keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+    
+    @keyframes inputHighlighter {
+        from {
+            background: #5264AE;
+        }
+        to {
+            width: 0;
+            background: transparent;
+        }
+    }
+    
+    .wrap {
+        display: block;
+        text-align: center;
+        position: relative;
+        float: left;
+        margin-left: 15px;
+        pointer-events: painted;
+    }
+    
+    .radio {
+        position: absolute;
+        left: -999rem;
+    }
+    
+    .rd-visual {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        opacity: 1;
+        width: 90px;
+        height: 44px;
+        padding: 84px 5px 5px;
+        border-radius: 3px;
+        overflow: hidden;
+        vertical-align: bottom;
+        font-size: 16px;
+    }
+    
+    .radio:checked + .rd-visual {
+        opacity: 1;
+        color: #fff;
+        background-color: #5cbc90;
+    }
+    
+    .rd-visual::before {
+        /* -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; */
+    }
+    
+    .rd-visual:hover {
+        opacity: 1;
+    }
+    
+    .rd-visual:hover::before {
+        /*-webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  filter: grayscale(0);
+  filter: none;*/
+    }
+    
+    .radio:checked + .rd-visual::before {
+        /* -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  filter: grayscale(0);
+  filter: none;*/
+    }
+    
+    .rd-visual::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 54px;
+        height: 54px;
+    }
+    
+    .radio:checked + .rd-visual::after {
+        content: "";
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 25px;
+        height: 25px;
+    }
+    
+    .rd-visual.en::before {
+        background-image: url(assets/flags/gb.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        border-radius: 50%;
+    }
+    
+    .rd-visual.da::before {
+        background-image: url(assets/flags/da.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        border-radius: 50%;
+    }
+    
+    .rd-visual.nl::before {
+        background-image: url(assets/flags/nl.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        border-radius: 50%;
+    }
+    
+    .rd-visual.de::before {
+        background-image: url(assets/flags/at.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        border-radius: 50%;
+    }
+    
+    .rd-visual.it::before {
+        background-image: url(assets/flags/it.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        border-radius: 50%;
+    }
+    
+    .radio:checked + .rd-visual::after {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpCOTJBMDUwQTEyMjA2ODExODA4M0E2QzFCM0EwRkMxNCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozOTBBMzc2RDA3N0QxMUUzQUZFQkEwNkRGMjRGQjNENiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozOTBBMzc2QzA3N0QxMUUzQUZFQkEwNkRGMjRGQjNENiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RDgwMDA4QzYxOTIwNjgxMTgwODNFNkZENTk3MEMwNUQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QjkyQTA1MEExMjIwNjgxMTgwODNBNkMxQjNBMEZDMTQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6EUwEaAAACaUlEQVR42rSW70tTURjHn7vNyVZDiJCkMkNtMpovNCOUIgsCGVoU9KIgohcRCRa+iegPSOjHi15Vf0SKRGIvgupVkFtrTAghkphz6ZxjzbnLtuP3ybux1rnbdVtf+MDlnHPP97nnnPs8RxFCUBlZwSA4D/rBQeAAERACc2AKvAeq7ixsIsEKxkFEGNNPcAOYZfPJDLqAX1QnL+ioZHICrInatAqO6ZnwF6yL+ugXaC814T34KuqrOWDh+U3a/t8BbqqvesBo/nTZwEq14WZzOfEy+FZ8WArKupd4lSzwGQF7qwk1k8vS8/lZ+hRZoI/heVKzGTp7oLt4SAvwsImnWoNngTfkW/2+vSL8h6bisqFDvCe9sp64ukEL8bDUgCN+4p8uGLBG2vroSudJ2fA+BWuWxIO9uHUt/ZsmvK8omk7Q3e5hcu9pLfRtZlV6/GWavq2HCm2X2/tpGCY6iplKDVgvgrMU3oj9ifgpIvZqESczaZhPFgwUcPXIqXIGrN3SL4luJmjCN0nLMGKZFRNdc56md6EALSZWtg0Uha47B+nM/oonP8YmQTy4ZHvyEEsWSkb/ecsEg5uuczSwr8vIGfHzcnllPU1WOz3ovURtjua/2i0mM40eHTJqwPrMJjN6vY4GG93vuUgdTS0FgzG3h443d+7ktM/wH2/XMqeuUhlVPPJNiUB0cacJYRk05hPkPfF/NF6chRv5ANTZgAtfQ2k9cdWxnnDhc+pVxoFaMrKmSLnKmOdwjTW+1chFIl8pb2unw4i4btzKV8JSlAr3Lhu4wOlay9aHwC5OY+CHdu96rZHSm2RLgAEArjdGkksKS7AAAAAASUVORK5CYII=);
+    }
+    
+   
+}
+    
+</style>
+
+<div id="background" style="position: absolute; z-index: 900; width: 100%; height: 100%; left: 0px; top: 0px; background-repeat: no-repeat; background-position: center center; background-size: cover; background-image: url('assets/1-login-bck.png');" class="background">
+    <div id="loginPanel" style="border: 1px solid white; position: absolute; z-index: 900; top: 20%; left: 50%; background-color: #90a4ae; width: 600px; height: 650px; margin-left: -300px" class="loginPane">
+
+        <span id="welcome_h1" style="position: absolute; z-index: 900; top: 10px; color: white; font-family: 'Helvetica,Trebuchet MS',sans-serif; font-size: 26px;  text-align: center; width: 100%;">Welcome to eWall</span>
+        <span id="welcome_h2" style="position: absolute; z-index: 900; top: 40px; color: #d4d4d4; font-family: 'Helvetica,Trebuchet MS',sans-serif; font-size: 24px; width: 100%; text-align: center;">Your life and health assistant</span>
+
+
+        <form id="langForm" style="position: absolute; z-index: 900; top: 80px; color: #d4d4d4; font-family: 'Helvetica,Trebuchet MS',sans-serif; font-size: 24px;">
+            <label class="wrap">
+                <input id="en" type="radio" name="lang" value="en" class="radio" checked="checked" />
+                <span class="rd-visual en" title="English">English</span>
+            </label>
+            <label class="wrap">
+                <input id="da" type="radio" name="lang" value="da" class="radio" />
+                <span class="rd-visual da" title="Danske">Dansk</span>
+            </label>
+            <label class="wrap">
+                <input id="nl" type="radio" name="lang" value="nl" class="radio" />
+                <span class="rd-visual nl" title="Nederlands">Nederlands</span>
+            </label>
+            <label class="wrap">
+                <input id="de" type="radio" name="lang" value="de" class="radio" />
+                <span class="rd-visual de" title="Deutsch">Deutsch</span>
+            </label>
+            </label>
+            <label class="wrap">
+                <input id="it" type="radio" name="lang" value="it" class="radio" />
+                <span class="rd-visual it" title="Italiano">Italiano</span>
+            </label>
+        </form>
+
+       <div style="position: absolute; z-index: 900; top:280px; width: 350px; height: 40px; left: 18%;">
+            <input id="userName" type="text" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label id="userNameLabel">User Name</label>
+        </div>
+
+        <div style="position: absolute; z-index: 900; top:390px; width: 350px; height: 40px; left: 18%;">
+            <input id="password" type="password" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label id="passwordLabel">Password</label>
+        </div>
+
+
+
+        <div id="startExperiment" style="position: absolute; z-index: 900; text-align: center; padding-top: 15px; height: 45px; left: 170px; top: 500px; width: 230px; background-color: white; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); cursor: pointer;">
+            <span id="loginBtnLabel" style="z-index: 900; font-family: Arial,Helvetica,sans-serif; font-size: 20px; color: #4d4d4d;">
+                Login</span>
+        </div>
+
+        <div style="position: absolute; z-index: 900; top:600px; width: 350px; height: 40px; left: 18%;">
+            <input id="reloginCheckbox" type="checkbox" ng-model="automaticRelogin">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label id="reloginCheckboxLabel">Ri-autentica automaticamente in caso di disconnessione</label>
+        </div>
+       
+       
+ 
+    </div>
+</div>
+<!-- JS event handlers -->
+<script>
+    // Browser localisation (language detection)    
+    // var browserLanguage = window.navigator.userLanguage || window.navigator.language;
+    // $("#language").prepend("<option value=\"" + browserLanguage + "\" selected=\"selected\">" + browserLanguage + "</option>");
+    var loginFormTranslation = {
+    'en': {
+            welcome_h1: 'Welcome to eWall',
+            welcome_h2: 'Your life and health assistant',
+            username: "User Name",
+            password: "Password",
+            login: "Login",
+            relogin: "Try re-authenticate automatically upon network disconnection"
+    },
+    'nl': {
+            welcome_h1: 'Welkom bij eWall',
+            welcome_h2: 'Je leven en gezondheid assistent',
+            username: "Gebruikersnaam",
+            password: "Wachtwoord",
+            login: "Log in",
+            relogin: "Probeer automatisch de verbinding te herstellen"
+    },
+    'da': {
+            welcome_h1: 'Velkommen til eWall',
+            welcome_h2: 'Din sundshedshjælper',
+            username: "Brugernavn",
+            password: "Password",
+            login: "Login",
+            relogin: "Husk brugernavn og adgangskode"
+    },
+    'de': {
+            welcome_h1: 'Willkommen zu eWall',
+            welcome_h2: 'Dein Lebens- und Gesundheits-Assistent',
+            username: "Benutzername",
+            password: "Passwort",
+            login: "Einloggen",
+            relogin: "Nach einer Netzwerktrennung automatische Anmeldung versuchen."
+    },
+    'it': {
+            welcome_h1: 'Benvenuto in eWall',
+            welcome_h2: "Il tuo assistente per la vita e la salute",
+            username: "Nome utente",
+            password: "Parola segreta",
+            login: "Accedi",
+            relogin: "Ri-autentica automaticamente in caso di disconnessione"
+    }
+    };
+
+    function translateLogin(lang) {
+        $('#welcome_h1').html(loginFormTranslation[lang].welcome_h1);
+        $('#welcome_h2').html(loginFormTranslation[lang].welcome_h2);
+        $('#userNameLabel').html(loginFormTranslation[lang].username);
+        $('#passwordLabel').html(loginFormTranslation[lang].password);
+        $('#loginBtnLabel').html(loginFormTranslation[lang].login);
+        $('#reloginCheckboxLabel').html(loginFormTranslation[lang].relogin);
+    };
+    
+    if (localStorage.historyPreferedLanguage) {
+        // set language from history
+        translateLogin(localStorage.historyPreferedLanguage);
+        $('#' + localStorage.historyPreferedLanguage).attr('checked', 'checked');
+        ewallApp.preferedLanguage = localStorage.historyPreferedLanguage;
+        
+    } else {
+        localStorage.historyPreferedLanguage = "en";
+        ewallApp.preferedLanguage = "en";
+    }
+    
+    if (localStorage.historyUserName) {
+        // set username from history
+        $("#userName").val(localStorage.historyUserName);
+    } else {
+         $("#userName").val();
+    }
+    
+    
+
+    $('#langForm input').on('change', function () {
+        ewallApp.preferedLanguage = $('input[name=lang]:checked', '#langForm').val();
+        // remember prefered language
+        localStorage.historyPreferedLanguage = ewallApp.preferedLanguage;
+        translateLogin(ewallApp.preferedLanguage);
+    });
+
+    $("#startExperiment").click(function () {       
+        ewallApp.login({
+            username: $("#userName").val(),
+            password: $("#password").val()
+        });
+        
+        // remember username
+         localStorage.historyUserName = $("#userName").val();
+    });
+    
+    $('#password').keypress(function(e){
+        if(e.keyCode==13)
+        	$("#startExperiment").click();
+      });
+    
+    
+</script>

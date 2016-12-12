@@ -1,0 +1,11 @@
+{
+    "filterPlaceHolder": "Филтер",
+    "filterTextClear": "Прикажи се",
+    "infoText": "Прикажување на се",
+    "infoTextEmpty": "Празна листа",
+    "infoTextFiltered": "Филтрирано",
+    "moveAllLabel": "Премести се",
+    "moveSelectedLabel": "Премести означено",
+    "removeAllLabel": "Отстрани се",
+    "removeSelectedLabel": "Отстрани означено"
+}

@@ -1,0 +1,26 @@
+IDSS sleep reasoner
+
+Copyright 
+
+Copyright 2013-2016 Technical University, Sofia (http://ftp.tu-sofia.bg/eng_new/index.html)
+
+
+I. Included Software
+
+Software developed by Technical University, Sofia (http://ftp.tu-sofia.bg/eng_new/index.html) for the eWALL project.
+
+
+II. Used Software
+
+This product uses software developed at
+Pivotal Software, Inc. (Pivotal)  (https://pivotal.io/).
+Licensed under the Apache License 2.0.
+
+This product uses software developed by
+Scala community (http://www.scala-lang.org/).
+Licensed under the BSD 3-clause.
+
+
+III. License Summary
+- Apache License 2.0
+- BSD 3-clause

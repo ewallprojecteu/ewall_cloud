@@ -1,0 +1,18 @@
+#greetingButton {
+    margin: 2px 0px 0px 10px;
+}
+
+.img-padding {
+    padding: 5px;
+}
+
+.img-container-margin {
+    margin: 20px;
+}
+
+#noPhotos {
+	font-size: 2em;
+	color: gray;
+	font-weight: bold;
+	margin: 30px 20px 0px 20px;
+}

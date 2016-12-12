@@ -1,0 +1,22 @@
+<h1 i18n="regions.detail"></h1>
+<form name="regionForm" ng-submit="regionForm.$valid && submit()"
+	novalidate>
+	<div class="row">
+		<div class="col-md-4 form-group">
+			<label for="inputName" i18n="regions.name"></label> <input
+				type="text" class="form-control" id="inputName"
+				i18n-attr="{placeholder: 'regions.enterName'}"
+				ng-model="region.regionName" ng-disabled="editing" required autofocus>
+		</div>
+		<div class="col-md-4 form-group">
+			<label for="inputCountry" i18n="common.country"></label> <input
+				type="text" class="form-control" id="inputCountry"
+				i18n-attr="{placeholder: 'common.enterCountry'}"
+				ng-model="region.country" required>
+		</div>
+	</div>
+	<div class="row col-md-2 form-group">
+		<button type="submit" ng-disabled="regionForm.$invalid"
+			class="form-control btn btn-primary" i18n="common.submit"></button>
+	</div>
+</form>

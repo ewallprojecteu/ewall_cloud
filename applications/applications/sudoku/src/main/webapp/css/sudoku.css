@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  padding: 100px;
+  margin: 0;
+  font-family: 'Oswald', sans-serif !important;
+}
+
+.vspace{
+  margin: 40px;
+}
+
+.sudoku {
+  width: 315px;
+  margin: 0 auto;
+  animation: 1s fadeIn;
+}
+.sudoku .tsl-selector {
+  box-sizing: border-box;
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 0;
+  vertical-align: top;
+}
+.sudoku .tsl-selector span {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sudoku .tsl-options {
+  width: 6em;
+  top: 50%;
+  left: 50%;
+  color: black;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 5;
+}
+.sudoku .tsl-options span {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  padding: 0;
+  line-height: 2em;
+  border: solid black;
+  border-radius: 50%;
+  border-width: 1px;
+  box-sizing: border-box;
+}
+
+.sudoku-square {
+  background: transparent !important;
+  font-size: 90%;
+  border: 0 solid black;
+  border-top: 1px solid black !important;
+  border-left: 1px solid black !important;
+}
+.sudoku-square.sd-top {
+  border-top: 3px solid black !important;
+}
+.sudoku-square.sd-left {
+  border-left: 3px solid black !important;
+}
+.sudoku-square.sd-thick-btm {
+  border-bottom: 3px solid black !important;
+}
+.sudoku-square.sd-thick-right {
+  border-right: 3px solid black !important;
+}
+
+@media only screen and (min-width: 620px) {
+  .sudoku {
+    width: 450px;
+    zoom: 140%;
+  }
+  .sudoku-square {
+    font-size: 150%;
+  }
+  .sudoku .tsl-selector {
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.hint{
+  font-weight: bold !important;
+  background: darkgrey !important;
+}
+
+.blank{
+  color: transparent;
+}
+
+.error{
+  color:#ff0000;
+}
+
+.back {
+	position: fixed;
+	top: 450px;
+	left: 450px;
+	z-index: 3;
+	animation: 1s slideInLeft;
+	zoom: 1.2;
+}
+
+.fontAwesomeText {
+	margin-top: -5px !important;
+}
+
+a:hover, a:visited, a:link, a:active {
+	text-decoration: none !important;
+	color: inherit !important;
+}
+
+.menu a {
+	margin-top: 50px !important;
+	display: inline-block;
+}
+
+.icon {
+	zoom:1.5;
+}
+
+.end-icon {
+	zoom:3;
+}
+
+.welcome {
+	margin-top: 200px !important;
+	animation: slideInUp 1s;
+}
+
+.main{
+	margin-top: 80px;
+}
+
+.solve{
+	margin-top: 20px;
+}
+
+.number {
+	font-family: 'Passion One', cursive;
+	font-size: 7em;
+	margin-top: -20px;
+	animation: zoomIn 1s;
+}
+
+.final{
+	margin-top: 30px;
+	animation: zoomIn 1s;
+}
+
+.menu{
+	margin-top: 60px;
+}
+
+.test{
+	margin-top: 150px !important;
+	color: white !important;
+}

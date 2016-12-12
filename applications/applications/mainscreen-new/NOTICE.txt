@@ -1,0 +1,157 @@
+﻿eWALL mainscreen-new application
+
+Copyright 
+
+Copyright 2013-2016 Roessingh Research and Development (RRD) Netherlands (http://www.rrd.nl/),
+Hewlett Packard Enterprise (HPE) Italy (https://www.hpe.com/it/it/home.html),
+Copyright 2013-2016 Teleinfrastructure Lab, Technical University Sofia (TUS) Bulgaria, (http://telilab.tu-sofia.bg) 
+
+
+I. Included Software
+
+
+Software 
+- mainscreen-new/src/main/webapp/widgets/weather/
+- mainscreen-new/src/main/webapp/widgets/background-switch/
+- mainscreen-new/src/main/webapp/notifications/alarm/
+- mainscreen-new/src/main/webapp/notifications/appointment/
+- mainscreen-new/src/main/webapp/notifications/general/
+- mainscreen-new/src/main/webapp/notifications/recommendation/
+- mainscreen-new/src/main/webapp/notifications/virtual_coach/
+developed by Roessingh Research and Development (RRD) Netherlands (http://www.rrd.nl/) for the eWALL project.
+
+Software: 
+- mainscreen-new/src/main/webapp/lib/app.js 
+- mainscreen-new/src/main/webapp/lib/controllers.js
+- mainscreen-new/src/main/webapp/lib/login.js
+- mainscreen-new/src/main/webapp/lib/main_screen.js
+- mainscreen-new/src/main/webapp/lib/services.js
+developed by Hewlett Packard Enterprise (HPE) Italy (https://www.hpe.com/it/it/home.html) for the eWALL project.
+
+Software: 
+- mainscreen-new/src/main/webapp/widgets/domotics/
+- mainscreen-new/src/main/webapp/widgets/dpam/
+- mainscreen-new/src/main/webapp/widgets/photo-frame/
+- mainscreen-new/src/main/webapp/widgets/agenda/
+developed by Copyright 2013-2016 Teleinfrastructure Lab, Technical University Sofia (TUS) Bulgaria, (http://telilab.tu-sofia.bg) for the eWALL project.
+
+
+II. Used Software
+
+This product uses software (jquery) developed at
+jQuery Foundation (https://jquery.org/).
+Licensed under the MIT License.
+
+This product uses software (underscore js) developed by 
+Jeremy Ashkenas (https://github.com/jashkenas/underscore)
+Licensed under the MIT License.
+
+Copyright (c) 2009-2016 Jeremy Ashkenas, DocumentCloud and Investigative
+This product uses software (AngularJS) developed at
+The Google (www.google.com).
+Licensed under the MIT License.
+
+This product uses software (angular-cookies) developed at
+Angular (https://github.com/angular/bower-angular-cookies).
+Licensed under the MIT License.
+
+This product uses software (angular-animate) developed at
+Angular (https://github.com/angular/bower-angular-animate).
+Licensed under the MIT License.
+
+This product uses software (angular-ui-router) developed by
+The AngularUI team (http://angular-ui.github.io/).
+Licensed under the MIT License.
+
+This product uses software (angular-resources) developed by
+Angular (https://github.com/angular/bower-angular-resource).
+Licensed under the MIT License.
+
+This product uses software (angular-sanitize) developed by
+Angular (https://github.com/angular/bower-angular-sanitize).
+Licensed under the MIT License.
+
+This product uses software (Moment.js) developed by 
+Tim Wood, Iskren Chernev, Moment.js contributors (https://github.com/moment/moment/).
+Licensed under the MIT License.
+Copyright (c) 2011-2016 Tim Wood, Iskren Chernev, Moment.js contributors
+
+This product uses software (Moment Timezone) developed by
+Tim Wood (https://github.com/moment/moment-timezone/).
+Licensed under the MIT License.
+Copyright (c) 2014, Tim Wood.
+
+This product uses software (angular-localalization) developed by
+Rahul Doshi (https://github.com/doshprompt/angular-localization).
+Licensed under the MIT License.
+Copyright (c) 2014 Rahul Doshi
+
+This product uses software (AngularTouchSelect) developed by
+Kevin Fray (http://kzf.github.io/AngularTouchSelect).
+Licensed under the MIT License.
+Copyright (c) 2014 Kevin Fray
+
+This product uses software (bootstrap-slider) developed by
+Kyle Kemp, Rohit Kalkur, and contributors (https://github.com/seiyria/bootstrap-slider).
+Licensed under the MIT License.
+Copyright (c) 2016 Kyle Kemp, Rohit Kalkur, and contributors
+
+This product uses software (angular-bootstrap-slider) developed by
+Kyle Kemp (https://github.com/seiyria/angular-bootstrap-slider).
+Licensed under the MIT License
+Copyright (c) 2014 Kyle Kemp
+
+This product includes jquery-ui software developed at
+jQuery Foundation (https://jquery.org/).
+Licensed under the MIT License.
+Copyright jQuery Foundation and other contributors, https://jquery.org/
+
+This product uses software (threes) developed by
+three.js authors (http://threes.org).
+Licensed under the MIT License
+Copyright © 2010-2016 three.js authors
+
+This product uses software (angular-ui-bootstrap) developed by
+ui-bootstrap contributors (http://angular-ui.github.io/bootstrap/).
+Licensed under the MIT License
+
+This product uses software (Charts.js) developed by
+Nick Downie (http://www.chartjs.org/).
+Licensed under the MIT License.
+Copyright (c) 2013-2016 Nick Downie
+
+This product uses software (angular-local-storage) developed by
+Gregory Pike (https://github.com/grevory/angular-local-storage).
+Licensed under the MIT License.
+Copyright (c) 2016 Gregory Pike
+
+This product uses software (angular-jwt) developed by
+Auth0 (https://github.com/auth0/angular-jwt).
+Licensed under the MIT License.
+
+This product uses software (Bootstrap) developed at
+Tweeter (https://github.com/twbs/bootstrap)
+Licensed under the MIT License.
+Copyright (c) 2011-2016 Twitter, Inc.
+
+This product uses software (iscroll) developed by
+Matteo Spinelli (http://cubiq.org).
+Licensed under the MIT License.
+Copyright (c) 2014 Matteo Spinelli
+
+
+III. License Summary
+- Apache License 2.0
+- MIT License
+- Copyright (c) 2013-2016 Nick Downie
+- Copyright (c) 2009-2016 Jeremy Ashkenas, DocumentCloud and Investigative
+- Copyright (c) 2011-2016 Twitter, Inc.
+- Copyright (c) 2011-2016 Tim Wood, Iskren Chernev, Moment.js contributors
+- Copyright (c) 2014, Tim Wood.
+- Copyright (c) 2014 Matteo Spinelli
+- Copyright (c) 2016 Gregory Pike
+- Copyright © 2010-2016 three.js authors
+- Copyright (c) 2014 Kyle Kemp
+- Copyright (c) 2016 Kyle Kemp, Rohit Kalkur, and contributors
+- Copyright (c) 2014 Kevin Fray
+- Copyright (c) 2014 Rahul Doshi

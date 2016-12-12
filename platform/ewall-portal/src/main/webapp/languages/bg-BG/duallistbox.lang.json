@@ -1,0 +1,11 @@
+{
+    "filterPlaceHolder": "филтър",
+    "filterTextClear": "покажи всички",
+    "infoText": "показване на всички",
+    "infoTextEmpty": "плазен лист",
+    "infoTextFiltered": "",
+    "moveAllLabel": "премести всички",
+    "moveSelectedLabel": "премести маркираните",
+    "removeAllLabel": "премахни всички",
+    "removeSelectedLabel": "премани маркираните"
+}

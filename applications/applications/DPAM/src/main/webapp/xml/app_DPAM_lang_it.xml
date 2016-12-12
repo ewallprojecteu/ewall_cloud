@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="LongMonths">
+        <item>gennaio</item>
+        <item>febbraio</item>
+        <item>marzo</item>
+        <item>aprile</item>
+        <item>maggio</item>
+        <item>giugno</item>
+        <item>luglio</item>
+        <item>agosto</item>
+        <item>settembre</item>
+        <item>ottobre</item>
+        <item>novembre</item>
+        <item>dicembre</item>
+    </ItemGroup>
+    <ItemGroup name="ShortMonths">
+        <item>gen</item>
+        <item>feb</item>
+        <item>mar</item>
+        <item>apr</item>
+        <item>mag</item>
+        <item>giu</item>
+        <item>lu</item>
+        <item>ago</item>
+        <item>sett</item>
+        <item>ott</item>
+        <item>nov</item>
+        <item>dic</item>
+    </ItemGroup>
+    <ItemGroup name="LongDays">
+        <item>domenica</item>
+        <item>lunedì</item>
+        <item>martedì</item>
+        <item>mercoledì</item>
+        <item>giovedì</item>
+        <item>venerdì</item>
+        <item>sabato</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>dom</item>
+        <item>lu</item>
+        <item>ma</item>
+        <item>me</item>
+        <item>gio</item>
+        <item>ve</item>
+        <item>sa</item>
+    </ItemGroup>
+    <ItemGroup name="ChartTitle">
+        <item>Distanza camminata in passi</item>
+        <item>Distanza camminata in chilometri</item>
+        <item>Calorie consumate</item>
+    </ItemGroup>
+    <ItemGroup name="yTitle">
+        <item>Passi</item>
+        <item>Chilometri</item>
+        <item>Calorie</item>
+    </ItemGroup>
+    <ItemGroup name="ChartNavLabels">
+        <item>Passi</item>
+        <item>Chilometri</item>
+        <item>Calorie</item>
+    </ItemGroup>
+    <ItemGroup name="NavActLabels">
+        <item>Attività in</item>
+        <item>Giorno</item>
+        <item>Settimana</item>
+        <item>Mese</item>
+    </ItemGroup>
+    <ItemGroup name="Messages">
+        <item>
+            <Title>Complimenti!</Title>
+            <Content>Hai raggiunto l'obiettivo per il periodo selezionato.</Content>
+        </item>
+    </ItemGroup>
+    <ItemGroup name="AppLabels">
+        <item>
+            <shorthour>h</shorthour>
+            <steps>Passi</steps>
+        </item>
+    </ItemGroup>
+    <ItemGroup name="ColorLegendLabels">
+        <Label>Legenda per il movimento</Label>
+        <Color id="1">Molto basso</Color>
+        <Color id="2">Basso</Color>
+        <Color id="3">Medio</Color>
+        <Color id="4">Alto</Color>
+        <Color id="5">Molto alto</Color>
+    </ItemGroup>
+</language_data>

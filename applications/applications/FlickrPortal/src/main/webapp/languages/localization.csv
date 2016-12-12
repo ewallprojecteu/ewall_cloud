@@ -1,0 +1,51 @@
+keys,en-US,it-IT,da-DK,de-AT,nl-NL,sr-SP,mk-MK,bg-BG,hr-HR,ro-RO
+application.title,Flickr Portal,Flickr Portal,Flickr Portal,Flickr Portal,Flickr Portal,Flickr Portal,Flickr Portal,Flickr Portal,Flickr Portal,Flickr Portal
+language.available,We are available in {nlang} languages,Sono disponibili {nlang} lingue,Vi er tilgængelige i {nlang} sprog,verfügbar in {nlang} Sprachen,We zijn beschikbaar in {nllang} talen,Dostupni smo u {nlang} jezicima,,,Dostupni smo u  {nlang} jezicima,
+language.changeLanguage,Change language,Cambia la lingua,Skift sprog,Sprache ändern,Verander taal,Promjeni jezik,Промени јазик,смяна на език,Promjeni jezik,Schimbă limba
+language.chooseLanguage,Choose a language,Scegli una lingua,Vælg et sprog,Sprache auswählen,Kies een taal,Izaberi jezik,Изберете јазик,Изберете език,Izaberi jezik,Alege o limbă
+language.plusMore,plus {nlang} more,più altre {nlang},samt mere,???,en {nlang} meer,Prikaži još,,,Prikaži još,
+language.search,Search languages...,Trova lingue...,Søg efter sprog...,Sprache suchen...,Zoek talen...,Traži jezike...,Барај јазици...,Търсене езици...,Traži jezike...,Căutare limbi...
+login.username,Username,Nome utente,Brugernavn,Benutzername,Gebruikersnaam,Korisničko ime,Корисничко име,Потребителско име,Korisničko ime,Nume utilizator
+login.password,Password,Password,Password,Passwort,Wachtwoord,Lozinka,Лозинка,парола,Lozinka,Parolă
+login.rememberMe,Remember me,Ricordami,Husk mig,Erinnere mich,Onthoud mij,Zapamti me,Запомни ме,запомни ме,Zapamti me,Ține-mă minte
+login.signIn,Sign in,Accedi,Log ind,einschreiben,Inloggen,Prijavi se,Пријави се,вписване,Prijavi se,Conectare
+login.title,Flickr Portal administration sign in,,,,,Prijavljivanje administratora na Flickr Portal,,,Prijavljivanje administratora na Flickr Portal,
+home.logout,Logout,Disconnetti,Log ud,ausloggen,Log uit,Odjavljivanje,Одјавување ,отписване,Odjavljivanje,Deconectare
+home.availablePhotos,Available photos,,,,,Dostupne fotografije,,,Dostupne fotografije,
+home.changeUser,Change user,,,,,Promijeni korisnika,,,Promijeni korisnika,
+common.ok,Ok,Ok,Ok,OK,Ok,Ok,Во ред,ОК,Ok,OK
+common.success,Success,Successo,Succes,Erfolg,Succes,Uspjeh,,,Uspjeh,
+common.error,Error,Errore,Fejl,Fehler,Fout,Greška,,,Greška,
+common.loading,Loading...,Caricamento...,Loading...,Lädt...,Laden...,Učitavanje...,Вчитување,зареждане,Učitavanje...,Se încarcă...
+common.uploading,Uploading...,Caricamento...,Uploading...,Hochladen...,Aan het uploaden...,Prijenos...,,,Prijenos...,
+common.uploadPhoto,Upload photo,Carica foto,Upload billede,Foto hochladen,Upload foto,Prenesi fotografiju,,,Prenesi fotografiju,
+common.tags,Tags (comma separated),Tags,Tags,Tag,Labels (gescheiden door comma's),Oznake (odvojene zarezom),,,Oznake (odvojene zarezom),
+common.privacy,Privacy,Privacy,Privatliv,Privatsphäre,Privacy,Privatnost,,,Privatnost,
+common.public,Public,Pubblico,Offentlig,öffentlich,Publiek,Javno,,,Javno,
+common.private,Private,Privato,Privat,privat,Privé,Privatno,,,Privatno,
+common.family,Family,Famiglia,Familie,Familie,Familie,Porodica,,,Obitelj,
+common.friends,Friends,Amici,Venner,Freunde,Vrienden,Prijatelji,,,Prijatelji,
+common.friendsAndFamily,Friends and family,Amici e famiglia,Venner og familie,Freunde und Familie,Vrienden en familie,Prijatelji i porodica,,,Prijatelji i obitelj,
+common.loginFailed,Log in failed,Accesso fallito,Fejl ved login,Einloggen fehlgeschlagen,Inloggen mislukt,Neuspješno prijavljivanje,Неуспешно пријавување,зареждането неуспешно,Neuspješno prijavljivanje,Autentificare nereușită
+userSelection.title,Flickr Portal user selection,Selezione utente del portale Flickr,Vælg bruger Plickr portal ,Flickr Portal User Auswahl,Flickr portaal gebruikers keuze,Izbor korisnika za Flickr Portal,,,Odabir korisnika za Flickr Portal,
+userSelection.selectUserHint,Select one user for Flickr portal usage,Seleziona un utente per l'uso del portale Flickr,Vælg en bruger på Flickr portalen,User für Flickr Portal Nutzung auswählen,Selecteer één gebruiker voor het gebruiken van het Flickr portaal,Izaberite jednog korisnika za korišćenje Flickr portala,,,Odaberite jednog korisnika za korištenje Flickr portala,
+userSelection.credentialsExist,Flickr user data exist,I dati dell'utente Flickr esistono,Flickr bruger data eksisterer,existierende Flickr Userdaten,Flickr gebruikers data gevonden,Flickr korisnički podaci postoje,,,Flickr korisnički podaci postoje,
+userSelection.credentialsMissing,Missing Flickr user data,Dati dell'utente Flickr mancanti,Manglende Flickr bruger data,fehlende Flickr Userdaten,Flickr gebruikers data ontbreekt,Nedostaju Flickr korisnički podaci,,,Nedostaju Flickr korisnički podaci,
+userSelection.openPortal,Open Flickr Portal,Apri il portale Flickr,Åbn Flickr Portalen,offenes Flickr Portal,Open Flickr portaal,Otvori Flickr Portal,,,Otvori Flickr Portal,
+userSelection.authUser,Authorize user on Flickr,Autorizza l'utente su Flickr,Godkend bruger på Flickr,User auf Flickr autorisieren,Authorizeer gebruiker op Flickr,Autoriziraj korisnika na mreži Flickr,,,Autoriziraj korisnika na mreži Flickr,
+userSelection.successfullyAuthorized,Successfully authorized user and saved Flickr user data,Autorizzazione utente e salvataggio dei dati utente di Flickr avvenuti con successo,Succesfuld godkendelse af bruger og gemt Flickr bruger data,Flickr Userdaten wurden gespeichert und User autorisiert,Gebruiker succesvol geauthorizeerd en Flickr data opgeslagen,Uspješno autorizovanje korisnika i sačuvani Flickr korisnički podaci,,,Uspješno autoriziranje korisnika i pohranjeni Flickr korisnički podaci,
+userSelection.failedAuthorizing,Error while authorizing user and saving Flickr user data,Errore durante l'autorizzazione dell'utente e il salvataggio dei dati utente di Flickr,Fejl ved godkendelse af bruger og gemt Flickr bruger data,Speichern der Flickr Userdaten und der Autorisierung fehlgeschlagen,Fout bij het authorizeren en opslaan van Flickr gebruikers data,Greška za vrijeme autorizovanja korisnika i smještanja Flickr korisničkih podataka,,,Pogreška za vrijeme autoriziranja korisnika i pohrane Flickr korisničkih podataka,
+uploadPhoto.browsePhotos,Browse photos,Scorri le foto,Hent billeder,Fotos durchsuchen,Blader door foto's,Pretraži fotografije,,,Pretraži fotografije,
+uploadPhoto.changePhoto,Change photo,Cambia foto,Skift billede,Foto ändern,Verander foto,Promijeni fotografiju,,,Promijeni fotografiju,
+uploadPhoto.title,Title,Titolo,Titel,Titel,Titel,Naziv,,,Naziv,
+uploadPhoto.description,Description,Descrizione,Beskrivelse,Erklärung,Omschrijving,Opis,,,Opis,
+uploadPhoto.descriptionHint,Some description,Qualche descrizione,Noget beskrivelse,Erklärung,Een beschrijving,Neki opis,,,Neki opis,
+uploadPhoto.uploadToFlicker,Upload on Flickr,Carica su Flickr,Upload på Flickr,auf Flickr hochladen,Upload naar Flickr,Prenesi na Flickr,,,Prenesi na Flickr,
+uploadPhoto.successfullyUploaded,Successfully uploaded photo,Foto caricata con successo,Succesfuld upload af billede,Foto wurde hochgeladen,Foto succesvol geupload,Uspješno prenesena fotografija,,,Uspješno prenesena fotografija,
+uploadPhoto.failedUploading,Failed uploading photo,Caricamento foto fallito,Fejl ved upload af billede,Hochladen des Fotos fehlgeschlagen,Fout bij het uploaden van foto,Prijenos fotografije nije uspio,,,Prijenos fotografije nije uspio,
+availablePhotos.size,Size,Dimensione,Størrelse,Größe,Grootte,Veličina,,,Veličina,
+availablePhotos.search,Search photos,Cerca foto,Søg efter billede,Fotos suchen,Zoek naar foto's,Pretraži slike,,,Pretraži slike,
+availablePhotos.original,Original,Originale,Original,Original,Origineel,Originalna,,,Originalna,
+availablePhotos.medium,Medium,Media,medium,Medium,Gemiddeld,Srednja,,,Srednja,
+availablePhotos.smallSquare,Small and square,Piccola e quadrata,lille og firkantet,klein und quadratisch,Klein en vierkant,Mala i četvrtasta,,,Mala i četvrtasta,
+availablePhotos.notFound,No photos found,Nessuna foto trovata,der er ikke fundet nogle billeder,keine Fotos gefunden,Geen foto's gevonden,Nisu pronađene fotografije,,,Nisu pronađene fotografije,

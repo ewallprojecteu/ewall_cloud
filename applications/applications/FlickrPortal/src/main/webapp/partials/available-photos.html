@@ -1,0 +1,54 @@
+<section>
+    <div class="row">
+		<div class="col-md-12 form-group">
+			<label class="sr-only" for="txtTags" i18n="common.tags"></label>
+			<div class="input-group">
+				<span class="input-group-addon" i18n="common.tags"></span>
+				<textarea placeholder="Tag1, Tag2" ng-model="photo.tags" rows="1" cols="50" class="form-control" id="txtTags"></textarea>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 form-group">
+			<label class="sr-only" for="ddlPrivacy" i18n="common.privacy"></label>
+			<div class="input-group" ng-init="photo.privacy = 'PRIVATE'">
+				<span class="input-group-addon" i18n="common.privacy"></span>
+				<select id="ddlPrivacy" class="form-control" ng-model="photo.privacy">
+					<option value="PRIVATE" i18n="common.private"></option>
+					<option value="PUBLIC" i18n="common.public"></option>
+					<option value="FRIENDS" i18n="common.friends"></option>
+					<option value="FAMILY" i18n="common.family"></option>
+					<option value="FRIENDS_AND_FAMILY" i18n="common.friendsAndFamily"></option>
+				</select>
+			</div>
+		</div>
+		<div class="col-md-6 form-group">
+			<label class="sr-only" for="ddlSize" i18n="availablePhotos.size"></label>
+			<div class="input-group" ng-init="photo.size = 'ORIGINAL'">
+				<span class="input-group-addon" i18n="availablePhotos.size"></span>
+				<select id="ddlSize" class="form-control" ng-model="photo.size">
+                	<option value="ORIGINAL" i18n="availablePhotos.original"></option>
+                	<option value="MEDIUM" i18n="availablePhotos.medium"></option>
+                	<option value="SMALL_SQUARE" i18n="availablePhotos.smallSquare"></option>
+                </select>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3 form-group">
+			<button ng-click="searchPhotos()" class="btn btn-primary btn-block" i18n="availablePhotos.search"></button>
+		</div>
+	</div>
+
+	<div class="row">
+		<div ng-repeat="photo in photos">
+			<div class="col-md-5 well well-sm img-container-margin">
+				<div><strong>{{photo.title}}</strong></div>
+				<div class="img-padding">
+					<img ng-src="{{photo.url}}" class="img-responsive">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="noPhotos" ng-show="photos && photos.length === 0" i18n="availablePhotos.notFound"></div>
+</section>

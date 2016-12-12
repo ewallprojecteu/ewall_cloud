@@ -1,0 +1,10 @@
+{
+    "copd1": "COPD_GOLD1",
+    "copd2": "COPD_GOLD2",
+    "copd3": "COPD_GOLD3",
+    "copd4": "COPD_GOLD4",
+    "diagnosis": "Health diagnosis",
+    "frail": "FRAIL",
+    "mci": "MCI",
+    "prefrail": "PRE_FRAIL"
+}

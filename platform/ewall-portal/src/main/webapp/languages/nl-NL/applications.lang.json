@@ -1,0 +1,17 @@
+{
+    "addNew": "Nieuwe applicatie toevoegen",
+    "availableServices": "Beschikbare diensten",
+    "contacts": "Contacten",
+    "dependsOnServices": "Hangt af van diensten",
+    "detail": "Applicatie detail",
+    "enterName": "Voer applicatie naam in",
+    "games": "Spellen",
+    "health": "Gezondheid",
+    "hidden": "Verborgen",
+    "house": "Huis",
+    "minimized": "Geminimaliseerd",
+    "name": "Applicatie naam",
+    "selectType": "Selecteer type",
+    "type": "Type",
+    "web_app": "Web applicatie"
+}

@@ -1,0 +1,19 @@
+eWALL swagger ui
+
+Copyright 
+
+Copyright 2013-2016 Hewlett Packard Enterprise (HPE) Italy (https://www.hpe.com/it/it/home.html)
+
+
+I. Included Software
+
+Software developed by Hewlett Packard Enterprise (HPE) Italy (https://www.hpe.com/it/it/home.html) for the eWALL project.
+
+
+II. Used Software
+
+none
+
+
+III. License Summary
+- Apache License 2.0

@@ -1,0 +1,20 @@
+{
+	"_username": "Username",
+	"_password": "Password",
+	"_signIn": "Sign in",
+	"_titleLogin": "Fitbit Authenticator sign in",
+	"_error": "Error",
+	"_success": "Success",
+	"_loading": "Loading...",
+	"_waiting": "Waiting...",
+	"_loginFailed": "Log in failed",
+	"_ok": "Ok",
+	"_logout": "Logout",
+	"_authUser": "Authorize user on Fitbit",
+	"_getUsersFailed": "Getting users failed",
+	"_getAuthPageFailed": "Getting Fitbit authorizing page failed",
+	"_failedAuth": "Error while authorizing user and saving Fitbit user data",
+	"_selectUserHint": "Select one user",
+	"_successAuth": "Successfully authorized user and saved Fitbit user data",
+	"_titleUserSelection": "Fitbit Authenticator user selection"
+}

@@ -1,0 +1,10 @@
+{
+    "applications": "Programi",
+    "devices": "Uređaji",
+    "home": "Kuća",
+    "logout": "Odjavljivanje({username})",
+    "regions": "Regije",
+    "sensingEnvs": "Senzorsko okruženje",
+    "services": "Servisi",
+    "users": "Korisnici"
+}

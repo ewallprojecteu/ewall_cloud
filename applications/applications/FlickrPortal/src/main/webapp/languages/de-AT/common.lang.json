@@ -1,0 +1,16 @@
+{
+    "error": "Fehler",
+    "family": "Familie",
+    "friends": "Freunde",
+    "friendsAndFamily": "Freunde und Familie",
+    "loading": "Lädt...",
+    "loginFailed": "Einloggen fehlgeschlagen",
+    "ok": "OK",
+    "privacy": "Privatsphäre",
+    "private": "privat",
+    "public": "öffentlich",
+    "success": "Erfolg",
+    "tags": "Tag",
+    "uploadPhoto": "Foto hochladen",
+    "uploading": "Hochladen..."
+}

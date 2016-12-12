@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="NavigationTxt">
+        <item>Status</item>
+        <item>Historie</item>
+    </ItemGroup>
+    <ItemGroup name="HistoryTxt">
+        <item>I Dag</item>
+        <item>Sidste uge</item>
+        <item>Sidste måned</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>Søn</item>
+        <item>Man</item>
+        <item>Tirs</item>
+        <item>Ons</item>
+        <item>Tors</item>
+        <item>Fre</item>
+        <item>Lør</item>
+    </ItemGroup>
+    <ItemGroup name="ParamLabelTxt">
+        <item>Temperatur</item>
+        <item>Luftfugtighed</item>
+        <item>Lys</item>
+    </ItemGroup>
+    <ItemGroup name="ParamDimensionTxt">
+        <item>&#176;C</item>
+        <item>%</item>
+        <item>lux</item>
+    </ItemGroup>
+    <ItemGroup name="LocationTxt">
+        <item>Køkken</item>
+        <item>Dagligstue</item>
+        <item>Soveværelse</item>
+        <item>Badeværelse</item>
+    </ItemGroup>
+    <ItemGroup name="AppLabels">
+        <item>Ingen information tilgængelig</item>
+    </ItemGroup>
+    <ItemGroup name="ColorLegendLabels">
+        <Label>Forklaring</Label>
+        <Color id="1">Lav værdi</Color>
+        <Color id="2">Normal værdi</Color>
+        <Color id="3">Høj værdi</Color>
+    </ItemGroup>
+</language_data>

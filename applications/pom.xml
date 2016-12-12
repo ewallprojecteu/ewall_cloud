@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>eu.ewall.application</groupId>
+    <artifactId>ewall-application-layer-pom</artifactId>
+	<!-- Also update version when changing this -->
+    <version>1.1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+	
+	<properties>
+		<!-- Also update project.version when changing this -->
+		<version>1.1.0-SNAPSHOT</version>
+		<java.version>1.7</java.version>
+		<spring.boot.version>1.1.6.RELEASE</spring.boot.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+	<modules>
+		<module>applications</module>
+		<module>service-bricks</module>
+		<module>libraries</module>
+		<module>fusioners</module>
+	</modules>
+	
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.1</version>
+					<configuration>
+						<source>${java.version}</source>
+						<target>${java.version}</target>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.mangofactory</groupId>
+				<artifactId>swagger-springmvc</artifactId>
+				<version>0.9.5</version>
+			</dependency>
+			<dependency>
+				<groupId>eu.ewall.application</groupId>
+				<artifactId>physicalactivity-common</artifactId>
+				<version>${version}</version>
+			</dependency>
+			<dependency>
+				<groupId>eu.ewall.application</groupId>
+				<artifactId>dailyfunctioning-common</artifactId>
+				<version>${version}</version>
+			</dependency>
+			<dependency>
+				<groupId>eu.ewall.application</groupId>
+				<artifactId>socializingmood-common</artifactId>
+				<version>${version}</version>
+			</dependency>
+                <dependency>
+				<groupId>eu.ewall.application</groupId>
+				<artifactId>domotics-common</artifactId>
+				<version>${version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>eu.ewall.platform</groupId>
+				<artifactId>ewall-common-libs</artifactId>
+				<version>${version}</version>
+			</dependency>
+			<dependency>
+				<groupId>eu.ewall.platform</groupId>
+				<artifactId>ewall-swagger-ui</artifactId>
+				<version>${version}</version>
+			</dependency>
+			<dependency>
+				<groupId>eu.ewall.application</groupId>
+				<artifactId>service-brick-common</artifactId>
+				<version>${version}</version>
+			</dependency>
+			<dependency>
+				<groupId>eu.ewall.platform</groupId>
+				<artifactId>commons-data-model</artifactId>
+				<version>${version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<type>pom</type>
+				<version>${spring.boot.version}</version>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
+	<repositories>
+	</repositories>
+	
+</project>

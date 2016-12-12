@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="LongMonths">
+        <item>Januar</item>
+        <item>Februar</item>
+        <item>Marts</item>
+        <item>April</item>
+        <item>Maj</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>August</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>December</item>
+    </ItemGroup>
+    <ItemGroup name="ShortMonths">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>Maj</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Okt</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </ItemGroup>
+    <ItemGroup name="LongDays">
+        <item>Søndag</item>
+        <item>Mandag</item>
+        <item>Tirsdag</item>
+        <item>Onsdag</item>
+        <item>Torsdag</item>
+        <item>Fredag</item>
+        <item>Lørdag</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>Søn</item>
+        <item>Man</item>
+        <item>Tirs</item>
+        <item>Ons</item>
+        <item>Tors</item>
+        <item>Fre</item>
+        <item>Lør</item>
+    </ItemGroup>
+    <ItemGroup name="AppLabels">
+        <item>Varighed</item>
+        <item>t.</item>
+        <item>time</item>
+        <item>timer</item>
+        <item>minut</item>
+        <item>minutter</item>
+        <item>sekund</item>
+        <item>sekunder</item>
+        <item>Ingen information tilgængelig</item>
+    </ItemGroup>
+    <ItemGroup name="ExtDataMessage">
+        <item name="sleeping">
+            <subitem>Sover</subitem>
+            <subitem>Vores sengesensor registrerede dig i sengen</subitem>
+        </item>
+        <item name="showering">
+            <subitem>Tage et bad</subitem>
+            <subitem>Vores fugtsensor registrerede, at du tog et bad på badeværelset</subitem>
+        </item>
+        <item name="entertaining">
+            <subitem>Afslapning og underholdning</subitem>
+            <subitem>Vores placeringssensor registrerede dig i stuen</subitem>
+        </item>
+        <item name="cooking">
+            <subitem>Madlavning og spisning</subitem>
+            <subitem>Vores placeringssensor registrerede dig i køkkenet</subitem>
+        </item>
+        <item name="sanitary_visits">
+            <subitem>Sanitære besøg</subitem>
+            <subitem>
+            </subitem>
+        </item>
+        <item name="getting_out">
+            <subitem>Komme ud</subitem>
+            <subitem>Vi har opdaget, at du er gået ud</subitem>
+        </item>
+        <item name="houseworks">
+            <subitem>Rengøring</subitem>
+            <subitem>eWALL har identificeret, at du gør rent</subitem>
+        </item>
+        <item name="visits">
+            <subitem>Hjemmebesøg</subitem>
+            <subitem>
+            </subitem>
+        </item>
+    </ItemGroup>
+</language_data>

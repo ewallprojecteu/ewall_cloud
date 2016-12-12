@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="flickrPortal">
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flickr portal</title>
+	
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/signin.css">
+	<link rel="stylesheet" href="lib/misc/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="lib/misc/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="lib/misc/flag-icon-css/css/flag-icon.css">
+	<link rel="stylesheet" href="lib/css/jasny-bootstrap/jasny-bootstrap.css">
+
+	<script src="lib/js/jquery/jquery.js"></script>
+	<script src="lib/js/angular/angular.js"></script>
+	<script src="lib/js/angular-cookies/angular-cookies.js"></script>
+	<script src="lib/js/angular-ui-router/angular-ui-router.js"></script>
+	<script src="lib/js/angular-resource/angular-resource.js"></script>
+	<script src="lib/js/angular-local-storage/angular-local-storage.js"></script>
+	<script src="lib/js/angular-localization/angular-localization.js"></script>
+	<script src="lib/js/angular-sanitize/angular-sanitize.js"></script>
+	<script src="lib/js/angular-jwt/angular-jwt.js"></script>
+    
+	<script src="js/angular-language-picker.js"></script> <!-- modified -->
+	<script src="js/angular-modal-service.js"></script>
+	
+	<script src="js/flickr-portal.js"></script>
+	<script src="js/flickr-portal-constants.js"></script>
+	<script src="js/flickr-portal-directives.js"></script>
+	<script src="js/flickr-portal-utility.js"></script>
+	<script src="js/controllers/flickr-portal-application-controller.js"></script>
+	<script src="js/controllers/flickr-portal-login-controller.js"></script>
+	<script src="js/controllers/flickr-portal-available-photos-controller.js"></script>
+	<script src="js/controllers/flickr-portal-home-controller.js"></script>
+	<script src="js/controllers/flickr-portal-upload-photo-controller.js"></script>
+	<script src="js/controllers/flickr-portal-user-selection-controller.js"></script>
+	<script src="js/controllers/extracted-controllers/flickr-portal-prepare-hosts-controller.js"></script>
+	<script src="js/services/flickr-portal-authorization-service.js"></script>
+	<script src="js/services/flickr-portal-photos-service.js"></script>
+	<script src="js/services/flickr-portal-users-service.js"></script>
+	<script src="js/services/flickr-portal-login-service.js"></script>
+</head>
+<body>
+	<body ng-controller="ApplicationController">
+    <div class="container">
+        <div ui-view></div>
+        <success-modal></success-modal>
+        <error-modal></error-modal>
+        <loading-modal></loading-modal>
+        <uploading-modal></uploading-modal>
+    </div>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="lib/misc/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/js/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="lib/js/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="lib/js/jasny-bootstrap/jasny-bootstrap.min.js"></script>
+</body>
+</body>
+</html>

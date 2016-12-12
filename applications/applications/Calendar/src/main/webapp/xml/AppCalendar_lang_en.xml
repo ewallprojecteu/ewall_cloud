@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="Dialog">
+        <item name="Header">
+            <Add>Add new event</Add>
+            <Edit>Edit/delete event</Edit>
+        </item>
+        <item name="Labels">
+            <Title>Title</Title>
+            <StartDate>Start date</StartDate>
+            <EndDate>End date</EndDate>
+            <StartTime>Start time</StartTime>
+            <EndTime>End time</EndTime>
+            <Location>Location</Location>
+            <Indoor>Indoors</Indoor>
+            <Outdoor>Outdoors</Outdoor>
+            <Question1>What do you need to have with you?</Question1>
+            <Question2>How will you reach the place?</Question2>
+            <Question3>Do you want to select your exercises from the Video trainer?</Question3>
+            <Question4>Do you want to play the eWALL cognitive games?</Question4>
+            <RepeatInterval>Repeat event</RepeatInterval>
+            <RepeatTimes>Repeat times</RepeatTimes>
+            <ReminderTime>Reminder</ReminderTime>
+            <Hourly>Hourly</Hourly>
+            <Daily>Daily</Daily>
+            <Weekly>Weekly</Weekly>
+            <Monthly>Monthly</Monthly>
+            <Yearly>Yearly</Yearly>
+            <ReminderTimeVal15>15 min</ReminderTimeVal15>
+            <ReminderTimeVal30>30 min</ReminderTimeVal30>
+            <ReminderTimeVal120>2 hrs</ReminderTimeVal120>
+            <ReminderTimeVal1440>1 day before</ReminderTimeVal1440>
+            <TransportationFoot>On foot</TransportationFoot>
+            <TransportationCar>Car</TransportationCar>
+            <TransportationTaxi>Taxi</TransportationTaxi>
+            <TransportationOther>Other</TransportationOther>
+            <DoctorName>Doctor's name</DoctorName>
+            <DoctorPhone>Doctor's phone number</DoctorPhone>
+            <MedExam>Medical examinations</MedExam>
+            <InsCard>Insurance card</InsCard>
+            <OtherDocs>Other</OtherDocs>
+            <Wallet>Wallet</Wallet>
+            <Keys>Keys</Keys>
+            <OtherBelongings>Other</OtherBelongings>
+            <Yes>Yes</Yes>
+            <No>No</No>
+            <Shower>Shower</Shower>
+            <Groom>Grooming</Groom>
+            <Bloodpressure>Blood pressure</Bloodpressure>
+            <SPO2>SPO2</SPO2>
+            <Heartrate>Heartrate</Heartrate>
+            <Breakfast>Breakfast</Breakfast>
+            <Lunch>Lunch</Lunch>
+            <Dinner>Dinner</Dinner>
+            <TitleMedicalVal>Medical checkup</TitleMedicalVal>
+            <TitlePhysicalVal>Physical exercise</TitlePhysicalVal>
+            <TitleCognitiveVal>Cognitive exercise</TitleCognitiveVal>
+        </item>
+        <item name="Buttons">
+            <Add>Add event</Add>
+            <Edit>Edit event</Edit>
+            <Delete>Delete event</Delete>
+            <DeleteAll>Delete all</DeleteAll>
+            <Cancel>Cancel</Cancel>
+        </item>
+    </ItemGroup>
+</language_data>

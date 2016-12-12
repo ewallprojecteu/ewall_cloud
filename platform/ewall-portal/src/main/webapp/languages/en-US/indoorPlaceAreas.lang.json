@@ -1,0 +1,18 @@
+{
+    "bathroom": "Bathroom",
+    "bedroom": "Bedroom",
+    "cellar": "Cellar",
+    "corridor": "Corridor",
+    "diningRoom": "Dining room",
+    "entranceHall": "Entrance hall",
+    "guestRoom": "Guest room",
+    "hobbyRoom": "Hobby room",
+    "kitchen": "Kitchen",
+    "livingRoom": "Living room",
+    "selectArea": "Select area",
+    "staircase": "Staircase",
+    "storageRoom": "Storage room",
+    "unknown": "Unknown",
+    "wardrobe": "Wardrobe",
+    "workRoom": "Work room"
+}

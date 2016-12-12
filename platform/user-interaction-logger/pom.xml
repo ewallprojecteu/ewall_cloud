@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>eu.ewall.platform</groupId>
+		<artifactId>ewall-platform-pom</artifactId>
+		<version>1.1.0-SNAPSHOT</version>
+	</parent>
+	
+	<artifactId>user-interaction-logger</artifactId>
+	<packaging>war</packaging>
+	<groupId>eu.ewall.platform.userinteractionlogger</groupId>
+
+	<properties>
+		<start-class>eu.ewall.platform.userinteractionlogger.UserInteractionLoggerApplication</start-class>
+	</properties>
+
+	<build>		
+		<finalName>user-interaction-logger</finalName>	
+		<plugins>			
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${maven.compile.source}</source>
+					<target>${maven.compile.target}</target>
+				</configuration>
+			</plugin>			
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>		
+	</build>
+	
+	<dependencies>		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<!-- tomcat scope provided together with the packaging war above ensures 
+			that the artefact is deployed on existing tomcat instance (spring boot uses 
+			embedded tomcat for every app othervise) -->		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>eu.ewall.platform</groupId>
+			<artifactId>commons-data-model</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>eu.ewall.platform.idss</groupId>
+			<artifactId>idss-lib</artifactId>
+		</dependency>		
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	
+	<repositories>
+		<repository>
+			<id>spring-releases</id>
+			<url>http://repo.spring.io/libs-release</url>
+		</repository>
+	</repositories>
+	
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-releases</id>
+			<url>http://repo.spring.io/libs-release</url>
+		</pluginRepository>
+	</pluginRepositories>
+	
+	<organization>
+		<name>Roessingh Research and Development</name>
+		<url>http://www.rrd.nl/</url>
+	</organization>
+</project>

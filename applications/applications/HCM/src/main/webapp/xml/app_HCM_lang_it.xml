@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<language_data>
+    <ItemGroup name="HistoryTxt">
+        <item>Oggi</item>
+        <item>Ultima settimana</item>
+        <item>Ultimo mese</item>
+    </ItemGroup>
+    <ItemGroup name="ShortDays">
+        <item>dom</item>
+        <item>lu</item>
+        <item>ma</item>
+        <item>me</item>
+        <item>gio</item>
+        <item>ve</item>
+        <item>sa</item>
+    </ItemGroup>
+    <ItemGroup name="MeasureTxt">
+        <item>Frequenza cardiaca</item>
+        <item>Saturazione</item>
+        <item>Pressione sanguigna</item>
+    </ItemGroup>
+    <ItemGroup name="MeasureValueTxt">
+        <item>BAM</item>
+        <item>%</item>
+        <item>
+            <subitem>SYS</subitem>
+            <subitem>DIA</subitem>
+        </item>
+    </ItemGroup>
+    <ItemGroup name="SystemMessages">
+        <item>Misura</item>
+        <item>Storico</item>
+        <item>Inizia la misura</item>
+        <item>Per favore prova di nuovo più tardi</item>
+    </ItemGroup>
+    <ItemGroup name="ColorLegendLabels">
+        <Label>Legenda</Label>
+        <Color id="1">Valore basso</Color>
+        <Color id="2">Valore normale</Color>
+        <Color id="3">Valore alto</Color>
+    </ItemGroup>
+    <ItemGroup name="MeasureInfoTxt">
+        <item>
+            <subitem>Lo smart stethoscope è uno degli strumenti per monitorare lo stato di salute</subitem>
+            <subitem>Misura la frequenza e la performance cardiaca</subitem>
+            <subitem>Spingi il pulsante "Start" sullo Smart Stethoscope e premilo sul torace vicino al cuore.</subitem>
+            <subitem>Premi il pulsante "INIZIA LA MISURA" sullo schermo.</subitem>
+        </item>
+        <item>
+            <subitem>Il Pulsossimetro misura e indica la saturazione funzionale di ossigeno nell'emoglobina arteriosa (% SpO&lt;sub&gt;2&lt;/sub&gt;) e la frequenza cardiaca</subitem>
+            <subitem>Inserisci un dito, con l'unghia rivolta verso l'alto, nel Pulsossimetro finchè la punta del dito non tocchi la guida di arresto</subitem>
+            <subitem>Quando un dito è inserito, il dispositivo esegue una breve procedura di inizializzazione. Verifica che tutti i LED siano accesi durante la procedura di inizializzazione.</subitem>
+            <subitem>Premi il pulsante "INIZIA LA MISURA" sullo schermo.</subitem>
+        </item>
+        <item>
+            <subitem>Il dispositivo misura la tua pressione sanguigna e la frequenza cardiaca in modo semplice e veloce.</subitem>
+            <subitem>Il bracciale può essere avvolto sul braccio destro o sinistro. Applicare il bracciale in modo che la camera d'aria si trovi dal lato del gomito.</subitem>
+            <subitem>Seleziona il tuo ID utente (A o B)</subitem>
+            <subitem>Premi il pulsante O/I START. Sul display appaiono tutti i simboli. Il simbolo ID utente che hai selezionato lampeggia sul display</subitem>
+            <subitem>Premi il pulsante "INIZIA LA MISURA" sullo schermo.</subitem>
+        </item>
+    </ItemGroup>
+</language_data>
